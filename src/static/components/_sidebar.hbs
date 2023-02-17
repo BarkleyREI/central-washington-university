@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- http://microformats.org/wiki/hcard-cheatsheet -->
+	<link rel="profile" href="http://microformats.org/profile/hcard" />
+
+	<link media="all" rel="stylesheet" href="{{ path '/css/main.css' }}">
+
+	<title>{{ _target.title }} - Preview</title>
+
+	<script type="text/javascript" src="{{ path '/js/plugins/modernizr.js' }}"></script>
+
+	{{#if _target.meta.tailwind }}
+		<link href="{{ _config.project.tailwindcdn }}" rel="stylesheet" />
+	{{/if}}
+
+	<style type="text/css">
+		body {
+			{{#if _target.meta.margin }}
+				margin: {{ _target.meta.margin }};
+			{{ else }}
+				margin: 16px;
+			{{/if}}
+			{{#if _target.meta.background }}
+				background-color: {{_target.meta.background}};
+			{{/if}}
+		}
+
+		.f-component-wrapper {
+			position: relative;
+			display: grid;
+			{{#if _target.meta.align }}
+				place-items: {{ _target.meta.align }};
+			{{else}}
+				place-items: center;
+			{{/if}}
+
+		}
+
+		@media screen and (min-width: 1024px) {
+			.f-component-wrapper {
+				max-width: 360px;
+				margin: 0 auto 0 0;
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	{{render '@svg' }}
+
+	<div class="f-component-wrapper">
+		{{{ yield }}}
+	</div>
+
+	<script src="{{ _config.project.jquerycdn }}"></script>
+
+	{{#if _target.meta.scripts}}
+		{{#each _target.meta.scripts}}
+			<script type="text/javascript" src="{{ scriptPath this }}"></script>
+		{{/each}}
+	{{/if}}
+
+</body>
+</html>

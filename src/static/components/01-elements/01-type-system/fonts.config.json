@@ -1,0 +1,16 @@
+{
+	"title": "Fonts",
+	"status": "ready",
+	"meta": {
+		"align": "self-start",
+		"tailwind": true
+	},
+	"context": {
+		"fonts": [
+			{
+				"title": "Name of Font Family",
+				"style": "font-family-class font-weight-class"
+			}
+		]
+	}
+}

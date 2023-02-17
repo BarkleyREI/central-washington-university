@@ -1,0 +1,12 @@
+%default-link {
+
+}
+
+a {
+	text-decoration: none;
+
+	// Standard links inside a WYSIWYG that don't have a class
+	.user-markup &:not([class]) {
+		@extend %default-link !optional;
+	}
+}

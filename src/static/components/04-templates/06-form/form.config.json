@@ -1,0 +1,15 @@
+{
+	"title": "Form",
+	"status": "wip",
+	"preview": "@template",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"title": "Headline Lorem Ipsum Dolor",
+		"main": []
+	}
+}

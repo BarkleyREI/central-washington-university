@@ -1,0 +1,10 @@
+{
+	"title": "Type Scale",
+	"status": "ready",
+	"meta": {
+		"align": "self-start",
+		"tailwind": true
+	},
+	"context": {
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"title": "Space",
+	"status": "wip",
+	"default": "Grid System",
+	"context": {
+	},
+	"variants": [
+		{
+			"name": "Margins"
+		},
+		{
+			"name": "Padding"
+		},
+		{
+			"name": "Gutters"
+		},
+		{
+			"name": "Light and Shadow"
+		}
+	]
+}

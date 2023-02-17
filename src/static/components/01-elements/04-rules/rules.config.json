@@ -1,0 +1,21 @@
+{
+	"title": "Rules",
+	"status": "ready",
+	"default": "Primary",
+	"context": {
+	},
+	"variants": [
+		{
+			"name": "Secondary",
+			"context": {
+				"style": "alt"
+			}
+		},
+		{
+			"name": "Tertiary",
+			"context": {
+				"style": "rule"
+			}
+		}
+	]
+}

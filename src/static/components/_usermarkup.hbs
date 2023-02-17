@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link media="all" rel="stylesheet" href="{{ path '/css/main.css' }}">
+	<title>{{ _target.title }} - Preview</title>
+
+	<script type="text/javascript" src="{{ path '/js/plugins/modernizr.js' }}"></script>
+
+	{{# if _target.meta.tailwind }}
+		<link href="{{ _config.project.tailwindcdn }}" rel="stylesheet">
+	{{/if}}
+
+	<style type="text/css">
+		body {
+			{{#if _target.meta.margin }}
+				margin: {{ _target.meta.margin }};
+			{{ else }}
+				margin: 16px;
+			{{/if}}
+			{{#if _target.meta.background }}
+				background-color: {{_target.meta.background}};
+			{{/if}}
+		}
+
+		.f-component-wrapper {
+			position: relative;
+			display: grid;
+			{{#if _target.meta.align }}
+				place-items: {{ _target.meta.align }};
+			{{else}}
+				place-items: center;
+			{{/if}}
+		}
+	</style>
+</head>
+<body>
+
+	{{render '@svg' }}
+
+	<div class="f-component-wrapper">
+		<div class="user-markup">
+		{{{ yield }}}
+		</div>
+	</div>
+
+	<script src="{{ _config.project.jquerycdn }}"></script>
+
+	{{#if _target.meta.scripts}}
+		{{#each _target.meta.scripts}}
+			<script type="text/javascript" src="{{ scriptPath this }}"></script>
+		{{/each}}
+	{{/if}}
+
+</body>
+</html>

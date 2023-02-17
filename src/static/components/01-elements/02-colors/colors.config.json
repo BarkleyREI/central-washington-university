@@ -1,0 +1,61 @@
+{
+	"title": "Colors",
+	"status": "wip",
+	"meta": {
+		"tailwind": true
+	},
+	"context": {
+		"colors": [
+			{
+				"varname": "$gray-10",
+				"hex": "#f4f4f4",
+				"name": "Gray 10"
+			},
+			{
+				"varname": "$gray-20",
+				"hex": "#e0e0e0",
+				"name": "Gray 20"
+			},
+			{
+				"varname": "$gray-30",
+				"hex": "#c6c6c6",
+				"name": "Gray 30"
+			},
+			{
+				"varname": "$gray-40",
+				"hex": "#a8a8a8",
+				"name": "Gray 40"
+			},
+			{
+				"varname": "$gray-50",
+				"hex": "#8d8d8d",
+				"name": "Gray 50"
+			},
+			{
+				"varname": "$gray-60",
+				"hex": "#6f6f6f",
+				"name": "Gray 60"
+			},
+			{
+				"varname": "$gray-70",
+				"hex": "#525252",
+				"name": "Gray 70"
+			},
+			{
+				"varname": "$gray-80",
+				"hex": "#393939",
+				"name": "Gray 80"
+			},
+			{
+				"varname": "$gray-90",
+				"hex": "#262626",
+				"name": "Gray 90"
+			},
+			{
+				"varname": "$gray-100",
+				"hex": "#161616",
+				"name": "Gray 100"
+			}
+		]
+	}
+}
