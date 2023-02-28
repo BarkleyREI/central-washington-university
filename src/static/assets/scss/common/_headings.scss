@@ -1,56 +1,211 @@
 // Try modifying /helpers/overrides/_foundation.scss before setting global heading styles here
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-
+.font-inter,
+%font-inter {
+	font-family: $inter;
 }
 
-h1 {
-
+.font-lora,
+%font-lora {
+	font-family: $lora;
 }
 
-h2 {
-
+.font-medium,
+%font-medium {
+	font-weight: 500;
 }
 
-h3 {
-
+.font-semibold,
+%font-semibold {
+	font-weight: 600;
 }
 
-h4 {
-
+.font-bold,
+%font-bold {
+	font-weight: 700;
 }
 
-h5 {
-
+.font-extrabold,
+%font-extrabold {
+	font-weight: 800;
 }
 
-h6 {
-
+.font-italic,
+%font-italic {
+	font-style: italic;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-	display: block;
+%font-h1,
+%font-h2,
+.font-h1,
+.font-h2,
+.user-markup h1,
+.user-markup h2 {
+	font-family: $inter;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+%font-h3,
+%font-h4,
+%font-h5,
+%font-h6,
+.font-h3,
+.font-h4,
+.font-h5,
+.font-h6,
+.user-markup h3,
+.user-markup h4,
+.user-markup h5,
+.user-markup h6 {
+	font-family: $inter;
+	font-weight: 500;
+	line-height: 1.2;
 }
 
 // Mixin that applies Foundation heading styles to heading classes dynamically
 // .h1, .h2, .h3, ... etc
 @each $size, $headers in $header-styles {
 	@each $header, $font-size in $headers {
-		%#{$header},
-		.#{$header} {
+		%font-#{$header},
+		.font-#{$header} {
 			@include breakpoint($size) {
-				font-size: map-deep-get($header-styles, $size, $header, 'font-size');
+				font-size: rem-calc(map-deep-get($header-styles, $size, $header, 'font-size'));
+				margin-bottom: 1.2rem;
 			}
 		}
+	}
+}
+
+%font-specialty-1,
+.font-specialty-1 {
+	color: $brand-primary;
+	font-family: $inter;
+	font-size: 61.33px;
+	font-weight: 800;
+	letter-spacing: -1px;
+	line-height: 1.15;
+
+	@include breakpoint(large) {
+		font-size: 86.46px;
+	}
+}
+
+%font-specialty-2,
+.font-specialty-2 {
+	color: $brand-primary;
+	font-family: $inter;
+	font-size: 39.81px;
+	font-weight: 800;
+	letter-spacing: -1px;
+	line-height: 1.2;
+
+	@include breakpoint(large) {
+		font-size: 68.8px;
+	}
+}
+
+%font-intro,
+.font-intro {
+	font-family: $lora;
+	font-size: 23.04px;
+	font-weight: 400;
+	line-height: 1.44;
+
+	@include breakpoint(large) {
+		font-size: 27.65px;
+	}
+}
+
+%font-body,
+.font-body {
+	font-family: $inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.44;
+
+	@include breakpoint(medium) {
+		font-size: 19.2px;
+		line-heiht: 1.519;		
+	}
+
+	@include breakpoint(large) {
+		font-size: 23.04px;
+	}
+}
+
+%font-caption,
+.font-caption {
+	font-family: $lora;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 600;
+	line-height: 1.44;
+}
+
+
+%font-button,
+.font-button {
+	font-family: $inter;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 1;
+	text-transform: uppercase;
+
+	@include breakpoint(large) {
+		font-size: 19.2px
+	}
+}
+
+%font-quote,
+.font-quote {
+	font-family: $lora;
+	font-size: 27.65px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 1.44;
+}
+
+%font-subhead,
+.font-subhead {
+	font-family: $inter;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.519;
+
+	@include breakpoint(medium) {
+		font-size: 19.2px;
+	}
+	
+	@include breakpoint(large) {
+		font-size: 23.04px;
+	}
+}
+
+%font-overline,
+.font-overline {
+	font-family: $inter;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 800;
+	line-height: 1;
+	text-transform: uppercase;
+
+	@include breakpoint(large) {
+		font-size: 19.2px;
+	}
+}
+
+%font-numeral,
+.font-numeral {
+	color: $brand-primary;
+	font-family: $inter;
+	font-size: 76.29px;
+	font-weight: 800;
+	line-height: 1;
+
+	@include breakpoint(large) {
+		font-size: 99.07px;
 	}
 }

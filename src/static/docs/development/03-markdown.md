@@ -104,10 +104,10 @@ function test() {
 
 ## Links
 
-[Our Website](https://barkleyrei.com)
+[Our Website](https://barkleyus.com)
 
 ```markdown
-[Our Website](https://barkleyrei.com)
+[Our Website](https://barkleyus.com)
 ```
 
 ## Images

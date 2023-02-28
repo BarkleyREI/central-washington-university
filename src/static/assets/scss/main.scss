@@ -10,8 +10,8 @@
 @include foundation-typography ();
 
 // Grids (choose one)
-// @include foundation-xy-grid-classes ();
-@include foundation-grid ();
+@include foundation-xy-grid-classes ();
+// @include foundation-grid ();
 // @include foundation-flex-grid;
 
 // Generic components
@@ -34,7 +34,7 @@
 // @include foundation-tooltip ();
 
 // Containers
-// @include foundation-accordion ();
+@include foundation-accordion ();
 // @include foundation-media-object ();
 // @include foundation-orbit ();
 // @include foundation-responsive-embed ();
@@ -71,7 +71,7 @@
 // @import 'helpers/lib/_animate';
 
 // Fonts
-// @import 'icons/_style';
+@import 'icons/_style';
 
 // Common content styles
 @import 'common/_index';

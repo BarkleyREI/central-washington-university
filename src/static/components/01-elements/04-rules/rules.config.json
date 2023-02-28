@@ -10,12 +10,6 @@
 			"context": {
 				"style": "alt"
 			}
-		},
-		{
-			"name": "Tertiary",
-			"context": {
-				"style": "rule"
-			}
 		}
 	]
 }

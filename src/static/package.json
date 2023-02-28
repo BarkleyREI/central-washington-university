@@ -1,9 +1,9 @@
 {
   "name": "central-washington-university",
   "version": "1.0.0",
-  "description": "Pattern library client project by BarkleyREI",
+  "description": "Pattern library client project by Barkley",
   "author": {
-    "name": "BarkleyREI"
+    "name": "Barkley"
   },
   "license": "ISC",
   "browserslist": [

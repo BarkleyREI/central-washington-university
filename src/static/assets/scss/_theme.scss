@@ -1,8 +1,34 @@
 // Use this file to store common values like
 // font size, z index, etc.
 
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@400;500;600;700;800&family=Lora:ital,wght@0,400;1,400;1,500;1,600&display=swap');
+$inter: 'Inter', sans-serif;
+$lora: 'Lora', serif;
+$body-font-family: 'Inter', sans-serif;
+
 // Colors
-$black: #0a0a0a;
+$brand-primary: #ab0032;
+$brand-secondary: #ffd632;
+
+$cwu-crimson: #a30f32;
+$cwu-dark-crimson: #b80025;
+$ellensburg-blue-jeans: #4c879e;
+$manatash-tan: #f1e5c3;
+$wildflower-yellow: #ffd632;
+$viva-magenta: #da234e;
+
+$bilbao: #12841f;
+$black: #000000;
+$crimson: #cc1540;
+$dove-gray: #696969;
+$gallery: #ebebeb;
+$guardsman: #c40000;
+$tundora: #414141;
+$wild-sand: #f6f6f6;
+
+
+// System Colors
 $sail: #a2cdee;
 
 // Grays
@@ -18,7 +44,7 @@ $gray-90: #262626;
 $gray-100: #161616;
 
 // Global Variables
-$transition-time: 0.425s; // Common transition time for hover states, etc.
+$transition-time: 0.25s; // Common transition time for hover states, etc.
 $placeholder-color: $black;
 $selection-color: $sail;
 $primary-nav-breakpoint: large;
@@ -47,22 +73,26 @@ $grid-column-gutter: (
 	xsmall: 16px,
 	medium: 16px,
 );
+$grid-margin-gutters: (
+	xsmall: 16px,
+	medium: 16px
+);
 $header-styles: (
 	xsmall: (
-		'h1': ('font-size': 48),
-		'h2': ('font-size': 42),
-		'h3': ('font-size': 38),
-		'h4': ('font-size': 32),
-		'h5': ('font-size': 28),
-		'h6': ('font-size': 24),
+		'h1': ('font-size': 39.81),
+		'h2': ('font-size': 33.18),
+		'h3': ('font-size': 27.65),
+		'h4': ('font-size': 23.04),
+		'h5': ('font-size': 19.2),
+		'h6': ('font-size': 16),
 	),
 	large: (
-		'h1': ('font-size': 72),
-		'h2': ('font-size': 64),
-		'h3': ('font-size': 56),
-		'h4': ('font-size': 48),
-		'h5': ('font-size': 40),
-		'h6': ('font-size': 32),
+		'h1': ('font-size': 47.48),
+		'h2': ('font-size': 39.81),
+		'h3': ('font-size': 33.18),
+		'h4': ('font-size': 27.65),
+		'h5': ('font-size': 23.04),
+		'h6': ('font-size': 19.2),
 	),
 );
-$breakpoint-classes: (xsmall small medium large);
+$breakpoint-classes: (xsmall small medium large xlarge xxlarge xxxlarge);

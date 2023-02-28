@@ -8,8 +8,40 @@
 	"context": {
 		"fonts": [
 			{
-				"title": "Name of Font Family",
-				"style": "font-family-class font-weight-class"
+				"title": "Inter Regular",
+				"style": "font-inter"
+			},
+			{
+				"title": "Inter Medium",
+				"style": "font-inter font-medium"
+			},
+			{
+				"title": "Inter SemiBold",
+				"style": "font-inter font-semibold"
+			},
+			{
+				"title": "Inter Bold",
+				"style": "font-inter font-bold"
+			},
+			{
+				"title": "Inter ExtraBold",
+				"style": "font-inter font-extrabold"
+			},
+			{
+				"title": "Lora Regular",
+				"style": "font-lora"
+			},
+			{
+				"title": "Lora Regular Italic",
+				"style": "font-lora font-italic"
+			},
+			{
+				"title": "Lora Medium Italic",
+				"style": "font-lora font-medium font-italic"
+			},
+			{
+				"title": "Lora SemiBold Italic",
+				"style": "font-lora font-semibold font-italic"
 			}
 		]
 	}

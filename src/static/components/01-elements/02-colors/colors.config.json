@@ -1,60 +1,90 @@
 {
 	"title": "Colors",
-	"status": "wip",
+	"status": "ready",
 	"meta": {
 		"tailwind": true
 	},
 	"context": {
 		"colors": [
 			{
-				"varname": "$gray-10",
-				"hex": "#f4f4f4",
-				"name": "Gray 10"
+				"varname": "$brand-primary",
+				"hex": "#ab0032",
+				"name": "Carmine"
 			},
 			{
-				"varname": "$gray-20",
-				"hex": "#e0e0e0",
-				"name": "Gray 20"
+				"varname": "$crimson",
+				"hex": "#cc1540",
+				"name": "Crimson"
 			},
 			{
-				"varname": "$gray-30",
-				"hex": "#c6c6c6",
-				"name": "Gray 30"
+				"varname": "$brand-secondary",
+				"hex": "#ffd632",
+				"name": "Sunglow"
 			},
 			{
-				"varname": "$gray-40",
-				"hex": "#a8a8a8",
-				"name": "Gray 40"
+				"varname": "$black",
+				"hex": "#000000",
+				"name": "Black"
 			},
 			{
-				"varname": "$gray-50",
-				"hex": "#8d8d8d",
-				"name": "Gray 50"
+				"varname": "$tundora",
+				"hex": "#414141",
+				"name": "Tundora"
 			},
 			{
-				"varname": "$gray-60",
-				"hex": "#6f6f6f",
-				"name": "Gray 60"
+				"varname": "$dove-gray",
+				"hex": "#696969",
+				"name": "Dove Gray"
 			},
 			{
-				"varname": "$gray-70",
-				"hex": "#525252",
-				"name": "Gray 70"
+				"varname": "$gallery",
+				"hex": "#ebebeb",
+				"name": "Gallery"
+			},			
+			{
+				"varname": "$wild-sand",
+				"hex": "#f6f6f6",
+				"name": "Wild Sand"
 			},
 			{
-				"varname": "$gray-80",
-				"hex": "#393939",
-				"name": "Gray 80"
+				"varname": "$bilbao",
+				"hex": "#12841f",
+				"name": "Bilbao"
 			},
 			{
-				"varname": "$gray-90",
-				"hex": "#262626",
-				"name": "Gray 90"
+				"varname": "$guardsman",
+				"hex": "#c40000",
+				"name": "Guardsman"
 			},
 			{
-				"varname": "$gray-100",
-				"hex": "#161616",
-				"name": "Gray 100"
+				"varname": "$cwu-crimson",
+				"hex": "#a30f32",
+				"name": "CWU Crimson"
+			},
+			{
+				"varname": "$cwu-dark-crimson",
+				"hex": "#b80025",
+				"name": "CWU Dark Crimson"
+			},
+			{
+				"varname": "$viva-magenta",
+				"hex": "#da234e",
+				"name": "Viva Magenta"
+			},			
+			{
+				"varname": "$wildflower-yellow",
+				"hex": "#ffd632",
+				"name": "Wildflower Yellow"
+			},
+			{
+				"varname": "$manatash-tan",
+				"hex": "#f1e5c3",
+				"name": "Manatash Tan"
+			},
+			{
+				"varname": "$ellensburg-blue-jeans",
+				"hex": "#4c879e",
+				"name": "Guardsman"
 			}
 		]
 	}
