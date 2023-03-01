@@ -1,0 +1,33 @@
+<div id="js-pagination" role="navigation" class="pagination{{#if style}} {{style}}{{/if}}">
+	<ul class="pagination__list clearfix" aria-label="Pagination">
+		<li class="pagination__item pagination__item--prev pagination__item--disabled">
+			{{render '@button--medium' prev merge=true}}
+		</li>
+		<li class="pagination__item pagination__item--active">
+			<a href="#" data-page="1" class="pagination__link" tabindex="-1"><span class="show-for-sr">You're on page</span> 1</a>
+		</li>
+		<li class="pagination__item">
+			<a href="#" data-page="2" class="pagination__link" aria-label="Page 2">2</a>
+		</li>
+		<li class="pagination__item"><span class="pagination__span">...</span></li>
+		<li class="pagination__item">
+			<a href="#" data-page="11" class="pagination__link" aria-label="Page 11">11</a>
+		</li>
+		<li class="pagination__item">
+			<a href="#" data-page="12" class="pagination__link" aria-label="Page 12">12</a>
+		</li>
+		<li class="pagination__item">
+			<a href="#" data-page="13" class="pagination__link" aria-label="Page 13">13</a>
+		</li>
+		<li class="pagination__item"><span class="pagination__span">...</span></li>
+		<li class="pagination__item">
+			<a href="#" data-page="21" class="pagination__link" aria-label="Page 21">21</a>
+		</li>
+		<li class="pagination__item">
+			<a href="#" data-page="22" class="pagination__link" aria-label="Page 22">22</a>
+		</li>
+		<li class="pagination__item pagination__item--next">
+			{{render '@button--medium' next merge=true}}
+		</li>
+	</ul>
+</div>

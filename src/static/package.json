@@ -16,9 +16,13 @@
     "root": true
   },
   "dependencies": {
+    "@accessible360/accessible-slick": "^1.0.1",
     "brei-project-utils": "~0.0.1",
     "foundation-sites": "~6.7.4",
     "jquery": "~3.6.0",
+    "jquery.selectability": "git+https://github.com/BarkleyREI/jquery.selectability.js.git",
+    "js-cookie": "^3.0.1",
+    "magnific-popup": "^1.1.0",
     "modernizr": "~3.11.8",
     "motion-ui": "~2.0.3",
     "what-input": "~5.2.10"

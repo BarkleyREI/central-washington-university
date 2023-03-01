@@ -1,0 +1,146 @@
+{
+	"title": "Dropdown",
+	"status": "ready",
+	"order": 1,
+	"display": {
+		"max-width": "400px"
+	},
+	"meta": {
+		"align": "self-start",
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"items": [
+			{
+				"id": "select-box",
+				"name": "select-box",
+				"label": "Select Box",
+				"required": "true",
+				"empty": "true",
+				"errormsg": "Field is required",
+				"options": [
+					{
+						"value": "2",
+						"label": "Option 2"
+					},
+					{
+						"value": "3",
+						"label": "Option 3"
+					},
+					{
+						"value": "4",
+						"label": "Option 4"
+					},
+					{
+						"value": "5",
+						"label": "Option 5"
+					},
+					{
+						"value": "6",
+						"label": "Option 6"
+					},
+					{
+						"value": "7",
+						"label": "Option 7"
+					},
+					{
+						"value": "8",
+						"label": "Option 8"
+					}
+				]
+			},
+			{
+				"id": "select-box2",
+				"name": "select-box2",
+				"label": "Select Box",
+				"options": [
+					{
+						"value": "1",
+						"label": "Enabled"
+					},
+					{
+						"value": "2",
+						"label": "Option 2"
+					},
+					{
+						"value": "3",
+						"label": "Option 3"
+					},
+					{
+						"value": "4",
+						"label": "Option 4"
+					},
+					{
+						"value": "5",
+						"label": "Option 5"
+					},
+					{
+						"value": "6",
+						"label": "Option 6"
+					},
+					{
+						"value": "7",
+						"label": "Option 7"
+					},
+					{
+						"value": "8",
+						"label": "Option 8"
+					}
+				]
+			}
+		]
+	},
+	"variants": [
+		{
+			"name": "Disabled",
+			"context": {
+				"items": [
+					{
+						"id": "select-box",
+						"name": "select-box",
+						"label": "Disabled",
+						"disabled": true,
+						"options": [
+							{
+								"value": "1",
+								"label": "Disabled Select"
+							},
+							{
+								"value": "2",
+								"label": "Option 2"
+							},
+							{
+								"value": "3",
+								"label": "Option 3"
+							},
+							{
+								"value": "4",
+								"label": "Option 4"
+							},
+							{
+								"value": "5",
+								"label": "Option 5"
+							},
+							{
+								"value": "6",
+								"label": "Option 6"
+							},
+							{
+								"value": "7",
+								"label": "Option 7"
+							},
+							{
+								"value": "8",
+								"label": "Option 8"
+							}
+						],
+						"field_style": "form__field--disabled"
+					}
+				]
+			}
+		}
+	]
+}

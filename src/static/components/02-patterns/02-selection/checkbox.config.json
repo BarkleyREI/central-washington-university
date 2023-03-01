@@ -1,0 +1,15 @@
+{
+	"title": "Checkbox",
+	"status": "ready",
+	"order": 3,
+	"context": {
+		"items": [
+			{
+				"id": "check-box",
+				"name": "check",
+				"value": 1,
+				"label": "Lorem Checkbox"
+			}
+		]
+	}
+}

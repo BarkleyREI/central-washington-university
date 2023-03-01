@@ -1,0 +1,23 @@
+{{#if items}}
+	{{#each items}}
+		<div class="form__field{{#if field_style}} {{field_style}}{{/if}}">
+			<select id="{{id}}{{#if formkey}}-{{formkey}}{{/if}}" name="{{name}}"{{#if disabled}} disabled="disabled"{{/if}}{{#if required}} required="required"{{/if}}>
+				{{#if empty}}
+					<option></option>
+				{{/if}}
+				{{#if default}}
+					<option>{{default}}</option>
+				{{/if}}
+				{{#each options}}
+					<option value="{{this.value}}"{{#if this.selected}} selected="selected"{{/if}}>{{this.label}}</option>
+				{{/each}}
+			</select>
+			<label for="{{id}}{{#if formkey}}-{{formkey}}{{/if}}">{{label}}</label>
+			{{#if errormsg}}
+				<div class="form__valid-icon">{{svg "check"}}</div>
+				<div class="form__error-icon">{{svg "warning"}}</div>
+				<div class="form__error-message">{{errormsg}}</div>
+			{{/if}}
+		</div>
+	{{/each}}
+{{/if}}

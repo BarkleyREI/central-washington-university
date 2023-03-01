@@ -126,7 +126,7 @@
 
 	@include breakpoint(medium) {
 		font-size: 19.2px;
-		line-heiht: 1.519;		
+		line-heiht: 1.519;
 	}
 
 	@include breakpoint(large) {
@@ -143,18 +143,17 @@
 	line-height: 1.44;
 }
 
-
 %font-button,
 .font-button {
 	font-family: $inter;
-	font-size: 16px;
+	font-size: 19.2px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	line-height: 1;
 	text-transform: uppercase;
 
 	@include breakpoint(large) {
-		font-size: 19.2px
+		font-size: 23.04px;
 	}
 }
 
@@ -177,7 +176,7 @@
 	@include breakpoint(medium) {
 		font-size: 19.2px;
 	}
-	
+
 	@include breakpoint(large) {
 		font-size: 23.04px;
 	}

@@ -1,0 +1,27 @@
+{
+	"title": "Search",
+	"status": "ready",
+	"order": "3",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"display": {
+		"max-width": "350px"
+	},
+	"context": {
+		"icon": "search",
+		"label": "Search"
+	},
+	"variants": [
+		{
+			"name": "Disabled",
+			"context": {
+				"style": "form__field--disabled",
+				"disabled": true
+			}
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{{#if items}}
+<fieldset>
+	{{#if legend}}<legend class="show-for-sr">{{{ legend }}}</legend>{{/if}}
+	{{#each items}}
+	<div class="form__field form__field--radio">
+		<input id="{{ id }}{{#if formkey}}-{{formkey}}{{/if}}" name="{{ name }}" type="radio" value="{{{ value }}}"{{#if checked}} checked="checked"{{/if}} />
+		<label for="{{ id }}{{#if formkey}}-{{formkey}}{{/if}}">
+			{{#if label}}{{{ label }}}{{else}}{{{ value }}}{{/if}}
+			<span class="radio-button" role="none">
+				<span class="radio-button__center"></span>
+			</span>
+		</label>
+	</div>
+	{{/each}}
+</fieldset>
+{{/if}}

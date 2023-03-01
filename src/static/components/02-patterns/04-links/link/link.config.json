@@ -1,0 +1,9 @@
+{
+	"title": "Link",
+	"status": "ready",
+	"preview": "@usermarkup",
+	"context": {
+		"url": "#",
+		"copy": "Lorem ipsum dolor"
+	}
+}

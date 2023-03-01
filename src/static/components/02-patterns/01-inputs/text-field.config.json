@@ -1,0 +1,49 @@
+{
+	"title": "Text Field",
+	"status": "ready",
+	"order": 1,
+	"preview": "@preview",
+	"meta": {
+		"align": "self-start",
+		"scripts" : [
+			"vendor",
+			"main"
+		]
+	},
+	"display": {
+		"max-width": "350px"
+	},
+	"context": {
+		"items": [
+			{
+				"id": "text-field",
+				"name": "text-field",
+				"required": true,
+				"errormsg": "Field is required",
+				"helpmsg": "123-123-1234",
+				"label": "Enabled/Required"
+			},
+			{
+				"id": "text-field-2",
+				"name": "text-field-2",
+				"label": "Enabled/Optional"
+			}
+		]
+	},
+	"variants": [
+		{
+			"name": "Disabled",
+			"context": {
+				"items": [
+					{
+						"id": "text-field",
+						"name": "text-field",
+						"disabled": true,
+						"label": "Disabled",
+						"field_style": "form__field--disabled"
+					}
+				]
+			}
+		}
+	]
+}

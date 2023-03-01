@@ -1,0 +1,8 @@
+<div class="form__field form__field--is-search{{#if style}} {{style}}{{/if}}">
+	<input id="search{{#if formkey}}-{{formkey}}{{/if}}" name="search" type="search" required="required"{{#if disabled}} disabled{{/if}}>
+	<label for="search{{#if formkey}}-{{formkey}}{{/if}}">{{ label }}</label>
+	<button type="submit" class="search-button">
+		<span class="show-for-sr">Search</span>
+		{{svg icon}}
+	</button>
+</div>

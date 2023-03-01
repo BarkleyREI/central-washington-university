@@ -1,0 +1,15 @@
+{
+	"title": "Text Tooltip",
+	"status": "ready",
+	"order": 3,
+	"meta": {
+		"scripts" : [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"title": "Text",
+		"copy": "Lorem dolor sit amet."
+	}
+}

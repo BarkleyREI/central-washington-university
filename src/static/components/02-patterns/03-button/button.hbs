@@ -1,0 +1,14 @@
+<a href="{{l url}}"{{#if id}} id="{{id}}"{{/if}}{{#if aria.label }} aria-label="{{ aria.label }}"{{/if}}{{#if itemprop}} itemprop="{{ itemprop }}"{{/if}}{{#if target}} target="{{ target }}"{{/if}} class="btn{{#if modifiers}} {{modifiers}}{{/if}}{{#and copy icon}} btn--with-icon{{/and}}{{#and copy icon-before}} btn--with-icon{{/and}}">
+	{{#if icon-before}}
+		<span class="btn__icon">{{svg icon-before}}</span>
+	{{/if}}
+	{{#if copy}}
+		<span class="text">{{copy}}</span>
+	{{/if}}
+	{{#if icon}}
+		<span class="btn__icon">{{svg icon}}</span>	
+	{{/if}}
+	{{#if alt}}
+		<span class="show-for-sr">{{alt}}</span>
+	{{/if}}
+</a>

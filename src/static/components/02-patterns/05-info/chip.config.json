@@ -1,0 +1,10 @@
+{
+	"title": "Chip",
+	"status": "ready",
+	"order": 1,
+	"context": {
+		"url": "#",
+		"label": "Filter Chip",
+		"filterkey": "1"
+	}
+}

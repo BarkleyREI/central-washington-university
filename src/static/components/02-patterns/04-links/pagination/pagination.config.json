@@ -1,0 +1,14 @@
+{
+	"title": "Page Number",
+	"status": "ready",
+	"context": {
+		"next": {
+			"alt": "Next Page"
+		},
+		"prev": {
+			"alt": "Previous Page"
+		}
+	},
+	"variants": [
+	]
+}

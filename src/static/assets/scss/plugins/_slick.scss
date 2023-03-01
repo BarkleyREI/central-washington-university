@@ -1,0 +1,91 @@
+@import "@accessible360/accessible-slick/slick/slick.scss";
+
+.slick-dots {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+
+	li {
+		display: inline-block;
+		margin: 0 6.5px;
+		padding: 0;
+		position: relative;
+
+		button {
+			color: transparent;
+			cursor: pointer;
+			font-size: 0;
+			height: 26px;
+			line-height: 0;
+			position: relative;
+			width: 26px;
+
+			&:before {
+				background-color: transparent;
+				border: 3px solid $black;
+				border-radius: 50%;
+				bottom: 0;
+				content: "";
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				transition: all $transition-time ease;				
+				z-index: 2;
+			}
+
+			&:after {
+				border: 0 solid $white;
+				border-radius: 50%;
+				bottom: 0;
+				content: "";
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				transition: border-width $transition-time ease;
+				z-index: 1;
+			}
+
+			&:hover,
+			&:focus {
+				&:before {					
+					border-width: 5px;
+					bottom: -4.5px;
+					left: -4.5px;
+					right: -4.5px;
+					top: -4.5px;
+				}
+			}
+		}
+
+		&.slick-active {
+			button {
+				&:before {					
+					border-width: 5px;
+					bottom: -2px;
+					left: -2px;
+					right: -2px;
+					top: -2px;
+				}
+
+				&:after {
+					background-color: $brand-secondary;
+				}
+
+				&:hover,
+				&:focus {					
+					&:after {
+						bottom: -2px;
+						left: -2px;
+						right: -2px;
+						top: -2px;					
+					}
+				}				
+			}
+		}
+	}
+}

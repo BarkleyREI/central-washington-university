@@ -1,0 +1,10 @@
+{
+	"title": "Menu Audience",
+	"status": "ready",
+	"order": "5",
+	"preview": "@preview",
+	"context": {
+		"url": "#",
+		"copy": "Lorem ipsum dolor"
+	}
+}

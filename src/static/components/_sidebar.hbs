@@ -20,42 +20,25 @@
 
 	<style type="text/css">
 		body {
-			{{#if _target.meta.margin }}
-				margin: {{ _target.meta.margin }};
-			{{ else }}
-				margin: 16px;
-			{{/if}}
+			margin: 0;
 			{{#if _target.meta.background }}
 				background-color: {{_target.meta.background}};
 			{{/if}}
 		}
-
-		.f-component-wrapper {
-			position: relative;
-			display: grid;
-			{{#if _target.meta.align }}
-				place-items: {{ _target.meta.align }};
-			{{else}}
-				place-items: center;
-			{{/if}}
-
-		}
-
-		@media screen and (min-width: 1024px) {
-			.f-component-wrapper {
-				max-width: 360px;
-				margin: 0 auto 0 0;
-			}
-		}
-
 	</style>
 </head>
 <body>
 
 	{{render '@svg' }}
 
-	<div class="f-component-wrapper">
-		{{{ yield }}}
+	<div class="wrapper">
+		<div class="grid-x grid-margin-x">
+			<div class="cell xsmall-12 large-4 xlarge-3">	  
+				<div class="f-component-wrapper">
+					{{{ yield }}}
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="{{ _config.project.jquerycdn }}"></script>

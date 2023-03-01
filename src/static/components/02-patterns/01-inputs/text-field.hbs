@@ -1,0 +1,16 @@
+{{#if items}}
+	{{#each items}}
+		<div class="form__field{{#if field_style}} {{field_style}}{{/if}}">
+			<input type="{{#if type}}{{{ type }}}{{else}}text{{/if}}"{{#if disabled}} disabled="disabled"{{/if}}{{#if required}} required="required"{{/if}}{{#if pattern}} pattern="{{{ pattern }}}"{{/if}} id="{{id}}" name="{{name}}"/>
+			<label for="{{id}}">{{label}}</label>
+			{{#if errormsg}}
+				<div class="form__valid-icon">{{svg "check"}}</div>
+				<div class="form__error-icon">{{svg "warning"}}</div>
+				<div class="form__error-message">{{errormsg}}</div>
+			{{/if}}
+			{{#if helpmsg}}
+				<div class="form__help-message">{{helpmsg}}</div>
+			{{/if}}
+		</div>
+	{{/each}}
+{{/if}}

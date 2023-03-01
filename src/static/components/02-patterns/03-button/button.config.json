@@ -1,0 +1,100 @@
+{
+	"name": "Buttons",
+	"status": "ready",
+	"default": "Primary",
+	"handle": "button",
+	"context": {
+		"url": "#",
+		"modifiers": "btn--primary",
+		"copy": "Primary Button",
+		"icon": "arrow"
+	},
+	"variants": [
+		{
+			"name": "primary--icon",
+			"label": "Primary [Icon]",
+			"context": {
+				"icon": "external"
+			}
+		},
+		{
+			"name": "secondary",
+			"label": "Secondary",
+			"context": {
+				"modifiers": "btn--alt",
+				"copy": "Secondary Button"
+			}
+		},
+		{
+			"name": "secondary--icon",
+			"label": "Secondary [Icon]",
+			"context": {
+				"modifiers": "btn--alt",
+				"copy": "Secondary Button",
+				"icon": "external"
+			}
+		},
+		{
+			"name": "tertiary",
+			"label": "Tertiary",
+			"context": {
+				"modifiers": "btn--cta",
+				"icon-before": "arrow",
+				"copy": "Tertiary Button"
+			}
+		},
+		{
+			"name": "Disabled",
+			"context": {
+				"modifiers": "btn--primary btn--disabled",
+				"copy": "Disabled"
+			}
+		},
+		{
+			"name": "xlarge",
+			"label": "Rounded XLarge",
+			"context": {
+				"modifiers": "btn--xlarge btn--round",
+				"icon": "play",
+				"copy": "",
+				"handle": "button--xlarge"
+			}
+		},
+		{
+			"name": "large",
+			"label": "Large",
+			"context": {
+				"modifiers": "btn--large",
+				"icon": "chevron",
+				"copy": "",
+				"handle": "button--large"
+			}
+		},
+		{
+			"name": "medium",
+			"label": "Medium",
+			"context": {
+				"modifiers": "btn--medium",
+				"icon": "chevron",
+				"copy": ""
+			}
+		},
+		{
+			"name": "small",
+			"label": "Small",
+			"context": {
+				"modifiers": "btn--small",
+				"icon": "close",
+				"copy": ""
+			}
+		},
+		{
+			"name": "Social",
+			"context": {
+				"modifiers": "btn--social",
+				"icon": "social-facebook",
+				"copy": ""
+			}
+		}
+	]
+}

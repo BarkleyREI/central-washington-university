@@ -1,0 +1,56 @@
+{
+	"title": "Textarea",
+	"status": "ready",
+	"order": 2,
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"display": {
+		"max-width": "350px"
+	},
+	"context": {
+		"items": [
+			{
+				"id": "textarea",
+				"name": "textarea",
+				"required": true,
+				"errormsg": "Field is required",
+				"helpmsg": "Leave a comment",
+				"label": "Enabled/Required"
+			},
+			{
+				"id": "textarea",
+				"name": "textarea",
+				"required": true,
+				"errormsg": "Field is required",
+				"helpmsg": "Leave a comment",
+				"max": "45",
+				"label": "Enabled/Required/Max"
+			},
+			{
+				"id": "textarea-2",
+				"name": "textarea-2",
+				"label": "Enabled/Optional"
+			}
+		]
+	},
+	"variants": [
+		{
+			"name": "Disabled",
+			"context": {
+				"items": [
+					{
+						"id": "textarea",
+						"name": "textarea",
+						"disabled": true,
+						"label": "Disabled",
+						"field_style": "form__field--disabled"
+					}
+				]
+			}
+		}
+	]
+}

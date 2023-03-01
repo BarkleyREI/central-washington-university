@@ -1,0 +1,14 @@
+<p aria-hidden="true" class="btn{{#if modifiers}} {{modifiers}}{{/if}}">
+	{{#if icon-before}}
+		<span class="btn__icon">{{svg icon-before}}</span>
+	{{/if}}
+	{{#if copy}}
+		<span class="text">{{copy}}</span>
+	{{/if}}
+	{{#if icon}}
+		<span class="btn__icon">{{svg icon}}</span>
+	{{/if}}
+	{{#if alt}}
+		<span class="show-for-sr">{{alt}}</span>
+	{{/if}}
+</p>

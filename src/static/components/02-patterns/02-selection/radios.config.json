@@ -1,0 +1,21 @@
+{
+	"title": "Radios",
+	"status": "ready",
+	"order": 2,
+	"context": {
+		"items": [
+			{
+				"id": "radio-btn",
+				"name": "radio",
+				"value": 1,
+				"label": "Lorem Radio"
+			},
+			{
+				"id": "radio-btn-2",
+				"name": "radio",
+				"value": 2,
+				"label": "Lorem Radio Two"
+			}
+		]
+	}
+}

@@ -1,22 +1,35 @@
 import { ready } from 'brei-project-utils';
 
-// Example of importing a custom module
-// import { primaryNav } from './modules/primaryNav';
+import { plugin } from './lib/plugin';
+
+import { forms } from './modules/forms';
+import { Tooltip } from './modules/tooltip';
 
 const main = {
 
 	elem: {
+		$textTooltip: $('.text-tooltip'),
+		$tooltip: $('.tooltip')				
 	},
 
 	init() {
+		plugin('Tooltip', Tooltip);
 
-		this.bindUIActions();
+		forms.init();
 
+		this.bindUIActions();		
 	},
 
 	bindUIActions() {
+		this.elem.$tooltip.Tooltip({ type: 'button' });
 
-	}
+		this.elem.$textTooltip.Tooltip({
+			type: 'text',
+			after(target) {
+				$(target).toggleClass('text-tooltip--is-active');
+			}
+		});
+	}	
 
 };
 

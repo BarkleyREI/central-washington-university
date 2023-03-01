@@ -1,0 +1,65 @@
+.social-links {
+	&__list {
+		@extend %inline-list;
+	}
+
+	&__item {
+		padding-right: 30px;
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	.global-footer & {
+		@extend %social-links-white;
+	}
+
+	.component + & {
+		margin-top: 30px;
+	}
+}
+
+%social-links-white {
+	.btn--social {
+		@extend %social-links-white-style;
+	}
+}
+
+%social-links-white-style {
+	color: $white;
+	fill: $white;
+
+	.brei-icon {
+		color: $white;
+		fill: $white;
+	}
+
+	&:focus,
+	&:hover {
+		color: $white;
+		fill: $white;
+	}
+}
+
+%social-links-brand {
+	.btn--social {
+		@extend %social-links-brand-style;
+	}
+}
+
+%social-links-brand-style {
+	color: $brand-primary;
+	fill: $brand-primary;
+
+	.brei-icon {
+		color: $brand-primary;
+		fill: $brand-primary;
+	}
+
+	&:focus,
+	&:hover {
+		color: $brand-primary;
+		fill: $brand-primary;
+	}
+}

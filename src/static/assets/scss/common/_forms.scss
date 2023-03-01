@@ -1,5 +1,16 @@
 // Form variables
-$radio-checkbox-size: 24px;
+
+%form-element {
+	-webkit-appearance: none;
+	appearance: none;
+	border: 3px solid currentcolor;
+	color: currentcolor;
+	font-family: $inter;
+	font-size: 19.2px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.5;
+}
 
 // Opinion: Background color to white, and shrink if necessary
 input[type='text'],
@@ -20,31 +31,26 @@ input[type='file'],
 textarea,
 select {
 	background-color: $white;
+	color: currentcolor;
 	max-width: 100%;
 }
 
-// Set word-break back to normal so that text inputs don't wrap
-input[type='text'],
-input[type='password'],
-input[type='date'],
-input[type='datetime'],
-input[type='datetime-local'],
-input[type='month'],
-input[type='week'],
-input[type='email'],
-input[type='number'],
-input[type='search'],
-input[type='tel'],
-input[type='time'],
-input[type='url'],
-input[type='color'],
-input[type='file'] {
-	word-break: normal;
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+	-webkit-appearance: none;
 }
 
 label {
+	color: currentcolor;
 	display: inline-block;
-	margin-bottom: 10px;
+	font-family: $inter;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 1;
+	text-transform: uppercase;
 
 	+ input[type='checkbox'],
 	+ input[type='radio'] {
@@ -54,70 +60,322 @@ label {
 	}
 }
 
+input[type='text'],
+input[type='password'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='week'],
+input[type='email'],
+input[type='number'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='color'],
+input[type='file'] {
+	@extend %form-element;
+	border-radius: 0;
+	padding: 14.75px 0 16.75px 20px;
+	width: 100%;
+	word-break: normal;
+
+	~ label {
+		background-color: $white;
+		font-weight: 700;
+		left: 15px;
+		padding: 0 8px;
+		pointer-events: none;
+		position: absolute;
+		top: 25px;
+		transition: transform $transition-time;
+	}
+
+	&:focus,
+	&:hover {
+		border: 3px solid currentcolor;
+		outline: 2px solid currentcolor;
+	}
+
+	&[required]:valid,
+	.form__field--is-invalid &,
+	.form__field--is-valid &,
+	&:focus {
+		~ label {
+			transform: translate(-20px, -31px) scale(0.8);
+		}
+	}
+}
+
 input[type='checkbox'],
 input[type='radio'] {
 	left: -9999px;
 	opacity: 0;
 	position: absolute;
 
-	&:checked + label {
-		color: $black;
+	+ label {
+		font-weight: 700;
+		padding-left: 36px;
+		position: relative;
+		text-transform: none;
 
-		&:after {
+		@include layer(bottom);
+	}
+
+	&:focus + label {
+		&:before {
 			opacity: 1;
 		}
 	}
+}
 
+input[type='checkbox'] {
 	+ label {
-		color: $black;
-		font-weight: 400;
-		min-height: $radio-checkbox-size;
-		padding-left: #{$radio-checkbox-size + 10px};
-		padding-top: 0.275em;
-		position: relative;
-		transition: color 0.4s;
-
-		&:before,
-		&:after {
-			content: '';
-			display: inline-block;
-			position: absolute;
+		&:hover {
+			.checkbox {
+				&:after {
+					opacity: 1;
+				}
+			}
 		}
 
-		&:before {
-			border: 2px solid $black;
-			height: $radio-checkbox-size;
+		.checkbox {
 			left: 0;
-			top: 0;
-			width: $radio-checkbox-size;
-		}
-
-		&:after {
-			background-color: $black;
-			height: #{$radio-checkbox-size - 10px};
-			left: 5px;
-			opacity: 0;
-			top: 5px;
-			transition: opacity $transition-time;
-			width: #{$radio-checkbox-size - 10px};
+			pointer-events: none;
+			position: absolute;
+			top: -6px;
+			@include layer(bottom);
 		}
 	}
 
-	&:hover + label {
-		color: $black;
+	&:checked + label {
+		.checkbox {
+			background-color: $brand-secondary;
+
+			&:before {
+				opacity: 1;
+			}
+
+			&:after {
+				opacity: 0;
+			}
+
+			.brei-icon-check {
+				opacity: 1;
+			}
+		}
+
+		&:hover {
+			.checkbox {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&:focus-visible + label {
+		.checkbox {
+			background-color: $brand-secondary;
+
+			&:after {
+				border: 4px solid $black;
+				height: calc(100% + 12px);
+				left: -6px;
+				opacity: 1;
+				top: -6px;
+				width: calc(100% + 12px);
+			}
+
+			&:before {
+				border-color: $white;
+				border-width: 1px;
+			}
+		}
+	}
+
+	&:disabled {
+		color: $dove-gray;
+
+		+ label {
+			cursor: not-allowed;
+			pointer-events: none;
+
+			.checkbox {
+
+				&:before {
+					background-color: $gray-20;
+					border-width: 0;
+				}
+			}
+		}
 	}
 }
 
-input[type='radio'] + label {
-	&:before,
-	&:after {
-		border-radius: $radio-checkbox-size;
+input[type='radio'] {
+	+ label {
+		&:hover {
+			.radio-button {
+				&:after {
+					opacity: 1;
+				}
+
+				&:before {
+					border-color: $brand-primary;
+				}
+			}
+		}
+
+		.radio-button {
+			left: 0;
+			pointer-events: none;
+			position: absolute;
+			top: -6px;
+			@include layer(bottom);
+		}
+	}
+
+	&:checked + label {
+		.radio-button {
+			&__center {
+				background-color: $brand-secondary;
+			}
+
+			&:before {
+				opacity: 0;
+			}
+
+			&:after,
+			&__center {
+				opacity: 1;
+			}
+		}
+	}
+
+	&:focus-visible + label {
+		.radio-button {
+			&__center {
+				background-color: $brand-secondary;
+			}
+
+			&:after {
+				border: 4px solid $black;
+				height: calc(100% + 12px);
+				left: -6px;
+				opacity: 1;
+				top: -6px;
+				width: calc(100% + 12px);
+			}
+
+			&:before {
+				border-color: $brand-primary;
+			}
+		}
+	}
+
+	&:disabled {
+		color: $dove-gray;
+
+		+ label {
+			color: $dove-gray;
+			cursor: not-allowed;
+			pointer-events: none;
+
+			.radio-button {
+
+				&:before {
+					background-color: $gallery;
+					border-width: 0;
+					box-shadow: none;
+				}
+			}
+		}
 	}
 }
 
-// Allow only vertical resizing of textareas.
 textarea {
+	@extend %form-element;
+	border-radius: 0;
+	padding: 19px 0 21px 20px;
+
+	// Allow only vertical resizing of textareas.
 	resize: vertical;
+	width: 100%;
+
+	~ label {
+		background-color: $white;
+		font-weight: 700;
+		left: 15px;
+		padding: 0 8px;
+		pointer-events: none;
+		position: absolute;
+		top: 25px;
+		transition: transform $transition-time;
+	}
+
+	&:focus,
+	&:hover {
+		border: 3px solid currentcolor;
+		outline: 2px solid currentcolor;
+	}
+
+	&[required]:valid,
+	.form__field--is-invalid &,
+	.form__field--is-valid &,
+	&:focus {
+		~ label {
+			transform: translate(-20px, -31px) scale(0.8);
+		}
+	}
+}
+
+input[type='search'] {
+	@extend %form-element;
+	border-radius: 0;
+
+	.form__field & {
+		padding: 14.75px 0 16.75px 20px;
+		width: 100%;
+
+		~ label {
+			background-color: $white;
+			font-weight: 700;
+			left: 15px;
+			padding: 0 8px;
+			pointer-events: none;
+			position: absolute;
+			top: 25px;
+			transition: transform $transition-time;
+		}
+
+		&:not([disabled]) {
+			&:focus,
+			&:hover {
+				border: 3px solid currentcolor;
+				outline: 4px solid currentcolor;
+			}
+
+			&[required]:valid,
+			&:focus {
+				~ label {
+					transform: translate(-8px, -31px) scale(0.8);
+				}
+			}
+		}
+	}
+
+	.form__field--is-invalid &,
+	.form__field--is-valid & {
+		~ label {
+			transform: translate(-8px, -31px) scale(0.8);
+		}
+	}
+
+	.form__field--disabled & {
+		~ label {
+			background-color: $gallery;
+		}
+	}
 }
 
 // Remove default fieldset styles.
@@ -152,5 +410,3 @@ fieldset {
 	color: $placeholder-color;
 }
 // scss-lint:enable VendorPrefix
-
-// Add custom generic form styles here
