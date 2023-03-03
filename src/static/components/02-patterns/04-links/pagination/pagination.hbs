@@ -1,7 +1,7 @@
 <div id="js-pagination" role="navigation" class="pagination{{#if style}} {{style}}{{/if}}">
 	<ul class="pagination__list clearfix" aria-label="Pagination">
 		<li class="pagination__item pagination__item--prev pagination__item--disabled">
-			{{render '@button--medium' prev merge=true}}
+			{{render '@button' prev merge=true}}
 		</li>
 		<li class="pagination__item pagination__item--active">
 			<a href="#" data-page="1" class="pagination__link" tabindex="-1"><span class="show-for-sr">You're on page</span> 1</a>
@@ -27,7 +27,7 @@
 			<a href="#" data-page="22" class="pagination__link" aria-label="Page 22">22</a>
 		</li>
 		<li class="pagination__item pagination__item--next">
-			{{render '@button--medium' next merge=true}}
+			{{render '@button' next merge=true}}
 		</li>
 	</ul>
 </div>

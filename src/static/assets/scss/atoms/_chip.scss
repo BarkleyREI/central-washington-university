@@ -1,0 +1,102 @@
+.chip {
+	$this: &;
+	align-items: center;
+	display: inline-flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	overflow: visible;
+	position: relative;
+
+	&:before,
+	&:after {
+		backface-visibility: hidden;
+		background-clip: padding-box;
+		box-sizing: content-box;
+		content: '';
+		display: block;
+		height: 100%;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		transition: background-color $transition-time, padding $transition-time;
+		width: 100%;
+		z-index: 2;
+	}
+
+	/* everything above this is good */
+	
+	&:before {
+		background-color: $black;
+		border: 2px solid transparent;
+	}
+
+	&:hover,
+	&:focus {
+		outline: 0;
+		text-decoration: none;
+		
+		#{$this}__close,
+		#{$this}__label {
+			color: $black;
+		}
+	}
+
+	&:hover {
+		&:after {
+			border: 0;
+			outline: 0;
+		}
+
+		&:before {
+			background-color: $brand-secondary;
+			border-color: $brand-secondary;
+			padding: 2px;
+		}
+	}
+
+	&:focus-visible {
+		#{$this}__close {
+			border-color: $brand-secondary;
+		}
+
+		&:before {
+			background-color: $brand-secondary;
+		}
+
+		&:after {
+			border: 4px solid $white;
+			outline: 4px solid $black;
+		}
+	}
+
+	&__close,
+	&__label {
+		position: relative;
+		z-index: 3;
+	}
+
+	&__close {
+		align-self: stretch;
+		border-right: 2px solid $black;
+		background-color: $brand-secondary;
+		color: $black;
+		display: inline-block;
+		font-size: 12px;
+		line-height: 1;
+		padding: 7px;
+	}
+
+	&__label {
+		color: $white;
+		font-family: $inter;
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		line-height: 1;
+		line-height: 1;
+		margin-top: -1px;
+		padding: 0 6px 0 8px;
+		position: relative;
+	}
+}

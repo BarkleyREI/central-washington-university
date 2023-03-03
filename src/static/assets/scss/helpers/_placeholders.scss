@@ -44,3 +44,14 @@
 		padding-top: 100%;
 	}
 }
+
+// tooltip text
+
+%tooltip-text {
+	color: $black;
+	display: block;
+	font-family: $lora;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.44;
+}

@@ -1,0 +1,97 @@
+$speech-bubble: '.speech-bubble';
+
+.tooltip-text {
+	@extend %tooltip-text;
+}
+
+.speech-bubble {
+	$this: &;
+	background-color: $gallery;
+	font-weight: normal;
+	left: 16px;
+	opacity: 0;
+	padding: 20px 44px 20px 16px;
+	position: absolute;
+	top: 0;
+	transition: opacity $transition-time, visibility $transition-time;
+	visibility: hidden;
+	width: 200px;
+	will-change: transform;
+	z-index: 200;
+
+	&:before {
+		border-bottom: 10px solid $gallery;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		border-top: 0;
+		content: '';
+		display: block;
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: -10px;
+		width: 0;
+	}
+
+	&__text {
+		@extend %tooltip-text;
+		display: inline-block;
+		font-style: normal;
+		text-align: left;
+		width: 100%;
+	}
+
+	.close-button {
+		align-items: center;
+		background-color: $brand-secondary;
+		color: $black;
+		display: flex;
+		flex-direction: row;
+		height: 20px;
+		justify-content: center;
+		position: absolute;
+		right: 6px;
+		top: 6px;
+		width: 20px;
+
+		svg {
+			font-size: 12px;
+		}
+
+		@include layer(bottom);
+	}
+
+	@include breakpoint(medium) {
+		left: 8px;
+
+		&:before {
+			left: 50%;
+			margin-left: -4px;
+			margin-right: -4px;
+		}
+	}
+
+	@include breakpoint(xlarge) {
+		left: 0;
+		width: 300px;
+	}
+}
+
+#{$speech-bubble}--is-visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+#{$speech-bubble}--align-right {
+	left: 0;
+	width: 100%;
+
+	@include breakpoint(xlarge) {
+		width: 300px;
+
+		&:before {
+			left: auto;
+			right: (15px + 10px);
+		}
+	}
+}

@@ -1,8 +1,17 @@
 $button: '.button';
 
 %primary-button-core {
+	align-items: center;
+	color: var(--text);
 	cursor: pointer;
+	flex-flow: row nowrap;
 
+	.btn__icon,
+	.text {
+		transform: scale(0.833);
+		transition: transform $transition-time ease;
+	}
+	
 	&:before,
 	&:after {
 		backface-visibility: hidden;
@@ -19,20 +28,47 @@ $button: '.button';
 
 	&:before {
 		z-index: -1;
+		background-color: var(--background);
+		border: 3px solid transparent;
+		height: 100%;
+		width: 100%;
 	}
 
 	&:after {
 		z-index: -2;
+		background-color: var(--gap);
+		border: 5px solid var(--border);
+		height: calc(100% - 3px);
+		width: calc(100% - 3px);
 	}
 
+	&:link,
+	&:visited {
+		color: var(--text);
+	}
+	
 	&:hover,
 	&:active {
-		outline: 0;
+		color: var(--text);
 		text-decoration: none;
+
+		.btn__icon,
+		.text {
+			transform: scale(1);
+		}
+		
+		&:after {
+			padding: 1px;
+		}
 	}
 
 	&:focus-visible {
+		color: var(--text);
 		outline: 0;
+
+		&:after {
+			padding: 6px;
+		}
 	}
 }
 
@@ -40,6 +76,11 @@ $button: '.button';
 	&:hover {
 		.btn--primary,
 		.btn--alt {
+			.btn-icon,
+			.txt {
+				transform: scale(1);
+			}
+			
 			&:after {
 				padding: 1px;
 			}
@@ -56,19 +97,54 @@ $button: '.button';
 	}
 }
 
+%fake-cta-actions {
+	&:hover {
+		.btn--cta {
+			&:before,
+			&:after {
+				left: 0;
+				right: 0;
+			}
+		}
+	}
+
+	&:focus-within {
+		.btn--cta {
+			color: var(--text);
+
+			&:before,
+			&:after {
+				opacity: 1;
+				left: 0;
+				right: 0;
+				background-color: var(--text);
+			}			
+		}
+	}
+}
+
 .btn {
 	$this: &;
 	backface-visibility: hidden;
-	display: inline-block;
+	display: inline-flex;
 	-webkit-font-smoothing: antialiased;
 	position: relative;
 	transform: translateZ(0);
 	transform-style: preserve-3d;
 	z-index: 5;
 
+	&:hover,
+	&:focus,	
+	&:active {
+		outline: 0;
+	}
+
+	&:focus-visible {
+		outline: 0;
+	}
+
 	&--primary,
 	&--alt,
-	&--cta,
 	&--pagination,
 	&--xlarge,
 	&--large,
@@ -80,19 +156,13 @@ $button: '.button';
 	&--primary,
 	&--alt {
 		@extend %font-button;
-		align-items: center;
-		color: var(--text);
-		display: inline-flex;
-		flex-flow: row nowrap;
 		justify-content: space-between;
 		padding: 14px 32px 13px;
 
 		.text {
 			flex-grow: 1;
 			flex-shrink: 1;
-			transform: scale(0.833);
 			transform-origin: left center;
-			transition: $transition-time transform ease;
 		}
 
 		#{$this}__icon {
@@ -101,51 +171,8 @@ $button: '.button';
 			margin-left: 16px;
 			position: relative;
 			top: 1px;
-			transform: scale(0.833);
 			transform-origin: right center;
-			transition: $transition-time transform ease;
 			width: 1em;
-		}
-
-		&:before {
-			background-color: var(--background);
-			border: 3px solid transparent;
-			height: 100%;
-			width: 100%;
-		}
-
-		&:after {
-			background-color: var(--gap);
-			border: 5px solid var(--border);
-			height: calc(100% - 3px);
-			width: calc(100% - 3px);
-		}
-
-		&:link,
-		&:visited {
-			color: var(--text);
-		}
-
-		&:hover,
-		&:active {
-			color: var(--text);
-
-			.text,
-			#{$this}__icon {
-				transform: scale(1);
-			}
-
-			&:after {
-				padding: 1px;
-			}
-		}
-
-		&:focus-visible {
-			color: var(--text);
-
-			&:after {
-				padding: 6px;
-			}
 		}
 
 		@include breakpoint(small) {
@@ -173,5 +200,191 @@ $button: '.button';
 		--border: #{$brand-secondary};
 		--gap: #{$black};
 		--text: #{$black};
+	}
+
+	&--cta {
+		--background: #{$brand-secondary};
+		--border: #{$brand-secondary};
+		--text: #{$black};
+
+		@extend %font-cta;
+		background: transparent;
+		padding: 2px 0.365em 1px;
+		color: var(--text);
+		position: relative;
+		margin-left: -0.365em;
+
+		&:before,
+		&:after {
+			background-color: var(--border);
+			bottom: -8px;
+			content: '';
+			display: block;
+			height: 4px;
+			left: 0.365em;
+			position: absolute;
+			right: 0.365em;
+			transition: left $transition-time ease, right $transition-time ease;
+		}
+
+		&:before {
+			opacity: 0;
+			top: -8px;
+		}
+		
+		&:after {
+			bottom: -8px;
+		}
+		
+		&:link,
+		&:visited {
+			color: var(--text);
+		}
+		
+		&:hover,
+		&:active {
+			color: var(--text);
+
+			&:before,
+			&:after {
+				left: 0;
+				right: 0;
+			}
+		}
+
+		&:focus-visible {
+			background: var(--background);
+			color: var(--text);
+
+			&:before,
+			&:after {
+				opacity: 1;
+				left: 0;
+				right: 0;
+				background-color: var(--text);
+			}			
+		}
+	}	
+
+	&--pagination,
+	&--xlarge,
+	&--large,
+	&--medium,
+	&--small {
+		--background: #{$brand-secondary};
+		--border: #{$black};
+		--gap: #{$white};
+		--text: #{$black};
+		justify-content: center;
+
+		#{$this}__icon {
+			line-height: 1;
+
+			svg {
+				display: block;
+			}
+
+			.brei-icon-chevron {
+				transform: translateX(10%);
+			}
+
+			.brei-icon-play {
+				transform: translateX(15%);
+			}
+		}
+
+		&:before,
+		&:after {
+			border-radius: 50%;
+		}		
+	}
+
+	&--xlarge {
+		font-size: 38.73px;
+		height: 80px;
+		width: 80px;
+	}
+
+	&--large {
+		font-size: 31.86px;
+		height: 66px;
+		width: 66px;
+	}
+
+	&--medium {
+		font-size: 27.54px;
+		height: 54px;
+		width: 54px;
+	}
+
+	&--small {
+		font-size: 18.94px;
+		height: 38px;
+		width: 38px;
+	}
+
+	&--disabled {
+		--background: #{$gallery};
+		--border: #{$dove-gray};
+		--gap: #{$gallery};
+		--text: #{$dove-gray};		
+		pointer-events: none;
+	}
+
+	&--pagination {
+		font-size: 18.94px;
+		height: 38px;
+		width: 38px;
+
+		.pagination__item--prev & {
+			.brei-icon {
+				transform: rotate(180deg);
+			}
+		}
+		
+		.pagination__item--disabled & {
+			--background: #{$gallery};
+			--border: #{$dove-gray};
+			--gap: #{$gallery};
+			--text: #{$dove-gray};
+			pointer-events: none;
+
+			&:before {
+				border-color: transparent;
+			}
+		}		
+	}
+
+	&--social {
+		--color: #{$black};
+		color: var(--color);
+		font-size: 25px;
+
+		.brei-icon {
+			transition: transform $transition-time ease;
+		}
+
+		&:link,
+		&:visited {
+			color: var(--color);			
+		}
+
+		&:hover,
+		&:active {
+			color: var(--color);
+			
+			.brei-icon {
+				transform: scale(1.1);
+			}
+		}
+
+		&:focus-visible {
+			color: var(--color);
+			
+			.brei-icon {
+				transform: scale(1.1);
+			}			
+		}		
+		
 	}
 }

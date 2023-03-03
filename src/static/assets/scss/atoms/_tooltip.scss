@@ -1,0 +1,102 @@
+$tooltip: '.tooltip';
+
+.tooltip {
+	$this: &;
+	align-items: center;
+	color: $black;
+	display: flex;
+	flex-direction: row;
+	height: 20px;
+	justify-content: center;
+	line-height: 1;
+	position: relative;
+	transform: translateZ(0);
+	transition: transform $transition-time;
+	width: 20px;
+
+	&:before,
+	&:after {
+		backface-visibility: hidden;
+		box-sizing: content-box;
+		content: '';
+		display: block;
+		height: 100%;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		transition: padding $transition-time;
+		width: 100%;
+		z-index: -1;
+	}
+
+	&:before {
+		background-color: $brand-secondary;
+	}
+
+	&:link,
+	&:visited {
+		color: $black;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $black;
+		outline: 0;
+		text-decoration: none;
+	}
+
+	&:after {
+		transition-property: none;
+	}
+
+	&:hover {
+		&:before {
+			padding: 2.5px;
+		}
+	}
+
+	&:focus-visible {
+		&:before {
+			padding: 0;
+		}
+
+		&:after {
+			border: 4px solid $black;
+			padding: 4px;
+		}
+	}
+
+	&__text {
+		color: $black;
+		font-family: $inter;
+		font-size: 18px;
+		font-weight: 700;
+		left: calc(50%);
+		line-height: 1;
+		pointer-events: none;
+		position: absolute;
+		top: calc(50%);
+		transform: translate(-50%, -50%);
+	}
+
+	&__wrapper {
+		position: relative;
+	}
+}
+
+#{$tooltip}--is-disabled {
+	&,
+	&:visited {
+
+	}
+}
+
+// ie11 fallback
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+	#{$tooltip}__text {
+		top: calc(50% + 4px);
+	}
+}

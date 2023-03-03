@@ -3,9 +3,15 @@
 	"status": "ready",
 	"context": {
 		"next": {
+			"modifiers": "btn--pagination",
+			"copy": "",
+			"icon": "chevron",
 			"alt": "Next Page"
 		},
 		"prev": {
+			"modifiers": "btn--pagination",
+			"copy": "",
+			"icon": "chevron",
 			"alt": "Previous Page"
 		}
 	},

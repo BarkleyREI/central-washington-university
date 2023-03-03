@@ -39,7 +39,7 @@
 			"label": "Tertiary",
 			"context": {
 				"modifiers": "btn--cta",
-				"icon-before": "arrow",
+				"icon": "",
 				"copy": "Tertiary Button"
 			}
 		},
@@ -52,9 +52,9 @@
 		},
 		{
 			"name": "xlarge",
-			"label": "Rounded XLarge",
+			"label": "XLarge",
 			"context": {
-				"modifiers": "btn--xlarge btn--round",
+				"modifiers": "btn--xlarge",
 				"icon": "play",
 				"copy": "",
 				"handle": "button--xlarge"
@@ -92,7 +92,7 @@
 			"name": "Social",
 			"context": {
 				"modifiers": "btn--social",
-				"icon": "social-facebook",
+				"icon": "facebook",
 				"copy": ""
 			}
 		}

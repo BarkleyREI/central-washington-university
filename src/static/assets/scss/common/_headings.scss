@@ -157,6 +157,20 @@
 	}
 }
 
+%font-cta,
+.font-cta {
+	font-family: $inter;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 1;
+	text-transform: uppercase;
+
+	@include breakpoint(large) {
+		font-size: 19.2px;
+	}
+}
+
 %font-quote,
 .font-quote {
 	font-family: $lora;
