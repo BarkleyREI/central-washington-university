@@ -1,0 +1,22 @@
+<div class="card card--news" itemscope itemtype="https://schema.org/NewsArticle">
+
+	{{#with image}}
+	<figure class="card__figure">
+		<img src="{{ src }}" alt="{{ alt }}" class="card__image" width="{{ width }}" height="{{ height }}" />
+	</figure>
+	{{/with}}
+
+	<div class="card__content">
+	 
+		<h3 class="card__heading"><span itemprop="name">{{{ heading }}}</span></h3>
+		 
+		<p class="card__info"><span itemprop="dateline">{{{ date }}}</span></p>
+		<p class="card__info">by <span itemprop="author">{{{ byline }}}</span></p>
+		 
+		{{render '@button-fake' cta }}
+		 
+	</div>
+
+	<a href="{{ cta.url }}" class="card__link" itemprop="url"><span class="show-for-sr">Read more about '{{{ heading }}}'</span></a>
+
+</div>

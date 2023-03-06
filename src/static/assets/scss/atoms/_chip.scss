@@ -23,9 +23,8 @@
 		width: 100%;
 		z-index: 2;
 	}
-
 	/* everything above this is good */
-	
+
 	&:before {
 		background-color: $black;
 		border: 2px solid transparent;
@@ -35,7 +34,7 @@
 	&:focus {
 		outline: 0;
 		text-decoration: none;
-		
+
 		#{$this}__close,
 		#{$this}__label {
 			color: $black;
@@ -78,8 +77,8 @@
 
 	&__close {
 		align-self: stretch;
-		border-right: 2px solid $black;
 		background-color: $brand-secondary;
+		border-right: 2px solid $black;
 		color: $black;
 		display: inline-block;
 		font-size: 12px;

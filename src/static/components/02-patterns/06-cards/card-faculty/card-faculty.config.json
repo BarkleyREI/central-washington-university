@@ -1,0 +1,31 @@
+{
+	"label": "Faculty",	
+	"title": "Card (Faculty)",
+	"status": "ready",
+	"context": {
+		"image": {
+			"src": "https://via.placeholder.com/500",
+			"alt": "[faculty photo alt text]",
+			"width": 500,
+			"height": 500
+		},
+		"heading": "Faculty name H3 headline lorem",
+		"subheading": "Optional Faculty Title, Pronouns Lorem Ipsum Dolor Sit Amet",
+		"contact": [
+			{
+				"url": "mailto:email@cwu.edu",
+				"copy": "email@cwu.edu"
+			},
+			{
+				"url": "tel:000-000-0000",
+				"copy": "000-000-0000"
+			}
+		],
+		"address": "Address Line One Lorem Ipsum<br />Address Line Two Lorem Ipsum<br />Address Line Three Lorem Ipsum",
+		"cta": {
+			"url": "#",
+			"modifiers": "btn--cta",
+			"copy": "Tertiary Button"
+		}
+	}
+}

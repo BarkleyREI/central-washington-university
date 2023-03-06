@@ -10,10 +10,10 @@ a {
 	@extend %font-body;
 	background-color: transparent;
 	background-repeat: repeat-x;
-	background-size: 100% 2px;
+	background-size: 100% 3px;
 	display: inline;
-	margin: 0 -2px;
-	padding: 0 2px;
+	margin: 0 -3px;
+	padding: 2px 3px 1px;
 	position: relative;
 	transition: background $transition-time ease;
 

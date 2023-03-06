@@ -1,0 +1,21 @@
+{
+	"label": "News",	
+	"title": "Card (News)",
+	"status": "ready",
+	"context": {
+		"image": {
+			"src": "https://via.placeholder.com/836x628",
+			"alt": "[news photo alt text]",
+			"width": 836,
+			"height": 628
+		},
+		"heading": "News item H4 headline lorem ipsum dolor sit amet consectetur",
+		"date": "Month 00, 0000",
+		"byline": "Firstname Lastname",
+		"cta": {
+			"url": "#",
+			"modifiers": "btn--cta",
+			"copy": "Tertiary Button"
+		}
+	}
+}

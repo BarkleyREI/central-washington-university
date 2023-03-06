@@ -1,9 +1,0 @@
-{
-	"title": "Menu Tertiary",
-	"status": "ready",
-	"order": 4,
-	"context": {
-		"url": "#",
-		"copy": "Lorem ipsum dolor"
-	}
-}

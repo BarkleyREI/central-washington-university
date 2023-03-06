@@ -1,0 +1,21 @@
+{
+	"label": "Program",	
+	"title": "Card (Program)",
+	"status": "ready",
+	"context": {
+		"image": {
+			"src": "https://via.placeholder.com/500",
+			"alt": "[program photo alt text]",
+			"width": 500,
+			"height": 500
+		},
+		"type": "Program Type",
+		"heading": "Program item H3 headline lorem ipsum",
+		"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+		"cta": {
+			"url": "#",
+			"modifiers": "btn--cta",
+			"copy": "Tertiary Button"
+		}
+	}
+}

@@ -1,0 +1,23 @@
+<div class="card card--program">
+
+	{{#with image}}
+	<figure class="card__figure">
+		<img src="{{ src }}" alt="{{ alt }}" class="card__image" width="{{ width }}" height="{{ height }}" />
+	</figure>
+	{{/with}}
+
+	<div class="card__content">
+
+		<p class="card__type">{{{ type }}}</p>
+	 
+		<h3 class="card__heading">{{{ heading }}}</h3>
+
+		<p class="card__info">{{{ copy }}}</p>
+		 
+		{{render '@button-fake' cta }}
+
+	</div>
+
+	<a href="{{ cta.url }}" class="card__link" itemprop="url"><span class="show-for-sr">Learn  more about '{{{ heading }}}'</span></a>
+
+</div>

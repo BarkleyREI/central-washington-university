@@ -1,0 +1,41 @@
+{
+	"name": "Menu",
+	"status": "ready",
+	"default": "Primary",
+	"handle": "menu",
+	"context": {
+		"modifiers": "menu--primary",
+		"url": "#",
+		"copy": "Lorem ipsum dolor"
+	},
+	"variants": [
+		{
+			"name": "Secondary",
+			"label": "Secondary",
+			"context": {
+				"modifiers": "menu--secondary",
+				"url": "#",
+				"copy": "Lorem ipsum dolor",
+				"icon": "chevron"
+			}
+		},
+		{
+			"name": "Tertiary",
+			"label": "Tertiary",
+			"context": {
+				"modifiers": "menu--tertiary",
+				"url": "#",
+				"copy": "Lorem ipsum dolor"
+			}
+		},		
+		{
+			"name": "Audience",
+			"label": "Audience",
+			"context": {
+				"modifiers": "menu--audience",
+				"url": "#",
+				"copy": "Lorem ipsum dolor"
+			}
+		}
+	]
+}

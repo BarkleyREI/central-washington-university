@@ -30,7 +30,7 @@
 		&:visited {
 			color: $black;
 		}
-		
+
 		&:hover,
 		&:focus {
 			background-color: $brand-secondary;
@@ -38,7 +38,7 @@
 			outline: 0;
 			text-decoration: none;
 		}
-		
+
 		&:focus-visible {
 			&:before {
 				content: '';
@@ -51,7 +51,6 @@
 			}
 		}
 	}
-	
 
 	&__item {
 		display: inline-block;
@@ -69,9 +68,20 @@
 		}
 
 		&--active {
-			#{$this}__link {
+			#{$this}__link,
+			#{$this}__span {
 				border-bottom: 2px solid $black;
 				pointer-events: none;
+				text-decoration: none;
+
+				&:after {
+					bottom: 2px;
+					content: '';
+					height: 5px;
+					left: calc(50% - 5px);
+					position: absolute;
+					width: 11px;
+				}
 			}
 		}
 
@@ -97,22 +107,6 @@
 			margin: 0 10px;
 		}
 	}
-
-	&__item--active {
-		#{$this}__link,
-		#{$this}__span {
-			text-decoration: none;
-
-			&:after {
-				bottom: 2px;
-				content: '';
-				height: 5px;
-				left: calc(50% - 5px);
-				position: absolute;
-				width: 11px;
-			}
-		}
-	}	
 
 	&__link,
 	&__span {

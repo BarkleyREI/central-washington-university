@@ -1,0 +1,154 @@
+.menu {
+	$this: &;
+	align-items: center;
+	display: inline-flex;
+	flex-flow: row nowrap;
+	font-family: $inter;
+	font-size: 16px;
+	font-weight: 700;
+	justify-content: flex-start;
+	letter-spacing: 1px;
+	line-height: 1;
+	position: relative;
+	z-index: 1;
+
+	&__icon {
+		flex-shrink: 0;
+		margin-left: 16px;
+		opacity: 0;
+		position: relative;
+		top: 1px;
+		transition: opacity $transition-time ease;
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+		opacity: 0;
+		position: absolute;
+		z-index: -1;
+
+		&:before {
+			z-index: -2;
+		}
+
+		&:after {
+			z-index: -1;
+		}
+	}
+
+	&:after {
+		background-color: $black;
+		bottom: -3px;
+		height: 3px;
+		opacity: 1;
+		right: 100%;
+	}
+
+	&:link,
+	&:visited {
+		color: $black;
+	}
+
+	&:hover,
+	&:active {
+		color: $black;
+
+		&:after {
+			transition: right $transition-time ease;
+		}
+	}
+
+	&:focus-visible {
+		// stylelint-disable declaration-no-important
+		background: $brand-secondary;
+		color: $black;
+		outline: 0;
+
+		&:before,
+		&:after {
+			background-color: $black !important;
+			background-image: none;
+			height: 4px !important;
+			left: 0 !important;
+			opacity: 1;
+			right: 0 !important;
+		}
+
+		&:before {
+			top: -8px;
+		}
+
+		&:after {
+			bottom: -8px !important;
+		}
+		// stylelint-enable declaration-no-important
+	}
+
+	&--primary {
+		padding: 5px 20px 4px;
+		text-transform: uppercase;
+
+		&:before {
+			background-image: linear-gradient(90deg, $brand-secondary 50%, $white 50%);
+			background-position: right center;
+			background-size: 205% 100%;
+			bottom: -15px;
+			left: -20px;
+			right: -20px;
+			top: -15px;
+			transition: background-position $transition-time ease;
+		}
+
+		&:hover {
+			&:before {
+				background-position: left center;
+				opacity: 1;
+			}
+
+			&:after {
+				left: 20px;
+				right: 20px;
+			}
+		}
+	}
+
+	&--secondary {
+		padding: 5px 10px 3px 4px;
+
+		&:hover,
+		&:active,
+		&:focus-visible {
+			#{$this}__icon {
+				opacity: 1;
+			}
+		}
+	}
+
+	&--tertiary {
+		padding: 5px 4px 3px;
+
+		&:hover {
+			&:after {
+				left: 4px;
+				right: 4px;
+			}
+		}
+	}
+
+	&--audience {
+		font-weight: 400;
+		letter-spacing: 0;
+		padding: 7px 8px 5px;
+
+		&:hover {
+			&:after {
+				bottom: -2px;
+				height: 2px;
+				left: 8px;
+				right: 8px;
+			}
+		}
+	}
+}

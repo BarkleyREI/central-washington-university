@@ -1,0 +1,14 @@
+.logo {
+
+	.brei-icon-logo-signature {
+		height: 40px;
+		width: 206px;
+	}
+
+	@include breakpoint(large) {
+		.brei-icon-logo-signature {
+			height: 50px;
+			width: 258px;
+		}
+	}
+}

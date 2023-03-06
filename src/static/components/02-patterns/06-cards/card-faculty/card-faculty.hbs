@@ -1,0 +1,25 @@
+<div class="card card--faculty">
+
+	{{#with image}}
+	<figure class="card__figure">
+		<img src="{{ src }}" alt="{{ alt }}" class="card__image" width="{{ width }}" height="{{ height }}" />
+	</figure>
+	{{/with}}
+
+	<div class="card__content">
+	 
+		<h3 class="card__heading">{{{ heading }}}</h3>
+
+		<p class="card__subheading">{{{ subheading }}}</p>
+
+		<ul class="card__contact-list">
+			{{#each contact }}<li class="card__contact-item"><a href="{{ url }}">{{ copy }}</a></li>{{/each}}
+		</ul>
+
+		<p class="card__info">{{{ address }}}</p>
+		 
+		{{render '@button--tertiary' cta }}
+		 
+	</div>
+
+</div>
