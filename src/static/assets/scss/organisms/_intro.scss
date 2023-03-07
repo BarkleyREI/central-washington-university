@@ -1,8 +1,19 @@
 .intro {
 	&__copy {
 		@extend %font-intro;
-		border-left: 3px solid $brand-primary;
 		padding-left: 1rem;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 3px;
+			top: 0.4em;
+			bottom: 0.4em;
+			left: -3px;
+			background-color: $brand-primary;
+		}
+		
 
 		> *:first-child {
 			margin-top: 0;
