@@ -1,0 +1,59 @@
+{
+	"title": "Tables",
+	"status": "ready",
+	"preview": "@standard",	
+	"context": {
+		"title": "Non-WYSIWYG table H2 headline lorem ipsum",
+		"copy": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>",
+		"sticky": true,
+		"headers": [
+			"Column Header",
+			"Column Header",
+			"Column Header",
+			"Column Header"
+		],
+		"rows": [
+			{
+				"cols": [
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet"
+				]
+			},
+			{
+				"cols": [
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet"
+				]
+			},
+			{
+				"cols": [
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet"
+				]
+			},
+			{
+				"cols": [
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet"
+				]
+			},
+			{
+				"highlight": true,
+				"cols": [
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet",
+					"Lorem Ipsum Dolor Sit Amet"
+				]
+			}
+		]
+	}
+}

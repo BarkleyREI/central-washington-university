@@ -1,0 +1,29 @@
+<section class="table component">
+
+	{{#if title }}<h2 class="table__title font-h2">{{{ title }}}</h2><hr />{{/if}}
+	{{#if copy }}<div class="table__copy user-markup">{{{ copy }}}</div>{{/if}}
+
+	<div class="table__table">
+		<table>
+			{{#if headers}}
+			<thead>
+				<tr>
+					{{#each headers}}
+					<th>{{this}}</th>
+					{{/each}}
+				</tr>
+			</thead>
+			{{/if}}
+			<tbody>
+				{{#each rows}}
+				<tr{{#if highlight}} class="highlight"{{/if}}>
+					{{#each cols}}
+					<td>{{this}}</td>
+					{{/each}}
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+	
+</section>

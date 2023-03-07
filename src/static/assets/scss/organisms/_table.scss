@@ -1,0 +1,56 @@
+.table {
+	&__copy {
+		margin-bottom: 2rem;
+	}
+
+	&__table {
+		background: linear-gradient(90deg, rgba($white, 1) 30%, rgba($white, 0)) left center,
+			linear-gradient(90deg, rgba($white, 0), rgba($white, 1) 70%) right center,
+			radial-gradient(farthest-side at 0% 50%, rgba($black, 0.2), rgba($black, 0)) left center,
+			radial-gradient(farthest-side at 100% 50%, rgba($black, 0.2), rgba($black, 0)) right center;
+		background-attachment: local, local, scroll, scroll;
+		background-repeat: no-repeat;
+		background-size: 100px 100%, 100px 100%, 50px 100%, 50px 100%;
+		overflow-x: scroll;
+	}
+
+	table {
+		border-collapse: collapse;
+		min-width: 768px;
+		width: 100%;
+	}
+
+	tr,
+	th,
+	td {
+		@extend %font-body;
+		position: relative;
+		text-align: center;
+		z-index: 100;
+	}
+
+	tr {
+		&:nth-child(even) {
+			th,
+			td {
+				background-color: rgba($black, 0.08);
+			}
+		}
+	}
+
+	.highlight {
+		td {
+			font-weight: 700;
+		}
+	}
+
+	td {
+		padding: 30px 12px;
+	}
+
+	th {
+		background-color: $black;
+		color: $white;
+		padding: 30px 16px;
+	}
+}

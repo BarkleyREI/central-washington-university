@@ -1,0 +1,24 @@
+{{#if items}}
+<nav id="breadcrumbs" class="breadcrumbs" aria-label="Breadcrumbs">
+	<ul class="breadcrumbs__list">
+		<li class="breadcrumbs__item breadcrumbs__item--home">
+			<a href="/" title="Home">
+				{{svg "home"}}
+				<span class="show-for-sr">Home</span>
+			</a>
+			{{ svg 'chevron' }}
+		</li>
+
+		{{#each items}}
+		<li class="breadcrumbs__item{{#if current}} breadcrumbs__item--current{{/if}}">
+			{{#if current}}
+			<span class="breadcrumbs__span">{{copy}}</span>
+			{{else}}
+			<a href="{{ url }}" class="breadcrumbs__link">{{{ copy }}}</a>
+			{{ svg 'chevron' }}
+			{{/if}}
+		</li>
+		{{/each}}
+	</ul>
+</nav>
+{{/if}}

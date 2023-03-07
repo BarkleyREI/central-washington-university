@@ -1,0 +1,188 @@
+{
+	"title": "Form Builder",
+	"status": "ready",
+	"handle": "form",
+	"preview": "@standard",	
+	"meta": {
+		"scripts" : [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"title": "Forms H2 headline lorem ipsum",
+		"copy": "<p>Structured body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.</p>",
+		"action": "#submitted",
+		"method": "get",
+		"submit": "Submit",
+		"rows": [
+			{
+				"columns": [
+					{
+						"style": "xsmall-12 medium-6",
+						"name": "text-field",
+						"context": {
+							"items":  [
+								{
+									"id": "first-name",
+									"name": "first-name",
+									"required": true,
+									"errormsg": "Field is required",
+									"label": "First Name"
+								}
+							]
+						}
+					},
+					{
+						"style": "xsmall-12 medium-6",
+						"name": "text-field",
+						"context": {
+							"items":  [
+								{
+									"id": "last-name",
+									"name": "last-name",
+									"required": true,
+									"pattern": ".{2,}",
+									"errormsg": "Field is required",
+									"label": "Last Name"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"columns": [
+					{
+						"style": "xsmall-12",
+						"name": "text-field",
+						"context": {
+							"items":  [
+								{
+									"id": "email-address",
+									"name": "email-address",
+									"type": "email",
+									"required": true,
+									"errormsg": "Field is required",
+									"helpmsg": "address@domain.com",
+									"label": "Email"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"columns": [
+					{
+						"style": "xsmall-12",
+						"name": "text-field",
+						"context": {
+							"items":  [
+								{
+									"id": "city",
+									"name": "city",
+									"required": true,
+									"errormsg": "Field is required",
+									"label": "City"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"columns": [
+					{
+						"style": "xsmall-12 medium-6",
+						"name": "dropdown",
+						"context": {
+							"items":  [
+								{
+									"id": "country",
+									"name": "country",
+									"label": "Country",
+									"required": "true",
+									"empty": "true",
+									"errormsg": "Field is required",
+									"options": [
+										{
+											"value": "United States",
+											"label": "United States"
+										},
+										{
+											"value": "Canada",
+											"label": "Canada"
+										},
+										{
+											"value": "Mexico",
+											"label": "Mexico"
+										}
+									]
+								}
+							]
+						}
+					},
+					{
+						"style": "xsmall-12 medium-6",
+						"name": "dropdown",
+						"context": {
+							"items":  [
+								{
+									"id": "state",
+									"name": "state",
+									"label": "State",
+									"required": "true",
+									"empty": "true",
+									"errormsg": "Field is required",
+									"options": [
+										{
+											"value": "MD",
+											"label": "Maryland"
+										},
+										{
+											"value": "OH",
+											"label": "Ohio"
+										},
+										{
+											"value": "PA",
+											"label": "Pennsylvania"
+										},
+										{
+											"value": "WV",
+											"label": "West Virginia"
+										}
+									]
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"columns": [
+					{
+						"style": "xsmall-12",
+						"name": "textarea--default"
+					}
+				]
+			},			
+			{
+				"columns": [
+					{
+						"style": "xsmall-12",
+						"name": "checkbox"
+					}
+				]
+			},
+			{
+				"columns": [
+					{
+						"style": "xsmall-12",
+						"name": "radios"
+					}
+				]
+			}
+		]
+	}
+}

@@ -51,6 +51,7 @@ label {
 	letter-spacing: 1px;
 	line-height: 1;
 	text-transform: uppercase;
+	transform-origin: top left;
 
 	+ input[type='checkbox'],
 	+ input[type='radio'] {
@@ -102,7 +103,7 @@ input[type='file'] {
 	.form__field--is-valid &,
 	&:focus {
 		~ label {
-			transform: translate(-20px, -31px) scale(0.8);
+			transform: translateY(-31px) scale(0.8);
 		}
 	}
 }
@@ -221,7 +222,7 @@ input[type='radio'] {
 				}
 
 				&:before {
-					border-color: $brand-primary;
+					border-color: $brand-secondary;
 				}
 			}
 		}
@@ -256,6 +257,7 @@ input[type='radio'] {
 		.radio-button {
 			&__center {
 				background-color: $brand-secondary;
+				opacity: 1;
 			}
 
 			&:after {
@@ -268,7 +270,7 @@ input[type='radio'] {
 			}
 
 			&:before {
-				border-color: $brand-primary;
+				opacity: 0;
 			}
 		}
 	}
@@ -324,7 +326,7 @@ textarea {
 	.form__field--is-valid &,
 	&:focus {
 		~ label {
-			transform: translate(-20px, -31px) scale(0.8);
+			transform: translateY(-31px) scale(0.8);
 		}
 	}
 }
@@ -358,7 +360,7 @@ input[type='search'] {
 			&[required]:valid,
 			&:focus {
 				~ label {
-					transform: translate(-8px, -31px) scale(0.8);
+					transform: translateY(-31px) scale(0.8);
 				}
 			}
 		}

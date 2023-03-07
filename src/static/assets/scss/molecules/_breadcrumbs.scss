@@ -1,0 +1,106 @@
+.breadcrumbs {
+
+	// Variables
+	$this: &;
+
+	// Styles
+	display: none;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__span,
+	&__link {
+		display: inline-block;
+		font-size: 16px;
+		padding-bottom: 4px;
+		padding-top: 4px;
+	}
+
+	&__link {
+		@extend %default-link;
+	}
+
+	&__span {
+		pointer-events: none;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	svg {
+		color: $black;
+		margin: 0 14px 3px;
+	}
+
+	&__item {
+		align-items: center;
+		display: inline-flex;
+		flex-shrink: 0;
+		margin-bottom: 15px;
+
+		&--home {
+			position: relative;
+
+			.brei-icon {
+				position: relative;
+			}
+
+			.brei-icon-home {
+				font-size: 22px;
+				top: -2px;
+				transition: transform $transition-time, color $transition-time;
+				will-change: transform;
+			}
+
+			a {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				height: 40px;
+				padding: 10px 0 0;
+				position: relative;
+				text-align: center;
+				transition: width $transition-time, height $transition-time, padding $transition-time;
+				width: 25px;
+				will-change: width, height, padding;
+
+				&:hover,
+				&:focus {
+					outline: 0;
+
+					.brei-icon-home {
+						color: $brand-primary;
+						transform: scale(1.2, 1.2);
+					}
+				}
+			}
+		}
+
+		&--current {
+			#{$this}__link {
+				pointer-events: none;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		display: block;
+		margin: 48px 0 0;
+	}
+
+	@include breakpoint(large) {
+		margin: 48px 0 60px;
+		padding: 0;
+	}
+
+	@media print {
+		display: none;
+	}
+}

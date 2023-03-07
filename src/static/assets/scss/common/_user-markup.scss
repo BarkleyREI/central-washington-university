@@ -1,0 +1,39 @@
+.user-markup {
+	@extend %font-body;
+	overflow: visible;
+
+	ol:not([class]) {
+		margin: 0 0 1.5rem;
+		overflow: auto;
+		padding-left: 40px;
+
+		li {
+			&::marker {
+				font-weight: bold;
+			}
+		}
+	}
+
+	h2:nth-child(n+2) {
+		margin-top: 1.2em;
+	}
+
+	p {
+		margin-bottom: 1.5rem;
+		overflow: visible; // Clears any floated content, like images
+	}
+
+	ul:not([class]) {
+		margin: 0 0 1.5rem;
+		overflow: auto;
+		padding-left: 40px;
+
+		li {
+			&::marker {
+				content: '●  ';
+				/* stylelint-disable-next-line declaration-no-important */
+				text-indent: 4px !important;
+			}
+		}
+	}
+}

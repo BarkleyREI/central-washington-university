@@ -1,0 +1,10 @@
+.wysiwyg {
+
+	&--wide {
+		padding: 52px 0;
+
+		@include breakpoint(large) {
+			padding: 120px 0;
+		}
+	}
+}

@@ -1,44 +1,103 @@
 img {
+	height: auto;
 	max-width: 100%;
 
 	.user-markup & {
-		margin: 6px 12px 24px 0;
+		margin: 6px 24px 24px 0;
+	}
 
-		&[align='right'],
-		&[style*='float: right'] {
-			margin: 6px 0 24px 12px;
-		}
+	.user-markup p & {
+		margin-bottom: 6px;
+	}
 
-		&[align='right'] {
+	&[align='right'],
+	&[style*='float: right'],
+	&.img--right {
+		display: block;
+		margin: 6px auto 20px;
+
+		@include breakpoint(medium) {
 			float: right;
+			margin: 6px 0 24px 15px;
 		}
+	}
 
-		&[align='left'],
-		&[style*='float: left'] {
-			margin: 6px 24px 12px 0;
-		}
+	&[align='left'],
+	&[style*='float: left'],
+	&.img--left {
+		display: block;
+		margin: 6px auto 24px;
 
-		&[align='left'] {
+		@include breakpoint(medium) {
 			float: left;
+			margin: 6px 24px 15px 0;
+		}
+	}
+}
+
+figure {
+	&.img {
+		height: auto;
+		max-width: 100%;
+		width: auto;
+	}
+
+	.user-markup & {
+		margin: 6px 12px 24px 0;
+		position: relative;
+
+		img {
+			margin: 0;
+			position: relative;
+			z-index: 1;
+		}
+
+		figcaption {
+			@extend %font-caption;
+			background-color: $black;
+			color: $white;
+			padding: 12px 16px;
+			text-align: center;
+
+			p {
+				margin: 0;
+				max-width: 100%;
+			}
 		}
 	}
 
 	.user-markup p & {
 		margin-bottom: 6px;
+	}
 
-		&[align='right'] {
+	&[align='right'],
+	&[style*='float: right'],
+	&.img--right {
+		display: block;
+		margin: 6px auto 20px;
+
+		@include breakpoint(medium) {
 			float: right;
+			margin: 6px 0 24px 15px;
 		}
+	}
 
-		&[align='left'] {
+	&[align='left'],
+	&[style*='float: left'],
+	&.img--left {
+		display: block;
+		margin: 6px auto 24px;
+
+		@include breakpoint(medium) {
 			float: left;
+			margin: 6px 24px 15px 0;
 		}
 	}
 }
 
 // Used for elements that mimic the img tag
 // Please use role='img' and aria-label in place of alt on these elements!
-.image {
+.img {
 	background-position: center 30%; // Positioned slightly above center due to subject matter (clients often request this)
 	background-size: cover;
 	height: 100%;

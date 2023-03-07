@@ -16,7 +16,7 @@
 
 	&.js-selectability--has-value {
 		~ label {
-			transform: translate(-11.5px, -31px) scale(0.8);
+			transform: translateY(-31px) scale(0.8);
 		}
 	}
 
@@ -150,9 +150,10 @@
 		/* the dropdown arrow & padding. */
 		&:after {
 			background-color: $black;
-			background-image: url('/img/chevron-white.png');
+			background-image: url('/img/chevron-white.svg');
 			background-position: center;
 			background-repeat: no-repeat;
+			background-size: 25px 13px;
 			border: 3px solid currentColor;
 			bottom: -3px;
 			content: '';

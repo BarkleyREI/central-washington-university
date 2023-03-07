@@ -1,0 +1,20 @@
+{
+	"title": "Breadcrumbs",
+	"status": "ready",
+	"context": {
+		"items": [
+			{
+				"url": "#grandparent",
+				"copy": "Grandparent Page"
+			},
+			{
+				"url": "#parent",
+				"copy": "Parent Page"
+			},
+			{
+				"copy": "Current Page",
+				"current": true
+			}
+		]
+	}
+}

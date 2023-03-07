@@ -1,3 +1,49 @@
-.container {
+.component {
+	width: 100%;
+}
 
+.container {
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1920px;
+	padding: 0 16px;
+	width: 100%;
+
+	&--no-padding {
+		padding: 0;
+
+		@include breakpoint(large) {
+			padding: 0;
+		}
+	}
+
+	@include breakpoint(large) {
+		padding: 0 5%;
+	}
+
+	@include breakpoint(1920px) {
+		padding: 0;
+		width: $global-width;
+	}
+}
+
+.main {
+}
+
+.rail {
+	position: relative;
+
+	@include breakpoint(large) {
+		padding-right: 16px;
+	}
+
+	@include breakpoint(xlarge) {
+		padding-right: 4.1666%;
+	}
+
+	@include breakpoint(xxlarge) {
+		padding-right: 8.3333%;
+	}
 }
