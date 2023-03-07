@@ -1,0 +1,15 @@
+.intro {
+	&__copy {
+		@extend %font-intro;
+		border-left: 3px solid $brand-primary;
+		padding-left: 1rem;
+
+		> *:first-child {
+			margin-top: 0;
+		}
+
+		> *:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

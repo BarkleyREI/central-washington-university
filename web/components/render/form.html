@@ -1,13 +1,227 @@
 
 
-<main id="main" class="level">
+<form class="form component" action="#submitted" method="get">
 
+		<h2 class="form__title font-h2">Forms H2 headline lorem ipsum</h2><hr />
+	<div class="form__copy user-markup"><p>Structured body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.</p></div>	
 
-	<div class="row level__row">
-		<div class="level__content large-8 large-push-2 columns">
-				<h1 class="page-title">Headline Lorem Ipsum Dolor</h1>
+	<div class="form__row grid-x grid-margin-x">
+		<div class="form__column cell xsmall-12 medium-6">
+					<div class="form__field">
+			<input type="text" required="required" id="first-name" name="first-name"/>
+			<label for="first-name">First Name</label>
+				<div class="form__valid-icon">
+			<svg class="brei-icon brei-icon-check" focusable="false">
+				<use xlink:href="#brei-icon-check"></use>
+			</svg>
+		</div>
+				<div class="form__error-icon">
+			<svg class="brei-icon brei-icon-warning" focusable="false">
+				<use xlink:href="#brei-icon-warning"></use>
+			</svg>
+		</div>
+				<div class="form__error-message">Field is required</div>
+		</div>
+
+		</div>
+		<div class="form__column cell xsmall-12 medium-6">
+					<div class="form__field">
+			<input type="text" required="required" pattern=".{2,}" id="last-name" name="last-name"/>
+			<label for="last-name">Last Name</label>
+				<div class="form__valid-icon">
+			<svg class="brei-icon brei-icon-check" focusable="false">
+				<use xlink:href="#brei-icon-check"></use>
+			</svg>
+		</div>
+				<div class="form__error-icon">
+			<svg class="brei-icon brei-icon-warning" focusable="false">
+				<use xlink:href="#brei-icon-warning"></use>
+			</svg>
+		</div>
+				<div class="form__error-message">Field is required</div>
+		</div>
+
+		</div>
+	</div>
+	<div class="form__row grid-x grid-margin-x">
+		<div class="form__column cell xsmall-12">
+					<div class="form__field">
+			<input type="email" required="required" id="email-address" name="email-address"/>
+			<label for="email-address">Email</label>
+				<div class="form__valid-icon">
+			<svg class="brei-icon brei-icon-check" focusable="false">
+				<use xlink:href="#brei-icon-check"></use>
+			</svg>
+		</div>
+				<div class="form__error-icon">
+			<svg class="brei-icon brei-icon-warning" focusable="false">
+				<use xlink:href="#brei-icon-warning"></use>
+			</svg>
+		</div>
+				<div class="form__error-message">Field is required</div>
+				<div class="form__help-message">address@domain.com</div>
+		</div>
+
+		</div>
+	</div>
+	<div class="form__row grid-x grid-margin-x">
+		<div class="form__column cell xsmall-12">
+					<div class="form__field">
+			<input type="text" required="required" id="city" name="city"/>
+			<label for="city">City</label>
+				<div class="form__valid-icon">
+			<svg class="brei-icon brei-icon-check" focusable="false">
+				<use xlink:href="#brei-icon-check"></use>
+			</svg>
+		</div>
+				<div class="form__error-icon">
+			<svg class="brei-icon brei-icon-warning" focusable="false">
+				<use xlink:href="#brei-icon-warning"></use>
+			</svg>
+		</div>
+				<div class="form__error-message">Field is required</div>
+		</div>
+
+		</div>
+	</div>
+	<div class="form__row grid-x grid-margin-x">
+		<div class="form__column cell xsmall-12 medium-6">
+					<div class="form__field">
+			<select id="country" name="country" required="required">
+					<option></option>
+					<option value="United States">United States</option>
+					<option value="Canada">Canada</option>
+					<option value="Mexico">Mexico</option>
+			</select>
+			<label for="country">Country</label>
+				<div class="form__valid-icon">
+			<svg class="brei-icon brei-icon-check" focusable="false">
+				<use xlink:href="#brei-icon-check"></use>
+			</svg>
+		</div>
+				<div class="form__error-icon">
+			<svg class="brei-icon brei-icon-warning" focusable="false">
+				<use xlink:href="#brei-icon-warning"></use>
+			</svg>
+		</div>
+				<div class="form__error-message">Field is required</div>
+		</div>
+
+		</div>
+		<div class="form__column cell xsmall-12 medium-6">
+					<div class="form__field">
+			<select id="state" name="state" required="required">
+					<option></option>
+					<option value="MD">Maryland</option>
+					<option value="OH">Ohio</option>
+					<option value="PA">Pennsylvania</option>
+					<option value="WV">West Virginia</option>
+			</select>
+			<label for="state">State</label>
+				<div class="form__valid-icon">
+			<svg class="brei-icon brei-icon-check" focusable="false">
+				<use xlink:href="#brei-icon-check"></use>
+			</svg>
+		</div>
+				<div class="form__error-icon">
+			<svg class="brei-icon brei-icon-warning" focusable="false">
+				<use xlink:href="#brei-icon-warning"></use>
+			</svg>
+		</div>
+				<div class="form__error-message">Field is required</div>
+		</div>
+
+		</div>
+	</div>
+	<div class="form__row grid-x grid-margin-x">
+		<div class="form__column cell xsmall-12">
+					<div class="form__field">
+			<textarea name="textarea" id="textarea" required="required"></textarea>
+			<label for="textarea">Enabled/Required</label>
+				<div class="form__valid-icon">
+			<svg class="brei-icon brei-icon-check" focusable="false">
+				<use xlink:href="#brei-icon-check"></use>
+			</svg>
+		</div>
+				<div class="form__error-icon">
+			<svg class="brei-icon brei-icon-warning" focusable="false">
+				<use xlink:href="#brei-icon-warning"></use>
+			</svg>
+		</div>
+				<div class="form__error-message">Field is required</div>
+				<div class="form__help-message">Leave a comment</div>
+		</div>
+		<div class="form__field">
+			<textarea name="textarea" id="textarea" required="required" maxlength="45"></textarea>
+			<label for="textarea">Enabled/Required/Max</label>
+				<div class="form__valid-icon">
+			<svg class="brei-icon brei-icon-check" focusable="false">
+				<use xlink:href="#brei-icon-check"></use>
+			</svg>
+		</div>
+				<div class="form__error-icon">
+			<svg class="brei-icon brei-icon-warning" focusable="false">
+				<use xlink:href="#brei-icon-warning"></use>
+			</svg>
+		</div>
+				<div class="form__error-message">Field is required</div>
+				<div class="form__help-message">Leave a comment</div>
+		</div>
+		<div class="form__field">
+			<textarea name="textarea-2" id="textarea-2"></textarea>
+			<label for="textarea-2">Enabled/Optional</label>
+		</div>
+
+		</div>
+	</div>
+	<div class="form__row grid-x grid-margin-x">
+		<div class="form__column cell xsmall-12">
+			<fieldset>
+	
+	<div class="form__field">
+		<input id="check-box-1" name="check[]" type="checkbox" value="1" />
+		<label for="check-box-1">
+			Lorem Checkbox
+			<span class="checkbox" role="none">
+			<svg class="brei-icon brei-icon-check" focusable="false">
+				<use xlink:href="#brei-icon-check"></use>
+			</svg>
+		</span>
+		</label>
+	</div>
+</fieldset>
+
+		</div>
+	</div>
+	<div class="form__row grid-x grid-margin-x">
+		<div class="form__column cell xsmall-12">
+			<fieldset>
+	
+	<div class="form__field form__field--radio">
+		<input id="radio-btn" name="radio" type="radio" value="1" />
+		<label for="radio-btn">
+			Lorem Radio
+			<span class="radio-button" role="none">
+				<span class="radio-button__center"></span>
+			</span>
+		</label>
+	</div>
+	<div class="form__field form__field--radio">
+		<input id="radio-btn-2" name="radio" type="radio" value="2" />
+		<label for="radio-btn-2">
+			Lorem Radio Two
+			<span class="radio-button" role="none">
+				<span class="radio-button__center"></span>
+			</span>
+		</label>
+	</div>
+</fieldset>
 
 		</div>
 	</div>
 
-</main>
+	<button type="submit" class="btn btn--primary">
+		<span class="text">Submit</span>
+	</button>
+
+</form>
