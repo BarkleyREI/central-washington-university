@@ -1,6 +1,5 @@
 .intro {
 	&__copy {
-		@extend %font-intro;
 		padding-left: 1rem;
 		position: relative;
 
@@ -13,7 +12,6 @@
 			top: 0.4em;
 			width: 3px;
 		}
-
 
 		> *:first-child {
 			margin-top: 0;

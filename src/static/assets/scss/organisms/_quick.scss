@@ -1,0 +1,47 @@
+.quick {
+	$this: &;
+
+	&__list {
+		list-style-type: none;
+		margin: 32px 0 0;
+		padding: 0;
+	}
+
+	&__item {
+		align-items: center;
+		background: $wild-sand;
+		border: 0.5px solid $white;
+		display: flex;
+		flex-flow: column;
+		justify-items: center;
+		padding: 36px;
+		text-align: center;
+	}
+
+	@include breakpoint(medium) {
+		&__list {
+			align-items: stretch;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+		}
+
+		&__item {
+			flex-grow: 0;
+			flex-shrink: 0;
+			width: 50%;
+		}
+	}
+
+	@include breakpoint(large) {
+		&__list {
+			margin-top: 40px;
+		}
+
+		&--wide {
+			#{$this}__item {
+				width: 33.3333%;
+			}
+		}
+	}
+}

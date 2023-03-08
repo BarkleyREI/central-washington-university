@@ -4,7 +4,7 @@
 	"preview": "@standard",	
 	"context": {
 		"title": "Non-WYSIWYG table H2 headline lorem ipsum",
-		"copy": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>",
+		"copy": "Structured body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"sticky": true,
 		"headers": [
 			"Column Header",

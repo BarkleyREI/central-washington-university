@@ -7,7 +7,6 @@ $card: '.card';
 	transition: background-color $transition-time ease, color $transition-time ease;
 
 	&__date {
-		@extend %font-h4;
 		background-color: $black;
 		clip-path: polygon(0% 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
 		color: $white;
@@ -57,7 +56,6 @@ $card: '.card';
 	}
 
 	&__subheading {
-		@extend %font-subhead;
 		margin-bottom: 24px;
 	}
 
@@ -166,10 +164,6 @@ $card: '.card';
 	&--news,
 	&--program {
 		@extend %fake-cta-actions;
-
-		#{$card}__heading {
-			@extend %font-h4;
-		}
 	}
 
 	&--faculty,
@@ -182,13 +176,6 @@ $card: '.card';
 				display: block;
 				z-index: 2;
 			}
-		}
-	}
-
-	&--faculty,
-	&--program {
-		#{$card}__heading {
-			@extend %font-h3;
 		}
 	}
 

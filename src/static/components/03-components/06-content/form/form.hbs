@@ -1,7 +1,9 @@
 <form class="form component" action="{{ action }}" method="{{ method }}">
 
-	{{#if h1 }}<h1 class="form__title font-h1">{{{ h1 }}}</h1><hr />{{/if}}	{{#if title }}<h2 class="form__title font-h2">{{{ title }}}</h2><hr />{{/if}}
-	{{#if copy }}<div class="form__copy user-markup">{{{ copy }}}</div>{{/if}}	
+	{{#if h1 }}<h1 class="form__title font-h1">{{{ h1 }}}</h1><hr />{{/if}}
+	{{#if title }}<h2 class="form__title font-h2">{{{ title }}}</h2><hr />{{/if}}
+	
+	{{#if copy }}<p class="form__copy font-body">{{{ copy }}}</p>{{/if}}	
 
 	{{#each rows}}
 	<div class="form__row grid-x grid-margin-x">

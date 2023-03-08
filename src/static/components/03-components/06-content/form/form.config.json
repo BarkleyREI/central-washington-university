@@ -10,8 +10,8 @@
 		]
 	},
 	"context": {
-		"title": "Forms H2 headline lorem ipsum",
-		"copy": "<p>Structured body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.</p>",
+		"title": "Forms H2 Headline Lorem Ipsum",
+		"copy": "Structured body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"action": "#submitted",
 		"method": "get",
 		"submit": "Submit",

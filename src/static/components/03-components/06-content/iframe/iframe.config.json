@@ -3,8 +3,8 @@
 	"status": "ready",
 	"preview": "@standard",	
 	"context": {
-		"title": "Iframe embed H2 headline lorem ipsum.",
-		"copy": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>",
+		"title": "iFrame Embed H2 Headline Lorem Ipsum",
+		"copy": "Structured body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"iframe": {
 			"src": "https://www.cwu.edu/",
 			"height": 200,

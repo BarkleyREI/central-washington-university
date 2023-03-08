@@ -1,0 +1,9 @@
+<section class="quick {{ style }} component">
+
+	<h2 class="quick__heading font-h2">{{{ heading }}}</h2>
+
+	<ul class="quick__list">
+		{{#each cta }}<li class="quick__item">{{render '@button--tertiary' this  merge="true" }}</li>{{/each}}
+	</ul>
+
+</section>

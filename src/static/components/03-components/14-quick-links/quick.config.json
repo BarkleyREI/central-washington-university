@@ -1,0 +1,60 @@
+{
+	"title": "Quick Links",
+	"status": "ready",
+	"preview": "@standard",
+	"default": "Narrow",
+	"handle": "quick",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"style": "quick--narrow",
+		"heading": "Quick Links H2 Headline Lorem Ipsum",
+		"cta": [
+			{
+				"copy": "Tertiary Button 1"
+			},
+			{
+				"copy": "Tertiary Button 2"
+			},
+			{
+				"copy": "Tertiary Button 3"
+			},
+			{
+				"copy": "Tertiary Button 4"
+			}			
+		]
+	},
+	"variants": [
+		{
+			"name": "Wide",
+			"preview": "@high",
+			"context": {
+				"style": "quick--wide",
+				"cta": [
+					{
+						"copy": "Tertiary Button 1"
+					},
+					{
+						"copy": "Tertiary Button 2"
+					},
+					{
+						"copy": "Tertiary Button 3"
+					},
+					{
+						"copy": "Tertiary Button 4"
+					},
+					{
+						"copy": "Tertiary Button 5"
+					},
+					{
+						"copy": "Tertiary Button 6"
+					}
+				]
+			}
+		}
+	]
+}
