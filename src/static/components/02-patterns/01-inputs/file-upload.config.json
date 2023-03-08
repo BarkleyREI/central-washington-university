@@ -1,0 +1,52 @@
+{
+	"title": "File Upload",
+	"status": "ready",
+	"order": 1,
+	"preview": "@preview",
+	"meta": {
+		"align": "self-start",
+		"scripts" : [
+			"vendor",
+			"main"
+		]
+	},
+	"display": {
+		"max-width": "350px"
+	},
+	"context": {
+		"items": [
+			{
+				"type": "file",
+				"id": "file-upload",
+				"name": "file-upload",
+				"required": true,
+				"errormsg": "Field is required",
+				"helpmsg": "Must be a GIF, JPG, or PNG",
+				"label": "Enabled/Required"
+			},
+			{
+				"type": "file",
+				"id": "file-upload-2",
+				"name": "file-upload-2",
+				"label": "Enabled/Optional"
+			}
+		]
+	},
+	"variants": [
+		{
+			"name": "Disabled",
+			"context": {
+				"items": [
+					{
+						"type": "file",
+						"id": "file-upload",
+						"name": "file-upload",
+						"disabled": true,
+						"label": "Disabled",
+						"field_style": "form__field--disabled"
+					}
+				]
+			}
+		}
+	]
+}

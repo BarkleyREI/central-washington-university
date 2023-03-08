@@ -71,7 +71,7 @@
 						}
 					}
 				]
-			},
+			},			
 			{
 				"columns": [
 					{
@@ -158,12 +158,20 @@
 						}
 					}
 				]
-			},
+			},			
 			{
 				"columns": [
 					{
 						"style": "xsmall-12",
 						"name": "textarea--default"
+					}
+				]
+			},			
+			{
+				"columns": [
+					{
+						"style": "xsmall-12",
+						"name": "file-upload--default"
 					}
 				]
 			},			

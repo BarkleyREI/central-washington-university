@@ -108,6 +108,14 @@ input[type='file'] {
 	}
 }
 
+input[type='file'] {
+	padding-right: 60px;
+	
+	~ label {
+		transform: translateY(-31px) scale(0.8);		
+	}
+}
+
 input[type='checkbox'],
 input[type='radio'] {
 	left: -9999px;
