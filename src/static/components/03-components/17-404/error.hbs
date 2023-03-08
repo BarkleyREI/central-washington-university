@@ -1,0 +1,17 @@
+<section class="error component">
+	<div class="error__wrapper wrapper">
+		<div class="grid-x grid-margin-x">
+			<div class="cell xsmall-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2">
+
+				<h1 class="error__code font-numeral"><span>{{{ heading }}}</span></h1>
+
+				<div class="error__copy user-markup">{{{ copy }}}</div>
+
+				<ul class="error__list">
+					{{#each cta }}<li class="error__item">{{render '@button--primary' this  merge="true" }}</li>{{/each}}
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</section>

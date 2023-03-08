@@ -1,0 +1,66 @@
+.error {
+	$this: &;
+
+	&__code {
+		
+		background-color: $black;
+		clip-path: polygon(0% 0%, 100% 0%, calc(100% - 16px) 100%, 0% 100%);
+		color: $white;
+		display: inline-block;
+		margin: 0 0 48px;
+		padding: 0 64px 0 24px ;
+		text-transform: uppercase;
+
+		span {
+			position: relative;
+			top: 10px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		list-style-type: none;
+		margin: 32px 0 0;
+		padding: 0;
+		gap: 16px;
+	}
+
+	&__item,
+	.btn {
+		width: 100%;
+	}
+
+	@include breakpoint(small) {
+		&__item {
+			max-width: 420px;
+		}
+	}
+
+	@include breakpoint(medium) {
+		&__list {
+			flex-flow: row wrap;
+			max-width: 876px;
+		}
+
+		.btn {
+			height: 100%;
+		}
+	}
+
+	@include breakpoint(large) {
+		&__code {
+			span {
+				top: 14px;
+			}
+		}
+		
+		&__list {
+			margin-top: 40px;
+		}
+	}
+
+	
+}

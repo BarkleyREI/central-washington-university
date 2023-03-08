@@ -1,7 +1,7 @@
 $button: '.button';
 
 %primary-button-core {
-	align-items: center;
+	align-items: space-between;
 	color: var(--text);
 	cursor: pointer;
 	flex-flow: row nowrap;
@@ -168,6 +168,7 @@ $button: '.button';
 			flex-grow: 1;
 			flex-shrink: 1;
 			transform-origin: left center;
+			text-align: left;
 		}
 
 		#{$this}__icon {
