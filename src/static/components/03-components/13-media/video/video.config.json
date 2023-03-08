@@ -1,0 +1,25 @@
+{
+	"title": "Video",
+	"status": "ready",
+	"preview": "@standard",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"poster": {
+			"src": "https://via.placeholder.com/1264x711",
+			"alt": "[image alt text]",
+			"width": 1264,
+			"height": 711
+		},
+		"play-button": {
+			"url": "https://www.youtube.com/watch?v=J5OSRpRyl6g",
+			"alt": "Play video",
+			"modifiers": "btn--xlarge play-button",
+			"icon": "play"
+		}
+	}
+}

@@ -1,0 +1,19 @@
+<div class="gallery">
+
+	<div class="gallery__items">
+
+		{{#each images}}
+		<figure class="gallery__image">
+		
+			<img src="{{ this.src }}" alt="{{ this.alt }}" width="{{ this.width }}" height="{{ this.height }}" />
+
+			{{#if caption}}<figcaption>{{{ caption }}}</figcaption>{{/if}}
+
+		</figure>
+		{{/each}}
+
+	</div>
+
+	<div class="gallery__caption" aria-hidden="true"></div>
+
+</div>

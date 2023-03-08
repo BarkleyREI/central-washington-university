@@ -36,6 +36,14 @@
 	width: 100%;
 }
 
+// Edge-to-edge overlay at small screens
+%small-edge {
+	@include breakpoint(medium down) {
+		margin-left: -16px;
+		width: 100vw;
+	}
+}
+
 // Maintains 1:1 image proportions. Works best when direct child uses %overlay.
 %square-scale {
 	&:before {
@@ -45,8 +53,7 @@
 	}
 }
 
-// tooltip text
-
+// Tooltip text
 %tooltip-text {
 	color: $black;
 	display: block;

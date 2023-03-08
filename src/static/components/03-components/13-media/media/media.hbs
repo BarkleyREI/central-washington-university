@@ -1,0 +1,18 @@
+<section class="media {{ style }} component">
+
+	<div class="media__content">
+
+		<h2 class="media__heading font-h2">{{{ heading }}}</h2>
+
+		<p class="media__copy">{{{ copy }}}</p>
+
+		{{render '@button--tertiary' cta merge="true" }}
+
+	</div>
+
+	<div class="media__items">
+		{{#if gallery}}{{render '@gallery' gallery }}{{/if}}
+		{{#if video}}{{ render '@video' video }}{{/if}}
+	</div>
+
+</section>

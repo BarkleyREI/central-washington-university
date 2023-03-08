@@ -210,6 +210,8 @@ $button: '.button';
 	&--cta {
 		--background: #{$brand-secondary};
 		--border: #{$brand-secondary};
+		--focus-border: #{$black};
+		--focus-text: #{$black};
 		--text: #{$black};
 
 		@extend %font-cta;
@@ -259,11 +261,11 @@ $button: '.button';
 
 		&:focus-visible {
 			background: var(--background);
-			color: var(--text);
+			color: var(--focus-text);
 
 			&:before,
 			&:after {
-				background-color: var(--text);
+				background-color: var(--focus-border);
 				left: 0;
 				opacity: 1;
 				right: 0;

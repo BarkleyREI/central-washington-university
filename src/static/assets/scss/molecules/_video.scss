@@ -1,0 +1,20 @@
+.video {
+	@extend %small-edge;
+	background-color: $black;
+	overflow: hidden;
+	position: relative;
+
+	&__poster {
+		aspect-ratio: 1.7777;
+		height: auto;
+		width: 100%;
+	}
+
+	.play-button {
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 3;
+	}
+}

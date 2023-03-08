@@ -38,6 +38,7 @@
 			}
 
 			&:after {
+				background-color: $white;
 				border: 0 solid $white;
 				border-radius: 50%;
 				bottom: 0;
@@ -52,6 +53,8 @@
 
 			&:hover,
 			&:focus {
+				outline: 0;
+				
 				&:before {					
 					border-width: 5px;
 					bottom: -4.5px;

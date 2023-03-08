@@ -1,0 +1,96 @@
+.media {
+	$this: &;
+	background-color: $black;
+	color: $white;
+
+	&__content {
+		@extend %small-edge;
+		background-color: $black;
+		padding: 48px 16px 32px;
+	}
+
+	&__copy {
+		@extend %font-body;
+		margin: 20px 0;
+	}
+
+	.btn--cta {
+		--text: #{$white};
+		--focus-border: #{$white};
+	}
+
+	.gallery__items,
+	.video__poster {
+		aspect-ratio: 1.3333;
+		clip-path: polygon(0% 8.25%, 100% 0%, 100% 100%, 0% 100%);
+	}
+
+	@include breakpoint(large up) {
+		&__copy {
+			font-size: 19.2px;
+			margin: 28px 0;
+		}
+
+		&--narrow {
+			#{$this}__content {
+				padding: 72px 12.5% 56px;
+			}
+		}
+
+		&--wide {
+			#{$this}__content {
+				align-self: center;
+				padding: 32px 64px 48px 0;
+			}
+
+			.gallery,
+			.video {
+				margin-right: -5vw;
+				position: relative;
+			}
+
+			.gallery,
+			.video__poster {
+				clip-path: polygon(6.5% 0%, 100% 0, 100% 100%, 0% 100%);
+			}
+
+			.gallery__items {
+				clip-path: none;
+			}
+
+			.gallery__image {
+				figcaption {
+					background-color: rgba($tundora, 0.9);
+					bottom: 0;
+					height: auto;
+					left: 0;
+					padding: 16px 16px 56px;
+					position: absolute;
+					right: 0;
+				}
+			}
+
+			.gallery__caption {
+				display: none;
+			}
+		}
+	}
+
+	@include breakpoint(large only) {
+		&--wide {
+			#{$this}__copy {
+				font-size: 16px;
+				margin: 20px 0;
+			}
+		}
+	}
+
+	@include breakpoint(xxxlarge up) {
+		&--wide {
+			.gallery,
+			.video {
+				margin-right: -96px;
+			}
+		}
+	}
+}

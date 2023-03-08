@@ -1,0 +1,22 @@
+<section class="media {{ style }} component">
+	<div class="media__wrapper wrapper">
+		<div class="grid-x grid-margin-x">
+
+			<div class="media__content cell xsmall-12 large-6 xlarge-6">
+
+				<h2 class="media__heading font-h2">{{{ heading }}}</h2>
+
+				<p class="media__copy">{{{ copy }}}</p>
+
+				{{render '@button--tertiary' cta merge="true" }}
+
+			</div>
+
+			<div class="media__items cell xsmall-12 large-6 xlarge-6">
+				 {{#if gallery}}{{render '@gallery' gallery }}{{/if}}
+				 {{#if video}}{{ render '@video' video }}{{/if}}
+			</div>
+
+		</div>
+	</div>
+</section>

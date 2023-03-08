@@ -3,7 +3,9 @@ import { ready } from 'brei-project-utils';
 import { plugin } from './lib/plugin';
 
 import { forms } from './modules/forms';
+import { gallery } from './modules/gallery';
 import { Tooltip } from './modules/tooltip';
+import { video } from './modules/video';
 
 const main = {
 
@@ -16,6 +18,8 @@ const main = {
 		plugin('Tooltip', Tooltip);
 
 		forms.init();
+		gallery.init();
+		video.init();
 
 		this.bindUIActions();		
 	},

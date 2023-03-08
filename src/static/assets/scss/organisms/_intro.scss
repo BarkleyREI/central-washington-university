@@ -5,15 +5,15 @@
 		position: relative;
 
 		&:before {
-			content: '';
-			position: absolute;
-			width: 3px;
-			top: 0.4em;
-			bottom: 0.4em;
-			left: -3px;
 			background-color: $brand-primary;
+			bottom: 0.4em;
+			content: '';
+			left: -3px;
+			position: absolute;
+			top: 0.4em;
+			width: 3px;
 		}
-		
+
 
 		> *:first-child {
 			margin-top: 0;

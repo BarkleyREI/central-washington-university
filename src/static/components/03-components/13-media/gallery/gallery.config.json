@@ -1,0 +1,35 @@
+{
+	"title": "Gallery",
+	"status": "ready",
+	"preview": "@standard",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"images": [
+			{
+				"src": "https://via.placeholder.com/836x627/f00/fff",
+				"alt": "[image alt text]",
+				"width": 836,
+				"height": 627,
+				"caption": "Optional caption 100 characters lorem ipsum dolor sit amet consectetur adipscing elit sed do eiusmo."
+			},
+			{
+				"src": "https://via.placeholder.com/836x627/0f0/fff",
+				"alt": "[image alt text]",
+				"width": 836,
+				"height": 627,
+				"caption": "Optional caption 100 characters lorem ipsum dolor sit amet consectetur adipscing elit sed do eiusmo."
+			},
+			{
+				"src": "https://via.placeholder.com/836x627/00f/fff",
+				"alt": "[image alt text]",
+				"width": 836,
+				"height": 627
+			}
+		]
+	}
+}

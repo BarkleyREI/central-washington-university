@@ -1,0 +1,78 @@
+.gallery {
+	@extend %small-edge;
+	background-color: $black;
+	overflow: hidden;
+	position: relative;
+
+	&__image {
+		img {
+			aspect-ratio: 1.3333;
+			height: auto;
+			object-fit: cover;
+			object-position: 50% 50%;
+			width: 100%;
+		}
+
+		figcaption {
+			@extend %font-caption;
+			color: $white;
+			height: 0;
+			overflow: hidden;
+			text-align: center;
+			z-index: 2;
+		}
+	}
+
+	&__prev,
+	&__next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 10;
+	}
+
+	&__prev {
+		left: 42px;
+
+		.brei-icon {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__next {
+		right: 42px;
+	}
+
+	.slick-dots {
+		bottom: 19.2px;
+		position: absolute;
+	}
+
+	&__caption {
+		@extend %font-caption;
+		background-color: $tundora;
+		color: $white;
+		padding: 19.2px;
+		position: relative;
+		text-align: center;
+		z-index: 2;
+
+		&:empty {
+			display: none;
+		}
+	}
+
+	@include breakpoint(medium down) {
+		&__prev {
+			left: 20px;
+		}
+
+		&__next {
+			right: 20px;
+		}
+
+		&__caption {
+			padding: 12px 24px;
+		}
+	}
+}
