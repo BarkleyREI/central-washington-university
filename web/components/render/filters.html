@@ -1,0 +1,127 @@
+
+
+<section class="filter component">
+
+	<h2 class="filter__title font-h4">Filter Headline</h2>
+	<hr />
+
+	<div class="filter__set">
+
+		<ul class="filter__accordion accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+
+			<li class="filter__item filter__item--checkboxes  accordion-item" data-accordion-item>
+
+				<a href="#accordion0" class="filter__heading accordion-title">
+					<span class="filter__label">Type</span>
+					<span class="trigger">
+	
+			<svg class="brei-icon brei-icon-plus" focusable="false">
+				<use xlink:href="#brei-icon-plus"></use>
+			</svg>
+		
+	
+			<svg class="brei-icon brei-icon-minus" focusable="false">
+				<use xlink:href="#brei-icon-minus"></use>
+			</svg>
+		
+</span>
+				</a>
+
+				<div class="filter__content accordion-content" data-tab-content id="accordion0">
+					 <fieldset>
+	<legend class="show-for-sr">type</legend>
+	<div class="form__field">
+		<input id="type-1" name="type[]" type="checkbox" value="1" />
+		<label for="type-1">
+			Lorem
+			<span class="checkbox" role="none">
+			<svg class="brei-icon brei-icon-check" focusable="false">
+				<use xlink:href="#brei-icon-check"></use>
+			</svg>
+		</span>
+		</label>
+	</div>
+	<div class="form__field">
+		<input id="type-2" name="type[]" type="checkbox" value="2" />
+		<label for="type-2">
+			Ipsum
+			<span class="checkbox" role="none">
+			<svg class="brei-icon brei-icon-check" focusable="false">
+				<use xlink:href="#brei-icon-check"></use>
+			</svg>
+		</span>
+		</label>
+	</div>
+</fieldset>
+
+					 
+				</div>
+
+			</li>
+			<li class="filter__item  filter__item--radios accordion-item" data-accordion-item>
+
+				<a href="#accordion1" class="filter__heading accordion-title">
+					<span class="filter__label">Location</span>
+					<span class="trigger">
+	
+			<svg class="brei-icon brei-icon-plus" focusable="false">
+				<use xlink:href="#brei-icon-plus"></use>
+			</svg>
+		
+	
+			<svg class="brei-icon brei-icon-minus" focusable="false">
+				<use xlink:href="#brei-icon-minus"></use>
+			</svg>
+		
+</span>
+				</a>
+
+				<div class="filter__content accordion-content" data-tab-content id="accordion1">
+					 
+					 <fieldset>
+	
+	<div class="form__field form__field--radio">
+		<input id="radio-btn" name="radio" type="radio" value="1" />
+		<label for="radio-btn">
+			Lorem Radio
+			<span class="radio-button" role="none">
+				<span class="radio-button__center"></span>
+			</span>
+		</label>
+	</div>
+	<div class="form__field form__field--radio">
+		<input id="radio-btn-2" name="radio" type="radio" value="2" />
+		<label for="radio-btn-2">
+			Lorem Radio Two
+			<span class="radio-button" role="none">
+				<span class="radio-button__center"></span>
+			</span>
+		</label>
+	</div>
+</fieldset>
+
+				</div>
+
+			</li>
+
+		</ul>
+
+	</div>
+
+	<div class="filter__keyword">
+		<div class="form__field form__field--is-search">
+	<input id="search" name="search" type="search" required="required">
+	<label for="search">Keyword</label>
+	<button type="submit" class="search-button">
+		<span class="show-for-sr">Search</span>
+		
+			<svg class="brei-icon brei-icon-search" focusable="false">
+				<use xlink:href="#brei-icon-search"></use>
+			</svg>
+		
+	</button>
+</div>
+
+	</div>
+
+</section>
