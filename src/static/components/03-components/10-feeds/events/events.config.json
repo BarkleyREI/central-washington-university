@@ -1,0 +1,29 @@
+{
+	"title": "Events Feed",
+	"status": "ready",
+	"preview": "@high",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"style": "feed--events",
+		"heading": "Events Feed H2 Headline Lorem Ipsum",
+		"items": [
+			{
+				"heading": "Event Item 1 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
+			},
+			{
+				"heading": "Event Item 2 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
+			},
+			{
+				"heading": "Event Item 3 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
+			}
+		],
+		"cta": {
+			"copy": "Primary Button"
+		}
+	}
+}

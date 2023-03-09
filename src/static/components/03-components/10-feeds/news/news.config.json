@@ -1,0 +1,29 @@
+{
+	"title": "News Feed",
+	"status": "ready",
+	"preview": "@high",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"style": "feed--news",
+		"heading": "News Feed H2 Headline Lorem Ipsum",
+		"items": [
+			{
+				"heading": "News Item 1 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
+			},
+			{
+				"heading": "News Item 2 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
+			},
+			{
+				"heading": "News Item 3 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
+			}
+		],
+		"cta": {
+			"copy": "Primary Button"
+		}
+	}
+}

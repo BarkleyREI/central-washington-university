@@ -1,0 +1,16 @@
+<section class="feed {{ style }} component">
+
+	<div class="feed__wrapper wrapper">
+
+		<h2 class="feed__heading font-h2">{{{ heading }}}</h2>
+
+		<div class="feed__list">
+
+			{{#each items}}{{render '@card-news' this merge="true" }}{{/each}}
+
+		</div>
+
+		{{render '@button--primary' }}
+
+	</div>
+</section>

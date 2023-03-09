@@ -162,13 +162,15 @@ $button: '.button';
 	&--alt {
 		@extend %font-button;
 		justify-content: space-between;
+		left: 3px;
 		padding: 14px 32px 13px;
+		position: relative;
 
 		.text {
 			flex-grow: 1;
 			flex-shrink: 1;
-			transform-origin: left center;
 			text-align: left;
+			transform-origin: left center;
 		}
 
 		#{$this}__icon {
@@ -182,7 +184,7 @@ $button: '.button';
 		}
 
 		@include breakpoint(small) {
-			padding: 14px 60px 13px;
+			padding: 14px 40px 13px;
 
 			#{$this}__icon {
 				margin-left: 36px;
@@ -190,7 +192,7 @@ $button: '.button';
 		}
 
 		@include breakpoint(large) {
-			padding: 16px 60px 15px;
+			padding: 16px 40px 15px;
 		}
 	}
 

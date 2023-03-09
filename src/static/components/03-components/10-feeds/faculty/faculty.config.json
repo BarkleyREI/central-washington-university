@@ -1,0 +1,29 @@
+{
+	"title": "Faculty Feed",
+	"status": "ready",
+	"preview": "@high",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"style": "feed--faculty",
+		"heading": "Faculty Feed H2 Headline Lorem Ipsum",
+		"items": [
+			{
+				"heading": "Faculty Name 1 H3 Headline Lorem"
+			},
+			{
+				"heading": "Faculty Name 2 H3 Headline Lorem"
+			},
+			{
+				"heading": "Faculty Name 3 H3 Headline Lorem"
+			}
+		],
+		"cta": {
+			"copy": "Primary Button"
+		}
+	}
+}

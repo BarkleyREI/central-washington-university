@@ -1,0 +1,46 @@
+.feed {
+	$this: &;
+
+	&__list {
+		align-items: stretch;
+		display: flex;
+		flex-flow: column;
+		gap: 16px;
+		justify-content: flex-start;
+		margin: 32px 0 0;
+	}
+
+	.btn--primary {
+		margin-top: 48px;
+	}
+
+	@include breakpoint(medium) {
+		text-align: center;
+
+		&__heading {
+			text-align: left;
+		}
+
+		&__list {
+			flex-flow: row wrap;
+			text-align: left;
+		}
+
+		.card {
+			width: calc(50% - 8px);
+		}
+	}
+
+	@include breakpoint(large) {
+		&__list,
+		.btn--primary {
+			margin-top: 64px;
+		}
+
+		.card--event,
+		.card--faculty,
+		.card--news {
+			width: calc(33.3333% - 10.6666px);
+		}
+	}
+}

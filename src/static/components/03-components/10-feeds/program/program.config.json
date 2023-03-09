@@ -1,0 +1,26 @@
+{
+	"title": "Program Feed",
+	"status": "ready",
+	"preview": "@standard",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"style": "feed--program",
+		"heading": "Program Feed H2 Headline Lorem Ipsum",
+		"items": [
+			{
+				"heading": "Program Title 1 H3 Lorem Ipsum Dolor Sit Amet"
+			},
+			{
+				"heading": "Program Title 2 H3 Lorem Ipsum Dolor Sit Amet"
+			}
+		],
+		"cta": {
+			"copy": "Primary Button"
+		}
+	}
+}
