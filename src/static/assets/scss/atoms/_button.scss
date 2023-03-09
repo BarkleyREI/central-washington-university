@@ -285,6 +285,7 @@ $button: '.button';
 		--border: #{$black};
 		--gap: #{$white};
 		--text: #{$black};
+		align-items: center;
 		justify-content: center;
 
 		#{$this}__icon {

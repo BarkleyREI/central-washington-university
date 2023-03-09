@@ -1,7 +1,7 @@
 import { plugin } from '../lib/plugin';
 import { Textarea } from './textarea';
 
-const forms = {
+const form = {
 
 	validClass: 'form__field--is-valid',
 	invalidClass: 'form__field--is-invalid',
@@ -93,4 +93,4 @@ const forms = {
 
 };
 
-export { forms };
+export { form };

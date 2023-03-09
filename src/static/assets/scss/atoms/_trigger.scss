@@ -1,0 +1,81 @@
+.trigger {
+	--background: #{$brand-secondary};
+	--border: #{$black};
+	--gap: #{$white};
+	--text: #{$black};
+	@extend %primary-button-core;
+	display: inline-block;
+	flex-grow: 0;
+	flex-shrink: 0;
+	font-size: 27.54px;
+	height: 54px;
+	line-height: 1;
+	position: relative;
+	width: 54px;
+
+	.brei-icon {
+		left: 50%;
+		line-height: 1;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%) scale(0.833);
+		transition: opacity $transition-time, transform $transition-time;
+	}
+
+	.brei-icon-minus {
+		opacity: 0;
+	}
+
+	.is-active & {
+		.brei-icon-minus {
+			opacity: 1;
+		}
+
+		.brei-icon-plus {
+			opacity: 0;
+		}
+	}
+
+	&:before,
+	&:after {
+		border-radius: 50%;
+	}
+}
+
+%trigger-interactions {
+	&:link,
+	&:visited {
+		.trigger {
+			color: var(--text);
+		}
+	}
+
+	&:hover,
+	&:active {
+		.trigger {
+			color: var(--text);
+			text-decoration: none;
+
+			.brei-icon {
+				transform: translate(-50%, -50%) scale(1);
+			}
+
+			&:after {
+				padding: 1px;
+			}
+		}
+	}
+
+	&:focus-visible {
+		outline: 0;
+
+		.trigger {
+			color: var(--text);
+			outline: 0;
+
+			&:after {
+				padding: 6px;
+			}
+		}
+	}
+}

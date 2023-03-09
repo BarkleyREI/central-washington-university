@@ -2,7 +2,8 @@ import { ready } from 'brei-project-utils';
 
 import { plugin } from './lib/plugin';
 
-import { forms } from './modules/forms';
+import { accordion } from './modules/accordion';
+import { form } from './modules/form';
 import { gallery } from './modules/gallery';
 import { Tooltip } from './modules/tooltip';
 import { video } from './modules/video';
@@ -17,7 +18,8 @@ const main = {
 	init() {
 		plugin('Tooltip', Tooltip);
 
-		forms.init();
+		accordion.init();
+		form.init();
 		gallery.init();
 		video.init();
 

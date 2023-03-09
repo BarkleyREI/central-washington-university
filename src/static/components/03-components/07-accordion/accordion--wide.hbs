@@ -1,0 +1,36 @@
+<section class="accordions accordions--wide component">
+
+	<div class="accordions__wrapper wrapper">
+
+		<h2 class="accordions__title font-h2">{{{ title }}}</h2>
+	
+		<hr />
+						
+		<p class="accordions__copy font-body">{{{ copy }}}</p>
+
+		<ul class="accordions__accordion accordion" data-accordion{{#if deep}} data-deep-link="true"{{/if}} data-multi-expand="true" data-allow-all-closed="true">
+	
+			{{#each items}}
+			<li class="accordions__item accordion-item{{#if active}} is-active{{/if}}" data-accordion-item>
+		
+				<a href="#accordion{{@key}}" class="accordions__heading accordion-title">
+					<span class="accordions__label font-h4">{{title}}</span>
+					{{render '@trigger'}}
+				</a>
+
+				<div class="accordions__content accordion-content" data-tab-content id="accordion{{@key}}">
+					<div class="user-markup">
+						{{{ copy }}}
+						{{#if cta}}{{render '@button--primary' cta merge=true }}{{/if}}
+					</div>
+				</div>
+
+			</li>
+			{{/each}}
+		
+		</ul>
+
+	</div>
+
+</section>
+
