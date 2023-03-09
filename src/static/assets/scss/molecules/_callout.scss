@@ -1,0 +1,20 @@
+.callout {
+	background-color: $black;
+	color: $white;
+	padding: 40px 16px;
+
+	&__list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__item {
+		margin: 0 0 12px -3px;
+		position: relative;
+	}
+
+	@include breakpoint(large) {
+		padding: 40px 28px;
+	}
+}

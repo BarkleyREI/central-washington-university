@@ -1,0 +1,86 @@
+.aside {
+	$this: &;
+	background-color: $gallery;
+	padding: 20px;
+
+	&__set {
+		margin-top: 24px;
+	}
+
+	&__accordion {
+		background: transparent;
+		border: 0;
+		margin: 0;
+	}
+
+	&__item {
+		border-top: 1px solid $white;
+		list-style-type: none;
+
+		&:first-child {
+			border-top: 0;
+		}
+	}
+
+	&__heading {
+		@extend %trigger-interactions;
+		// stylelint-disable declaration-no-important
+		align-items: center;
+		border: 0 !important;
+		display: flex;
+		flex-flow: row nowrap;
+		font-family: $inter;
+		font-size: 19.2px;
+		font-weight: 700;
+		gap: 16px;
+		justify-content: space-between;
+		line-height: 1.2;
+		padding: 16px 0;
+		// stylelint-enable declaration-no-important
+
+		&:link,
+		&:visited,
+		&:focus,
+		&:hover {
+			background: transparent;
+			color: $black;
+			text-decoration: none;
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+
+	&__label {
+		margin-bottom: 0;
+	}
+
+	.trigger {
+		height: 38px;
+		width: 38px;
+	}
+
+	&__content {
+		// stylelint-disable declaration-no-important
+		background: transparent;
+		border: none !important;
+		padding: 0 0 28px;
+		// stylelint-enable declaration-no-important
+	}
+
+	&__list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__list-item {
+		margin: 0 0 12px -3px;
+		position: relative;
+	}
+
+	@include breakpoint(large) {
+		padding: 36px 28px;
+	}
+}

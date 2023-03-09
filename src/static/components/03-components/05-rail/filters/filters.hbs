@@ -1,0 +1,34 @@
+<section class="filter component">
+
+	<h2 class="filter__title font-h4">{{{ title }}}</h2>
+	<hr />
+
+	<div class="filter__set">
+
+		<ul class="filter__accordion accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+
+			{{#each items }}
+			<li class="filter__item {{#if checkboxes}}filter__item--checkboxes{{/if}} {{#if radios}}filter__item--radios{{/if}} accordion-item{{#if active}} is-active{{/if}}" data-accordion-item>
+
+				<a href="#accordion{{@key}}" class="filter__heading accordion-title">
+					<span class="filter__label">{{title}}</span>
+					{{render '@trigger' }}
+				</a>
+
+				<div class="filter__content accordion-content" data-tab-content id="accordion{{@key}}">
+					 {{#if checkboxes }}{{render '@checkbox' this merge=true }}{{/if }}
+					 {{#if radios }}{{render '@radios' this merge=true}}{{/if}}
+				</div>
+
+			</li>
+			{{/each}}
+
+		</ul>
+
+	</div>
+
+	<div class="filter__keyword">
+		{{render '@search' search merge=true }}
+	</div>
+
+</section>

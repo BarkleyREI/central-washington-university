@@ -1,0 +1,24 @@
+{
+	"title": "Rail Navigation",
+	"label": "Navigation",
+	"status": "ready",
+	"preview": "@rail",
+	"context": {
+		"title": "Section Headline",
+		"items": [
+			{
+				"copy": "Child Page Lorem Ipsum Dolor"
+			},
+			{
+				"copy": "Child Page Lorem Ipsum Dolor"
+			},
+			{
+				"disabled": true,
+				"copy": "Current Page Lorem Ipsum Dolor"
+			},
+			{
+				"copy": "Child Page Lorem Ipsum Dolor on Two Lines"
+			}
+		]
+	}
+}

@@ -1,0 +1,11 @@
+.social {
+	@extend %inline-list;
+
+	&__item {
+		padding-right: 32px;
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}

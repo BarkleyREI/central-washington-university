@@ -1,0 +1,35 @@
+.contact {
+	&__heading {
+		font-size: 19.2px;
+		font-weight: 700;
+		line-height: 1.5;
+	}
+
+	&__address,
+	&__optional {
+		color: $tundora;
+		font-size: 16px;
+		line-height: 1.44;
+		margin-top: 16px;
+	}
+
+	&__list {
+		@extend %list-reset;
+		margin: 16px 0 0;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__item {
+		margin: 12px 0;
+	}
+
+	.menu--secondary {
+		margin-left: -3px;
+		position: relative;
+	}
+
+	.social {
+		margin-top: 32px;
+	}
+}

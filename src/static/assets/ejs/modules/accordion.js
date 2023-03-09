@@ -7,8 +7,8 @@ import { Accordion } from 'foundation-sites';
 const accordion = {
 
 	elem: {
-		$body: $('body'),
 		$accordion: $('.accordion'),
+		$asides: $('.aside__accordion'),		
 		$emergency: $('.emergency'),
 		$filters: $('.filter__accordion'),
 		$navigation: $('.nav-primary__list')
@@ -74,7 +74,13 @@ const accordion = {
 			
 		}
 
-		if (this.elem.$filters.length > 0) {
+		if (this.elem.$asides.length > 0) {
+			if (this.mql.large.matches) {			
+				this.elem.$asides.foundation('down', $(this.elem.$asides.find('.aside__heading').eq(0).attr('href')));
+			}
+		}
+
+ 		if (this.elem.$filters.length > 0) {
 			if (this.mql.large.matches) {
 				this.elem.$filters.foundation('down', $(this.elem.$filters.find('.filter__heading').eq(0).attr('href')));
 			}

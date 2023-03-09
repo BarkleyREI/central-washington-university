@@ -1,0 +1,46 @@
+{
+	"title": "Rail Contact",
+	"label": "Contact",
+	"status": "ready",
+	"preview": "@rail",
+	"context": {
+		"title": "Contact Headline",
+		"heading": "Name or Office Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing elit Sed Do",
+		"address": "Address Line One Lorem Ipsum<br />Address Line Two Lorem Ipsum<br />Address Line Three Lorem Ipsum",
+		"contact": [
+			{
+				"url": "mailto:email@cwu.edu",
+				"copy": "email@cwu.edu"
+			},
+			{
+				"url": "tel:0000000000",
+				"copy": "000-000-0000"
+			}			
+		],
+		"optional": "Optional Office Fields to Include Infromation Such as Pronouns, Name Pronunciation, Office Hours Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Sed Do",
+		"social": {
+			"items": [
+				{
+					"url": "#",
+					"icon": "facebook"
+				},
+				{
+					"url": "#",
+					"icon": "twitter"
+				},
+				{
+					"url": "#",
+					"icon": "instagram"
+				},
+				{
+					"url": "#",
+					"icon": "linkedin"
+				},
+				{
+					"url": "#",
+					"icon": "youtube"
+				}				
+			]
+		}
+	}
+}

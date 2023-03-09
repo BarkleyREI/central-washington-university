@@ -1,0 +1,23 @@
+<section class="contact component">
+
+	<h2 class="contact__title font-h4">{{{ title }}}</h2>
+
+	<hr />
+
+	<h3 class="contact__heading">{{{ heading }}}</h3>
+
+	<p class="contact__address">{{{ address }}}</p>
+
+	<ul class="contact__list">
+		{{#each contact}}
+		<li class="contact__item">{{render '@menu--tertiary' this merge=true }}</li>
+		{{/each}}
+	</ul>
+
+	{{#if optional}}
+	<div class="contact__optional">{{{ optional }}}</div>
+	{{/if}}
+
+	{{#if social}}{{render '@social' social }}{{/if}}
+
+</section>

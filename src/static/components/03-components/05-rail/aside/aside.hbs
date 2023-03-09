@@ -1,0 +1,32 @@
+<section class="aside component">
+
+	<h2 class="aside__title font-h4">{{{ title }}}</h2>
+	<hr />
+
+	<div class="aside__set">
+
+		<ul class="aside__accordion accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+
+			{{#each items }}
+			<li class="aside__item accordion-item{{#if active}} is-active{{/if}}" data-accordion-item>
+
+				<a href="#accordion{{@key}}" class="aside__heading accordion-title">
+					<span class="aside__label">{{title}}</span>
+					{{render '@trigger' }}
+				</a>
+
+				<div class="aside__content accordion-content" data-tab-content id="accordion{{@key}}">
+				
+					<ul class="aside__list">
+						{{#each links}}<li class="aside__list-item">{{render '@menu--tertiary' this merge=true }}</li>{{/each}}
+					</ul>
+				</div>
+
+			</li>
+			{{/each}}
+
+		</ul>
+
+	</div>
+
+</section>

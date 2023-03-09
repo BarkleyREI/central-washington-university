@@ -1,0 +1,26 @@
+{
+	"title": "Rail Callout",
+	"label": "Callout",
+	"status": "ready",
+	"preview": "@rail",
+	"context": {
+		"title": "Rail Callout Headline",
+		"items": [
+			{
+				"copy": "Rail Call To Action"
+			},
+			{
+				"copy": "Rail Call To Action"
+			},
+			{
+				"copy": "Rail Call To Action"
+			},
+			{
+				"copy": "Rail Call To Action"
+			},
+			{
+				"copy": "Rail Call To Action"
+			}			
+		]
+	}
+}

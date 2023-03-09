@@ -1,0 +1,57 @@
+{
+	"title": "Rail Filters",
+	"label": "Filters",
+	"status": "ready",
+	"preview": "@rail",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"title": "Filter Headline",
+		"items": [
+			{
+				"checkboxes": true,
+				"title": "Type",
+				"legend": "type",
+				"items": [
+					{
+						"id": "type",
+						"name": "type",
+						"value": 1,
+						"label": "Lorem"
+					},
+					{
+						"id": "type",
+						"name": "type",
+						"value": 2,
+						"label": "Ipsum"
+					}
+				]
+			},
+			{
+				"radios": true,
+				"title": "Location",
+				"items": [
+					{
+						"id": "radio-btn",
+						"name": "radio",
+						"value": 1,
+						"label": "Lorem Radio"
+					},
+					{
+						"id": "radio-btn-2",
+						"name": "radio",
+						"value": 2,
+						"label": "Lorem Radio Two"
+					}
+				]				
+			}
+		],
+		"search": {
+			"label": "Keyword"
+		}
+	}
+}

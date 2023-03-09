@@ -1,0 +1,45 @@
+{
+	"title": "Rail Aside",
+	"label": "Aside",
+	"status": "ready",
+	"preview": "@rail",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"title": "Filter Headline",
+		"items": [
+			{
+				"title": "Category Headline 1",
+				"links": [
+					{
+						"copy": "Child Page Lorem Ipsum Dolor"
+					},
+					{
+						"copy": "Child Page Lorem Ipsum Dolor"
+					},
+					{
+						"copy": "Child Page Lorem Ipsum Dolor on Two Lines"
+					}
+				]
+			},
+			{
+				"title": "Category Headline 2",
+				"links": [
+					{
+						"copy": "Child Page Lorem Ipsum Dolor"
+					},
+					{
+						"copy": "Child Page Lorem Ipsum Dolor"
+					},
+					{
+						"copy": "Child Page Lorem Ipsum Dolor on Two Lines"
+					}
+				]				
+			}
+		]
+	}
+}

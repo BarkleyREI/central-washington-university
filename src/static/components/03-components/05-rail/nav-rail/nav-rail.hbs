@@ -1,0 +1,13 @@
+<nav id="rail-navigation" class="nav-rail component">
+
+	<h2 class="nav-rail__title font-h4">{{{ title }}}</h2>
+	
+	<hr />
+
+	<ul class="nav-rail__list">
+		{{#each items}}
+		<li class="nav-rail__item">{{render '@menu--tertiary' this merge=true }}</li>
+		{{/each}}
+	</ul>
+
+</nav>

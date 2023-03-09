@@ -1,0 +1,12 @@
+<section class="callout component">
+
+	<h2 class="callout__title font-h4">{{{ title }}}</h2>
+	<hr />
+	
+	<ul class="callout__list">
+		{{#each items}}
+		<li class="callout__item">{{render '@menu--tertiary' this merge=true }}</li>
+		{{/each}}
+	</ul>
+
+</section>
