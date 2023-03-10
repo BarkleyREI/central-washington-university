@@ -1,0 +1,128 @@
+{
+	"title": "Child Page Grid",
+	"status": "ready",
+	"default": "Standard Level",
+	"preview": "@high",
+	"context": {
+		"title": "Child Page Grid H2 Grid Max 35 Char Lorem",
+		"copy": "Structured copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"items": [
+			{
+				"image": {
+					"src": "https://via.placeholder.com/836x628",
+					"alt": "[news photo alt text]",
+					"width": 836,
+					"height": 628
+				},
+				"url": "#TBD",
+				"heading": "Child Page H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur",
+				"copy": "Structured content body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"url": "#TBD",
+					"modifiers": "btn--cta",
+					"copy": "Tertiary Button"					
+				}
+			},
+			{
+				"image": {
+					"src": "https://via.placeholder.com/836x628",
+					"alt": "[news photo alt text]",
+					"width": 836,
+					"height": 628
+				},
+				"url": "#TBD",				
+				"heading": "Child Page H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur",
+				"copy": "Structured content body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"url": "#TBD",
+					"modifiers": "btn--cta",
+					"copy": "Tertiary Button"					
+				}
+			},
+			{
+				"image": {
+					"src": "https://via.placeholder.com/836x628",
+					"alt": "[news photo alt text]",
+					"width": 836,
+					"height": 628
+				},
+				"url": "#TBD",
+				"heading": "Child Page H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur",
+				"copy": "Structured content body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"url": "#TBD",
+					"modifiers": "btn--cta",
+					"copy": "Tertiary Button"					
+				}
+			},
+			{
+				"image": {
+					"src": "https://via.placeholder.com/836x628",
+					"alt": "[news photo alt text]",
+					"width": 836,
+					"height": 628
+				},
+				"url": "#TBD",
+				"heading": "Child Page H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur",
+				"copy": "Structured content body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"url": "#TBD",
+					"modifiers": "btn--cta",
+					"copy": "Tertiary Button"					
+				}
+			},
+			{
+				"image": {
+					"src": "https://via.placeholder.com/836x628",
+					"alt": "[news photo alt text]",
+					"width": 836,
+					"height": 628
+				},
+				"url": "#TBD",
+				"heading": "Child Page H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur",
+				"copy": "Structured content body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"url": "#TBD",
+					"modifiers": "btn--cta",
+					"copy": "Tertiary Button"					
+				}
+			},
+			{
+				"image": {
+					"src": "https://via.placeholder.com/836x628",
+					"alt": "[news photo alt text]",
+					"width": 836,
+					"height": 628
+				},
+				"url": "#TBD",
+				"heading": "Child Page H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur",
+				"copy": "Structured content body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"url": "#TBD",
+					"modifiers": "btn--cta",
+					"copy": "Tertiary Button"					
+				}
+			},
+			{
+				"url": "#TBD",
+				"heading": "Child Page H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur",
+				"copy": "Structured content body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"url": "#TBD",
+					"modifiers": "btn--cta",
+					"copy": "Tertiary Button"					
+				}
+			},
+			{
+				"url": "#TBD",
+				"heading": "Child Page H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur",
+				"copy": "Structured content body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"url": "#TBD",
+					"modifiers": "btn--cta",
+					"copy": "Tertiary Button"					
+				}
+			}
+		]
+	}
+}

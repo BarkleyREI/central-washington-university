@@ -217,10 +217,10 @@ $card: '.card';
 #{$card}--faculty {
 	#{$card}__figure {
 		aspect-ratio: 1;
-		clip-path: polygon(0% 0%, 100% 0%, 100% 93.5%, 0% 100%);
+		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 24px), 0% 100%);
 
 		&:after {
-			clip-path: polygon(0% 100%, 100% 100%, 100% calc(93.5% - 6px), 0% calc(100% - 6px));
+			clip-path: polygon(0% 100%, 100% 100%, 100% calc(100% - 30px), 0% calc(100% - 6px));
 		}
 	}
 }
@@ -228,10 +228,10 @@ $card: '.card';
 #{$card}--news {
 	#{$card}__figure {
 		aspect-ratio: 1.333;
-		clip-path: polygon(0% 0%, 100% 0%, 100% 91.75%, 0% 100%);
+		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 24px), 0% 100%);
 
 		&:after {
-			clip-path: polygon(0% 100%, 100% 100%, 100% calc(91.75% - 6px), 0% calc(100% - 6px));
+			clip-path: polygon(0% 100%, 100% 100%, 100% calc(100% - 30px), 0% calc(100% - 6px));
 		}
 	}
 }

@@ -1,0 +1,43 @@
+<section class="cpg">
+
+	<div class="cpg__wrapper wrapper">
+
+		<h2 class="cpg__title font-h2">{{{ title }}}</h2>
+
+		<hr />
+
+		<p class="cpg__copy font-body">{{{ copy }}}</p>
+
+		<div class="cpg__list grid-x grid-margin-x">
+
+			{{#each items}}
+			<div class="cpg__item cell xsmall-12 medium-6 large-4">
+			
+				{{#with image}}
+				<figure class="cpg__figure">
+					<img src="{{ src }}" alt="{{ alt }}" class="cpg__image" width="{{ width }}" height="{{ height }}" />
+				</figure>
+				{{/with}}
+
+				<div class="cpg__content">
+
+					<h3 class="cpg__heading font-h4">{{{ heading }}}</h3>
+
+					<p class="cpg__description">{{{ copy }}}</p>
+
+					{{render '@button-fake' cta }}
+
+				</div>
+				
+				<a href="{{ cta.url }}" class="cpg__link"><span class="show-for-sr">{{{ cta.copy }}}</span></a>
+				
+			</div>
+		 	{{/each}}
+
+		</div>
+
+		{{render '@button--primary' }}
+
+	</div>
+
+</section>

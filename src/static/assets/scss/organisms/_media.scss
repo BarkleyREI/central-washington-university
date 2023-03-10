@@ -21,7 +21,7 @@
 	.gallery__items,
 	.video__poster {
 		aspect-ratio: 1.3333;
-		clip-path: polygon(0% 8.25%, 100% 0%, 100% 100%, 0% 100%);
+		clip-path: polygon(0% 24px, 100% 0%, 100% 100%, 0% 100%);
 	}
 
 	@include breakpoint(large up) {
@@ -50,7 +50,7 @@
 
 			.gallery,
 			.video__poster {
-				clip-path: polygon(6.5% 0%, 100% 0, 100% 100%, 0% 100%);
+				clip-path: polygon(48px 0%, 100% 0, 100% 100%, 0% 100%);
 			}
 
 			.gallery__items {
