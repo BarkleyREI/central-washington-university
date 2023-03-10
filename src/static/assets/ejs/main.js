@@ -5,6 +5,7 @@ import { plugin } from './lib/plugin';
 import { accordion } from './modules/accordion';
 import { form } from './modules/form';
 import { gallery } from './modules/gallery';
+import { takeover } from './modules/takeover';
 import { Tooltip } from './modules/tooltip';
 import { video } from './modules/video';
 
@@ -21,6 +22,7 @@ const main = {
 		accordion.init();
 		form.init();
 		gallery.init();
+		takeover.init();
 		video.init();
 
 		this.bindUIActions();		

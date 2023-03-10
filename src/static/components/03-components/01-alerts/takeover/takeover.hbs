@@ -1,0 +1,24 @@
+<div id="js-takeover" class="takeover" aria-modal="false" role="alertdialog">
+	
+	<div class="takeover__inner wrapper grid-x grid-margin">
+
+		<div class="takeover__content cell xsmall-12 large-10 large-offset-1">
+		
+			<span class="takeover__icon" aria-hidden="true">{{svg "warning"}}</span>
+		
+			<h1 class="takeover__title font-h2">{{{ title }}}</h1>
+
+			<div class="takeover__copy user-markup">{{{ copy }}}</div>
+		
+			{{render '@button--primary' button merge=true}}
+			
+		</div>
+
+	</div>
+	
+	{{render '@button--small' close-button merge=true }}	
+
+</div>
+<script>
+	let takeoverModTime = 1641489635871;
+</script>

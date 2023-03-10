@@ -169,7 +169,9 @@ $button: '.button';
 		.text {
 			flex-grow: 1;
 			flex-shrink: 1;
+			position: relative;
 			text-align: left;
+			top: 2px;
 			transform-origin: left center;
 		}
 

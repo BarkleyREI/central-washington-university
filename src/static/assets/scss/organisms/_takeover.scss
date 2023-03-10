@@ -1,0 +1,66 @@
+.takeover {
+	$this: &;
+	align-items: center;
+	background-color: $white;
+	border: 16px solid $guardsman;
+	bottom: 0;
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	padding: 80px 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	transition-duration: $transition-time;
+	transition-property: all;
+	width: 100%;
+	z-index: 200;
+
+	&__inner {
+		max-height: 100%;
+		overflow-y: auto;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	&__icon {
+		align-items: center;
+		background: $guardsman;
+		color: $white;
+		display: flex;
+		flex-flow: column;
+		font-size: 30px;
+		height: 56px;
+		justify-content: center;
+		width: 56px;
+	}
+
+	&__title,
+	&__copy {
+		margin: 32px 0;
+	}
+
+	&__close {
+		position: absolute;
+		right: 24px;
+		top: 24px;
+	}
+
+	&[aria-modal='false'] {
+		height: 0;
+		opacity: 0;
+		pointer-events: none;
+		visibility: hidden;
+	}
+
+	@include breakpoint(large) {
+		border-width: 32px;
+
+		&__close {
+			right: 32px;
+			top: 32px;
+		}
+	}
+}

@@ -1,0 +1,90 @@
+.emergency {
+	$this: &;
+	display: contents;
+
+	&__item {
+		display: contents;
+	}
+
+	&__heading {
+		@extend %trigger-interactions;
+		// stylelint-disable declaration-no-important
+		align-items: center;
+		border: 0 !important;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		padding: 16px;
+		// stylelint-enable declaration-no-important
+
+		&:link,
+		&:visited,
+		&:focus,
+		&:hover {
+			background-color: $guardsman;
+			color: $black;
+			text-decoration: none;
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+
+	&__icon {
+		align-items: center;
+		background: $black;
+		color: $white;
+		display: flex;
+		flex-flow: column;
+		flex-grow: 0;
+		flex-shrink: 0;
+		font-size: 22px;
+		height: 40px;
+		justify-content: center;
+		width: 40px;
+	}
+
+	&__label {
+		color: $white;
+		flex-grow: 1;
+		flex-shrink: 1;
+		line-height: 1.2;
+		margin: 0;
+		padding: 0 16px;
+	}
+
+	.trigger {
+		--gap: #{$guardsman};
+		font-size: 16px;
+		height: 38px;
+		width: 38px;
+	}
+
+	&__content {
+		// stylelint-disable declaration-no-important
+		background: $guardsman;
+		border: 0 !important;
+		padding: 0 16px 16px;
+		// stylelint-enable declaration-no-important
+
+		.user-markup {
+			background: $white;
+			padding: 16px 24px;
+		}
+	}
+
+	@include breakpoint(large) {
+		&__heading {
+			padding: 16px;
+		}
+
+		&__content {
+			padding: 0 16px 16px;
+
+			.user-markup {
+				padding: 52px 64px;
+			}
+		}
+	}
+}

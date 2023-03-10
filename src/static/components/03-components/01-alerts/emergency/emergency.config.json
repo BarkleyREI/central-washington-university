@@ -1,0 +1,24 @@
+{
+	"title": "Emergency Alert",
+	"status": "ready",
+	"preview": "@high",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"alert": {
+			"items": [
+				{
+					"title": "Emergency Alert H5 Headline Lorem Ipsum Dolor",
+					"copy": "<h2 class=\"font-h3\">H3 Headline Lorem Ipsum Dolor Sit Amet</h3><p>WYSIWYG body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <a href='#'>eiusmod tempor</a> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+					"more": {
+						"copy": "Primary Button"
+					}
+				}
+			]
+		}
+	}
+}

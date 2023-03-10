@@ -1,0 +1,27 @@
+<div class="emergency accordion"  data-accordion{{#if deep}} data-deep-link="true"{{/if}} data-multi-expand="true" data-allow-all-closed="true">
+
+	{{#with alert}}
+	{{#each items}}
+	<div class="emergency__item accordion-item{{#if active}} is-active{{/if}}" data-accordion-item>
+
+		<a href="#emergency" class="emergency__heading accordion-title">
+			<span class="emergency__icon" aria-hidden="true">{{svg "warning"}}</span>
+			<span class="emergency__label font-h5">{{title}}</span>
+			{{render '@trigger' }}
+		</a>
+
+		<div class="emergency__content accordion-content" data-tab-content id="emergency">
+			<div class="user-markup">
+				{{{ copy }}}
+				{{#if more}}{{render '@button--primary' cta merge=true }}{{/if}}
+			</div>
+		</div>
+
+	</div>
+	{{/each}}
+	{{/with}}
+
+</div>
+<script>
+	let emergencyModTime = 1641489635871;
+</script>

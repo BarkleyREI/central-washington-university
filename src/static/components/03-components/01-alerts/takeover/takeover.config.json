@@ -1,0 +1,27 @@
+{
+    "title": "Emergency Takeover",
+    "status": "ready",
+	"meta": {
+		"margin": "0",
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+    "context": {
+		"close-button": {
+			"id": "close",
+			"modifiers": "btn--small takeover__close",
+			"copy": "",
+			"icon": "minus",
+			"aria": {
+				"label": "Close alert dialog"
+			}			
+		},
+		"title": "Emergency Takeover H2 Headline Lorem Ipsum",
+		"copy": "<p>WYSIWYG body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>",
+		"button": {
+			"copy": "Primary Button"
+		}
+    }
+}
