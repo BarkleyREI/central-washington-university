@@ -5,7 +5,7 @@
 	"context": {
 		"image": {
 			"src": "https://via.placeholder.com/500",
-			"alt": "[faculty photo alt text]",
+			"alt": "[photo alt text]",
 			"width": 500,
 			"height": 500
 		},
