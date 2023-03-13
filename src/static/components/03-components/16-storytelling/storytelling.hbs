@@ -1,0 +1,35 @@
+<div class="storytelling {{ style }} component">
+	<div class="storytelling__wrapper">
+
+		{{#with image}}
+		<figure class="storytelling__image">
+	
+			<img src="{{ this.src }}" alt="{{ this.alt }}" width="{{ this.width }}" height="{{ this.height }}" />
+
+			{{#if caption}}<figcaption>{{{ caption }}}</figcaption>{{/if}}
+
+		</figure>
+		{{/with}}
+
+		<div class="storytelling__content">
+	
+			<blockquote class="storytelling__quote">
+		
+				<p class="storytelling__copy">{{{ quote }}}</p>
+
+				<cite class="storytelling__cite">
+					{{#each citation}}
+					<span>{{{ this }}}</span>
+					{{/each}}
+				</cite>
+
+			</blockquote>
+
+			{{render '@button--tertiary' cta merge="true" }}
+		
+		</div>
+
+	</div>
+
+</div>
+

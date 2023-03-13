@@ -1,9 +1,10 @@
 .emergency {
 	$this: &;
-	display: contents;
+	background-color: $guardsman;
+	padding: 16px 0;
 
-	&__item {
-		display: contents;
+	&__accordion {
+		background: transparent;
 	}
 
 	&__heading {
@@ -14,14 +15,14 @@
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
-		padding: 16px;
+		padding: 0;
 		// stylelint-enable declaration-no-important
 
 		&:link,
 		&:visited,
 		&:focus,
 		&:hover {
-			background-color: $guardsman;
+			background: transparent;
 			color: $black;
 			text-decoration: none;
 		}
@@ -63,9 +64,9 @@
 
 	&__content {
 		// stylelint-disable declaration-no-important
-		background: $guardsman;
+		background: transparent;
 		border: 0 !important;
-		padding: 0 16px 16px;
+		padding: 16px 0 0;
 		// stylelint-enable declaration-no-important
 
 		.user-markup {
@@ -75,15 +76,9 @@
 	}
 
 	@include breakpoint(large) {
-		&__heading {
-			padding: 16px;
-		}
-
 		&__content {
-			padding: 0 16px 16px;
-
 			.user-markup {
-				padding: 52px 64px;
+				padding: 52px 56px;
 			}
 		}
 	}

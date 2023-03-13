@@ -1,0 +1,40 @@
+{
+	"title": "Storytelling",
+	"status": "ready",
+	"preview": "@standard",
+	"default": "narrow",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"style": "storytelling--narrow",
+		"image": {
+			"src": "https://via.placeholder.com/836x627",
+			"alt": "[image alt text]",
+			"width": 836,
+			"height": 627
+		},
+		"quote": "Pull quote copy 200 characters orem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod <strong>tempor incid idunt ut labore et dolore</strong> magna aliqua. Nisi lacus sed viverra tellus in hac habitasse.",
+		"citation": [
+			"Firstname Lastname",
+			"Pronouns",
+			"Program"
+		],
+		"cta": {
+			"url": "#",
+			"copy": "Tertiary Button"
+		}
+	},
+	"variants": [
+		{
+			"name": "Wide",
+			"preview": "@high",
+			"context": {
+				"style": "storytelling--wide"
+			}
+		}
+	]	
+}

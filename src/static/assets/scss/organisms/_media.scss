@@ -18,6 +18,11 @@
 		--focus-border: #{$white};
 	}
 
+	.gallery,
+	.video {
+		@extend %small-edge;
+	}
+
 	.gallery__items,
 	.video__poster {
 		aspect-ratio: 1.3333;

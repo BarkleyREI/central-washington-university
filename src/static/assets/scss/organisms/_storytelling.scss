@@ -1,0 +1,213 @@
+.storytelling {
+	$this: &;
+	background-color: $brand-primary;
+	clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 24px), 0% 100%);
+	color: $white;
+	padding: 16px 0 90px;
+	position: relative;
+
+	&:after {
+		@extend %overlay;
+		background-image: url('/img/topo-map.jpg');
+		background-position: 50% 50%;
+		background-size: cover;
+		content: '';
+		mix-blend-mode: multiply;
+		opacity: 0.2;
+		z-index: 1;
+	}
+
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1920px;
+		padding: 0 16px;
+	}
+
+	&__image {
+		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 22px), 0% 100%);
+		position: relative;
+		z-index: 2;
+
+		img {
+			aspect-ratio: 1.3333;
+			object-fit: cover;
+			object-position: 50% 50%;
+			width: 100%;
+		}
+	}
+
+	&__content {
+		padding: 0 8px;
+		position: relative;
+		z-index: 3;
+	}
+
+	&__quote {
+		border: 0;
+		margin: 0;
+		padding: 90px 0 0;
+		position: relative;
+
+		&:before {
+			aspect-ratio: 1;
+			background-image: url('/img/quote.svg');
+			background-position: top left;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: '';
+			display: block;
+			height: 100px;
+			left: -8px;
+			position: absolute;
+			top: -50px;
+			width: 100px;
+		}
+	}
+
+	&__copy {
+		@extend %font-quote;
+		color: $white;
+		position: relative;
+		z-index: 4;
+
+		&:before {
+			background-color: $crimson;
+			content: '';
+			display: block;
+			height: 55px;
+			left: 41px;
+			position: absolute;
+			top: -55px;
+			width: 2px;
+			z-index: -1;
+		}
+	}
+
+	&__cite {
+		color: $white;
+		font-size: 16px;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 1.5;
+		margin-top: 32px;
+
+		span {
+			&:first-child {
+				font-weight: 700;
+			}
+
+			+ span {
+				&:before {
+					content: ' | ';
+				}
+			}
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.btn--cta {
+		--text: #{$white};
+		margin-top: 32px;
+	}
+
+	&--narrow {
+		@extend %small-edge;
+		width: 100vw;
+	}
+
+	@include breakpoint(medium) {
+		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 36px), 0% 100%);
+		margin-left: 0;
+		padding: 0 0 96px;
+		width: 100%;
+
+		&__wrapper {
+			align-items: flex-start;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			padding: 0;
+		}
+
+		&__image {
+			clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 16px), 0% 100%);
+			width: 45%;
+		}
+
+		&__content {
+			padding: 60px 52px 0;
+			width: 55%;
+		}
+
+		&__quote {
+			padding: 0;
+
+			&:before {
+				left: -104px;
+				top: -20px;
+			}
+		}
+
+		&__copy {
+			&:before {
+				height: 2px;
+				left: -18px;
+				top: 30px;
+				width: 260px;
+			}
+		}
+	}
+
+	@include breakpoint(medium only) {
+		&--narrow {
+			margin-left: -16px;
+			width: 100vw;
+		}
+	}
+
+	@include breakpoint(large) {
+		&--wide {
+			clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 48px), 0% 100%);
+			padding: 80px 0;
+
+			#{$this}__wrapper {
+				padding: 0 5%;
+			}
+
+			#{$this}__image {
+				clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 18px), 0% 100%);
+			}
+
+			#{$this}__content {
+				padding: 56px 0 0 80px;
+			}
+
+			#{$this}__quote {
+				&:before {
+					left: -130px;
+				}
+			}
+
+			#{$this}__copy {
+				&:before {
+					left: -44px;
+					right: 0;
+					width: auto;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(1920px) {
+		&--wide {
+			#{$this}__wrapper{
+				padding: 0;
+				width: $global-width;
+			}
+		}
+	}
+}

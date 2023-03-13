@@ -1,0 +1,73 @@
+<div class="featured {{ style }} component">
+	<div class="featured__wrapper wrapper">
+
+		{{#with gallery}}
+		<div class="featured__card featured__card--gallery">
+
+			<div class="featured__content">
+		
+				<h2 class="featured__heading font-h2">{{{ heading }}}</h2>
+
+				<div class="featured__description">
+
+					<p class="featured__copy font-body">{{{ copy }}}</p>
+
+					{{render '@button--tertiary' cta merge="true" }}
+
+				</div>
+
+			</div>
+
+			<div class="featured__items">
+				{{render '@gallery' gallery }}
+			</div>
+
+		</div>
+		{{/with}}
+
+		{{#with video}}
+		<div class="featured__card featured__card--video">
+
+			<div class="featured__content">
+		
+				<h2 class="featured__heading font-h2">{{{ heading }}}</h2>
+
+				<div class="featured__description">
+
+					<p class="featured__copy font-body">{{{ copy }}}</p>
+
+					{{render '@button--tertiary' cta merge="true" }}
+
+				</div>
+
+			</div>
+
+			<div class="featured__items">
+				{{render '@video' video }}
+			</div>
+
+		</div>
+		{{/with}}
+
+		{{#with textonly }}
+		<div class="featured__card featured__card--text">
+
+			<div class="featured__content">		
+
+				<h2 class="featured__heading font-h2">{{{ heading }}}</h2>
+
+				<div class="featured__description">
+
+					<p class="featured__copy font-body">{{{ copy }}}</p>
+
+					{{render '@button--tertiary' cta merge="true" }}
+
+				</div>
+
+			</div>
+
+		</div>
+		{{/with}}
+
+	</div>
+</div>

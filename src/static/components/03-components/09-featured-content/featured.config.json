@@ -1,0 +1,69 @@
+{
+	"title": "Featured Content",
+	"status": "ready",
+	"preview": "@standard",
+	"default": "Narrow",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"style": "featured--narrow",
+		"gallery": {
+			"gallery": {
+				"images": [
+					{
+						"src": "https://via.placeholder.com/836x627",
+						"alt": "[image alt text]",
+						"width": 836,
+						"height": 627
+					}
+				]
+			},
+			"heading": "Featured Content H2 Headline Ipsum Dolor Sit Amet Elid Sed To",
+			"copy": "Structured body copy 150 characters lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+			"cta": {
+				"copy": "Tertiary Button"
+			}
+		},
+		"video": {
+			"video": {
+				"poster": {
+					"src": "https://via.placeholder.com/1264x711",
+					"alt": "[image alt text]",
+					"width": 1264,
+					"height": 711
+				},
+				"play-button": {
+					"url": "https://www.youtube.com/watch?v=J5OSRpRyl6g",
+					"alt": "Play video",
+					"modifiers": "btn--xlarge play-button",
+					"icon": "play"
+				}
+			},
+			"heading": "Featured Content H2 Headline Ipsum Dolor Sit Amet Elid Sed To",
+			"copy": "Structured body copy 150 characters lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+			"cta": {
+				"copy": "Tertiary Button"
+			}
+		},
+		"textonly": {
+			"heading": "Featured Content H2 Headline Ipsum Dolor Sit Amet Elid Sed To",
+			"copy": "Structured body copy 150 characters lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+			"cta": {
+				"copy": "Tertiary Button"
+			}
+		}
+	},
+	"variants": [
+		{
+			"name": "Wide",
+			"preview": "@high",
+			"context": {
+				"style": "featured--wide"
+			}
+		}
+	]
+}

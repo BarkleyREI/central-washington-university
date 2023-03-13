@@ -9,7 +9,7 @@ const accordion = {
 	elem: {
 		$accordion: $('.accordion'),
 		$asides: $('.aside__accordion'),		
-		$emergency: $('.emergency'),
+		$emergency: $('.emergency__accordion'),
 		$filters: $('.filter__accordion'),
 		$navigation: $('.nav-primary__list')
 	},
