@@ -1,0 +1,155 @@
+.stats {
+	$this: &;
+
+	&__list {
+		align-items: flex-start;
+		display: flex;
+		flex-flow: column;
+		gap: 40px;
+		justify-content: flex-start;
+		margin-top: 40px;
+	}
+
+	&__info {
+		display: inline-block;
+		margin: 0;
+
+		span {
+			position: relative;
+		}
+	}
+
+	&__headline {
+		margin-top: 20px;
+	}
+
+	&__description {
+		color: $tundora;
+		font-size: 16px;
+		line-height: 1.5;
+		margin-top: 20px;
+	}
+
+	.btn--cta {
+		margin-top: 18px;
+	}
+
+	&__card--digits {
+		#{$this}__info {
+			background: $brand-primary;
+			clip-path: polygon(0% 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+			color: $white;
+			font-family: $inter;
+			font-size: 76.29px;
+			font-weight: 800;
+			line-height: 0.9;
+			padding: 0 36px 0 12px;
+
+			span {
+				top: 5px;
+			}
+		}
+	}
+
+	&__card--words {
+		#{$this}__info {
+			color: $brand-primary;
+			font-family: $inter;
+			font-size: 33.18px;
+			font-weight: 700;
+			line-height: 1;
+			margin-bottom: 0;
+			min-height: 68.86px;
+		}
+	}
+
+	&__card--standalone {
+		#{$this}__info {
+			color: $brand-primary;
+			font-family: $inter;
+			font-size: 76.29px;
+			font-weight: 800;
+			line-height: 0.9;
+			padding: 0;
+
+			span {
+				top: 5px;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		&__list {
+			flex-flow: row wrap;
+			gap: 0;
+		}
+
+		&__card {
+			padding-right: 12.5%;
+			width: 50%;
+		}
+	}
+
+	@include breakpoint(medium only) {
+		&__card {
+			&:nth-child(n+3) {
+				margin-top: 64px;
+			}
+		}
+	}
+
+
+	@include breakpoint(large) {
+		&__list {
+			margin-top: 56px;
+		}
+
+		&__card {
+			padding-right: 32px;
+		}
+
+		&--narrow {
+			#{$this}__card {
+				&:nth-child(n+3) {
+					margin-top: 64px;
+				}
+			}
+		}
+
+		&--wide {
+			#{$this}__card {
+				width: 33.3333%;
+
+				&:nth-child(n+4) {
+					margin-top: 64px;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(xlarge) {
+		&__card--digits,
+		&__card--standalone {
+			#{$this}__info {
+				font-size: 99.07px;
+
+				span {
+					top: 8px;
+				}
+			}
+		}
+
+		&__card--words {
+			#{$this}__info {
+				font-size: 39.91px;
+				min-height: 89.16px;
+			}
+		}
+	}
+
+	@include breakpoint(xxlarge) {
+		&__card {
+			padding-right: 12.5%;
+		}
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"title": "Stats",
+	"status": "ready",
+	"preview": "@standard",
+	"default": "Narrow",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"style": "stats--narrow",
+		"heading": "Stats H2 Headline Lorem Ipsum",
+		"copy": "Structured copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+		"items": [
+			{
+				"style": "stats__card--digits",
+				"infor": "0000",
+				"heading": "Stat Headline H4 45 Char Max Lorem",
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},
+			{
+				"style": "stats__card--words",
+				"infor": "Stats 25 Char Lorem Ipsum",
+				"heading": "Stat Headline H4 45 Char Max Lorem",
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},
+			{
+				"style": "stats__card--standalone",
+				"infor": "0000",
+				"heading": "Stat Headline H4 45 Char Max Lorem"
+			}			
+		]
+	},
+	"variants": [
+		{
+			"name": "Wide",
+			"preview": "@high",
+			"context": {
+				"style": "stats--wide",	
+				"items": [
+					{
+						"style": "stats__card--digits",
+						"infor": "0000",
+						"heading": "Stat Headline H4 45 Char Max Lorem",
+						"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+						"cta": {
+							"copy": "Tertiary Button"
+						}
+					},
+					{
+						"style": "stats__card--words",
+						"infor": "Stats 25 Char Lorem Ipsum",
+						"heading": "Stat Headline H4 45 Char Max Lorem",
+						"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+						"cta": {
+							"copy": "Tertiary Button"
+						}
+					},
+					{
+						"style": "stats__card--standalone",
+						"infor": "0000",
+						"heading": "Stat Headline H4 45 Char Max Lorem"
+					}					
+				]
+			}
+		}
+	]
+}

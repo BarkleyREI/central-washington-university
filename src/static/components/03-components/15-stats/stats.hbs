@@ -1,0 +1,27 @@
+<div class="stats {{ style }} component">
+
+	<h2 class="stats__heading font-h2">{{{ heading }}}</h2>
+
+	<hr />
+
+	<p class="stats__copy font-body">{{{ copy }}}</p>
+
+	<div class="stats__list">
+
+		{{#each items}}
+		<div class="stats__card {{ style }}">
+
+			<h3 class="stats__info"><span>{{{ infor }}}</span></h3>
+
+			<h4 class="stats__headline font-h4">{{{ heading }}}</h4>
+
+			{{#if copy }}<p class="stats__description">{{{ copy }}}</p>{{/if}}
+
+			{{#if cta }}{{render '@button--tertiary' cta merge="true" }}{{/if}}
+
+		</div>
+		{{/each}}
+
+	</div>
+
+</div>
