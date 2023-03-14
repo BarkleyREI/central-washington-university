@@ -1,0 +1,59 @@
+{
+	"title": "Masthead",
+	"status": "ready",
+	"preview": "@high",
+	"default": "Detail",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"style": "masthead--detail masthead--gallery",
+		"title": "Specialty Headline Lorem Ipsum",
+		"images": [
+			{
+				"src": "https://via.placeholder.com/1440x810/f00/fff",
+				"alt": "[image alt text]",
+				"width": 1440,
+				"height": 810
+			},
+			{
+				"src": "https://via.placeholder.com/1440x810/0f0/fff",
+				"alt": "[image alt text]",
+				"width": 1440,
+				"height": 810
+			},
+			{
+				"src": "https://via.placeholder.com/1440x810/00f/fff",
+				"alt": "[image alt text]",
+				"width": 1440,
+				"height": 810
+			}			
+		]
+	},
+	"variants": [
+		{
+			"name": "Landing",
+			"context": {
+				"style": "masthead--landing masthead--video",
+				"title": "Specialty Headline Lorem Ipsum",				
+				"images": "",
+				"video": {
+					"src": "/video/alb_tvn0212_1080p.mp4",
+					"poster": "https://via.placeholder.com/1264x711",
+					"alt": "[video alt text]"
+				}				
+			}
+		},
+		{
+			"name": "Aggregate",
+			"context": {
+				"style": "masthead--aggregate masthead--gallery",
+				"title": "Specialty Headline Lorem Ipsum",				
+				"intro": "Introduction lorem ipsum dolor sit amet, consectetur adipis elit sed do eiusmod tempor ut."
+			}
+		}
+	]
+}

@@ -1,0 +1,596 @@
+.masthead {
+	$this: &;
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+
+	&__gallery {
+		background: $black;
+		position: relative;
+		z-index: 5;
+	}
+
+	&__image,
+	&__video {
+		@extend %overlay;
+		object-fit: cover;
+		z-index: 2;
+	}
+
+	&__image {
+		display: none;
+
+		&--shown {
+			display: block;
+		}
+	}
+
+	&__btn {
+		/* stylelint-disable declaration-no-important */
+		--background: #{$black};
+		--border: #{$brand-secondary};
+		--gap: #{$white};
+		--text: #{$white};
+		bottom: 40px;
+		position: absolute;
+		right: 16px;
+		z-index: 15;
+
+		.brei-icon-play {
+			display: block !important;
+		}
+
+		.brei-icon-pause {
+			display: none !important;
+		}
+
+		&--is-playing {
+			.brei-icon-play {
+				display: none !important;
+			}
+
+			.brei-icon-pause {
+				display: block !important;
+			}
+		}
+		/* stylelint-enable declaration-no-important */
+	}
+
+	&__title {
+		position: relative;
+		z-index: 4;
+
+		h1 {
+			color: $white;
+		}
+
+		p {
+			color: $white;
+			margin-top: 20px;
+		}
+	}
+
+	&--aggregate {
+		align-items: flex-start;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		min-height: 56.25vw;
+
+		&:before {
+			@extend %overlay;
+			background-color: rgba($black, 0.7);
+			content: '';
+			display: block;
+			z-index: 3;
+		}
+
+		&:after {
+			background-color: $brand-primary;
+			bottom: 0;
+			content: '';
+			display: block;
+			left: 0;
+			position: absolute;
+			right: 0;
+			z-index: 10;
+		}
+
+		#{$this}__gallery {
+			display: contents;
+		}
+	}
+
+	&--detail {
+		#{$this}__title {
+			background: $black;
+		}
+	}
+
+	&--landing {
+		#{$this}__title {
+			background: $brand-primary;
+		}
+	}
+
+	@include breakpoint(medium down) {
+		&__gallery {
+			aspect-ratio: 1.7777;
+
+			&:after {
+				background-color: $brand-primary;
+				bottom: 0;
+				content: '';
+				display: block;
+				left: 0;
+				position: absolute;
+				right: 0;
+				z-index: 10;
+			}
+		}
+
+		&__title {
+			padding: 48px 24px 36px;
+		}
+	}
+
+	@include breakpoint(small down) {
+		&__gallery {
+			clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 24px), 0% 100%);
+
+			&:after {
+				clip-path: polygon(0% 24px, 100% 0%, 100% 100%, 0% 100%);
+				height: 30px;
+			}
+		}
+
+		&__title {
+			margin-top: -24px;
+		}
+
+		&--aggregate {
+			clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 24px), 0% 100%);
+
+			&:after {
+				clip-path: polygon(0% 24px, 100% 0%, 100% 100%, 0% 100%);
+				height: 30px;
+			}
+
+			#{$this}__title {
+				margin-top: 0;
+				padding: 40px 0 64px;
+			}
+		}
+	}
+
+	@include breakpoint(medium only) {
+		&__gallery {
+			clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 56px), 0% 100%);
+
+			&:after {
+				clip-path: polygon(0% 56px, 100% 0%, 100% 100%, 0% 100%);
+				height: 62px;
+			}
+		}
+
+		&__title {
+			margin-top: -56px;
+			padding-top: 80px;
+		}
+
+		&__btn {
+			bottom: 72px;
+		}
+
+		&--aggregate {
+			clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 56px), 0% 100%);
+
+			&:after {
+				clip-path: polygon(0% 56px, 100% 0%, 100% 100%, 0% 100%);
+				height: 62px;
+			}
+
+			#{$this}__title {
+				margin-top: 0;
+				padding-top: 40px;
+			}
+		}
+	}
+
+	@include breakpoint(large) {
+		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 88px), 0% 100%);
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+		min-height: 56.25vw;
+
+		&:after {
+			background-color: $brand-primary;
+			bottom: 0;
+			clip-path: polygon(0% 88px, 100% 0%, 100% 100%, 0% 100%);
+			content: '';
+			display: block;
+			height: 94px;
+			left: 0;
+			position: absolute;
+			right: 0;
+			z-index: 10;
+		}
+
+		&__gallery {
+			display: contents;
+		}
+
+		&__btn {
+			bottom: 104px;
+		}
+
+		&__title {
+			padding: 56px 36px 96px;
+		}
+
+		&--aggregate {
+			justify-content: center;
+		}
+
+		&--detail {
+			#{$this}__title {
+				background: rgba($black, 0.8);
+			}
+		}
+	}
+	/*
+
+.masthead {
+
+	&__upper {
+		overflow: hidden;
+		padding: 64px 0 72px;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__title {
+		margin: 0;
+		position: relative;
+		text-align: center;
+		z-index: 5;
+	}
+
+	hr,
+	&__subtitle {
+		position: relative;
+		z-index: 5;
+	}
+
+	&__info {
+		list-style-type: none;
+		margin: 20px 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	&__item {
+		@extend %font-overline;
+		padding: 8px;
+		text-align: center;
+	}
+
+	&__gallery {
+		margin-top: -26.5vw;
+		position: relative;
+		z-index: 10;
+
+		figcaption {
+			background: $black;
+			color: $white;
+			padding: 16px;
+			position: relative;
+			text-align: center;
+			z-index: 2;
+		}
+	}
+
+	&__image,
+	&__video {
+		aspect-ratio: 1.7777;
+		display: block;
+		margin: 0 auto;
+		object-fit: cover;
+		object-position: 50% 50%;
+		width: 100%;
+	}
+
+
+
+	&__btn {
+		bottom: 24px;
+		position: absolute;
+		right: 40px;
+		z-index: 15;
+
+		.brei-icon-play {
+			display: block !important;
+		}
+
+		.brei-icon-pause {
+			display: none !important;
+		}
+
+		&--is-playing {
+			.brei-icon-play {
+				display: none !important;
+			}
+
+			.brei-icon-pause {
+				display: block !important;
+			}
+		}
+	}
+
+	&__link {
+		display: block;
+		left: 32px;
+		position: absolute;
+		right: 32px;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&:link,
+		&:visited {
+			#{$this}__link-icon {
+				color: $brand-primary;
+
+				&:before {
+					background-color: $white;
+					border: 2px solid $black;
+				}
+			}
+		}
+
+		&:hover,
+		&:active {
+			#{$this}__link-icon {
+				color: $white;
+
+				&:before {
+					background-color: $brand-primary;
+					border: 0;
+					padding: 4px;
+				}
+
+				&:after {
+					padding: 5px;
+				}
+			}
+		}
+
+		&:focus-visible {
+			outline: 0;
+
+			#{$this}__link-icon {
+				color: $white;
+
+				&:before {
+					background-color: $brand-primary;
+					border: 0;
+				}
+
+				&:after {
+					border: 4px solid $white;
+					outline: 4px solid $black;
+				}
+			}
+		}
+	}
+
+	&__link-icon {
+		align-items: center;
+		display: block;
+		display: flex;
+		flex-flow: column;
+		height: 64px;
+		justify-content: center;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 64px;
+
+		.brei-icon-play {
+			height: 29.13px;
+			transform: translateX(15%);
+			width: 19.2px;
+		}
+
+		&:before,
+		&:after {
+			backface-visibility: hidden;
+			border-radius: 50%;
+			box-sizing: content-box;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 50%;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			transition: padding $transition-time ease;
+			width: 100%;
+		}
+
+		&:before {
+			z-index: -1;
+		}
+
+		&:after {
+			z-index: -2;
+		}
+	}
+
+	&__link-text {
+		background-color: rgba($black, 0.64);
+		color: $white;
+		display: block;
+		font-family: $source-sans;
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		line-height: 1;
+		margin-left: 32px;
+		padding: 16px 16px 16px 40px;
+		text-align: center;
+	}
+
+	&--gallery,
+	&--video {
+		#{$this}__upper {
+			padding-bottom: 32vw !important;
+		}
+
+		#{$this}__watermark {
+			top: 40px !important;
+			transform: translateX(-50%);
+		}
+
+		@include breakpoint(large) {
+			#{$this}__upper {
+				padding-bottom: 25vw !important;
+			}
+		}
+
+		@include breakpoint(xxxlarge) {
+			#{$this}__upper {
+				padding-bottom: 480px !important;
+			}
+		}
+	}
+
+
+	@include breakpoint(large) {
+		&__upper {
+			padding: 52px 0;
+		}
+
+		&__background {
+			display: block;
+			left: 0;
+			opacity: 0.32;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 100%;
+		}
+
+		&__info {
+			align-items: center;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+			margin: 36px 0 40px;
+		}
+
+		&__item {
+			padding: 4px 16px;
+
+			+ #{$this}__item {
+				border-left: 2px solid $white;
+			}
+		}
+
+		&__watermark {
+			.brei-icon-shield,
+			.brei-icon-shield-open {
+				height: 310px;
+				width: 267.78px;
+			}
+		}
+
+		&__audio {
+			padding: 0;
+			width: 73.3333%;
+
+			.btn--alt {
+				width: calc(50% - 2px);
+			}
+		}
+
+		&__gallery {
+			margin-top: -20vw;
+			padding: 0;
+			width: 73.3333%;
+
+			&:before {
+				background-color: $brand-secondary;
+				content: '';
+				display: block;
+				height: 100px;
+				left: 50%;
+				position: absolute;
+				top: -50px;
+				transform: translateX(-50%);
+				width: 2px;
+				z-index: 15;
+			}
+
+			figcaption {
+				background-color: rgba($black, 0.8);
+				bottom: 0;
+				left: 0;
+				position: absolute;
+				right: 0;
+			}
+		}
+
+		&__btn {
+			right: calc(12.5% + 26px);
+		}
+
+		&__link {
+			bottom: 24px;
+			left: calc(5% + 26px);
+			right: auto;
+			top: auto;
+			transform: none;
+		}
+
+		&__link-icon {
+			height: 80px;
+			width: 80px;
+
+			.brei-icon-play {
+				height: 36.34px;
+				transform: translateX(15%);
+				width: 24px;
+			}
+		}
+
+		&__link-text {
+			font-size: 23.04px;
+			margin-left: 40px;
+			padding: 16px 16px 16px 56px;
+		}
+	}
+
+	@include breakpoint(xxxlarge) {
+		&__gallery {
+			margin-top: -384px;
+			width: 1412px;
+		}
+
+		&__btn {
+			right: 170px;
+		}
+	}
+
+	@media (prefers-reduced-motion) {
+		.brei-icon-vbdd,
+		#{$this}__title,
+		#{$this}__gallery,
+		#{$this}__gallery:before {
+			transition: none;
+		}
+	}
+}
+
+   */
+}

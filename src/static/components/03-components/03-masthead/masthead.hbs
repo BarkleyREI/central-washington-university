@@ -1,0 +1,45 @@
+<section class="masthead {{ style }}">
+
+	{{#if images }}
+	<figure class="masthead__gallery">
+		{{#each images }}<img src="{{ src }}" alt="{{ alt }}" class="masthead__image" width="{{ width }}" height="{{ height }}" />{{/each}}
+		{{#if caption}}<figcaption class="font-caption">{{{ caption }}}</figcaption>{{/if}}
+	</figure>
+	{{/if}}
+
+	{{#with video }}
+	<figure class="masthead__gallery">
+		<button class="masthead__btn masthead__btn--is-playing btn btn--small" aria-label="Pause video" aria-pressed="false">
+			<span class="show-for-sr">Pause video</span>
+			<span class="btn__icon">
+				{{svg "play" }}
+				{{svg "pause" }}
+			</span>
+		</button>
+
+		<video autoplay loop muted playsinline preload="auto" class="masthead__video" poster="{{ poster }}">
+			<source src="{{ src }}" type="video/mp4" />
+		</video>
+
+		{{#with button}}
+		<a href="{{ url }}" class="masthead__link">
+			<span class="masthead__link-icon">{{svg 'play' }}</span>
+			<span class="masthead__link-text">{{{ copy }}}</span>
+		</a>
+		{{/with}}		
+	</figure>
+	{{/with}}
+
+	<div class="masthead__wrapper wrapper grid-x grid-margin-x">
+
+		<div class="masthead__title cell xsmall-12 large-7">
+
+			<h1 class="font-specialty-2">{{{ title }}}</h1>
+			
+			{{#if intro}}<p class="font-intro">{{{ intro }}}</p>{{/if}}
+			
+		</div>
+		
+	</div>
+	
+</section>
