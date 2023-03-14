@@ -1,0 +1,53 @@
+<footer id="global-footer" class="footer">
+
+	<div class="footer__main">
+		<div class="wrapper">
+
+		{{render '@nav-cta' }}
+
+		{{render '@logo' }}
+
+		<div class="grid-x grid-margin-x">
+
+			<div class="footer__info cell xsmall-12 large-6">
+
+				 <p class="footer__address">
+				 	<strong>{{{ title }}}</strong><br />
+					{{{ address }}}
+				</p>
+
+				{{#each tels}}
+				<p class="footer__contact">
+					<strong>{{{ label }}}:</strong>
+					<a href="{{ url }}">{{{ copy }}}</a>
+				</p>
+				{{/each}}
+					
+			</div>
+
+			<div class="footer__social cell xsmall-12 large-2">
+				{{render '@social' social }}
+			</div>
+
+			<div class="footer__nav cell xsmall-12 large-2">
+				{{render '@nav-footer--one' }}
+			</div>
+
+			<div class="footer__nav cell xsmall-12 large-2">
+				{{render '@nav-footer--two' }}
+			</div>
+
+		</div>
+
+		{{render '@nav-legal' }}
+
+		</div>
+	</div>
+
+	<div class="footer__copyright">
+		<div class="wrapper">
+			<p>{{{ copyright }}}</p>
+		</div>
+	</div>
+	
+</footer>

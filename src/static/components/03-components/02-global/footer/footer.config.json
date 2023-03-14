@@ -1,0 +1,46 @@
+{
+	"title": "Footer",
+	"status": "ready",
+	"preview": "@high",
+	"context": {
+		"title": "Central Washington University",
+		"address": "400 E. University Way, Ellensburg, WA 98926",
+		"tels": [
+			{
+				"label": "Campus Operator",
+				"url": "tel:5099631111",
+				"copy": "(509) 963-1111"
+			},
+			{
+				"label": "Public Affairs",
+				"url": "tel:5099631221",
+				"copy": "(509) 963-1221"
+			}
+		],
+		"social": {
+			"items": [
+				{
+					"url": "https://www.facebook.com/cwu.wildcats",
+					"icon": "facebook"
+				},
+				{
+					"url": "https://www.linkedin.com/school/central-washington-university/",
+					"icon": "linkedin"
+				},
+				{
+					"url": "https://www.instagram.com/central_washington_university/",
+					"icon": "instagram"
+				},
+				{
+					"url": "https://www.youtube.com/user/CentralWashU",
+					"icon": "youtube"
+				},
+				{
+					"url": "https://twitter.com/CentralWashU",
+					"icon": "twitter"
+				}
+			]
+		},
+		"copyright": "© 2023 Central Washington University"
+	}
+}

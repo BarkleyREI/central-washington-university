@@ -1,0 +1,32 @@
+{
+	"title": "Legal Navigation",
+	"context": {
+		"items": [
+			{
+				"modifiers": "menu--audience",
+				"url": "#",
+				"copy": "Policies & Procedures"
+			},
+			{
+				"modifiers": "menu--audience",
+				"url": "#",
+				"copy": "Privacy"
+			},
+			{
+				"modifiers": "menu--audience",
+				"url": "#",
+				"copy": "Accessibility"
+			},
+			{
+				"modifiers": "menu--audience",
+				"url": "#",
+				"copy": "Emergency Information"
+			},
+			{
+				"modifiers": "menu--audience",
+				"url": "#",
+				"copy": "AA/EEO/Title X/Veteran/Disability Employer"
+			}
+		]
+	}
+}

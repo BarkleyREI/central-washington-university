@@ -1,0 +1,19 @@
+{
+	"title": "CTA Navigation",
+	"context": {
+		"items": [
+			{
+				"url": "#",
+				"copy": "Apply Now"
+			},
+			{
+				"url": "#",
+				"copy": "Visit Us"
+			},
+			{
+				"url": "#",
+				"copy": "Request Info"
+			}
+		]
+	}
+}

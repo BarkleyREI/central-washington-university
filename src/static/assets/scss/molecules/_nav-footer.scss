@@ -1,0 +1,12 @@
+.nav-footer {
+	&__item {
+		padding: 6px 0;
+		text-align: center;
+	}
+
+	@include breakpoint(large) {
+		&__item {
+			text-align: left;
+		}
+	}
+}

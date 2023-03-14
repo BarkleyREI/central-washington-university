@@ -1,0 +1,23 @@
+.nav-legal {
+	border-top: 2px solid $tundora;
+	margin-top: 12px;
+	padding-top: 22px;
+
+	&__item {
+		padding: 6px 0;
+		text-align: center;
+	}
+
+	@include breakpoint(large) {
+		border-top: 0;
+		margin-top: 56px;
+		padding-top: 0;
+
+		&__list {
+			align-items: center;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+		}
+	}
+}

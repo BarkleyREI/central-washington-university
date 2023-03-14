@@ -1,0 +1,47 @@
+{
+	"title": "Footer Navigation",
+	"default": "One",
+	"context": {
+		"id": "one",
+		"items": [
+			{
+				"url": "#",
+				"copy": "CWU Events"
+			},
+			{
+				"url": "#",
+				"copy": "CWU News"
+			},
+			{
+				"url": "#",
+				"copy": "CWU Libraries"
+			},
+			{
+				"url": "#",
+				"copy": "Wildcat Shop"
+			}
+		]
+	},
+	"variants": [
+		{
+			"name": "Two",
+			"context": {
+				"id": "two",
+				"items": [
+					{
+						"url": "#",
+						"copy": "Careers"
+					},
+					{
+						"url": "#",
+						"copy": "Maps & Directions"
+					},
+					{
+						"url": "#",
+						"copy": "Sitemap"
+					}
+				]
+			}
+		}
+	]	
+}

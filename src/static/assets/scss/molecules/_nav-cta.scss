@@ -1,0 +1,98 @@
+.nav-cta {
+	margin-bottom: 56px;
+	position: relative;
+	transform: translateY(-24px);
+
+	&__item {
+		margin-bottom: 20px;
+
+		a {
+			background-image: linear-gradient(90deg, $brand-primary 50%, $black 50%);
+			background-size: 200% 100%;
+			clip-path: polygon(0% 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+			display: block;
+			font-family: $inter;
+			font-size: 30.264px;
+			font-weight: 800;
+			line-height: 1;
+			padding: 4px 24px;
+			text-transform: uppercase;
+			transition: background-position $transition-time ease;
+
+			span {
+				position: relative;
+				text-transform: uppercase;
+				top: 8px;
+			}
+
+			&:link,
+			&:visited {
+				background-position: right center;
+				color: $white;
+				text-decoration: none;
+			}
+
+			&:hover,
+			&:active,
+			&:focus-visible {
+				background-position: left center;
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+
+	@include breakpoint(small) {
+		transform: translateY(-30px);
+
+		&__item {
+			a {
+				font-size: 43.58px;
+
+				span {
+					top: 10px;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		&__list {
+			align-items: stretch;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+		}
+
+		&__item {
+			flex-grow: 1;
+
+			a {
+				clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+				padding: 4px 12px;
+				text-align: center;
+			}
+		}
+	}
+
+	@include breakpoint(large) {
+		margin-bottom: 66px;
+	}
+
+	@include breakpoint(xlarge) {
+
+		&__item {
+			flex-grow: 0;
+
+			a {
+				font-size: 57.33px;
+				line-height: 0.9;
+				padding: 2px 32px;
+
+				span {
+					top: 7px;
+				}
+			}
+		}
+	}
+}
