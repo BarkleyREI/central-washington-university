@@ -1,0 +1,71 @@
+{
+	"title": "Secondary Navigation",
+	"default": "Mobile",	
+	"context": {
+		"id": "mobile",
+		"wrapper": true,
+		"items": [
+			{
+				"modifiers": "menu--audience",
+				"url": "#",
+				"copy": "Resources for:",
+				"children": [
+					{ 
+						"url": "#",
+						"copy": "Prospective Students"
+					},
+					{
+						"url": "#",
+						"copy": "Current Students",
+						"children": [
+							{ 
+								"url": "#",
+								"copy": "MyCWU"
+							},
+							{
+								"url": "#",
+								"copy": "Email/Outlook"
+							}
+						]			
+					},
+					{
+						"url": "#",
+						"copy": "Parents & Families"
+					},
+					{
+						"url": "#",
+						"copy": "CWU Alumni"
+					},
+					{
+						"url": "#",
+						"copy": "Conference Services"
+					}
+				]
+			},
+			{
+				"modifiers": "menu--audience",
+				"url": "#",
+				"copy": "Apply"
+			},
+			{
+				"modifiers": "menu--audience",
+				"url": "#",
+				"copy": "Visit"
+			},
+			{
+				"modifiers": "menu--audience",
+				"url": "#",
+				"copy": "Give"
+			}
+		]
+	},
+	"variants": [
+		{
+			"name": "Desktop",
+			"context": {
+				"id": "desktop",
+				"wrapper": false
+			}
+		}
+	]
+}

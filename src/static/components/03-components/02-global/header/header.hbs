@@ -1,0 +1,31 @@
+<header id="global-header" class="header">
+
+	<div class="header__upper">
+		<div class="wrapper">
+
+			{{render '@logo' }} 
+
+			<button class="header__toggle" aria-controls="header__navigation" aria-pressed="false" aria-label="Open primary navigation">
+				<span class="show-for-sr">Open primary navigation</span>
+				{{svg 'menu' }}
+				{{svg 'close' }}
+			</button>
+
+			{{render '@nav-secondary--desktop' }}
+			{{render '@search-desktop' }}
+
+		</div>
+	</div>
+
+	<div id="header__navigation" class="header__lower">
+	
+		{{render '@search-mobile' }}
+
+		<div class="header__links">
+			{{render '@nav-primary' }}
+			{{render '@nav-secondary--mobile' }}
+		</div>
+		
+	</div>
+
+</header>

@@ -1,0 +1,138 @@
+.search-desktop {
+	$this: &;
+	margin-left: 16px;
+	position: relative;
+
+	&__toggle {
+		background: $white;
+		color: $black;
+		font-size: 24px;
+		height: 44px;
+		position: relative;
+		width: 44px;
+		z-index: 20;
+
+		.brei-icon {
+			left: 50%;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			transition: all $transition-time;
+		}
+
+		&[aria-pressed='false'] {
+			.brei-icon-close {
+				opacity: 0;
+			}
+
+			.brei-icon-search {
+				opacity: 1;
+			}
+		}
+
+		&[aria-pressed='true'] {
+			background: $black;
+			color: $white;
+
+			.brei-icon-close {
+				opacity: 1;
+			}
+
+			.brei-icon-search {
+				opacity: 0;
+			}
+
+			+ #{$this}__form {
+				border-color: $black;
+				max-width: calc(45vw - 16px);
+				padding: 0 48px 0 16px;
+
+				&:hover,
+				&:focus-within {
+					outline: 2px solid $black;
+				}
+
+				#{$this}__input[type="search"],
+				#{$this}__submit {
+					opacity: 1;
+					transition: background-size $transition-time, opacity $transition-time;
+					transition-delay: 0s, $transition-time;
+				}
+			}
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			.brei-icon {
+				transform: translate(-50%, -50%) scale(1.1);
+			}
+		}
+	}
+
+	&__form {
+		align-items: center;
+		background: $white;
+		border: 2px solid transparent;
+		bottom: -2px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		max-width: 0;
+		padding: 0;
+		position: absolute;
+		right: -2px;
+		top: -2px;
+		transition: max-width $transition-time, padding $transition-time;
+		z-index: 15;
+	}
+
+	&__input[type='search'] {
+		border: 0;
+		font-size: 16px;
+		letter-spacing: 2px;
+		line-height: 1;
+		opacity: 0;
+		outline: 0;
+		text-overflow: ellipsis;
+		width: 350px;
+
+		&::placeholder {
+			color: $black;
+			font-weight: 700;
+			opacity: 1;
+		}
+
+		&:focus {
+			&::placeholder {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	&__submit {
+		align-items: center;
+		background-image: linear-gradient(90deg, currentcolor 0%, currentcolor 100%);
+		background-position: bottom left;
+		background-repeat: no-repeat;
+		background-size: 0% 3px;
+		color: $black;
+		display: flex;
+		flex-flow: row nowrap;
+		font-size: 16px;
+		font-weight: 700;
+		justify-content: flex-end;
+		letter-spacing: 2px;
+		line-height: 1;
+		margin: 0 16px;
+		opacity: 0;
+		padding: 5px 0;
+		transition: background-size $transition-time ease;
+		white-space: nowrap;
+
+		&:hover,
+		&:active {
+			background-size: 100% 3px;
+		}
+	}
+}

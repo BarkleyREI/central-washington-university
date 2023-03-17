@@ -152,6 +152,7 @@ $form: '.form';
 			color: $white;
 			position: relative;
 			top: 1px;
+			transition: transform $transition-time ease;
 		}
 
 		&:hover,
@@ -161,6 +162,7 @@ $form: '.form';
 
 			svg {
 				color: currentcolor;
+				transform: scale(1.1);
 			}
 		}
 

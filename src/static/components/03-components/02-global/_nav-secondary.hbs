@@ -1,0 +1,44 @@
+<nav id="secondary-navigation-{{ id }}" class="nav-secondary">
+	{{#if wrapper}}<div class="wrapper">{{/if}}
+
+	<ul class="nav-secondary__list accordion" data-accordion data-multi-expand="false" data-allow-all-closed="true">
+		{{#each items}}
+		{{#if children}}
+		<li class="nav-secondary__item accordion-item" data-accordion-item>
+			<a href="#nav-secondary-{{ @key }}" class="nav-secondary__heading accordion-title">
+			   <span class="nav-secondary__label">{{copy}}</span>
+			   {{svg 'chevron' }}
+			</a>
+
+			<div class="nav-secondary__content accordion-content" data-tab-content id="nav-secondary-{{ @key }}">
+				 <ul class="nav-secondary__children">
+				 	{{#each children}}
+					<li class="nav-secondary__child">
+						{{#if children }}
+						<span>{{{ copy }}}</span>
+						<ul class="nav-secondary__grandchildren">
+							{{#each children }}
+							<li class="nav-secondary__grandchild">
+								<a href="{{ url }}">{{{ copy }}}</a>
+							</li>
+							{{/each}}
+						</ul>
+						{{else}}
+						<a href="{{ url }}">{{{ copy }}}</a>
+						{{/if}}
+					</li>
+				 	{{/each}}
+				</ul>
+			</div>
+		</li>
+		{{else}}
+		<li class="nav-secondary__item">
+			{{render '@menu--secondary' this }}
+		</li>
+		{{/if}}
+		{{/each}}
+	</ul>
+
+
+	{{#if wrapper}}</div>{{/if}}
+</nav>

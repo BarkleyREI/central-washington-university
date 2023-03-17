@@ -1,0 +1,150 @@
+.header {
+	$this: &;
+	position: relative;
+	z-index: 100;
+
+	&__upper {
+		background-color: $white;
+		border-bottom: 4px solid $black;
+		padding: 27px 0 26px;
+
+		.wrapper {
+			align-items: center;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+		}
+	}
+
+	.logo {
+		display: block;
+
+		svg {
+			display: block;
+			height: 40px;
+			width: 206px;
+		}
+	}
+
+	&__toggle {
+		--background: #{$brand-secondary};
+		--border: #{$black};
+		--gap: #{$white};
+		--text: #{$black};
+		@extend %primary-button-core;
+		display: inline-block;
+		flex-grow: 0;
+		flex-shrink: 0;
+		font-size: 20px;
+		height: 44px;
+		line-height: 1;
+		position: relative;
+		top: -2px;
+		width: 44px;
+		z-index: 1;
+
+		.brei-icon {
+			left: 50%;
+			line-height: 1;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%) scale(0.833);
+			transition: opacity $transition-time, transform $transition-time;
+		}
+
+		.brei-icon-close {
+			opacity: 0;
+		}
+
+		&[aria-pressed='true'] {
+			.brei-icon-close {
+				opacity: 1;
+			}
+
+			.brei-icon-menu {
+				opacity: 0;
+			}
+		}
+
+		&:before,
+		&:after {
+			border-radius: 50%;
+		}
+	}
+
+	&__lower {
+		border-bottom: 4px solid $black;
+	}
+
+	@include breakpoint(medium down) {
+		&__upper {
+			.nav-secondary,
+			.search-desktop {
+				display: none;
+			}
+		}
+
+		&__lower {
+			background: $white;
+			bottom: 100%;
+			display: block;
+			left: 0;
+			overflow: hidden;
+			position: fixed;
+			right: 0;
+			top: 97px;
+			transition-duration: $transition-time * 2;
+			transition-property: bottom;
+			visibility: hidden;
+			z-index: 999;
+		}
+
+		.body--no-scroll & {
+			&__upper {
+				left: 0;
+				position: fixed;
+				right: 0;
+				top: 0;
+			}
+
+			&__lower {
+				bottom: 0;
+				visibility: visible;
+			}
+
+			&__links {
+				height: calc(100vh - 185px);
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+		}
+	}
+
+	@include breakpoint(large) {
+		&__upper {
+			padding: 32px 0;
+		}
+
+		&__toggle {
+			display: none;
+		}
+
+		.logo {
+			margin-right: auto;
+
+			svg {
+				height: 50px;
+				width: 258px;
+			}
+		}
+
+		&__lower {
+			background-color: $black;
+
+			.search-mobile,
+			.nav-secondary {
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,235 @@
+{
+	"title": "Primary Navigation",
+	"context": {
+		"items": [
+			{
+				"modifiers": "menu--primary",
+				"url": "#",
+				"copy": "About CWU",
+				"children": [
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "History, Vision, & Values"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "University Leadership"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Campus Locations"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Offices"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Directory"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Local Community"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Media Resources"
+					}
+				]
+			},
+			{
+				"modifiers": "menu--primary",
+				"url": "#",
+				"copy": "Admissions & Aid",
+				"children": [
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Apply Now"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Visit Campus"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Campus Locations"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Tuition & Fees"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Financial Aid Scholarships"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Student Account Services"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Preview Day"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Admitted Students"
+					}
+				]
+			},
+			{
+				"modifiers": "menu--primary",
+				"url": "#",
+				"copy": "Academics",
+				"children": [
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Explore Programs"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Academic Colleges"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Specialized Programs"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Research"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Academic Resources"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Academic Calendar"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Library"
+					}
+				]
+			},
+			{
+				"modifiers": "menu--primary",
+				"url": "#",
+				"copy": "Student Life",
+				"children": [
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Campus Housing"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Diversity & Inclusion"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Campus Dining"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Student Union"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Student Government"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Student Clubs & Organizations"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Fitness & Recreation"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Student Health & Wellness Services"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Student Support"
+					},
+					{
+						"modifiers": "menu--secondary",
+						"icon": "chevron",
+						"url": "#",
+						"copy": "Student Employment & Volunteer Opportunities"
+					}
+				]
+			},
+			{
+				"modifiers": "menu--primary",
+				"url": "#",
+				"copy": "Athletics",
+				"children": ""
+			}
+		]
+	},
+	"variants": [	
+	]	
+}

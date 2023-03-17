@@ -5,7 +5,9 @@ import { plugin } from './lib/plugin';
 import { accordion } from './modules/accordion';
 import { form } from './modules/form';
 import { gallery } from './modules/gallery';
+import { header } from './modules/header';
 import { masthead } from './modules/masthead';
+import { search } from './modules/search';
 import { takeover } from './modules/takeover';
 import { Tooltip } from './modules/tooltip';
 import { video } from './modules/video';
@@ -23,7 +25,9 @@ const main = {
 		accordion.init();
 		form.init();
 		gallery.init();
+		header.init();
 		masthead.init();
+		search.init();		
 		takeover.init();
 		video.init();
 

@@ -1,0 +1,273 @@
+.nav-primary {
+	$this: &;
+
+	&__list {
+		background: transparent;
+	}
+
+	&__heading {
+		@extend %trigger-interactions;
+	}
+
+	&__item {
+		position: relative;
+	}
+
+	.menu {
+		display: block;
+		width: 100%;
+	}
+
+	&__content {
+		background: $white;
+		border: 2px solid $black;
+		margin-bottom: 16px;
+		padding: 0;
+	}
+
+	&__child {
+		border-top: 2px solid $black;
+		margin: 0;
+
+		> .menu {
+			text-align: center;
+		}
+
+		&:first-child {
+			border-top: 0;
+			padding: 18px 20px 17px;
+		}
+	}
+
+	.menu--primary {
+		display: block;
+		font-size: 16px;
+	}
+
+	.menu--secondary {
+		padding: 10px 8px;
+	}
+
+	@include breakpoint(medium down) {
+		background-color: $white;
+
+		&__list {
+			background: transparent;
+		}
+
+		&__item {
+			border-top: 3px solid $black;
+			padding: 18px 0;
+
+			&:first-child {
+				border-top: 0;
+			}
+
+			> .menu--primary {
+				padding: 0;
+
+				&:before {
+					left: 0;
+					right: 0;
+				}
+			}
+
+			&.accordion-item {
+				padding: 0;
+
+				#{$this}__heading {
+					padding: 24px 0;
+				}
+			}
+		}
+
+		&__heading {
+			// stylelint-disable declaration-no-important
+			align-items: center;
+			border: 0 !important;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			padding: 0;
+			// stylelint-enable declaration-no-important
+
+			&:link,
+			&:visited,
+			&:hover,
+			&:active,
+			&:focus {
+				background: transparent;
+				color: $black;
+				text-decoration: none;
+			}
+
+			&:before {
+				display: none;
+			}
+		}
+
+		&__label {
+			color: $black;
+			flex-grow: 1;
+			flex-shrink: 1;
+			font-family: $inter;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 1.2;
+			padding: 0 16px 0 0;
+			text-transform: uppercase;
+		}
+
+		.trigger {
+			font-size: 16px;
+			height: 38px;
+			width: 38px;
+		}
+	}
+
+	@include breakpoint(large) {
+		&__list {
+			align-items: center;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+		}
+
+		&__item {
+			padding: 19px 0 18px;
+
+			> .menu--primary {
+				color: $white;
+
+				&:hover,
+				&:active {
+					color: $black;
+				}
+			}
+		}
+
+		&__heading {
+			// stylelint-disable declaration-no-important
+			background: transparent !important;
+			border: 0 !important;
+			display: block;
+			font-family: $inter;
+			font-size: 16px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			line-height: 1.6;
+			padding: 0 20px;
+			position: relative;
+			text-transform: uppercase;
+			z-index: 1;
+
+			&:before,
+			&:after {
+				content: '' !important;
+				display: block;
+				margin: 0;
+				opacity: 0;
+				position: absolute;
+				z-index: -1;
+			}
+
+			&:before {
+				background-image: linear-gradient(90deg, $brand-secondary 50%, transparent 50%);
+				background-position: right center;
+				background-size: 205% 100%;
+				bottom: -17px;
+				left: -20px;
+				right: -20px;
+				top: -18px;
+				transition: background-position $transition-time ease;
+			}
+
+			&:link,
+			&:visited {
+				color: $white;
+			}
+
+			&:hover,
+			&:active {
+				color: $black;
+
+				#{$this}__label {
+					background-size: 100% 3px;
+				}
+
+				&:hover {
+					&:before {
+						background-position: left center;
+						opacity: 1;
+					}
+				}
+
+				&:after {
+					transition: right $transition-time ease;
+				}
+			}
+
+			&:focus-visible {
+				background: $brand-secondary;
+				color: $white;
+				outline: 0;
+
+				#{$this}__label {
+					background-size: 0% 3px;
+					color: $black;
+				}
+
+				&:before,
+				&:after {
+					background-color: $white !important;
+					background-image: none;
+					height: 4px !important;
+					left: 0 !important;
+					opacity: 1;
+					right: 0 !important;
+				}
+
+				&:before {
+					top: -8px;
+				}
+
+				&:after {
+					bottom: -8px !important;
+				}
+			}
+			// stylelint-enable declaration-no-important
+		}
+
+		&__label {
+			background-image: linear-gradient(90deg, currentcolor 0%, currentcolor 100%);
+			background-position: bottom left;
+			background-repeat: no-repeat;
+			background-size: 0% 3px;
+			line-height: 1.6;
+			padding: 5px 0 4px;
+			position: relative;
+			top: 1px;
+			transition: background-size $transition-time ease;
+		}
+
+		.trigger {
+			display: none;
+		}
+
+		&__content {
+			left: -20px;
+			min-width: 300px;
+			padding: 0;
+			position: absolute;
+			top: 100%;
+			// transform: translateX(-50%);
+		}
+	}
+
+	@include breakpoint(xxlarge) {
+		&__content {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

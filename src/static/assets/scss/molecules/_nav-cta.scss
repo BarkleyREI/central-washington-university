@@ -8,14 +8,14 @@
 
 		a {
 			background-image: linear-gradient(90deg, $brand-primary 50%, $black 50%);
-			background-size: 200% 100%;
+			background-size: 205% 100%;
 			clip-path: polygon(0% 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
 			display: block;
 			font-family: $inter;
 			font-size: 30.264px;
 			font-weight: 800;
 			line-height: 1;
-			padding: 4px 24px;
+			padding: 4px 16px;
 			text-transform: uppercase;
 			transition: background-position $transition-time ease;
 
@@ -80,7 +80,6 @@
 	}
 
 	@include breakpoint(xlarge) {
-
 		&__item {
 			flex-grow: 0;
 

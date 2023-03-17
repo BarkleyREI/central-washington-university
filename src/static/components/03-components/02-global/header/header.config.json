@@ -1,0 +1,13 @@
+{
+	"title": "Header",
+	"status": "ready",
+	"preview": "@high",
+	"meta": {
+		"height": "200vh",
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},	
+	"context": {}	
+}

@@ -1,0 +1,38 @@
+.search-mobile {
+	margin-top: 32px;
+	position: relative;
+	z-index: 1000;
+
+	.form__field--is-search {
+		margin-bottom: 24px;
+		position: relative;
+		z-index: 100;
+
+		input[type='search'] {
+			border-width: 2px;
+			font-size: 16px;
+			padding: 8px 60px 8px 16px;
+
+			&:hover,
+			&:focus-visible {
+				border-width: 2px;
+			}
+		}
+
+		.search-button {
+			bottom: 2px;
+			font-size: 20px;
+			right: 2px;
+			top: 2px;
+			width: 40px;
+		}
+	}
+
+	&:before {
+		@extend %overlay;
+		background-color: $black;
+		content: '';
+		height: 4px;
+		top: 20px;
+	}
+}

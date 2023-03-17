@@ -1,0 +1,34 @@
+<nav id="primary-navigation" class="nav-primary">
+	<div class="wrapper">
+
+	<ul class="nav-primary__list accordion" data-accordion data-multi-expand="false" data-allow-all-closed="true">
+		{{#each items}}
+		{{#if children}}
+		<li class="nav-primary__item accordion-item" data-accordion-item>
+			<a href="#nav-primary-{{ @key }}" class="nav-primary__heading accordion-title">
+			   <span class="nav-primary__label">{{copy}}</span>
+			   {{render '@trigger' }}
+			</a>
+
+			<div class="nav-primary__content accordion-content" data-tab-content id="nav-primary-{{ @key }}">
+				 <ul class="nav-primary__children">
+				 	<li class="nav-primary__child">
+						{{render '@menu--primary' this}}
+					</li>
+				 	{{#each children}}
+					<li class="nav-primary__child">
+						{{render '@menu--tertiary' this}}
+					</li>
+				 	{{/each}}
+				</ul>
+			</div>
+		</li>
+		{{else}}
+		<li class="nav-primary__item">
+			{{render '@menu--primary' this }}
+		</li>
+		{{/if}}
+		{{/each}}
+	</ul>
+
+</nav>
