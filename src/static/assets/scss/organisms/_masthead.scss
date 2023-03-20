@@ -75,7 +75,7 @@
 		display: flex;
 		flex-flow: column;
 		justify-content: center;
-		min-height: 56.25vw;
+		min-height: 42.85vw;
 
 		&:before {
 			@extend %overlay;
@@ -115,8 +115,6 @@
 
 	@include breakpoint(medium down) {
 		&__gallery {
-			aspect-ratio: 1.7777;
-
 			&:after {
 				background-color: $brand-primary;
 				bottom: 0;
@@ -131,6 +129,19 @@
 
 		&__title {
 			padding: 48px 24px 36px;
+		}
+
+		&--detail,
+		&--aggregate {
+			#{$this}__gallery {
+				aspect-ratio: 2.3333;
+			}
+		}
+
+		&--lainding {
+			#{$this}__gallery {
+				aspect-ratio: 1.7777;
+			}
 		}
 	}
 
@@ -202,7 +213,6 @@
 		display: flex;
 		flex-flow: column;
 		justify-content: flex-end;
-		min-height: 56.25vw;
 
 		&:after {
 			background-color: $brand-primary;
@@ -231,6 +241,7 @@
 
 		&--aggregate {
 			justify-content: center;
+			min-height: 42.85vw;
 
 			#{$this}__title {
 				padding: 56px 0 96px;
@@ -238,9 +249,15 @@
 		}
 
 		&--detail {
+			min-height: 42.85vw;
+
 			#{$this}__title {
 				background: rgba($black, 0.8);
 			}
+		}
+
+		&--landing {
+			min-height: 56.25vw;
 		}
 	}
 }

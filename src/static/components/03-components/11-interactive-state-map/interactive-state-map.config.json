@@ -1,0 +1,233 @@
+{
+	"title": "Interactive State Map",
+	"status": "ready",
+	"preview": "@high",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main",
+			"home"
+		]
+	},
+	"context": {
+		"title": "H2 Campus and Center Locations",
+		"map": {
+			"src": "/img/state-map.svg",
+			"alt": "a map of Washington State, showing CWU campus loations"
+		},
+		"id": "ism",
+		"deep": false,
+		"items": [
+			{
+				"title": "CWU Ellensburg",
+				"active": true,
+				"icon": "peak",
+				"position": {
+					"top": "50%",
+					"left": "50%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},
+			{
+				"title": "CWU Des Moines",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "50%",
+					"left": "50%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},
+			{
+				"title": "CWU Joint Base Lewis-McChord",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "50%",
+					"left": "50%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},
+			{
+				"title": "CWU Lynnwood",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "50%",
+					"left": "50%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},
+			{
+				"title": "CWU Moses Lake",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "50%",
+					"left": "50%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},
+			{
+				"title": "CWU Pierce County",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "50%",
+					"left": "50%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},
+			{
+				"title": "CWU Sammamish",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "50%",
+					"left": "50%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},
+			{
+				"title": "CWU Wenatchee",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "50%",
+					"left": "50%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},
+			{
+				"title": "CWU Yakima",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "50%",
+					"left": "50%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			}
+		],
+		"cta": {
+			"copy": "Primary Button"
+		}		
+	}
+}

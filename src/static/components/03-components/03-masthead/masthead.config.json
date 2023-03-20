@@ -14,22 +14,22 @@
 		"title": "Specialty Headline Lorem Ipsum",
 		"images": [
 			{
-				"src": "https://via.placeholder.com/1440x810/f00/fff",
+				"src": "https://via.placeholder.com/1920x823/f00/fff",
 				"alt": "[image alt text]",
-				"width": 1440,
-				"height": 810
+				"width": 1920,
+				"height": 823
 			},
 			{
-				"src": "https://via.placeholder.com/1440x810/0f0/fff",
+				"src": "https://via.placeholder.com/1920x823/0f0/fff",
 				"alt": "[image alt text]",
-				"width": 1440,
-				"height": 810
+				"width": 1920,
+				"height": 823
 			},
 			{
-				"src": "https://via.placeholder.com/1440x810/00f/fff",
+				"src": "https://via.placeholder.com/1920x823/00f/fff",
 				"alt": "[image alt text]",
-				"width": 1440,
-				"height": 810
+				"width": 1920,
+				"height": 823
 			}			
 		]
 	},
@@ -42,7 +42,7 @@
 				"images": "",
 				"video": {
 					"src": "/video/alb_tvn0212_1080p.mp4",
-					"poster": "https://via.placeholder.com/1264x711",
+					"poster": "https://via.placeholder.com/1920x1080",
 					"alt": "[video alt text]"
 				}				
 			}
