@@ -16,61 +16,15 @@
 			"alt": "a map of Washington State, showing CWU campus loations"
 		},
 		"id": "ism",
-		"deep": false,
+		"deep": true,
 		"items": [
 			{
 				"title": "CWU Ellensburg",
 				"active": true,
 				"icon": "peak",
 				"position": {
-					"top": "50%",
-					"left": "50%"
-				},
-				"contact": [
-					{
-						"url": "tel:0000000000",
-						"copy": "000-000-0000"
-					},
-					{
-						"url": "mailto:email@cwu.edu",
-						"copy": "email@cwu.edu"
-					}			
-				],
-				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-				"cta": {
-					"copy": "Tertiary Button"
-				}
-			},
-			{
-				"title": "CWU Des Moines",
-				"active": false,
-				"icon": "plus",
-				"position": {
-					"top": "50%",
-					"left": "50%"
-				},
-				"contact": [
-					{
-						"url": "tel:0000000000",
-						"copy": "000-000-0000"
-					},
-					{
-						"url": "mailto:email@cwu.edu",
-						"copy": "email@cwu.edu"
-					}			
-				],
-				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-				"cta": {
-					"copy": "Tertiary Button"
-				}
-			},
-			{
-				"title": "CWU Joint Base Lewis-McChord",
-				"active": false,
-				"icon": "plus",
-				"position": {
-					"top": "50%",
-					"left": "50%"
+					"top": "55.7%",
+					"left": "47.4%"
 				},
 				"contact": [
 					{
@@ -92,54 +46,8 @@
 				"active": false,
 				"icon": "plus",
 				"position": {
-					"top": "50%",
-					"left": "50%"
-				},
-				"contact": [
-					{
-						"url": "tel:0000000000",
-						"copy": "000-000-0000"
-					},
-					{
-						"url": "mailto:email@cwu.edu",
-						"copy": "email@cwu.edu"
-					}			
-				],
-				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-				"cta": {
-					"copy": "Tertiary Button"
-				}
-			},
-			{
-				"title": "CWU Moses Lake",
-				"active": false,
-				"icon": "plus",
-				"position": {
-					"top": "50%",
-					"left": "50%"
-				},
-				"contact": [
-					{
-						"url": "tel:0000000000",
-						"copy": "000-000-0000"
-					},
-					{
-						"url": "mailto:email@cwu.edu",
-						"copy": "email@cwu.edu"
-					}			
-				],
-				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-				"cta": {
-					"copy": "Tertiary Button"
-				}
-			},
-			{
-				"title": "CWU Pierce County",
-				"active": false,
-				"icon": "plus",
-				"position": {
-					"top": "50%",
-					"left": "50%"
+					"top": "32.4%",
+					"left": "26.0%"
 				},
 				"contact": [
 					{
@@ -161,8 +69,100 @@
 				"active": false,
 				"icon": "plus",
 				"position": {
-					"top": "50%",
-					"left": "50%"
+					"top": "38.6%",
+					"left": "27.0%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},			
+			{
+				"title": "CWU Des Moines",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "41.5%",
+					"left": "26.2%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},			
+			{
+				"title": "CWU Moses Lake",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "48.4%",
+					"left": "57.9%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},
+			{
+				"title": "CWU Pierce County",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "48.3%",
+					"left": "23.2%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},			
+			{
+				"title": "CWU Yakima",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "70.5%",
+					"left": "48.8%"
 				},
 				"contact": [
 					{
@@ -184,8 +184,8 @@
 				"active": false,
 				"icon": "plus",
 				"position": {
-					"top": "50%",
-					"left": "50%"
+					"top": "41.2%",
+					"left": "54.1%"
 				},
 				"contact": [
 					{
@@ -203,12 +203,12 @@
 				}
 			},
 			{
-				"title": "CWU Yakima",
+				"title": "CWU Joint Base Lewis-McChord",
 				"active": false,
 				"icon": "plus",
 				"position": {
-					"top": "50%",
-					"left": "50%"
+					"top": "50.3%",
+					"left": "22.0%"
 				},
 				"contact": [
 					{
@@ -224,7 +224,7 @@
 				"cta": {
 					"copy": "Tertiary Button"
 				}
-			}
+			}			
 		],
 		"cta": {
 			"copy": "Primary Button"

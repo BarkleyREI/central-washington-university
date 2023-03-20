@@ -42,6 +42,14 @@
 	&:after {
 		border-radius: 50%;
 	}
+
+	@include breakpoint(medium down) {
+		.is-active & {
+			.brei-icon-peak {
+				opacity: 1;
+			}
+		}
+	}
 }
 
 %trigger-interactions {

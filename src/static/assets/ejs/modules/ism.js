@@ -27,6 +27,7 @@ const ism = {
 	},
 
 	btnIcon(e) {
+		console.log('blorb');
 		this.elem.$icon.removeClass('is-active').find('.ism__location-link').attr('aria-expanded', false);
 		$(e.currentTarget).addClass('is-active').find('.ism__location-link').attr('aria-expanded', true);
 	}

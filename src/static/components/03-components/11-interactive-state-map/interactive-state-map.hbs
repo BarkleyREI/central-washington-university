@@ -16,7 +16,7 @@
 							{{svg icon}}
 							{{svg "minus"}}
 						</span>
-						<span class="ism__location-name">{{{ title }}}</span>
+						<span class="ism__location-name"><span>{{{ title }}}</span></span>
 					</a>
 				</li>
 				{{/each}}
@@ -26,7 +26,7 @@
 
 		<div class="ism__content">
 
-			<h2 class="" aria-hidden="true">{{{ title }}}</h2>
+			<h2 class="ism__title font-h2 show-for-large" aria-hidden="true">{{{ title }}}</h2>
 
 			<ul class="ism__accordion accordion" data-accordion{{#if deep}} data-deep-link="true"{{/if}} data-multi-expand="false" data-allow-all-closed="false">
 
@@ -44,7 +44,7 @@
 
 						<ul class="ism__contact-list">
 							{{#each contact}}
-							<li class="ism__contact-item__item">{{render '@menu--tertiary' this merge=true }}</li>
+							<li class="ism__contact-item">{{render '@menu--tertiary' this merge=true }}</li>
 							{{/each}}
 						</ul>
 
