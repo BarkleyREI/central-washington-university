@@ -1,4 +1,5 @@
 .ism {
+	$this: &;
 	background: $wild-sand;
 	padding: 36px 0 48px;
 
@@ -26,11 +27,18 @@
 
 	&__location-item {
 		position: absolute;
+		transform: translate(-9.6px, -9.6px);
 
 		&:first-child {
 			.trigger {
 				--border: #{$white};
+				height: 30.5px;
+				width: 30.5px;
 			}
+		}
+
+		&.is-active {
+			z-index: 10;
 		}
 	}
 
@@ -63,6 +71,10 @@
 		.brei-icon-minus,
 		.brei-icon-plus {
 			display: none;
+		}
+
+		.brei-icon-peak {
+			font-size: 38px;
 		}
 		// stylelint-enable declaration-no-important
 	}
@@ -159,5 +171,129 @@
 	&__copy {
 		color: $tundora;
 		margin: 0 0 16px;
+	}
+
+	@include breakpoint(large) {
+		padding: 96px 0 84px;
+
+		&__wrapper {
+			align-items: flex-start;
+			display: flex;
+			flex-flow: row-reverse nowrap;
+			justify-content: flex-start;
+		}
+
+		&__map {
+			left: 7.5vw;
+			position: relative;
+		}
+
+		&__image {
+			width: 60.9vw;
+		}
+
+		&__location-item {
+			height: 38px;
+			overflow: visible;
+			transform: translate(-19px, -19px);
+			width: 38px;
+
+			&:first-child {
+				height: 48px;
+				width: 48px;
+
+				.trigger {
+					height: 48px;
+					width: 48px;
+				}
+			}
+		}
+
+		&__location-link {
+			.trigger {
+				font-size: 16px;
+				height: 38px;
+				width: 38px;
+			}
+
+			.brei-icon-minus,
+			.brei-icon-plus {
+				display: block;
+			}
+
+			.brei-icon-peak {
+				font-size: 60px;
+			}
+		}
+
+		&__content {
+			flex-grow: 0;
+			flex-shrink: 0;
+			width: 37.5%;
+		}
+
+		&__accordion {
+			padding-right: 80px;
+		}
+
+		&__item {
+			border-bottom: 0;
+		}
+
+		&__heading {
+			display: none;
+		}
+
+		&__accordion-content {
+			background: $white;
+			clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 12px), 0% 100%);
+			padding: 36px 30px 48px;
+		}
+
+		&__label {
+			color: $brand-primary;
+			margin-bottom: 20px;
+		}
+
+		&__contact-list {
+			margin-bottom: 20px;
+		}
+
+		&__copy {
+			margin-bottom: 24px;
+		}
+	}
+
+	@include breakpoint(xlarge) {
+		&__location-item {
+			&.is-active {
+				#{$this}__location-name {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+
+		&__location-name {
+			display: block;
+			margin-left: 19.2px;
+			margin-top: -19.2px;
+			opacity: 0;
+			pointer-events: none;
+			position: absolute;
+			visibility: hidden;
+			white-space: nowrap;
+			width: auto;
+		}
+	}
+
+	@include breakpoint(xxxlarge) {
+		&__map {
+			left: 144px;
+		}
+
+		&__image {
+			width: 1170px;
+		}
 	}
 }
