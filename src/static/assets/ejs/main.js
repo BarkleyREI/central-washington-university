@@ -8,6 +8,7 @@ import { gallery } from './modules/gallery';
 import { header } from './modules/header';
 import { masthead } from './modules/masthead';
 import { search } from './modules/search';
+import { table } from './modules/table';
 import { takeover } from './modules/takeover';
 import { Tooltip } from './modules/tooltip';
 import { video } from './modules/video';
@@ -16,7 +17,7 @@ const main = {
 
 	elem: {
 		$textTooltip: $('.text-tooltip'),
-		$tooltip: $('.tooltip')				
+		$tooltip: $('.tooltip')	
 	},
 
 	init() {
@@ -27,11 +28,12 @@ const main = {
 		gallery.init();
 		header.init();
 		masthead.init();
-		search.init();		
+		search.init();
+		table.init();
 		takeover.init();
 		video.init();
 
-		this.bindUIActions();		
+		this.bindUIActions();
 	},
 
 	bindUIActions() {
@@ -43,7 +45,7 @@ const main = {
 				$(target).toggleClass('text-tooltip--is-active');
 			}
 		});
-	}	
+	}
 
 };
 

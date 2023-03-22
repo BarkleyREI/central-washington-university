@@ -1,4 +1,6 @@
 .table {
+	$this: &;
+	
 	&__table {
 		background: linear-gradient(90deg, rgba($white, 1) 30%, rgba($white, 0)) left center,
 			linear-gradient(90deg, rgba($white, 0), rgba($white, 1) 70%) right center,
@@ -8,7 +10,7 @@
 		background-repeat: no-repeat;
 		background-size: 100px 100%, 100px 100%, 50px 100%, 50px 100%;
 		margin-top: 32px;
-		overflow-x: scroll;
+		// overflow-x: scroll;
 	}
 
 	table {
@@ -50,4 +52,10 @@
 		color: $white;
 		padding: 30px 16px;
 	}
+
+	&--overscroll {
+		#{$this}__table {
+			overflow-x: scroll;
+		}
+	}	
 }

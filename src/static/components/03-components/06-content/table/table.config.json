@@ -1,7 +1,13 @@
 {
 	"title": "Tables",
 	"status": "ready",
-	"preview": "@standard",	
+	"preview": "@standard",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},	
 	"context": {
 		"title": "Non-WYSIWYG table H2 headline lorem ipsum",
 		"copy": "Structured body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
