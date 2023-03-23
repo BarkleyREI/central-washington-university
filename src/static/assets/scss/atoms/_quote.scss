@@ -10,7 +10,7 @@
 		color: $black;
 		position: relative;
 		z-index: 2;
-		
+
 		&:before {
 			background-color: $crimson;
 			content: '';
@@ -46,7 +46,7 @@
 		z-index: 1;
 	}
 
-		
+
 
 	@include breakpoint(medium down) {
 		margin: 28px 0;
@@ -61,7 +61,7 @@
 				width: 2px;
 			}
 		}
-		
+
 		&:before {
 			width: 76px;
 		}
@@ -77,12 +77,12 @@
 			&:before {
 				height: 2px;
 				left: -30px;
-				top: 30px;
 				right: 0;
+				top: 30px;
 				width: auto;
 			}
 		}
-		
+
 		&:before {
 			transform: translateY(-15%);
 			width: 92px;
