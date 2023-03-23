@@ -5,9 +5,19 @@
 	position: relative;
 
 	p,
-	&__quote {
+	&__copy {
 		@extend %font-quote;
 		color: $black;
+		position: relative;
+		z-index: 2;
+		
+		&:before {
+			background-color: $crimson;
+			content: '';
+			display: block;
+			position: absolute;
+			z-index: -1;
+		}
 	}
 
 	cite,
@@ -33,12 +43,25 @@
 		left: 0;
 		position: absolute;
 		top: 0;
+		z-index: 1;
 	}
+
+		
 
 	@include breakpoint(medium down) {
 		margin: 28px 0;
 		padding: 92px 0 0;
 
+		p,
+		&__copy {
+			&:before {
+				height: 32px;
+				left: 38px;
+				top: -28px;
+				width: 2px;
+			}
+		}
+		
 		&:before {
 			width: 76px;
 		}
@@ -46,12 +69,23 @@
 
 	@include breakpoint(large) {
 		margin: 36px 0;
-		padding-left: calc(12.5% + 16px);
+		padding-left: 108px;
 		padding-right: 12.5%;
 
+		p,
+		&__copy {
+			&:before {
+				height: 2px;
+				left: -30px;
+				top: 30px;
+				right: 0;
+				width: auto;
+			}
+		}
+		
 		&:before {
-			transform: translateY(-12.5%);
-			width: 12.5%;
+			transform: translateY(-15%);
+			width: 92px;
 		}
 	}
 }
