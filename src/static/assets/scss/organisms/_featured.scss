@@ -2,6 +2,8 @@
 	$this: &;
 
 	&__card {
+		--inset-edge: 0;
+		@extend %inset-bottom-edge;
 		position: relative;
 
 		+ #{$this}__card {
@@ -16,9 +18,9 @@
 	}
 
 	&__content {
+		@extend %inset-bottom-edge;
 		@extend %small-edge;
 		background: $brand-primary;
-		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 24px), 0% 100%);
 		color: $white;
 		padding: 48px 16px 96px;
 		position: relative;
@@ -76,6 +78,7 @@
 
 		&--wide {
 			#{$this}__card {
+				--inset-edge: 48px;
 				align-items: center;
 				background: $brand-primary;
 				clip-path: polygon(0% 48px, 100% 0%, 100% calc(100% - 48px), 0% 100%);

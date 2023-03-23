@@ -1,7 +1,7 @@
 .storytelling {
 	$this: &;
+	@extend %inset-bottom-edge;
 	background-color: $brand-primary;
-	clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 24px), 0% 100%);
 	color: $white;
 	padding: 16px 0 90px;
 	position: relative;
@@ -24,7 +24,8 @@
 	}
 
 	&__image {
-		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 22px), 0% 100%);
+		--inset-edge: 22px;
+		@extend %inset-bottom-edge;
 		position: relative;
 		z-index: 2;
 
@@ -120,7 +121,7 @@
 	}
 
 	@include breakpoint(medium) {
-		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 36px), 0% 100%);
+		--inset-edge: 36px;
 		margin-left: 0;
 		padding: 0 0 96px;
 		width: 100%;
@@ -134,7 +135,7 @@
 		}
 
 		&__image {
-			clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 16px), 0% 100%);
+			--inset-edge: 16px;
 			width: 45%;
 		}
 
@@ -171,7 +172,7 @@
 
 	@include breakpoint(large) {
 		&--wide {
-			clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 48px), 0% 100%);
+			--inset-edge: 48px;
 			padding: 80px 0;
 
 			#{$this}__wrapper {
@@ -179,7 +180,7 @@
 			}
 
 			#{$this}__image {
-				clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 18px), 0% 100%);
+				--inset-edge: 18px;
 			}
 
 			#{$this}__content {

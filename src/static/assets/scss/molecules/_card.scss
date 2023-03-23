@@ -23,8 +23,10 @@ $card: '.card';
 	}
 
 	&__figure {
+		background: transparent;
 		overflow: hidden;
 		position: relative;
+		z-index: 3;
 	}
 
 	&__image {
@@ -36,7 +38,11 @@ $card: '.card';
 	}
 
 	&__content {
+		background-color: $wild-sand;
 		padding: 48px 24px 64px;
+		position: relative;
+		transition: background-color $transition-time ease;
+		z-index: 2;
 	}
 
 	&__type {
@@ -126,12 +132,17 @@ $card: '.card';
 		}
 	}
 
-	&:hover {
+	&:hover,
+	&:focus-within {
 		background-color: $brand-primary;
 		color: $white;
 
 		#{$card}__image {
 			transform: scale(1.1);
+		}
+
+		#{$card}__content {
+			background-color: $brand-primary;
 		}
 
 		#{$card}__info {
@@ -143,40 +154,10 @@ $card: '.card';
 		}
 	}
 
-	&:focus-within {
-		background-color: $brand-primary;
-		color: $white;
-
-		#{$card}__image {
-			transform: scale(1.1);
-		}
-
-		#{$card}__info {
-			opacity: 1;
-		}
-
-		.btn--cta {
-			--text: #{$black};
-		}
-	}
-
 	&--event,
 	&--news,
 	&--program {
 		@extend %fake-cta-actions;
-	}
-
-	&--faculty,
-	&--news {
-		#{$card}__figure {
-			&:after {
-				@extend %overlay;
-				background-color: $brand-primary;
-				content: '';
-				display: block;
-				z-index: 2;
-			}
-		}
 	}
 
 	@include breakpoint(large) {
@@ -209,30 +190,46 @@ $card: '.card';
 
 	@include breakpoint(large) {
 		#{$card}__content {
-			padding: 36px 32px 56px;
+			padding: 30px 32px 56px;
 		}
 	}
 }
 
 #{$card}--faculty {
 	#{$card}__figure {
+		@extend %inset-bottom-edge;
+		@extend %inset-bottom-border;
 		aspect-ratio: 1;
-		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 24px), 0% 100%);
+	}
 
-		&:after {
-			clip-path: polygon(0% 100%, 100% 100%, 100% calc(100% - 30px), 0% calc(100% - 6px));
-		}
+	#{$card}__content {
+		@extend %inset-top-edge;
+		margin-top: -24px;
+		padding-top: 72px;
+		z-index: 3;
+	}
+
+	#{$card}__image {
+		@extend %inset-bottom-image;
 	}
 }
 
 #{$card}--news {
 	#{$card}__figure {
+		@extend %inset-bottom-edge;
+		@extend %inset-bottom-border;
 		aspect-ratio: 1.333;
-		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 24px), 0% 100%);
+	}
 
-		&:after {
-			clip-path: polygon(0% 100%, 100% 100%, 100% calc(100% - 30px), 0% calc(100% - 6px));
-		}
+	#{$card}__content {
+		@extend %inset-top-edge;
+		margin-top: -24px;
+		padding-top: 72px;
+		z-index: 3;
+	}
+
+	#{$card}__image {
+		@extend %inset-bottom-image;
 	}
 }
 

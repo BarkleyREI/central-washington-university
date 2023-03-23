@@ -8,25 +8,17 @@
 	}
 
 	&__item {
+		--inset-color: #{$white};
 		@extend %fake-cta-actions;
+		@extend %inset-bottom-edge;
+		@extend %inset-bottom-border;
 		background: $white;
-		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 24px), 0 100%);
 		margin-bottom: 16px;
 		position: relative;
 		transition: background $transition-time ease, color $transition-time ease;
 
-		&:after {
-			@extend %overlay;
-			background-color: $black;
-			clip-path: polygon(0% 100%, 100% 100%, 100% calc(100% - 30px), 0% calc(100% - 6px));
-			content: '';
-			opacity: 0;
-			position: absolute;
-			transition: opacity $transition-time ease;
-			z-index: 1;
-		}
-
 		&:hover {
+			--inset-color: #{$black};
 			background-color: $brand-primary;
 			color: $white;
 
@@ -41,13 +33,10 @@
 			.btn--cta {
 				--text: #{$white};
 			}
-
-			&:after {
-				opacity: 1;
-			}
 		}
 
 		&:focus-within {
+			--inset-color: #{$black};
 			background-color: $brand-primary;
 			color: $white;
 
@@ -61,10 +50,6 @@
 
 			.btn--cta {
 				--text: #{$black};
-			}
-
-			&:after {
-				opacity: 0;
 			}
 		}
 	}

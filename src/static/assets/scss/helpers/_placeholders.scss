@@ -36,6 +36,42 @@
 	width: 100%;
 }
 
+// Angled bottom, and angled bottom with border (do not use second separately)
+
+%inset-bottom-edge {
+	--inset-edge: 24px;
+	clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - var(--inset-edge)), 0% 100%);
+}
+
+%inset-bottom-image {
+	clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - var(--inset-edge) - 2px), 0% calc(100% - 2px));
+}
+
+%inset-bottom-border {
+	--inset-color: #{$brand-primary};
+
+	&:after {
+		background-color: var(--inset-color);
+		bottom: -1px;
+		clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% calc(100% - 6px));
+		content: '';
+		display: block;
+		height: calc(var(--inset-edge) + 7px);
+		left: 0;
+		position: absolute;
+		right: 0;
+		transition: background-color $transition-time ease;
+		z-index: 10;
+	}
+}
+
+// Angled top
+
+%inset-top-edge {
+	--inset-edge: 24px;
+	clip-path: polygon(0% var(--inset-edge), 100% 0%, 100% 100%, 0% 100%);
+}
+
 // Edge-to-edge overlay at small screens
 %small-edge {
 	@include breakpoint(medium down) {

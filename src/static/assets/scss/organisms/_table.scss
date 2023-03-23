@@ -1,6 +1,6 @@
 .table {
 	$this: &;
-	
+
 	&__table {
 		background: linear-gradient(90deg, rgba($white, 1) 30%, rgba($white, 0)) left center,
 			linear-gradient(90deg, rgba($white, 0), rgba($white, 1) 70%) right center,
@@ -57,5 +57,5 @@
 		#{$this}__table {
 			overflow-x: scroll;
 		}
-	}	
+	}
 }
