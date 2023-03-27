@@ -7,17 +7,20 @@
 		"title": "Section Headline",
 		"items": [
 			{
-				"copy": "Child Page Lorem Ipsum Dolor"
+				"copy": "Child Page Lorem Ipsum",
+				"icon": "arrow"
 			},
 			{
-				"copy": "Child Page Lorem Ipsum Dolor"
+				"copy": "Child Page Lorem Ipsum",
+				"icon": "arrow"
 			},
 			{
 				"disabled": true,
-				"copy": "Current Page Lorem Ipsum Dolor"
+				"copy": "Current Page Lorem Ipsum"
 			},
 			{
-				"copy": "Child Page Lorem Ipsum Dolor on Two Lines"
+				"copy": "Child Page Lorem Ipsum on Two Lines",
+				"icon": "arrow"
 			}
 		]
 	}

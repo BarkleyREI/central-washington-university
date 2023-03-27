@@ -7,19 +7,24 @@
 		"title": "Rail Callout Headline",
 		"items": [
 			{
-				"copy": "Rail Call To Action"
+				"copy": "Rail Call To Action",
+				"icon": "arrow"
 			},
 			{
-				"copy": "Rail Call To Action"
+				"copy": "Rail Call To Action",
+				"icon": "arrow"
 			},
 			{
-				"copy": "Rail Call To Action"
+				"copy": "Rail Call To Action",
+				"icon": "arrow"
 			},
 			{
-				"copy": "Rail Call To Action"
+				"copy": "Rail Call To Action",
+				"icon": "arrow"
 			},
 			{
-				"copy": "Rail Call To Action"
+				"copy": "Rail Call To Action",
+				"icon": "arrow"
 			}			
 		]
 	}

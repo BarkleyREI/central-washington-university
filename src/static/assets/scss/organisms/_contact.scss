@@ -1,0 +1,78 @@
+.contact {
+	$this: &;
+
+	&__wrapper {
+		background-color: $brand-primary;
+		color: $white;
+		padding: 32px 0 64px;
+		position: relative;
+
+		&:after {
+			@extend %overlay;
+			background-image: url('/img/topo-map.jpg');
+			background-position: 50% 50%;
+			background-size: cover;
+			content: '';
+			mix-blend-mode: multiply;
+			opacity: 0.2;
+			z-index: 1;
+		}
+	}
+
+	hr {
+		background-color: $white;
+	}
+
+	&__intro {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__content {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__heading {
+		font-size: 19.2px;
+		font-weight: 700;
+		line-height: 1.5;
+	}
+
+	&__address,
+	&__optional {
+		font-size: 16px;
+		line-height: 1.44;
+		margin-top: 16px;
+	}
+
+	&__list {
+		@extend %list-reset;
+		margin: 16px 0 0;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__item {
+		margin: 12px 0;
+	}
+
+	.menu--secondary {
+		margin-left: -3px;
+		position: relative;
+	}
+
+	.social {
+		margin-top: 32px;
+	}
+
+	.btn--social {
+		color: #{$white};
+	}
+
+	@include breakpoint(large) {
+		&__wrapper {
+			padding: 110px 0 120px;
+		}
+	}
+}

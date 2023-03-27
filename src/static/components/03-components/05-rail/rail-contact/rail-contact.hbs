@@ -1,0 +1,23 @@
+<section class="rail-contact component">
+
+	<h2 class="rail-contact__title font-h4">{{{ title }}}</h2>
+
+	<hr />
+
+	<h3 class="rail-contact__heading">{{{ heading }}}</h3>
+
+	<p class="rail-contact__address">{{{ address }}}</p>
+
+	<ul class="rail-contact__list">
+		{{#each rail-contact}}
+		<li class="rail-contact__item">{{render '@menu--tertiary' this merge=true }}</li>
+		{{/each}}
+	</ul>
+
+	{{#if optional}}
+	<div class="rail-contact__optional">{{{ optional }}}</div>
+	{{/if}}
+
+	{{#if social}}{{render '@social' social }}{{/if}}
+
+</section>

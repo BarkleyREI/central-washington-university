@@ -10,19 +10,22 @@
 		]
 	},
 	"context": {
-		"title": "Filter Headline",
+		"title": "Aside Headline",
 		"items": [
 			{
 				"title": "Category Headline 1",
 				"links": [
 					{
-						"copy": "Child Page Lorem Ipsum Dolor"
+						"copy": "Page Link Lorem Ipsum",
+						"icon": "arrow"
 					},
 					{
-						"copy": "Child Page Lorem Ipsum Dolor"
+						"copy": "Page Link Lorem Ipsum",
+						"icon": "arrow"
 					},
 					{
-						"copy": "Child Page Lorem Ipsum Dolor on Two Lines"
+						"copy": "Page Link Lorem Ipsum on Two Lines",
+						"icon": "arrow"
 					}
 				]
 			},
@@ -30,13 +33,16 @@
 				"title": "Category Headline 2",
 				"links": [
 					{
-						"copy": "Child Page Lorem Ipsum Dolor"
+						"copy": "Page Link Lorem Ipsum",
+						"icon": "arrow"
 					},
 					{
-						"copy": "Child Page Lorem Ipsum Dolor"
+						"copy": "Page Link Lorem Ipsum",
+						"icon": "arrow"
 					},
 					{
-						"copy": "Child Page Lorem Ipsum Dolor on Two Lines"
+						"copy": "Page Link Lorem Ipsum on Two Lines",
+						"icon": "arrow"
 					}
 				]				
 			}

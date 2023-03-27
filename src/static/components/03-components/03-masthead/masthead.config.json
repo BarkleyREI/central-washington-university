@@ -50,9 +50,9 @@
 		{
 			"name": "Aggregate",
 			"context": {
-				"style": "masthead--aggregate masthead--gallery",
-				"title": "Specialty Headline Lorem Ipsum",				
-				"intro": "Introduction lorem ipsum dolor sit amet, consectetur adipis elit sed do eiusmod tempor ut."
+				"style": "masthead--aggregate",
+				"title": "Specialty Headline Lorem Ipsum",
+				"images": ""
 			}
 		}
 	]

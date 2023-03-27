@@ -2,7 +2,7 @@
 	"title": "Rail Contact",
 	"label": "Contact",
 	"status": "ready",
-	"preview": "@rail",
+	"preview": "@high",
 	"context": {
 		"title": "Contact Headline",
 		"heading": "Name or Office Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing elit Sed Do",
@@ -17,7 +17,7 @@
 				"copy": "000-000-0000"
 			}			
 		],
-		"optional": "Optional Office Fields to Include Infromation Such as Pronouns, Name Pronunciation, Office Hours Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Sed Do",
+		"optional": "Optional Office Fields to Include Information Such as Pronouns, Name Pronunciation, Office Hours Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Sed Do",
 		"social": {
 			"items": [
 				{

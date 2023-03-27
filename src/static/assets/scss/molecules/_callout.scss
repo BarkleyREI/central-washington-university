@@ -1,5 +1,8 @@
 .callout {
 	background-color: $black;
+	background-image: url('/img/peak.png');
+	background-position: bottom left;
+	background-repeat: no-repeat;
 	color: $white;
 	padding: 40px 16px;
 
@@ -11,7 +14,16 @@
 
 	&__item {
 		margin: 0 0 12px -3px;
+		padding-right: 16px;
 		position: relative;
+	}
+
+	.menu--tertiary {
+		width: 100%;
+	}
+
+	@include breakpoint(medium down) {
+		background-size: 125% auto;
 	}
 
 	@include breakpoint(large) {

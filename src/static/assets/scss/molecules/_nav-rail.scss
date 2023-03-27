@@ -1,7 +1,18 @@
 .nav-rail {
+	background-color: $gallery;
+	padding: 20px;
 
 	&__item {
 		margin: 0 0 12px -3px;
+		padding-right: 16px;
 		position: relative;
+	}
+
+	.menu--tertiary {
+		width: 100%;
+	}
+
+	@include breakpoint(large) {
+		padding: 36px 28px;
 	}
 }

@@ -70,6 +70,10 @@
 			color: $black;
 		}
 
+		#{$this}__icon {
+			color: $black;
+		}
+
 		&:before,
 		&:after {
 			background-color: currentcolor !important;
@@ -143,7 +147,28 @@
 	}
 
 	&--tertiary {
+		align-items: flex-start;
+		display: inline-block;
+		flex-flow: row nowrap;
+		justify-content: space-between;
 		padding: 0 3px;
+
+		&.menu--with-icon {
+			padding: 0 28px 0 3px;
+		}
+
+		&[tabindex='-1'] {
+			color: $tundora;
+			pointer-events: none;
+		}
+
+		#{$this}__icon {
+			font-size: 12px;
+			opacity: 1;
+			position: absolute;
+			right: 3px;
+			top: 4px;
+		}
 
 		&:hover,
 		&:active {

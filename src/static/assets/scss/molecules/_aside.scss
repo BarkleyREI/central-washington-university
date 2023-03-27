@@ -77,7 +77,12 @@
 
 	&__list-item {
 		margin: 0 0 12px -3px;
+		padding-right: 16px;
 		position: relative;
+	}
+
+	.menu--tertiary {
+		width: 100%;
 	}
 
 	@include breakpoint(large) {
