@@ -1,22 +1,22 @@
-<div class="card card--faculty">
+<div class="card card--faculty" itemscope itemtype="https://schema.org/Person">
 
 	{{#with image}}
 	<figure class="card__figure">
-		<img src="{{ src }}" alt="{{ alt }}" class="card__image" width="{{ width }}" height="{{ height }}" />
+		<img src="{{ src }}" alt="{{ alt }}" class="card__image" width="{{ width }}" height="{{ height }}" itemprop="image" />
 	</figure>
 	{{/with}}
 
 	<div class="card__content">
 	 
-		<h3 class="card__heading font-h3">{{{ heading }}}</h3>
+		<h3 class="card__heading font-h3" itemprop="name">{{{ heading }}}</h3>
 
-		<p class="card__subheading font-subhead">{{{ subheading }}}</p>
+		<p class="card__subheading font-subhead" itemprop="jobTitle">{{{ subheading }}}</p>
 
 		<ul class="card__contact-list">
-			{{#each contact }}<li class="card__contact-item"><a href="{{ url }}">{{ copy }}</a></li>{{/each}}
+			{{#each contact }}<li class="card__contact-item"><a href="{{ url }}" itemprop="{{ itemprop }}">{{ copy }}</a></li>{{/each}}
 		</ul>
 
-		<p class="card__info">{{{ address }}}</p>
+		<p class="card__info" itemprop="address">{{{ address }}}</p>
 		 
 		{{render '@button--tertiary' cta }}
 		 

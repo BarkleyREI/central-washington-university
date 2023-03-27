@@ -13,16 +13,19 @@
 		"subheading": "Optional Faculty Title, Pronouns Lorem Ipsum Dolor Sit Amet",
 		"contact": [
 			{
+				"itemprop": "email",
 				"url": "mailto:email@cwu.edu",
 				"copy": "email@cwu.edu"
 			},
 			{
+				"itemprop": "telephone",
 				"url": "tel:000-000-0000",
 				"copy": "000-000-0000"
 			}
 		],
 		"address": "Address Line One Lorem Ipsum<br />Address Line Two Lorem Ipsum<br />Address Line Three Lorem Ipsum",
 		"cta": {
+			"itemprop": "url",
 			"url": "#",
 			"modifiers": "btn--cta",
 			"copy": "Tertiary Button"
