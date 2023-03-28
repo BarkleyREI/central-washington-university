@@ -5,6 +5,7 @@ $card: '.card';
 	color: $black;
 	position: relative;
 	transition: background-color $transition-time ease, color $transition-time ease;
+	width: 100%;
 
 	&__date {
 		background-color: $black;
