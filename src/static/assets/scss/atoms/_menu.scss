@@ -168,9 +168,9 @@
 			position: absolute;
 			right: 3px;
 			top: 4px;
-			transition: transform $transition-time ease;
 			transform: scale(0.8333);
 			transform-origin: right center;
+			transition: transform $transition-time ease;
 		}
 
 		&:link,
@@ -179,7 +179,7 @@
 				transform: scale(0.8333);
 			}
 		}
-		
+
 		&:hover,
 		&:active {
 			&:after {
