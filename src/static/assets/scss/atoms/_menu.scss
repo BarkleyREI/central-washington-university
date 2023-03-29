@@ -163,18 +163,32 @@
 		}
 
 		#{$this}__icon {
-			font-size: 12px;
+			font-size: 14.4px;
 			opacity: 1;
 			position: absolute;
 			right: 3px;
 			top: 4px;
+			transition: transform $transition-time ease;
+			transform: scale(0.8333);
+			transform-origin: right center;
 		}
 
+		&:link,
+		&:visited {
+			#{$this}__icon {
+				transform: scale(0.8333);
+			}
+		}
+		
 		&:hover,
 		&:active {
 			&:after {
 				left: 4px;
 				right: 4px;
+			}
+
+			#{$this}__icon {
+				transform: scale(1);
 			}
 		}
 	}
