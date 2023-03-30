@@ -48,7 +48,7 @@
 }
 
 %inset-bottom-border {
-	--inset-color: #{$brand-primary};
+	--inset-color: #{$cwu-crimson};
 
 	&:after {
 		background-color: var(--inset-color);

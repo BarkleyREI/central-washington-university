@@ -106,32 +106,6 @@
 		z-index: 60;
 	}
 
-	// &:focus {
-	//	outline: 0;
-	//
-	//	[role*=textbox] {
-	//		background-color: $brand-primary;
-	//		color: $white;
-	//	}
-	//
-	//	&:before {
-	//		border: 4px solid $black;
-	//		width: calc(100% + 24px);
-	//		height: calc(100% + 24px);
-	//		top: -12px;
-	//		left: -12px;
-	//		background-color: $white;
-	//	}
-	//
-	//	&:after {
-	//		border: 4px solid $brand-primary;
-	//		width: calc(100% + 8px);
-	//		height: calc(100% + 8px);
-	//		top: -4px;
-	//		left: -4px;
-	//	}
-	//}
-
 	/* the text inside the main select box before selecting an item. */
 	[role*=textbox] {
 		height: 100%;
@@ -233,21 +207,21 @@
 
 	/* disabled state for options. */
 	&[aria-disabled=true] {
-		background-color: $gallery;
-		color: $gallery;
+		background-color: $mercury;
+		color: $mercury;
 
 		&:hover {
 			&:after {
-				border-color: $gallery;
+				border-color: $mercury;
 			}
 		}
 
 		[role*=textbox] {
-			border-color: $gallery;
-			outline: 2px solid $gallery;
+			border-color: $mercury;
+			outline: 2px solid $mercury;
 
 			&:after {
-				background-color: $gallery;
+				background-color: $mercury;
 				background-image: url('/img/chevron-gray.png');
 				color: transparent;
 			}

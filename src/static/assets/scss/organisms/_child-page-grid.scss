@@ -19,7 +19,7 @@
 
 		&:hover {
 			--inset-color: #{$black};
-			background-color: $brand-primary;
+			background-color: $cwu-crimson;
 			color: $white;
 
 			#{$this}__image {
@@ -37,7 +37,7 @@
 
 		&:focus-within {
 			--inset-color: #{$black};
-			background-color: $brand-primary;
+			background-color: $cwu-crimson;
 			color: $white;
 
 			#{$this}__image {

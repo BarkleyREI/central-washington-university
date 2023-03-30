@@ -36,7 +36,7 @@
 
 	&__card--digits {
 		#{$this}__info {
-			background: $brand-primary;
+			background: $cwu-crimson;
 			clip-path: polygon(0% 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
 			color: $white;
 			font-family: $inter;
@@ -53,7 +53,7 @@
 
 	&__card--words {
 		#{$this}__info {
-			color: $brand-primary;
+			color: $cwu-crimson;
 			font-family: $inter;
 			font-size: 33.18px;
 			font-weight: 700;
@@ -65,7 +65,7 @@
 
 	&__card--standalone {
 		#{$this}__info {
-			color: $brand-primary;
+			color: $cwu-crimson;
 			font-family: $inter;
 			font-size: 76.29px;
 			font-weight: 800;
@@ -97,7 +97,6 @@
 			}
 		}
 	}
-
 
 	@include breakpoint(large) {
 		&__list {

@@ -7,19 +7,20 @@
 	"context": {
 		"colors": [
 			{
-				"varname": "$brand-primary",
-				"hex": "#ab0032",
-				"name": "Carmine"
-			},
-			{
-				"varname": "$crimson",
-				"hex": "#cc1540",
+				"varname": "$cwu-crimson",
+				"hex": "#a30f32",
 				"name": "Crimson"
 			},
 			{
-				"varname": "$brand-secondary",
+				"varname": "$cwu-crimson-bright",
+				"hex": "#cc1540",
+				"name": "Bright Crimson"
+			},
+
+			{
+				"varname": "$cwu-yellow",
 				"hex": "#ffd632",
-				"name": "Sunglow"
+				"name": "Yellow"
 			},
 			{
 				"varname": "$black",
@@ -37,8 +38,8 @@
 				"name": "Dove Gray"
 			},
 			{
-				"varname": "$gallery",
-				"hex": "#ebebeb",
+				"varname": "$mercury",
+				"hex": "#e6e6e6",
 				"name": "Gallery"
 			},			
 			{
@@ -54,36 +55,6 @@
 			{
 				"varname": "$guardsman",
 				"hex": "#c40000",
-				"name": "Guardsman"
-			},
-			{
-				"varname": "$cwu-crimson",
-				"hex": "#a30f32",
-				"name": "CWU Crimson"
-			},
-			{
-				"varname": "$cwu-dark-crimson",
-				"hex": "#b80025",
-				"name": "CWU Dark Crimson"
-			},
-			{
-				"varname": "$viva-magenta",
-				"hex": "#da234e",
-				"name": "Viva Magenta"
-			},			
-			{
-				"varname": "$wildflower-yellow",
-				"hex": "#ffd632",
-				"name": "Wildflower Yellow"
-			},
-			{
-				"varname": "$manatash-tan",
-				"hex": "#f1e5c3",
-				"name": "Manatash Tan"
-			},
-			{
-				"varname": "$ellensburg-blue-jeans",
-				"hex": "#4c879e",
 				"name": "Guardsman"
 			}
 		]

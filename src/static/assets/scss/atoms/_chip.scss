@@ -48,19 +48,19 @@
 		}
 
 		&:before {
-			background-color: $brand-secondary;
-			border-color: $brand-secondary;
+			background-color: $cwu-yellow;
+			border-color: $cwu-yellow;
 			padding: 2px;
 		}
 	}
 
 	&:focus-visible {
 		#{$this}__close {
-			border-color: $brand-secondary;
+			border-color: $cwu-yellow;
 		}
 
 		&:before {
-			background-color: $brand-secondary;
+			background-color: $cwu-yellow;
 		}
 
 		&:after {
@@ -77,7 +77,7 @@
 
 	&__close {
 		align-self: stretch;
-		background-color: $brand-secondary;
+		background-color: $cwu-yellow;
 		border-right: 2px solid $black;
 		color: $black;
 		display: inline-block;

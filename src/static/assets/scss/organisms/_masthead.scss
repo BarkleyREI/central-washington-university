@@ -33,7 +33,7 @@
 	&__btn {
 		/* stylelint-disable declaration-no-important */
 		--background: #{$black};
-		--border: #{$brand-secondary};
+		--border: #{$cwu-yellow};
 		--gap: #{$white};
 		--text: #{$white};
 		bottom: 40px;
@@ -119,7 +119,7 @@
 
 	&--landing {
 		#{$this}__title {
-			background: $brand-primary;
+			background: $cwu-crimson;
 		}
 	}
 

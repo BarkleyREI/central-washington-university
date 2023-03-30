@@ -199,7 +199,7 @@ $button: '.button';
 	}
 
 	&--primary {
-		--background: #{$brand-secondary};
+		--background: #{$cwu-yellow};
 		--border: #{$black};
 		--gap: #{$white};
 		--text: #{$black};
@@ -207,14 +207,14 @@ $button: '.button';
 
 	&--alt {
 		--background: #{$white};
-		--border: #{$brand-secondary};
+		--border: #{$cwu-yellow};
 		--gap: #{$black};
 		--text: #{$black};
 	}
 
 	&--cta {
-		--background: #{$brand-secondary};
-		--border: #{$brand-secondary};
+		--background: #{$cwu-yellow};
+		--border: #{$cwu-yellow};
 		--focus-border: #{$black};
 		--focus-text: #{$black};
 		--text: #{$black};
@@ -283,7 +283,7 @@ $button: '.button';
 	&--large,
 	&--medium,
 	&--small {
-		--background: #{$brand-secondary};
+		--background: #{$cwu-yellow};
 		--border: #{$black};
 		--gap: #{$white};
 		--text: #{$black};
@@ -337,9 +337,9 @@ $button: '.button';
 	}
 
 	&--disabled {
-		--background: #{$gallery};
+		--background: #{$mercury};
 		--border: #{$dove-gray};
-		--gap: #{$gallery};
+		--gap: #{$mercury};
 		--text: #{$dove-gray};
 		pointer-events: none;
 	}
@@ -356,9 +356,9 @@ $button: '.button';
 		}
 
 		.pagination__item--disabled & {
-			--background: #{$gallery};
+			--background: #{$mercury};
 			--border: #{$dove-gray};
-			--gap: #{$gallery};
+			--gap: #{$mercury};
 			--text: #{$dove-gray};
 			pointer-events: none;
 

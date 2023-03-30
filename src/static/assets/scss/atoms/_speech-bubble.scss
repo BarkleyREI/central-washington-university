@@ -6,7 +6,7 @@ $speech-bubble: '.speech-bubble';
 
 .speech-bubble {
 	$this: &;
-	background-color: $gallery;
+	background-color: $mercury;
 	font-weight: normal;
 	left: 16px;
 	opacity: 0;
@@ -20,7 +20,7 @@ $speech-bubble: '.speech-bubble';
 	z-index: 200;
 
 	&:before {
-		border-bottom: 10px solid $gallery;
+		border-bottom: 10px solid $mercury;
 		border-left: 4px solid transparent;
 		border-right: 4px solid transparent;
 		border-top: 0;
@@ -43,7 +43,7 @@ $speech-bubble: '.speech-bubble';
 
 	.close-button {
 		align-items: center;
-		background-color: $brand-secondary;
+		background-color: $cwu-yellow;
 		color: $black;
 		display: flex;
 		flex-direction: row;

@@ -1,7 +1,7 @@
 .storytelling {
 	$this: &;
 	@extend %inset-bottom-edge;
-	background-color: $brand-primary;
+	background-color: $cwu-crimson;
 	color: $white;
 	padding: 16px 0 90px;
 	position: relative;
@@ -72,7 +72,7 @@
 		z-index: 4;
 
 		&:before {
-			background-color: $crimson;
+			background-color: $cwu-crimson-bright;
 			content: '';
 			display: block;
 			height: 55px;

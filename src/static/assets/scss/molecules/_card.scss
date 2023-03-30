@@ -135,7 +135,7 @@ $card: '.card';
 
 	&:hover,
 	&:focus-within {
-		background-color: $brand-primary;
+		background-color: $cwu-crimson;
 		color: $white;
 
 		#{$card}__image {
@@ -143,7 +143,7 @@ $card: '.card';
 		}
 
 		#{$card}__content {
-			background-color: $brand-primary;
+			background-color: $cwu-crimson;
 		}
 
 		#{$card}__info {

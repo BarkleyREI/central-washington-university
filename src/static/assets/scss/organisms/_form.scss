@@ -157,7 +157,7 @@ $form: '.form';
 
 		&:hover,
 		&:focus {
-			background: $brand-secondary;
+			background: $cwu-yellow;
 			outline: 3px solid currentcolor;
 
 			svg {
@@ -200,28 +200,28 @@ $form: '.form';
 
 	textarea,
 	input {
-		background-color: $gallery;
-		border-color: $gallery;
+		background-color: $mercury;
+		border-color: $mercury;
 		cursor: not-allowed;
-		outline: 2px solid $gallery;
+		outline: 2px solid $mercury;
 		pointer-events: none;
 		resize: none;
 		user-select: none;
 
 		&:hover,
 		&:focus {
-			background-color: $gallery;
-			border-color: $gallery;
-			outline: 2px solid $gallery;
+			background-color: $mercury;
+			border-color: $mercury;
+			outline: 2px solid $mercury;
 		}
 
 		~ label {
-			background-color: $gallery;
+			background-color: $mercury;
 		}
 	}
 
 	.search-button {
-		background-color: $gallery;
+		background-color: $mercury;
 		color: $dove-gray;
 		cursor: not-allowed;
 		pointer-events: none;
