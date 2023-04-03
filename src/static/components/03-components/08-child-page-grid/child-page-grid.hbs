@@ -1,4 +1,4 @@
-<section class="cpg">
+<section class="cpg {{ style }}">
 
 	<div class="cpg__wrapper wrapper">
 
@@ -36,7 +36,11 @@
 
 		</div>
 
-		{{render '@button--primary' }}
+		{{#if cta }}
+		<div class="cpg__button">
+			{{render '@button--primary' cta merge="true" }}
+		</div>
+		{{/if}}
 
 	</div>
 

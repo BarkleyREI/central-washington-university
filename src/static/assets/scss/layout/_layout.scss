@@ -1,5 +1,17 @@
 .component {
 	width: 100%;
+
+	.masthead + &,
+	+ * {
+		margin-top: 48px;
+	}
+
+	@include breakpoint(large) {
+		.masthead + &,
+		+ * {
+			margin-top: 120px;
+		}
+	}
 }
 
 .container {

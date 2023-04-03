@@ -1,33 +1,37 @@
-<section class="contact wrapper component">
+<section class="contact component">
 
-	<div class="contact__wrapper grid-x grid-margin-x">
+	<div class="contact__wrapper wrapper">
 
-		<div class="contact__intro cell xsmall-12 large-4 large-offset-1">
+		<div class="contact__inner grid-x grid-margin-x">
 
-			<h2 class="contact__title font-h2">{{{ title }}}</h2>
+			<div class="contact__intro cell xsmall-12 large-4 large-offset-1">
 
-			<hr />
+				<h2 class="contact__title font-h2">{{{ title }}}</h2>
 
-		</div>
+				<hr />
 
-		<div class="contact__content cell xsmall-12 large-5 large-offset-1">
+			</div>
 
-			<h3 class="contact__heading">{{{ heading }}}</h3>
+			<div class="contact__content cell xsmall-12 large-5 large-offset-1">
 
-			<p class="contact__address">{{{ address }}}</p>
+				<h3 class="contact__heading">{{{ heading }}}</h3>
 
-			<ul class="contact__list">
-				{{#each contact}}
-				<li class="contact__item">{{render '@menu--tertiary' this merge=true }}</li>
-				{{/each}}
-			</ul>
+				<p class="contact__address">{{{ address }}}</p>
 
-			{{#if optional}}
-			<div class="contact__optional">{{{ optional }}}</div>
-			{{/if}}
+				<ul class="contact__list">
+					{{#each contact}}
+					<li class="contact__item">{{render '@menu--tertiary' this merge=true }}</li>
+					{{/each}}
+				</ul>
 
-			{{#if social}}{{render '@social' social }}{{/if}}
+				{{#if optional}}
+				<div class="contact__optional">{{{ optional }}}</div>
+				{{/if}}
 
+				{{#if social}}{{render '@social' social }}{{/if}}
+
+			</div>
+			
 		</div>
 		
 	</div>

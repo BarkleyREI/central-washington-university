@@ -3,6 +3,10 @@
 	background: $wild-sand;
 	padding: 48px 0;
 
+	&--manual {
+		background: transparent;
+	}
+
 	&__list {
 		margin-top: 36px;
 	}
@@ -83,6 +87,11 @@
 		z-index: 2;
 	}
 
+	&__button {
+		margin-top: 48px;
+		text-align: center;
+	}
+
 	@include breakpoint(large) {
 		padding: 96px 0;
 
@@ -92,6 +101,11 @@
 
 		&__content {
 			padding: 48px 24px;
+		}
+
+		&__button {
+			margin-top: 96px;
+			text-align: cener;
 		}
 	}
 }
