@@ -50,7 +50,7 @@
 
 						<p class="ism__copy">{{{ copy }}}</p>
 						
-						{{render '@button--tertiary' cta merge="true" }}
+						{{#if cta }}{{render '@button--tertiary' cta merge="true" }}{{/if}}
 					
 					</div>
 
@@ -59,7 +59,7 @@
 
 			</ul>
 
-			{{render '@button--primary' cta merge="true" }}
+			{{#if cta}}{{render '@button--primary' cta merge="true" }}{{/if}}
 
 		</div>
 

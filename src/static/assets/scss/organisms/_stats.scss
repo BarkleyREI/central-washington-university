@@ -148,6 +148,12 @@
 
 	@include breakpoint(xxlarge) {
 		&__card {
+			padding-right: 6.25%;
+		}
+	}
+
+	@include breakpoint(xxxlarge) {
+		&__card {
 			padding-right: 12.5%;
 		}
 	}

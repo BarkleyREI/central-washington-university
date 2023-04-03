@@ -32,7 +32,14 @@
 			opacity: 1;
 		}
 
-		.brei-icon-peak,
+		.brei-icon-peak {
+			opacity: 1;
+
+			+ .brei-icon-minus {
+				opacity: 0;
+			}
+		}
+
 		.brei-icon-plus {
 			opacity: 0;
 		}
