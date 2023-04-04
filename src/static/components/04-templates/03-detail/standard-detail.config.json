@@ -12,7 +12,7 @@
 	"context": {
 		"wysiwyg1": {
 			"style": "wysiwyg--narrow",
-			"copy": "<h2 class=\"font-h1\">H1 Headline Two Lines Lorem Ipsum Dolor Sit Amet Consectetur</h2><hr /><p class=\"font-intro\">Introduction lorem ipsum dolor sit amet, consectetur adipis elit sed do eiusmod tempor ut.</p><p><a href=\"#\">WYSIWYG body copy</a> lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut.</p><figure class=\"image\"><img alt=\"DESCRIPTION\" class=\"\" height=\"308\" src=\"https://via.placeholder.com/411x308\" width=\"411\"><figcaption>Optional caption 100 characters lorem ipsum dolor sit amet consectetur adipscing elit sed do eiusmo.</figure><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla  lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat sed do eiusmod tempor incididunt ut labore et dolore magna.</p><ul><li>Unordered list lorem ipsum dolor</li></ul><ol><li>Ordered list lorem ipsum dolor</li></ol><h3 class=\"font-h2\">H2 Headline Lorem Ipsum Dolor Sit Amet</h2><hr /><p>WYSIWYG body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea dictumst. Morbi tempus iaculis urna id volutpat lacus laoreet. Nec ullamcorper sit amet risus nullam eget. Id donec ultrices tincidunt arcu non. Congue eu consequat ac felis donec et odio pellentesque diam. Vel quam elementum pulvinar etiam non quam lacus. Magna sit amet purus gravida quis blandit turpis cursus in. Faucibus ornare suspendisse sed nisi lacus sed. Lacus vestibulum sed arcu non odio euismod lacinia. Lorem ipsum dolor sit amet consectetur adipiscing. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Amet commodo nulla facilisi nullam vehicula ipsum a. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Auctor elit sed vulputate mi sit amet. Nisi est sit amet facilisis magna etiam tempor orci eu. Rutrum quisque non tellus orci ac. Tortor posuere ac ut consequat.</p><h4 class=\"font-h3\">H3 Headline Lorem Ipsum Dolor Sit Amet</h4><p>WYSIWYG body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea dictumst. Morbi tempus iaculis urna id volutpat lacus laoreet. Nec ullamcorper sit amet risus nullam eget. Id donec ultrices tincidunt arcu non. Congue eu consequat ac felis donec et odio pellentesque diam. Vel quam elementum pulvinar etiam non quam lacus. Magna sit amet purus gravida quis blandit turpis cursus in. Faucibus ornare suspendisse sed nisi lacus sed. Lacus vestibulum sed arcu non odio euismod lacinia. Lorem ipsum dolor sit amet consectetur adipiscing. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Amet commodo nulla facilisi nullam vehicula ipsum a. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Auctor elit sed vulputate mi sit amet. Nisi est sit amet facilisis magna etiam tempor orci eu. Rutrum quisque non tellus orci ac. Tortor posuere ac ut consequat.</p><a href=\"#\" class=\"btn btn--primary btn--with-icon\"><span class=\"text\">Primary Button</span><span class=\"btn__icon\"><svg class=\"brei-icon brei-icon-arrow\" focusable=\"false\"><use xlink:href=\"#brei-icon-arrow\"></use></svg></span></a>"
+			"copy": "<h2 class=\"font-h1\">H1 Headline Two Lines Lorem Ipsum Dolor Sit Amet Consectetur</h2><hr /><p class=\"font-intro\">Introduction lorem ipsum dolor sit amet, consectetur adipis elit sed do eiusmod tempor ut.</p><p><a href=\"#\">WYSIWYG body copy</a> lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut.</p><figure class=\"image\"><img alt=\"DESCRIPTION\" class=\"\" height=\"308\" src=\"https://via.placeholder.com/411x308\" width=\"411\"><figcaption>Optional caption 100 characters lorem ipsum dolor sit amet consectetur adipscing elit sed do eiusmo.</figcaption></figure><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla  lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat sed do eiusmod tempor incididunt ut labore et dolore magna.</p><ul><li>Unordered list lorem ipsum dolor</li></ul><ol><li>Ordered list lorem ipsum dolor</li></ol><h3 class=\"font-h2\">H2 Headline Lorem Ipsum Dolor Sit Amet</h2><hr /><p>WYSIWYG body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea dictumst. Morbi tempus iaculis urna id volutpat lacus laoreet. Nec ullamcorper sit amet risus nullam eget. Id donec ultrices tincidunt arcu non. Congue eu consequat ac felis donec et odio pellentesque diam. Vel quam elementum pulvinar etiam non quam lacus. Magna sit amet purus gravida quis blandit turpis cursus in. Faucibus ornare suspendisse sed nisi lacus sed. Lacus vestibulum sed arcu non odio euismod lacinia. Lorem ipsum dolor sit amet consectetur adipiscing. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Amet commodo nulla facilisi nullam vehicula ipsum a. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Auctor elit sed vulputate mi sit amet. Nisi est sit amet facilisis magna etiam tempor orci eu. Rutrum quisque non tellus orci ac. Tortor posuere ac ut consequat.</p><h4 class=\"font-h3\">H3 Headline Lorem Ipsum Dolor Sit Amet</h4><p>WYSIWYG body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea dictumst. Morbi tempus iaculis urna id volutpat lacus laoreet. Nec ullamcorper sit amet risus nullam eget. Id donec ultrices tincidunt arcu non. Congue eu consequat ac felis donec et odio pellentesque diam. Vel quam elementum pulvinar etiam non quam lacus. Magna sit amet purus gravida quis blandit turpis cursus in. Faucibus ornare suspendisse sed nisi lacus sed. Lacus vestibulum sed arcu non odio euismod lacinia. Lorem ipsum dolor sit amet consectetur adipiscing. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Amet commodo nulla facilisi nullam vehicula ipsum a. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Auctor elit sed vulputate mi sit amet. Nisi est sit amet facilisis magna etiam tempor orci eu. Rutrum quisque non tellus orci ac. Tortor posuere ac ut consequat.</p><a href=\"#\" class=\"btn btn--primary btn--with-icon\"><span class=\"text\">Primary Button</span><span class=\"btn__icon\"><svg class=\"brei-icon brei-icon-arrow\" focusable=\"false\"><use xlink:href=\"#brei-icon-arrow\"></use></svg></span></a>"
 		},
 		"faculty": {
 			"style": "feed--faculty",
@@ -83,85 +83,85 @@
 						"height": 627
 					}
 				]
-			},
-			"featured": {
-				"style": "featured--narrow",
+			}
+		},
+		"featured": {
+			"style": "featured--narrow",
+			"gallery": {
 				"gallery": {
-					"gallery": {
-						"images": [
-							{
-								"src": "https://via.placeholder.com/836x627",
-								"alt": "[image alt text]",
-								"width": 836,
-								"height": 627
-							}
-						]
-					},
-					"heading": "Image H2 Headline Ipsum Dolor Sit Amet Elit Sed Do Consectetur",
-					"copy": "Structured body copy 225 characters Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor.",
-					"cta": {
-						"copy": "Tertiary Button"
-					}
-				},
-				"video": {
-					"video": {
-						"poster": {
-							"src": "https://via.placeholder.com/1264x711",
+					"images": [
+						{
+							"src": "https://via.placeholder.com/836x627",
 							"alt": "[image alt text]",
-							"width": 1264,
-							"height": 711
-						},
-						"play-button": {
-							"url": "https://www.youtube.com/watch?v=J5OSRpRyl6g",
-							"alt": "Play video",
-							"modifiers": "btn--xlarge play-button",
-							"icon": "play"
+							"width": 836,
+							"height": 627
 						}
+					]
+				},
+				"heading": "Image H2 Headline Ipsum Dolor Sit Amet Elit Sed Do Consectetur",
+				"copy": "Structured body copy 225 characters Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor.",
+				"cta": {
+					"copy": "Tertiary Button"
+				}
+			},
+			"video": {
+				"video": {
+					"poster": {
+						"src": "https://via.placeholder.com/1264x711",
+						"alt": "[image alt text]",
+						"width": 1264,
+						"height": 711
 					},
-					"heading": "Video H2 Headline Ipsum Dolor Sit Amet Elit Sed Do Consectetur",
-					"copy": "Structured body copy 225 characters Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor.",
-					"cta": {
-						"copy": "Tertiary Button"
+					"play-button": {
+						"url": "https://www.youtube.com/watch?v=J5OSRpRyl6g",
+						"alt": "Play video",
+						"modifiers": "btn--xlarge play-button",
+						"icon": "play"
 					}
 				},
-				"textonly": {
-					"heading": "Text H2 Headline Ipsum Dolor Sit Amet Elit Sed Do Consectetur",
-					"copy": "Structured body copy 225 characters Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor.",
-					"cta": {
-						"copy": "Tertiary Button"
-					}
+				"heading": "Video H2 Headline Ipsum Dolor Sit Amet Elit Sed Do Consectetur",
+				"copy": "Structured body copy 225 characters Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor.",
+				"cta": {
+					"copy": "Tertiary Button"
 				}
 			},
-			"news": {
-				"style": "feed--news",
-				"heading": "News Feed H2 Headline Lorem Ipsum",
-				"items": [
-					{
-						"heading": "News Item 1 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
-					},
-					{
-						"heading": "News Item 2 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
-					}
-				],
+			"textonly": {
+				"heading": "Text H2 Headline Ipsum Dolor Sit Amet Elit Sed Do Consectetur",
+				"copy": "Structured body copy 225 characters Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor.",
 				"cta": {
-					"copy": "Primary Button"
+					"copy": "Tertiary Button"
 				}
-			},
-			"events": {
-				"style": "feed--events",
-				"heading": "Events Feed H2 Headline Lorem Ipsum",
-				"items": [
-					{
-						"heading": "Events Item 1 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
-					},
-					{
-						"heading": "Events Item 2 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
-					}
-				],
-				"cta": {
-					"copy": "Primary Button"
+			}
+		},
+		"news": {
+			"style": "feed--news",
+			"heading": "News Feed H2 Headline Lorem Ipsum",
+			"items": [
+				{
+					"heading": "News Item 1 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
+				},
+				{
+					"heading": "News Item 2 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
 				}
-			}			
+			],
+			"cta": {
+				"copy": "Primary Button"
+			}
+		},
+		"events": {
+			"style": "feed--events",
+			"heading": "Events Feed H2 Headline Lorem Ipsum",
+			"items": [
+				{
+					"heading": "Events Item 1 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
+				},
+				{
+					"heading": "Events Item 2 H4 Headline Lorem Ipsum Dolor Sit Amet Consectetur"
+				}
+			],
+			"cta": {
+				"copy": "Primary Button"
+			}
 		}
 	}
 }
