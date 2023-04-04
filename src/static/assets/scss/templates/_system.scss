@@ -1,0 +1,16 @@
+.system {
+	.form {
+		&:first-child {
+			margin-top: 48px;
+		}
+	}
+
+	@include breakpoint(large) {
+		.form {
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}
+		
