@@ -15,23 +15,21 @@
 	}
 
 	@include breakpoint(medium) {
-		text-align: center;
-
-		&__heading {
-			text-align: left;
-		}
-
 		&__list {
 			flex-flow: row wrap;
-			text-align: left;
 		}
 
 		.card {
 			width: calc(50% - 8px);
 		}
 
-		&--program {
-			text-align: left;
+		&--wide {
+			text-align: center;
+
+			#{$this}__heading,
+			#{$this}__list {
+				text-align: left;
+			}
 		}
 	}
 
@@ -41,10 +39,10 @@
 			margin-top: 64px;
 		}
 
-		.card--event,
-		.card--faculty,
-		.card--news {
-			width: calc(33.3333% - 10.6666px);
+		&--wide {
+			.card {
+				width: calc(33.3333% - 10.6666px);
+			}
 		}
 	}
 }

@@ -1,0 +1,13 @@
+<section class="feed feed--narrow {{ style }} component">
+
+	<h2 class="feed__heading font-h2">{{{ heading }}}</h2>
+
+	<div class="feed__list">
+
+		{{#each items}}{{render '@card-faculty' this merge="true" }}{{/each}}
+
+	</div>
+
+	{{#if cta }}{{render '@button--primary' cta merge="true" }}{{/if}}
+
+</section>

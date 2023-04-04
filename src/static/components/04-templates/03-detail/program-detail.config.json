@@ -1,5 +1,6 @@
 {
-	"title": "ProgramDetail",
+	"title": "Program Detail",
+	"label": "Program",
 	"status": "ready",
 	"preview": "@template",
 	"meta": {

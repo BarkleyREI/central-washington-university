@@ -1,4 +1,4 @@
-<section class="feed {{ style }} component">
+<section class="feed feed--wide {{ style }} component">
 
 	<div class="feed__wrapper wrapper">
 
@@ -10,7 +10,7 @@
 
 		</div>
 
-		{{render '@button--primary' }}
+		{{#if cta }}{{render '@button--primary' cta merge="true" }}{{/if}}
 
 	</div>
 </section>

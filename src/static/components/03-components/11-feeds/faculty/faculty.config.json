@@ -2,6 +2,7 @@
 	"title": "Faculty Feed",
 	"status": "ready",
 	"preview": "@high",
+	"default": "Wide",
 	"meta": {
 		"scripts": [
 			"vendor",
@@ -25,5 +26,21 @@
 		"cta": {
 			"copy": "Primary Button"
 		}
-	}
+	},
+	"variants": [
+		{
+			"name": "Narrow",
+			"preview": "@standard",
+			"context": {
+				"items": [
+					{
+						"heading": "Faculty Name 1 H3 Headline Lorem"
+					},
+					{
+						"heading": "Faculty Name 2 H3 Headline Lorem"
+					}
+				]
+			}
+		}
+	]
 }

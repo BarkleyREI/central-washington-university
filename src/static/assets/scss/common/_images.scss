@@ -2,11 +2,17 @@ img {
 	height: auto;
 	max-width: 100%;
 
-	.user-markup & {
+	.user-markup > & {
 		margin: 6px 24px 24px 0;
+
+		@include breakpoint(medium) {
+			float: left;
+			margin: 6px 24px 15px 0;
+		}
 	}
 
 	.user-markup p & {
+		display: block;
 		margin-bottom: 6px;
 	}
 
@@ -44,11 +50,14 @@ figure {
 
 	.user-markup & {
 		margin: 6px 12px 24px 0;
+		max-width: 411px;
 		position: relative;
 
 		img {
+			height: auto;
 			margin: 0;
 			position: relative;
+			width: 100%;
 			z-index: 1;
 		}
 
@@ -63,6 +72,11 @@ figure {
 				margin: 0;
 				max-width: 100%;
 			}
+		}
+
+		@include breakpoint(medium) {
+			float: left;
+			margin: 6px 24px 15px 0;
 		}
 	}
 
