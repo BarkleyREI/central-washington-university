@@ -18,6 +18,22 @@
 .container {
 }
 
+.content {
+	@include breakpoint(large) {
+		.component {
+			margin-top: 72px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			+ * {
+				margin-top: 72px;
+			}
+		}
+	}
+}
+
 .wrapper {
 	margin: 0 auto;
 	max-width: 1920px;
@@ -50,6 +66,18 @@
 
 	@include breakpoint(large) {
 		padding-right: 16px;
+
+		.component {
+			margin-top: 64px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			+ * {
+				margin-top: 64px;
+			}
+		}
 	}
 
 	@include breakpoint(xlarge) {

@@ -1,0 +1,11 @@
+.detail {
+	@include breakpoint(large) {
+		.rail {
+			order: 1;
+		}
+
+		.content {
+			order: 2;
+		}
+	}
+}

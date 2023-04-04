@@ -1,0 +1,53 @@
+{
+	"title": "ProgramDetail",
+	"status": "ready",
+	"preview": "@template",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"masthead": {
+			"style": "masthead--detail masthead--gallery",
+			"title": "Detail Program Specialty Headline",
+			"images": [
+				{
+					"src": "https://via.placeholder.com/1920x823/f00/fff",
+					"alt": "[image alt text]",
+					"width": 1920,
+					"height": 823
+				},
+				{
+					"src": "https://via.placeholder.com/1920x823/0f0/fff",
+					"alt": "[image alt text]",
+					"width": 1920,
+					"height": 823
+				},
+				{
+					"src": "https://via.placeholder.com/1920x823/00f/fff",
+					"alt": "[image alt text]",
+					"width": 1920,
+					"height": 823
+				}			
+			]
+		},
+		"breadcrumbs": {
+			"items": [
+				{
+					"url": "#grandparent",
+					"copy": "Breadcrum Parent Page"
+				},
+				{
+					"copy": "Bradcrumb Current Page",
+					"current": true
+				}
+			]
+		},
+		"wysiwyg1": {
+			"style": "wysiwyg--narrow",
+			"copy": "<h2>H2 Headline Lorem Ipsum Dolor Sit Amet</h2><hr /><p>WYSIWYG body copy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi lacus sed viverra tellus in hac habitasse platea dictumst. Morbi tempus iaculis urna id volutpat lacus laoreet. Nec ullamcorper sit amet risus nullam eget. Id donec ultrices tincidunt arcu non. Congue eu consequat ac felis donec et odio pellentesque diam. Vel quam elementum pulvinar etiam non quam lacus. Magna sit amet purus gravida quis blandit turpis cursus in. Faucibus ornare suspendisse sed nisi lacus sed. Lacus vestibulum sed arcu non odio euismod lacinia. Lorem ipsum dolor sit amet consectetur adipiscing. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Amet commodo nulla facilisi nullam vehicula ipsum a. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Auctor elit sed vulputate mi sit amet. Nisi est sit amet facilisis magna etiam tempor orci eu. Rutrum quisque non tellus orciac. Tortor posuere ac ut consequat.</p>"
+		}
+	}
+}

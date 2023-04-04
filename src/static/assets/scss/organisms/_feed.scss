@@ -29,6 +29,10 @@
 		.card {
 			width: calc(50% - 8px);
 		}
+
+		&--program {
+			text-align: left;
+		}
 	}
 
 	@include breakpoint(large) {
