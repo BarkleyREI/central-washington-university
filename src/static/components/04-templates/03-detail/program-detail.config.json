@@ -41,7 +41,7 @@
 					"copy": "Breadcrumb Parent Page"
 				},
 				{
-					"copy": "Bradcrumb Current Page",
+					"copy": "Breadcrumb Current Page",
 					"current": true
 				}
 			]

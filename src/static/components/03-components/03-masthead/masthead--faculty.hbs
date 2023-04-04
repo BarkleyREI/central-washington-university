@@ -1,0 +1,19 @@
+<section class="headline {{ style }}">
+
+	<div class="headline__wrapper wrapper grid-x grid-margin-x">
+
+		<div class="headline__title cell xsmall-12 large-7 xlarge-6">
+
+			<h1 class="font-specialty-2">{{{ title }}}</h1>
+			
+ 			<p>{{{ subtitle }}}</p>
+			
+		</div>
+
+		{{#with image}}
+		<img src="{{ src }}" alt="{{ alt }}" width="{{ width }}" height="{{ height }}" class="headline__image cell xsmall-12 large-4 large-offset-1 xlarge-offset-2">
+		{{/with}}
+		
+	</div>
+	
+</section>

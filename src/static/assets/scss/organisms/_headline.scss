@@ -1,0 +1,148 @@
+.headline {
+
+	--inset-edge: 0;
+	--inset-color: #{$black};
+	$this: &;
+	@extend %inset-bottom-edge;
+	@extend %inset-bottom-border;
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+
+	&:before {
+		@extend %overlay;
+	}
+
+	&__title {
+		--inset-edge: 0;
+		--inset-color: #{$black};
+		@extend %inset-bottom-edge;
+		@extend %inset-bottom-border;
+		position: relative;
+
+		h1 {
+			color: $white;
+			margin-bottom: 12px;
+			position: relative;
+			z-index: 5;
+		}
+
+		p {
+			color: $white;
+			font-family: $inter;
+			font-size: 19.2px;
+			font-weight: 700;
+			position: relative;
+			z-index: 5;
+		}
+
+		&:before {
+			@extend %overlay;
+		}
+	}
+
+	&__info {
+		list-style-type: none;
+		margin: 20px 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	&__item {
+		color: $white;
+		display: inline;
+		font-family: $inter;
+		font-size: 16px;
+		padding: 0 10px 0 0;
+
+		+ #{$this}__item {
+			border-left: 1px solid $white;
+			padding-left: 10px;
+		}
+	}
+
+	&__image {
+		position: relative;
+		z-index: 10;
+	}
+
+	@include breakpoint(medium down) {
+		&__title {
+			// stylelint-disable declaration-no-important
+			--inset-edge: 24px;
+			margin: 0 0 0 -16px !important;
+			padding: 48px 16px 140px;
+			width: 100vw !important;
+
+			&:before {
+				background-image: url('/img/topo-map.jpg');
+				background-position: 50% 50%;
+				background-size: cover;
+				content: '';
+				mix-blend-mode: multiply;
+				opacity: 0.2;
+				z-index: 1;
+			}
+			// stylelint-enable declaration-no-important
+		}
+
+		&__image {
+			// stylelint-disable declaration-no-important
+			margin: -120px auto 0 !important;
+			width: 100% !important;
+			// stylelint-enable declaration-no-important
+		}
+
+		&--faculty {
+			#{$this}__title {
+				background: $cwu-crimson;
+			}
+
+			#{$this}__image {
+				max-width: 500px;
+			}
+		}
+
+		&--news {
+			#{$this}__title {
+				background: $tundora;
+			}
+
+			#{$this}__image {
+				max-width: 838px;
+			}
+		}
+	}
+
+	@include breakpoint(large) {
+		--inset-edge: 96px;
+		--inset-color: #{$black};
+
+		&:before {
+			background-image: url('/img/topo-map.jpg');
+			background-position: 50% 50%;
+			background-size: cover;
+			content: '';
+			mix-blend-mode: multiply;
+			opacity: 0.2;
+			z-index: 1;
+		}
+
+		&__wrapper {
+			padding-bottom: 160px;
+			padding-top: 48px;
+		}
+
+		&__title {
+			align-self: center;
+		}
+
+		&--faculty {
+			background-color: $cwu-crimson;
+		}
+
+		&--news {
+			background-color: $tundora;
+		}
+	}
+}

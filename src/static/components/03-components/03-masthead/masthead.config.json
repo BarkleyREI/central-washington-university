@@ -35,6 +35,28 @@
 	},
 	"variants": [
 		{
+			"name": "Aggregate",
+			"context": {
+				"style": "masthead--aggregate",
+				"title": "Specialty Headline Lorem Ipsum",
+				"images": ""
+			}
+		},
+		{
+			"name": "Faculty",
+			"context": {
+				"style": "headline--faculty",
+				"title": "Detail Faculty First & Lastname",
+				"subtitle": "Faculty Title Lorem Ipsum Dolor Sit Amet Consectetur",
+				"image": {
+					"src": "https://via.placeholder.com/500",
+					"alt": "[image alt text]",
+					"width": 500,
+					"height": 500
+				}
+			}
+		},
+		{
 			"name": "Landing",
 			"context": {
 				"style": "masthead--landing masthead--video",
@@ -48,12 +70,19 @@
 			}
 		},
 		{
-			"name": "Aggregate",
+			"name": "News",
 			"context": {
-				"style": "masthead--aggregate",
-				"title": "Specialty Headline Lorem Ipsum",
-				"images": ""
+				"style": "headline--news",
+				"title": "H1 Headline Two Lines Lorem Ipsum Dolor Sit amet Consectetur",
+				"datetime": "Month 00, 0000",
+				"author": "By Firstname Lastname",
+				"image": {
+					"src": "https://via.placeholder.com/838x627",
+					"alt": "[image alt text]",
+					"width": 838,
+					"height": 627
+				}
 			}
-		}
+		}		
 	]
 }

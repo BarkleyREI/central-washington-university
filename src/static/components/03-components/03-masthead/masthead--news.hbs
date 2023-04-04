@@ -1,0 +1,22 @@
+<section class="headline {{ style }}">
+
+	<div class="headline__wrapper wrapper grid-x grid-margin-x">
+
+		<div class="headline__title cell xsmall-12 large-7 xlarge-6">
+
+			<h1 class="font-h1">{{{ title }}}</h1>
+			
+			<ul class="headline__info">
+				{{#if datetime }}<li class="headline__item">{{{ datetime }}}</li>{{/if}}
+				{{#if author}}<li class="headline__item">{{{ author }}}</li>{{/if}}
+			</ul>
+			
+		</div>
+
+		{{#with image}}
+		<img src="{{ src }}" alt="{{ alt }}" width="{{ width }}" height="{{ height }}" class="headline__image cell xsmall-12 large-4 large-offset-1 xlarge-offset-2">
+		{{/with}}
+		
+	</div>
+	
+</section>
