@@ -1,0 +1,178 @@
+{
+	"title": "News Aggregate",
+	"label": "News",
+	"status": "ready",
+	"preview": "@template",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main",
+			"aggregate"
+		]
+	},
+	"context": {
+		"masthead": {
+			"style": "masthead--aggregate",
+			"title": "News Aggregate Headline",
+			"images": ""
+		},
+		"filters": {
+			"title": "News Filters",
+			"items": [
+				{
+					"checkboxes": true,
+					"title": "Type",
+					"legend": "type",
+					"items": [
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Academic Programs",
+							"label": "Academic Programs"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Alumni",
+							"label": "Alumni"
+						},						
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Athletics",
+							"label": "Athletics"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Faculty & Staff",
+							"label": "Faculty & Staff"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Student Life",
+							"label": "Student Life"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "University Leadership",
+							"label": "University Leadership"
+						}
+					]
+				},			
+				{
+					"checkboxes": true,
+					"title": "Year",
+					"legend": "year",
+					"items": [
+						{
+							"id": "year",
+							"name": "year",
+							"value": "2023",
+							"label": "2023"
+						},
+						{
+							"id": "year",
+							"name": "year",
+							"value": "2022",
+							"label": "2022"
+						},
+						{
+							"id": "year",
+							"name": "year",
+							"value": "2021",
+							"label": "2021"
+						}
+					]
+				},
+				{
+					"checkboxes": true,
+					"title": "Month",
+					"legend": "month",
+					"items": [
+						{
+							"id": "month",
+							"name": "month",
+							"value": "01",
+							"label": "January"
+						},
+						{
+							"id": "month",
+							"name": "month",
+							"value": "02",
+							"label": "February"
+						},
+						{
+							"id": "month",
+							"name": "month",
+							"value": "03",
+							"label": "March"
+						},
+						{
+							"id": "month",
+							"name": "month",
+							"value": "04",
+							"label": "April"
+						},
+						{
+							"id": "month",
+							"name": "month",
+							"value": "05",
+							"label": "May"
+						},
+						{
+							"id": "month",
+							"name": "month",
+							"value": "06",
+							"label": "June"
+						},
+						{
+							"id": "month",
+							"name": "month",
+							"value": "07",
+							"label": "July"
+						},
+						{
+							"id": "month",
+							"name": "month",
+							"value": "08",
+							"label": "August"
+						},
+						{
+							"id": "month",
+							"name": "month",
+							"value": "09",
+							"label": "September"
+						},
+						{
+							"id": "month",
+							"name": "month",
+							"value": "10",
+							"label": "October"
+						},
+						{
+							"id": "month",
+							"name": "month",
+							"value": "11",
+							"label": "November"
+						},
+						{
+							"id": "month",
+							"name": "month",
+							"value": "12",
+							"label": "December"
+						}
+					]
+				}
+			]
+		},
+		"keyword": {
+			"search": {
+				"label": "Search News",
+				"placeholder": "Search News"
+			}
+		}
+	}
+}

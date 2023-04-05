@@ -17,7 +17,13 @@
 				<div class="aggregate__set">
 
 					{{render '@keyword' keyword }}
-					
+
+					<h2 class="show-for-sr">Featured News</h2>
+
+					<div class="aggregate__feature">
+						{{render '@card-news' }}
+					</div>
+
 					<div class="aggregate__info">
 
 						<div class="aggregate__chips"></div>
@@ -41,7 +47,7 @@
 					
 					<h2 class="show-for-sr">Search Results</h2>
 					
-					<div class="aggregate__results" data-src="/data/events.json"></div>
+					<div class="aggregate__results" data-src="/data/news.json"></div>
 					
 					<div role="navigation" class="aggregate__pagination"></div>
 

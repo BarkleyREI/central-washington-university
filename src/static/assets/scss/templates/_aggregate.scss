@@ -5,6 +5,29 @@
 		margin-bottom: 40px;
 	}
 
+	&__feature {
+		margin-bottom: 8px;
+		
+		.card__figure,
+		.card__image,
+		.card__content {
+			clip-path: none;
+
+			&:after {
+				display: none;
+			}
+		}
+
+		.card__content {
+			margin-top: 0;
+			padding-top: 32px;
+		}
+
+		.card__heading {
+			@extend %font-h2;
+		}
+	}
+
 	&__info {
 		align-items: center;
 		display: flex;
@@ -83,6 +106,10 @@
 	@include breakpoint(large) {
 		.masthead {
 			margin-bottom: 110px;
+		}
+
+		&__feature {
+			margin-bottom: 32px;
 		}
 
 		&__info {
