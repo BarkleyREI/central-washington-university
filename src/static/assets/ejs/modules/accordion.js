@@ -88,15 +88,11 @@ const accordion = {
 
 		if (this.elem.$emergency.length > 0) {
 			this.emergencyModTime = (emergencyModTime) ? String(emergencyModTime) : null;
-			if (Cookies.get('cookie') !== undefined) {			
-				if (Cookies.get('emergencyModTime') === undefined) {
-					Cookies.set('emergencyModTime', this.emergencyModTime, { expires: 365, Secure: true, HttpOnly: true });
-					this.elem.$emergency.foundation('down', $('#emergency'));
-				} else if (Cookies.get('emergencyModTime') !== undefined && Cookies.get('emergencyModTime') !== this.emergencyModTime) {
-					Cookies.set('emergencyModTime', this.emergencyModTime, { expires: 365, Secure: true, HttpOnly: true });
-					this.elem.$emergency.foundation('down', $('#emergency'));
-				}
-			} else {
+			if (Cookies.get('emergencyModTime') === undefined) {
+				Cookies.set('emergencyModTime', this.emergencyModTime, { expires: 1, Secure: true, HttpOnly: true });
+				this.elem.$emergency.foundation('down', $('#emergency'));
+			} else if (Cookies.get('emergencyModTime') !== undefined && Cookies.get('emergencyModTime') !== this.emergencyModTime) {
+				Cookies.set('emergencyModTime', this.emergencyModTime, { expires: 1, Secure: true, HttpOnly: true });
 				this.elem.$emergency.foundation('down', $('#emergency'));
 			}
 		};

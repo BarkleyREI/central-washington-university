@@ -8,7 +8,7 @@ export const takeover = {
 		if (this.elem.$takeover === null) {
 			return;
 		}
-		
+
 		this.takeoverModTime = (takeoverModTime) ? String(takeoverModTime) : null;
 		this.bindUIActions();
 		this.displayAlert();
@@ -24,7 +24,7 @@ export const takeover = {
 
 		// If there are no cookies set, show the modal
 		// If the cookies are set but the takeover is more current, show the modal
-		if (Cookies.get('cookie') !== undefined) {
+		if (Cookies.get('takeover') !== undefined) {
 			if (Cookies.get('takeover') === undefined || Cookies.get('takeoverModTime') === undefined) {
 				Cookies.set('takeoverModTime', this.takeoverModTime, { Secure: true, HttpOnly: true });
 				$('html, body').addClass('body--no-scroll');
@@ -45,11 +45,7 @@ export const takeover = {
 
 	onClick(e) {
 		e.preventDefault();
-		
-		// Set cookie
-		if (Cookies.get('cookie') !== undefined) {
-			Cookies.set('takeover', 'true', { expires: 1, Secure: true, HttpOnly: true });
-		}
+		Cookies.set('takeover', 'true', { expires: 1, Secure: true, HttpOnly: true });
 		$('html, body').removeClass('body--no-scroll');
 
 		// Hide takeover
