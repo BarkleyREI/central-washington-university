@@ -1,0 +1,99 @@
+{
+	"title": "Events Aggregate",
+	"label": "Events",
+	"status": "ready",
+	"preview": "@template",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main",
+			"aggregate"
+		]
+	},
+	"context": {
+		"masthead": {
+			"style": "masthead--aggregate",
+			"title": "Events Aggregate Headline",
+			"images": ""
+		},
+		"filters": {
+			"title": "Event Filters",
+			"items": [
+				{
+					"checkboxes": true,
+					"title": "Events",
+					"legend": "type",
+					"items": [
+						{
+							"id": "type",
+							"name": "type",
+							"value": "University Events",
+							"label": "University Events"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "University Centers Events",
+							"label": "University Centers Events"
+						},						
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Athletics & Recreation",
+							"label": "Athletics & Recreation"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Conferences & Camps",
+							"label": "Conferences & Camps"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Performing Arts & Speakers",
+							"label": "Performing Arts & Speakers"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Student Life & Activities",
+							"label": "Student Life & Activities"
+						}
+					]
+				},
+				{
+					"checkboxes": true,
+					"title": "Deadlines",
+					"legend": "deadline",
+					"items": [
+						{
+							"id": "deadline",
+							"name": "deadline",
+							"value": "Registration & Classes",
+							"label": "Registration & Classes"
+						},
+						{
+							"id": "deadline",
+							"name": "deadline",
+							"value": "Withdrawal Deadlines",
+							"label": "Withdrawal Deadlines"
+						},
+						{
+							"id": "deadline",
+							"name": "deadline",
+							"value": "Graduation Deadlines",
+							"label": "Graduation Deadlines"
+						}						
+					]
+				}
+			]
+		},
+		"keyword": {
+			"search": {
+				"label": "Search Events",
+				"placeholder": "Search Events"
+			}
+		}
+	}
+}

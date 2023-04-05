@@ -1,0 +1,103 @@
+.aggregate {
+	$this: &;
+	
+	.masthead {
+		margin-bottom: 40px;
+	}
+
+	&__info {
+		align-items: center;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		margin-bottom: 32px;
+		min-height: 34px;
+	}
+
+	&__chips {
+		margin-bottom: 24px;
+		width: 100%;
+
+		.chip {
+			margin: 2px 16px 4px 0;
+		}
+
+		&:empty {
+			+ #{$this}__reset {
+				display: none;
+			}
+		}
+	}
+
+	&__reset {
+		@extend %default-link;
+		flex-shrink: 0;
+		font-size: 16px;
+		line-height: 1.5;
+
+		&:only-child {
+			display: none;
+		}
+	}
+
+	&__count {
+		font-family: $inter;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 1.5;
+		margin-left: 16px;
+		white-space: nowrap;
+	}
+
+	&__loading {
+		svg {
+			display: block;
+			fill: $cwu-crimson;
+			height: 200px;
+			margin: 0 auto;
+			width: 200px;
+		}
+	}
+	
+	&__results {
+		align-items: stretch;
+		display: flex;
+		flex-flow: row wrap;
+		gap: 16px;
+		justify-content: space-between;
+	}
+
+	&__pagination {
+		margin-top: 56px;
+		text-align: center;
+	}
+
+	@include breakpoint(medium) {
+		.card--event {
+			width: calc(50% - 8px);
+		}
+	}
+
+	@include breakpoint(large) {
+		.masthead {
+			margin-bottom: 110px;
+		}
+
+		&__info {
+			flex-flow: row nowrap;
+		}			
+
+		&__chips {
+			margin-bottom: 0;
+			width: auto;
+		}
+
+		&__reset {
+			margin-right: auto;
+		}
+		
+		&__pagination {
+			margin-top: 72px;
+		}
+	}	
+}
