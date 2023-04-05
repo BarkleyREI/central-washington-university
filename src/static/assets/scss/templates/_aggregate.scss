@@ -1,6 +1,6 @@
 .aggregate {
 	$this: &;
-	
+
 	.masthead {
 		margin-bottom: 40px;
 	}
@@ -58,7 +58,7 @@
 			width: 200px;
 		}
 	}
-	
+
 	&__results {
 		align-items: stretch;
 		display: flex;
@@ -87,7 +87,7 @@
 
 		&__info {
 			flex-flow: row nowrap;
-		}			
+		}
 
 		&__chips {
 			margin-bottom: 0;
@@ -97,9 +97,9 @@
 		&__reset {
 			margin-right: auto;
 		}
-		
+
 		&__pagination {
 			margin-top: 72px;
 		}
-	}	
+	}
 }

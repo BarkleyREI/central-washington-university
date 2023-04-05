@@ -1,0 +1,68 @@
+{
+	"title": "Faculty Aggregate",
+	"label": "Faculty",
+	"status": "ready",
+	"preview": "@template",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main",
+			"aggregate"
+		]
+	},
+	"context": {
+		"masthead": {
+			"style": "masthead--aggregate",
+			"title": "Faculty Aggregate Headline",
+			"images": ""
+		},
+		"filters": {
+			"title": "Faculty Filters",
+			"items": [
+				{
+					"checkboxes": true,
+					"title": "Type",
+					"legend": "type",
+					"items": [
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Department Chair",
+							"label": "Department Chair"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Full-Time Faculty",
+							"label": "Full-Time Faculty"
+						},						
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Adjunct Faculty",
+							"label": "Adjunct Faculty"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Emeritus Faculty",
+							"label": "Emeritus Faculty"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Staff",
+							"label": "Staff"
+						}
+					]
+				}
+			]
+		},
+		"keyword": {
+			"search": {
+				"label": "Search Faculty",
+				"placeholder": "Search Faculty"
+			}
+		}
+	}
+}

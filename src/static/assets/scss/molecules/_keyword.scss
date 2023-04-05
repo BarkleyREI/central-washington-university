@@ -3,7 +3,7 @@
 	.form__field--is-search {
 		margin-bottom: 0;
 
-		input[type='search'] {	
+		input[type='search'] {
 			~ label {
 				max-width: calc(100% - 60px);
 				overflow-x: hidden;
@@ -12,7 +12,7 @@
 			}
 		}
 	}
-	
+
 	@include breakpoint(medium down) {
 		background-color: $mercury;
 		margin-bottom: 40px;
@@ -21,15 +21,14 @@
 		.form__field--is-search {
 			input[type='search'] {
 				padding: 3.75px 60px 5.75px 20px;
-				
+
 				~ label,
 				&:not([disabled])[required]:valid ~ label,
 				&:not([disabled]):focus ~ label {
 					display: none;
 				}
-				
 			}
-			
+
 			.search-button {
 				font-size: 20px;
 				width: 44px;
