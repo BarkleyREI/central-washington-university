@@ -3,8 +3,8 @@
 	{{#if legend}}<legend class="show-for-sr">{{{ legend }}}</legend>{{/if}}
 	{{#each items}}
 	<div class="form__field{{#if style}} {{style}}{{/if}}">
-		<input id="{{ id }}{{#if formkey}}-{{formkey}}{{/if}}-{{value}}" name="{{ name }}[]" type="checkbox" value="{{{ value }}}"{{#if checked}} checked="checked"{{/if}} />
-		<label for="{{ id }}{{#if formkey}}-{{formkey}}{{/if}}-{{value}}">
+		<input id="{{ id }}{{#if formkey}}-{{formkey}}{{/if}}-{{@key}}" name="{{ name }}[]" type="checkbox" value="{{{ value }}}"{{#if checked}} checked="checked"{{/if}} />
+		<label for="{{ id }}{{#if formkey}}-{{formkey}}{{/if}}-{{@key}}">
 			{{#if label}}{{{ label }}}{{else}}{{{ value }}}{{/if}}
 			<span class="checkbox" role="none">{{svg "check"}}</span>
 		</label>

@@ -1,0 +1,111 @@
+{
+	"title": "Programs Aggregate",
+	"label": "Programs",
+	"status": "ready",
+	"preview": "@template",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main",
+			"aggregate"
+		]
+	},
+	"context": {
+		"masthead": {
+			"style": "masthead--aggregate",
+			"title": "Programs Aggregate Headline",
+			"images": ""
+		},
+		"filters": {
+			"title": "Program Filters",
+			"items": [
+				{
+					"checkboxes": true,
+					"title": "Programs",
+					"legend": "type",
+					"items": [
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Majors",
+							"label": "Majors"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Minors",
+							"label": "Minors"
+						},						
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Certificates",
+							"label": "Certificates"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Graduate Programs",
+							"label": "Graduate Programs"
+						},
+						{
+							"id": "type",
+							"name": "type",
+							"value": "Online Programs",
+							"label": "Online Programs"
+						}
+					]
+				},
+				{
+					"checkboxes": true,
+					"title": "Academic Colleges",
+					"legend": "college",
+					"items": [
+						{
+							"id": "college",
+							"name": "college",
+							"value": "College of Arts & Humanities",
+							"label": "College of Arts & Humanities"
+						},
+						{
+							"id": "college",
+							"name": "college",
+							"value": "College of Business",
+							"label": "College of Business"
+						},
+						{
+							"id": "college",
+							"name": "college",
+							"value": "College of Education & Professional Studies",
+							"label": "College of Education & Professional Studies"
+						},
+						{
+							"id": "college",
+							"name": "college",
+							"value": "College of Sciences",
+							"label": "College of Sciences"
+						},
+						{
+							"id": "college",
+							"name": "college",
+							"value": "Honors College",
+							"label": "Honors College"
+						},
+						{
+							"id": "college",
+							"name": "college",
+							"value": "School of Graduate Studies & Research",
+							"label": "School of Graduate Studies & Research"
+						}						
+					]
+				}
+			]
+		},
+		"keyword": {
+			"search": {
+				"label": "Search Programs",
+				"placeholder": "Search Programs"
+			}
+		}
+	}
+}

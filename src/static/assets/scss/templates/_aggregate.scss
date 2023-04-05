@@ -73,8 +73,10 @@
 	}
 
 	@include breakpoint(medium) {
-		.card--event {
-			width: calc(50% - 8px);
+		&__results {
+			.card {
+				width: calc(50% - 8px);
+			}
 		}
 	}
 
