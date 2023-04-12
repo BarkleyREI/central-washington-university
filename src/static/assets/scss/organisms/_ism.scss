@@ -48,6 +48,10 @@
 		padding: 0;
 		position: relative;
 
+		&[disabled] {
+			pointer-events: none;
+		}
+
 		&:link,
 		&:visited,
 		&:focus,

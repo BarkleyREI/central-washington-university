@@ -10,8 +10,8 @@
 
 			<ul class="ism__location-list">
 				{{#each items}}
-				<li class="ism__location-item accordion-item{{#if active}} is-active{{/if}}" data-accordion-item style="left: {{ position.left }}; top: {{ position.top }};">
-					<a href="#{{id}}{{@key}}" class="ism__location-link accordion-title" aria-controls="{{@key}}" id="{{@key}}-label" aria-expanded="{{ active }}">
+				<li class="ism__location-item {{#if active}} is-active{{/if}}" style="left: {{ position.left }}; top: {{ position.top }};">
+					<a href="#{{id}}{{@key}}" class="ism__location-link" aria-controls="{{@key}}" aria-expanded="{{ active }}">
 						<span class="trigger">
 							{{svg icon}}
 							{{svg "minus"}}

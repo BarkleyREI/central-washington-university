@@ -6,6 +6,7 @@ import { accordion } from './modules/accordion';
 import { form } from './modules/form';
 import { gallery } from './modules/gallery';
 import { header } from './modules/header';
+import { ism } from './modules/ism';
 import { masthead } from './modules/masthead';
 import { search } from './modules/search';
 import { table } from './modules/table';
@@ -27,6 +28,7 @@ const main = {
 		form.init();
 		gallery.init();
 		header.init();
+		ism.init();
 		masthead.init();
 		search.init();
 		table.init();

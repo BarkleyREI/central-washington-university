@@ -11,14 +11,21 @@ const ism = {
 	},
 
 	init() {
-		if (this.elem.$icon.length > 0) {
+		if (this.elem.$icon.length > 1) {
 			this.bindUIActions();
+		} else {
+			this.bindNoUIActions();
 		}
 	},
 
 	bindUIActions() {
 		this.elem.$icon.on('click', this.btnIcon.bind(this));
 		this.elem.$heading.on('click', this.btnHeading.bind(this));
+	},
+	
+	bindNoUIActions() {
+		this.elem.$icon.find('.ism__location-link').removeAttr('href').attr('disabled',true);
+		this.elem.$icon.on('click', this.btnNoIcon.bind(this));
 	},
 
 	btnHeading(e) {
@@ -27,9 +34,16 @@ const ism = {
 	},
 
 	btnIcon(e) {
+		e.preventDefault();
 		console.log('blorb');
+		console.log(e.currentTarget);
 		this.elem.$icon.removeClass('is-active').find('.ism__location-link').attr('aria-expanded', false);
 		$(e.currentTarget).addClass('is-active').find('.ism__location-link').attr('aria-expanded', true);
+		$('.ism__heading[href="' + $(e.currentTarget).find('.ism__location-link').attr('href') + '"]').trigger('click');
+	},
+
+	btnNoIcon(e) {
+		e.preventDefault();
 	}
 };
 
