@@ -341,10 +341,14 @@ const results = {
 			items.push(max - 2);
 		}
 		
-		// filter out results that are less than zero, or greater than max, then sort
+		// filter out results that are less than zero
+		// filter out results that are greater than max
+		// filter out non-unique items
+		// sort
 		items = items.filter(function(x){ return x > -1 });
 		items = items.filter(function(x){ return x <= max });
-		items.sort(function(a, b){return a-b});
+		items = [...new Set(items)];
+		items = items.sort(function(a, b){return a-b});
 
 		// previous button
 		output += '<li class="pagination__item pagination__item--prev';
