@@ -31,14 +31,6 @@
 		margin: 0 0 1.5rem;
 		overflow: auto;
 		padding-left: 40px;
-
-		li {
-			&::marker {
-				content: '●  ';
-				/* stylelint-disable-next-line declaration-no-important */
-				text-indent: 4px !important;
-			}
-		}
 	}
 
 	@include breakpoint(large) {
