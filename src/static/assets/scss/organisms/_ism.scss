@@ -112,6 +112,16 @@
 	&__item {
 		border-bottom: 1px solid $tundora;
 		list-style-type: none;
+
+		&:only-child {
+			#{$this}__heading {
+				pointer-events: none;
+			}
+			
+			.trigger {
+				display: none;
+			}
+		}
 	}
 
 	&__heading {
