@@ -33,13 +33,17 @@
 	&__prev {
 		left: 42px;
 
-		.brei-icon {
-			transform: rotate(180deg);
+		.brei-icon-chevron {
+			transform: rotate(180deg) translateX(15%);
 		}
 	}
 
 	&__next {
 		right: 42px;
+
+		.brei-icon-chevron {
+			transform: translateX(15%);
+		}
 	}
 
 	.slick-dots {
