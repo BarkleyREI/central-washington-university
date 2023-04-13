@@ -1,10 +1,10 @@
 .cpg {
 	$this: &;
-	background: $wild-sand;
+	background: $mercury;
 	padding: 48px 0;
 
 	&--manual {
-		background: transparent;
+		background: $wild-sand;
 	}
 
 	&__list {
