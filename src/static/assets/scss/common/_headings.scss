@@ -124,10 +124,18 @@
 	font-weight: 400;
 	line-height: 1.44;
 
-	@include breakpoint(medium) {
+	@include breakpoint(large) {
 		font-size: 19.2px;
 		line-height: 1.5;
 	}
+}
+
+%font-big,
+.font-big {
+	font-family: $inter;
+	font-size: 19.2px;
+	font-weight: 400;
+	line-height: 1.5;
 
 	@include breakpoint(large) {
 		font-size: 23.04px;
