@@ -36,17 +36,27 @@
 
 	&__card--digits {
 		#{$this}__info {
-			background: $cwu-crimson;
-			clip-path: polygon(0% 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+			// background: $cwu-crimson;
+			// clip-path: polygon(0% 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
 			color: $white;
 			font-family: $inter;
 			font-size: 76.29px;
 			font-weight: 800;
 			line-height: 0.9;
+			overflow: hidden;
 			padding: 0 36px 0 12px;
+			position: relative;
 
 			span {
 				top: 5px;
+			}
+
+			&:after {
+				@extend %overlay;
+				background: $cwu-crimson;
+				content: '';
+				transform: skewX(-12.5deg) translateX(-10px);
+				z-index: -1;
 			}
 		}
 	}

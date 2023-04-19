@@ -2,17 +2,27 @@
 	$this: &;
 
 	&__code {
-		background-color: $black;
-		clip-path: polygon(0% 0%, 100% 0%, calc(100% - 16px) 100%, 0% 100%);
+		// background-color: $black;
+		// clip-path: polygon(0% 0%, 100% 0%, calc(100% - 16px) 100%, 0% 100%);
 		color: $white;
 		display: inline-block;
 		margin: 0 0 48px;
+		overflow: hidden;
 		padding: 0 64px 0 24px;
+		position: relative;
 		text-transform: uppercase;
 
 		span {
 			position: relative;
 			top: 10px;
+		}
+
+		&:after {
+			@extend %overlay;
+			background-color: $black;
+			content: '';
+			transform: skewX(-12.5deg) translateX(-12px);
+			z-index: -1;
 		}
 	}
 

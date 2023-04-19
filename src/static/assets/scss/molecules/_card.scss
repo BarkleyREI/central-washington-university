@@ -8,18 +8,28 @@ $card: '.card';
 	width: 100%;
 
 	&__date {
-		background-color: $black;
-		clip-path: polygon(0% 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+		// clip-path: polygon(0% 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
 		color: $white;
 		display: inline-block;
 		font-weight: 800;
 		margin: 0;
 		padding: 4px 40px 4px 24px;
+		position: relative;
 		text-transform: uppercase;
+		z-index: 1;
 
 		span {
 			position: relative;
 			top: 10px;
+		}
+
+		&:after {
+			@extend %overlay;
+			background-color: $black;
+			content: '';
+			right: -4px;
+			transform: skew(-12.5deg) translateX(-6px);
+			z-index: -1;
 		}
 	}
 
@@ -47,15 +57,24 @@ $card: '.card';
 	}
 
 	&__type {
-		background: $black;
-		clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
+		// background-color: $black;
+		// clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
 		color: $white;
 		display: inline-block;
 		font-size: 16px;
 		font-weight: 800;
 		line-height: 1;
 		padding: 6px 12px 5px;
+		position: relative;
 		text-transform: uppercase;
+
+		&:after {
+			@extend %overlay;
+			background-color: $black;
+			content: '';
+			transform: skew(-12.5deg);
+			z-index: -1;
+		}
 	}
 
 	&__heading {
@@ -185,6 +204,8 @@ $card: '.card';
 }
 
 #{$card}--event {
+	overflow: hidden;
+
 	#{$card}__content {
 		padding: 36px 24px 64px;
 	}

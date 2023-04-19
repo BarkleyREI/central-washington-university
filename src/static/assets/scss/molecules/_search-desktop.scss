@@ -31,7 +31,7 @@
 		}
 
 		&[aria-pressed='true'] {
-			background: $black;
+			background-color: $black;
 			color: $white;
 
 			.brei-icon-close {

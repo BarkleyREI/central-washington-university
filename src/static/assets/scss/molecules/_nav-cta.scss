@@ -7,17 +7,17 @@
 		margin-bottom: 20px;
 
 		a {
-			background-image: linear-gradient(90deg, $cwu-crimson 50%, $black 50%);
-			background-size: 205% 100%;
-			clip-path: polygon(0% 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+			// background-image: linear-gradient(90deg, $cwu-crimson 50%, $black 50%);
+			// background-size: 205% 100%;
+			// clip-path: polygon(0% 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
 			display: block;
 			font-family: $inter;
 			font-size: 30.264px;
 			font-weight: 800;
 			line-height: 1;
 			padding: 4px 16px;
+			position: relative;
 			text-transform: uppercase;
-			transition: background-position $transition-time ease;
 
 			span {
 				position: relative;
@@ -25,19 +25,38 @@
 				top: 8px;
 			}
 
+			&:after {
+				@extend %overlay;
+				background-image: linear-gradient(90deg, $cwu-crimson 50%, $black 50%);
+				background-size: 205% 100%;
+				content: '';
+				transform: skewX(-12.5deg);
+				transition: background-position $transition-time ease;
+				z-index: -1;
+			}
+
+
 			&:link,
 			&:visited {
-				background-position: right center;
+				// background-position: right center;
 				color: $white;
 				text-decoration: none;
+
+				&:after {
+					background-position: right center;
+				}
 			}
 
 			&:hover,
 			&:active,
 			&:focus-visible {
-				background-position: left center;
+				// background-position: left center;
 				color: $white;
 				text-decoration: none;
+
+				&:after {
+					background-position: left center;
+				}
 			}
 		}
 	}
@@ -68,7 +87,7 @@
 			flex-grow: 1;
 
 			a {
-				clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+				// clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
 				padding: 4px 12px;
 				text-align: center;
 			}
