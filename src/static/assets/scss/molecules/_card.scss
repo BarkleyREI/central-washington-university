@@ -27,8 +27,8 @@ $card: '.card';
 			@extend %overlay;
 			background-color: $black;
 			content: '';
-			right: -4px;
-			transform: skew(-12.5deg) translateX(-6px);
+			transform: skewX(-12.5deg);
+			transform-origin: top right;
 			z-index: -1;
 		}
 	}
@@ -64,7 +64,7 @@ $card: '.card';
 		font-size: 16px;
 		font-weight: 800;
 		line-height: 1;
-		padding: 6px 12px 5px;
+		padding: 6px 6px 5px 12px;
 		position: relative;
 		text-transform: uppercase;
 
@@ -72,7 +72,8 @@ $card: '.card';
 			@extend %overlay;
 			background-color: $black;
 			content: '';
-			transform: skew(-12.5deg);
+			transform: skewX(-12.5deg);
+			transform-origin: bottom left;
 			z-index: -1;
 		}
 	}

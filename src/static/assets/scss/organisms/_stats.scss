@@ -55,7 +55,8 @@
 				@extend %overlay;
 				background: $cwu-crimson;
 				content: '';
-				transform: skewX(-12.5deg) translateX(-10px);
+				transform: skewX(-12.5deg);
+				transform-origin: top right;
 				z-index: -1;
 			}
 		}

@@ -15,6 +15,7 @@
 			font-size: 30.264px;
 			font-weight: 800;
 			line-height: 1;
+			overflow: hidden;
 			padding: 4px 16px;
 			position: relative;
 			text-transform: uppercase;
@@ -31,10 +32,10 @@
 				background-size: 205% 100%;
 				content: '';
 				transform: skewX(-12.5deg);
+				transform-origin: top right;
 				transition: background-position $transition-time ease;
 				z-index: -1;
 			}
-
 
 			&:link,
 			&:visited {
@@ -80,6 +81,7 @@
 			align-items: stretch;
 			display: flex;
 			flex-flow: row nowrap;
+			gap: 16px;
 			justify-content: space-between;
 		}
 
@@ -88,8 +90,13 @@
 
 			a {
 				// clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+				overflow: visible;
 				padding: 4px 12px;
 				text-align: center;
+
+				&:after {
+					transform-origin: center center;
+				}
 			}
 		}
 	}
