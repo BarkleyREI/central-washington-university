@@ -41,6 +41,66 @@
 					}
 				]
 			}
-		}
+		},
+		{
+			"name": "Home",
+			"context": {
+				"style": "feed--news feed--dark",
+				"heading": "CWU News",
+				"items": [
+					{
+						"image": {
+							"src": "/img/photos/heart.jpg",
+							"alt": "CWU students walking on campus",
+							"width": 836,
+							"height": 628
+						},
+						"heading": "From the President: Heart of Higher Education Conference 2023",
+						"date": "March 08, 2023",
+						"byline": "Jim Wohlpart",
+						"cta": {
+							"url": "#",
+							"modifiers": "btn--cta",
+							"copy": "Read More"
+						}
+					},
+					{
+						"image": {
+							"src": "/img/photos/were-leadership.jpg",
+							"alt": "the CWU College of Business building",
+							"width": 836,
+							"height": 628
+						},
+						"heading": "WERE leadership training program building momentum in 2023",
+						"date": "March 06, 2023",
+						"byline": "David Leder",
+						"cta": {
+							"url": "#",
+							"modifiers": "btn--cta",
+							"copy": "Read More"
+						}
+					},
+					{
+						"image": {
+							"src": "/img/photos/wildcat-football.jpg",
+							"alt": "the CWU Wildcats football team",
+							"width": 836,
+							"height": 628
+						},
+						"heading": "Wildcat Football Once Again Partners with Be The Match",
+						"date": "March 02, 2023",
+						"byline": "Jacob Thompson",
+						"cta": {
+							"url": "#",
+							"modifiers": "btn--cta",
+							"copy": "Read More"
+						}
+					}
+				],
+				"cta": {
+					"copy": "View All News"
+				}
+			}
+		}	
 	]
 }

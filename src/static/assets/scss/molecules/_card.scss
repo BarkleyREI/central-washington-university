@@ -1,8 +1,12 @@
 $card: '.card';
 
 .card {
+	align-items: flex-start;
 	background-color: $wild-sand;
 	color: $black;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
 	position: relative;
 	transition: background-color $transition-time ease, color $transition-time ease;
 	width: 100%;
@@ -37,6 +41,7 @@ $card: '.card';
 		background: transparent;
 		overflow: hidden;
 		position: relative;
+		width: 100%;
 		z-index: 3;
 	}
 
@@ -49,10 +54,16 @@ $card: '.card';
 	}
 
 	&__content {
+		align-items: flex-start;
 		background-color: $wild-sand;
+		display: flex;
+		flex-flow: column;
+		flex-grow: 1;
+		justify-content: flex-start;
 		padding: 48px 24px 64px;
 		position: relative;
 		transition: background-color $transition-time ease;
+		width: 100%;
 		z-index: 2;
 	}
 
@@ -79,7 +90,8 @@ $card: '.card';
 	}
 
 	&__heading {
-		margin-bottom: 16px;
+		margin-bottom: auto;
+		padding-bottom: 16px;
 	}
 
 	&__subheading {
@@ -88,7 +100,7 @@ $card: '.card';
 
 	&__contact-list {
 		list-style-type: none;
-		margin: 16px 0;
+		margin: 0 0 16px;
 		padding: 0;
 	}
 
@@ -195,7 +207,7 @@ $card: '.card';
 		}
 
 		&__heading {
-			margin-bottom: 28px;
+			padding-bottom: 28px;
 		}
 
 		.btn--cta {

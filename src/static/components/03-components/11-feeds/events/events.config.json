@@ -41,6 +41,53 @@
 					}
 				]
 			}
-		}
+		},
+		{
+			"name": "Home",
+			"context": {
+				"heading": "CWU Upcoming Events",
+				"items": [
+					{
+						"UTC": "2023-03-06T02:30:00-07:00",
+						"datetime": "March 06",
+						"heading": "Monday Movie Madness: I Wanna Dance With Somebody",
+						"time": "07:30PM - 10:00PM",
+						"location": "Student Union and Recreation Center<br />Theatre Rm 210",
+						"cta": {
+							"modifiers": "btn--cta",
+							"url": "#",
+							"copy": "View Event Details"
+						}
+					},
+					{
+						"UTC": "2023-03-04T18:00:00-07:00",
+						"datetime": "March 04",
+						"heading": "Softball Doubleheader Game vs Billings",
+						"time": "11:00AM - 05:00PM",
+						"location": "Sports-Varsity Softball Field",
+						"cta": {
+							"modifiers": "btn--cta",
+							"url": "#",
+							"copy": "View Event Details"
+						}
+					},
+					{
+						"UTC": "2023-03-02T24:00:00-07:00",
+						"datetime": "March 02",
+						"heading": "Services & Activities Fee Committe Meeting",
+						"time": "05:30PM - 07:00PM",
+						"location": "Virtual Location for Online Events",
+						"cta": {
+							"modifiers": "btn--cta",
+							"url": "#",
+							"copy": "View Event Details"
+						}
+					}
+				],
+				"cta": {
+					"copy": "View All Events"
+				}
+			}
+		}		
 	]	
 }

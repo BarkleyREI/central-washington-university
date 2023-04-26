@@ -1,0 +1,22 @@
+<section class="feed feed--home {{ style }}">
+
+	<div class="feed__wrapper wrapper">
+
+		<div class="feed__title">
+
+			<h2 class="feed__heading font-h1">{{{ heading }}}</h2>
+
+			{{#if cta }}{{render '@button--primary' cta merge="true" }}{{/if}}
+		
+		</div>
+
+		<div class="feed__list">
+
+			{{#each items}}{{render '@card-news' this merge="true" }}{{/each}}
+
+		</div>
+
+		{{#if cta }}{{render '@button--primary' cta merge="true" }}{{/if}}
+
+	</div>
+</section>

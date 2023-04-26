@@ -1,6 +1,27 @@
 .feed {
 	$this: &;
 
+	&__title {
+		position: relative;
+
+		#{$this}__heading {
+			margin-bottom: 0;
+			padding-right: 36px;
+		}
+
+		&:after {
+			background-color: $black;
+			bottom: 24px;
+			content: '';
+			display: block;
+			height: 4px;
+			left: 0;
+			position: absolute;
+			right: 0;
+			z-index: -1;
+		}
+	}
+
 	&__list {
 		align-items: stretch;
 		display: flex;
@@ -8,13 +29,83 @@
 		gap: 16px;
 		justify-content: flex-start;
 		margin: 32px 0 0;
+
+		~ .btn--primary {
+			margin-top: 48px;
+		}
 	}
 
-	.btn--primary {
-		margin-top: 48px;
+	&--home {
+		@extend %inset-bottom-edge;
+		padding: 60px 0;
+
+		#{$this}__heading {
+			background-color: $white;
+			display: inline;
+			font-style: italic;
+			text-transform: uppercase;
+		}
+	}
+
+	&--dark {
+		background-color: $wild-sand;
+		padding-bottom: 72px;
+
+		#{$this}__heading {
+			background-color: $wild-sand;
+		}
+
+		.card {
+			background-color: $white;
+
+			.card__content {
+				background-color: $white;
+			}
+
+			&:hover,
+			&:focus-within {
+				background-color: $cwu-crimson;
+
+				.card__content {
+					background-color: $cwu-crimson;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(small down) {
+		&--home {
+			#{$this}__title {
+				.btn--primary {
+					display: none;
+				}
+			}
+
+			.card:nth-child(n+2) {
+				display: none;
+			}
+		}
+	}
+
+	@include breakpoint(medium only) {
+		.card:nth-child(n+3) {
+			display: none;
+		}
 	}
 
 	@include breakpoint(medium) {
+		&__title {
+			align-items: center;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			padding-right: 8px;
+
+			&:after {
+				right: 8px;
+			}
+		}
+
 		&__list {
 			flex-flow: row wrap;
 		}
@@ -31,18 +122,45 @@
 				text-align: left;
 			}
 		}
+
+		&--home {
+			#{$this}__list {
+				~ .btn--primary {
+					display: none;
+				}
+			}
+		}
 	}
 
 	@include breakpoint(large) {
-		&__list,
-		.btn--primary {
-			margin-top: 64px;
+		&__title {
+			&:after {
+				bottom: 27.5px;
+			}
 		}
 
-		&--wide {
+		&__list {
+			margin-top: 64px;
+
+			~ .btn--primary {
+				margin-top: 64px;
+			}
+		}
+
+		&--wide,
+		&--home {
 			.card {
 				width: calc(33.3333% - 10.6666px);
 			}
+		}
+
+		&--home {
+			--inset-edge: 48px;
+			padding: 96px 0;
+		}
+
+		&--dark {
+			padding-bottom: 120px;
 		}
 	}
 }
