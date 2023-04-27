@@ -10,12 +10,9 @@
 
 		&:after {
 			@extend %overlay;
-			background-image: url('/img/topo-map.jpg');
-			background-position: 50% 50%;
-			background-size: cover;
 			content: '';
 			mix-blend-mode: multiply;
-			opacity: 0.08;
+			opacity: 0.03;
 			z-index: 1;
 		}
 	}
@@ -105,8 +102,26 @@
 		}
 	}
 
+	@include breakpoint(medium down) {
+		&__main {
+			&:after {
+				background-image: url('/img/triangles-vertical.svg');
+				background-position: bottom center;
+				background-repeat: repeat-x;
+			}
+		}
+	}
+
 	@include breakpoint(large) {
 		margin-top: 148px;
+
+		&__main {
+			&:after {
+				background-image: url('/img/triangles-horizontal.svg');
+				background-position: right center;
+				background-repeat: repeat-y;
+			}
+		}
 
 		.logo {
 			margin-bottom: 32px;
