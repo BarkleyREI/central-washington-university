@@ -71,6 +71,36 @@
 					}					
 				]
 			}
-		}
+		},
+		{
+			"name": "Home",
+			"preview": "@high",
+			"context": {
+				"style": "stats--home",
+				"heading": "CWU by the Numbers",
+				"items": [
+					{
+						"style": "stats__card--standalone",
+						"infor": "10K",
+						"heading": "full-time Wildcats"
+					},
+					{
+						"style": "stats__card--standalone",
+						"infor": "80%",
+						"heading": "of students receive financial aid"
+					},
+					{
+						"style": "stats__card--standalone",
+						"infor": "20/1",
+						"heading": "student to faculty ratio"
+					},
+					{
+						"style": "stats__card--standalone",
+						"infor": "125+",
+						"heading": "student organizations"
+					}
+				]
+			}
+		}		
 	]
 }

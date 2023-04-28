@@ -89,6 +89,63 @@
 		}
 	}
 
+	&--home {
+		#{$this}__heading {
+			color: $white;
+			position: relative;
+			text-transform: uppercase;
+			padding: 8px 24px;
+			font-style: italic;
+			font-weight: 700;
+			text-align: center;
+
+			&:after {
+				@extend %overlay;
+				left: 16px;
+				right: 16px;
+				width: auto;
+				background-color: $black;
+				content: '';
+				transform: skewX(-12.5deg);
+				transform-origin: center center;
+				z-index: -1;
+			}			
+		}
+
+		#{$this}__list {
+			flex-flow: row wrap;
+			gap: 0;
+			margin-top: 32px;
+		}
+
+		#{$this}__card {
+			text-align: center;
+			width: 100%;
+
+			&--standalone {
+				padding: 8px;
+				
+				#{$this}__info {
+					font-size: 61.33px;
+				}
+
+				#{$this}__headline {
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(small) {
+		&--home {
+			#{$this}__card {
+				width: 50%;
+			}
+		}
+	}
+		
+
 	@include breakpoint(medium) {
 		&__list {
 			flex-flow: row wrap;
@@ -135,6 +192,31 @@
 				}
 			}
 		}
+
+		&--home {
+			#{$this}__heading {
+				width: fit-content;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 8px 32px;
+			}
+			
+			#{$this}__list {
+				margin-top: 32px;
+			}
+			
+			#{$this}__card {
+				width: 25%;
+
+				&:nth-child(n+5) {
+					margin-top: 64px;
+				}
+
+				&--standalone {
+					padding: 16px;
+				}
+			}
+		}
 	}
 
 	@include breakpoint(xlarge) {
@@ -155,17 +237,45 @@
 				min-height: 89.16px;
 			}
 		}
+
+		&--home {
+			#{$this}__card {
+				width: 25%;
+
+				&--standalone {
+					#{$this}__info {
+						font-size: 99.07px;
+					}
+				}
+			}
+		}
 	}
 
 	@include breakpoint(xxlarge) {
 		&__card {
 			padding-right: 6.25%;
 		}
+
+		&--home {
+			#{$this}__list {
+				justify-content: space-between;
+			}
+			
+			#{$this}__card {
+				width: 22.5%;
+			}
+		}
 	}
 
 	@include breakpoint(xxxlarge) {
 		&__card {
 			padding-right: 12.5%;
+		}
+
+		&--home {
+			#{$this}__card {
+				width: 20%;
+			}
 		}
 	}
 }
