@@ -45,6 +45,7 @@
 		{
 			"name": "Home",
 			"context": {
+				"style": "feed--events animateOnce",
 				"heading": "CWU Upcoming Events",
 				"items": [
 					{

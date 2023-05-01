@@ -3,6 +3,7 @@ import { ready } from 'brei-project-utils';
 import { plugin } from './lib/plugin';
 
 import { accordion } from './modules/accordion';
+import { animator } from './modules/animator';
 import { form } from './modules/form';
 import { gallery } from './modules/gallery';
 import { header } from './modules/header';
@@ -34,6 +35,8 @@ const main = {
 		table.init();
 		takeover.init();
 		video.init();
+
+		animator.init();
 
 		this.bindUIActions();
 	},

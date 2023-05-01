@@ -57,6 +57,20 @@
 			}
 		},
 		{
+			"name": "Home",
+			"context": {
+				"style": "masthead--home masthead--video animateOnce",
+				"title": "We See <br />Futures",
+				"copy": "At Central Washington University, you'll find a community designed to support your individual journey to success.",
+				"images": "",
+				"video": {
+					"src": "/video/alb_tvn0212_1080p.mp4",
+					"poster": "https://via.placeholder.com/1920x1080",
+					"alt": "[video alt text]"
+				}				
+			}
+		},
+		{
 			"name": "Landing",
 			"context": {
 				"style": "masthead--landing masthead--video",

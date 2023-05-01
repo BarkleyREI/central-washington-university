@@ -45,7 +45,7 @@
 		{
 			"name": "Home",
 			"context": {
-				"style": "feed--news feed--dark",
+				"style": "feed--news feed--dark animateOnce",
 				"heading": "CWU News",
 				"items": [
 					{

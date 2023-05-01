@@ -37,14 +37,22 @@
 
 	&--home {
 		@extend %inset-bottom-edge;
+		opacity: 0;
 		padding: 60px 0;
+		transform: translateY(100px);
 
 		#{$this}__heading {
 			background-color: $white;
 			display: inline;
 			font-style: italic;
-			font-weight: 700;			
+			font-weight: 700;
 			text-transform: uppercase;
+		}
+
+		&.animated {
+			opacity: 1;
+			transform: none;
+			transition: opacity 1000ms ease, transform 1000ms ease;
 		}
 	}
 

@@ -90,26 +90,29 @@
 	}
 
 	&--home {
+		opacity: 0;
+		transform: translateY(100px);
+
 		#{$this}__heading {
 			color: $white;
-			position: relative;
-			text-transform: uppercase;
-			padding: 8px 24px;
 			font-style: italic;
 			font-weight: 700;
+			padding: 8px 24px;
+			position: relative;
 			text-align: center;
+			text-transform: uppercase;
 
 			&:after {
 				@extend %overlay;
-				left: 16px;
-				right: 16px;
-				width: auto;
 				background-color: $black;
 				content: '';
+				left: 16px;
+				right: 16px;
 				transform: skewX(-12.5deg);
 				transform-origin: center center;
+				width: auto;
 				z-index: -1;
-			}			
+			}
 		}
 
 		#{$this}__list {
@@ -124,7 +127,7 @@
 
 			&--standalone {
 				padding: 8px;
-				
+
 				#{$this}__info {
 					font-size: 61.33px;
 				}
@@ -135,6 +138,12 @@
 				}
 			}
 		}
+
+		&.animated {
+			opacity: 1;
+			transform: none;
+			transition: opacity 1000ms ease, transform 1000ms ease;
+		}
 	}
 
 	@include breakpoint(small) {
@@ -144,7 +153,7 @@
 			}
 		}
 	}
-		
+
 
 	@include breakpoint(medium) {
 		&__list {
@@ -195,16 +204,16 @@
 
 		&--home {
 			#{$this}__heading {
-				width: fit-content;
 				margin-left: auto;
 				margin-right: auto;
 				padding: 8px 32px;
+				width: fit-content;
 			}
-			
+
 			#{$this}__list {
 				margin-top: 32px;
 			}
-			
+
 			#{$this}__card {
 				width: 25%;
 
@@ -260,7 +269,7 @@
 			#{$this}__list {
 				justify-content: space-between;
 			}
-			
+
 			#{$this}__card {
 				width: 22.5%;
 			}

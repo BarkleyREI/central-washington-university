@@ -76,7 +76,7 @@
 			"name": "Home",
 			"preview": "@high",
 			"context": {
-				"style": "stats--home",
+				"style": "stats--home animateOnce",
 				"heading": "CWU by the Numbers",
 				"items": [
 					{

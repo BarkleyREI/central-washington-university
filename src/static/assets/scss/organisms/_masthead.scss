@@ -75,6 +75,16 @@
 		}
 	}
 
+	&__copy {
+		margin-top: 32px;
+		position: relative;
+		z-index: 4;
+
+		p {
+			color: $white;
+		}
+	}
+
 	&--aggregate {
 		--inset-edge: 24px;
 		align-items: flex-start;
@@ -117,9 +127,74 @@
 		}
 	}
 
+	&--home {
+		#{$this}__gallery {
+			&:before {
+				@extend %overlay;
+				background-image: linear-gradient(180deg, rgba($black, 0) 0%, rgba($black, 1) 100%);
+				clip-path: none;
+				content: '';
+				display: block;
+				z-index: 3;
+			}
+		}
+
+		#{$this}__wrapper {
+			--inset-edge: 24px;
+			@extend %inset-bottom-border;
+			background: $black;
+			clip-path: polygon(0% -56px, 100% -56px, 100% calc(100% - var(--inset-edge)), 0% 100%);
+			padding-bottom: 72px;
+		}
+
+		#{$this}__title {
+			transform: translateX(-100vw);
+
+			h1 {
+				font-style: italic;
+				line-height: 1;
+				padding: 8px 44px 8px 0;
+				position: relative;
+				text-transform: uppercase;
+				width: fit-content;
+
+				&:before {
+					background-color: $cwu-crimson;
+					bottom: 0;
+					content: '';
+					display: block;
+					left: -50vw;
+					position: absolute;
+					right: 0;
+					top: 0;
+					transform: skew(-12.5deg);
+					transform-origin: top right;
+					z-index: -1;
+				}
+			}
+		}
+
+		#{$this}__copy {
+			transform: translateX(-100vw);
+		}
+
+		&.animated {
+			#{$this}__title {
+				transform: none;
+				transition: transform 500ms ease;
+			}
+
+			#{$this}__copy {
+				transform: none;
+				transition: transform 500ms ease;
+				transition-delay: 250ms;
+			}
+		}
+	}
+
 	&--landing {
 		#{$this}__title {
-			background: $cwu-crimson;
+			background-color: $cwu-crimson;
 		}
 	}
 
@@ -138,6 +213,26 @@
 		&--landing {
 			#{$this}__gallery {
 				aspect-ratio: 1.7777;
+			}
+		}
+
+		&--home {
+			#{$this}__gallery {
+				aspect-ratio: 1.7777;
+				clip-path: none;
+
+				&:after {
+					display: none;
+				}
+			}
+
+			#{$this}__wrapper {
+				position: relative;
+				z-index: 20;
+			}
+
+			#{$this}__title {
+				padding: 0;
 			}
 		}
 	}
@@ -207,15 +302,32 @@
 		}
 
 		&--detail {
-			min-height: 42.85vw;
+			height: clamp(438px, 42.85vw, 822px);
 
 			#{$this}__title {
 				background: rgba($black, 0.8);
 			}
 		}
 
+		&--home {
+			height: clamp(576px, 56.25vw, 1080px);
+
+			#{$this}__wrapper {
+				clip-path: none;
+				padding-bottom: 88px;
+			}
+
+			#{$this}__title {
+				padding: 0;
+
+				br {
+					display: none;
+				}
+			}
+		}
+
 		&--landing {
-			min-height: 56.25vw;
+			height: clamp(576px, 56.25vw, 1080px);
 		}
 	}
 }
