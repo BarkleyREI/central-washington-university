@@ -14,19 +14,19 @@
 		"title": "Specialty Headline Lorem Ipsum",
 		"images": [
 			{
-				"src": "https://via.placeholder.com/1920x823/f00/fff",
+				"src": "https://picsum.photos/seed/1/1920/823",
 				"alt": "[image alt text]",
 				"width": 1920,
 				"height": 823
 			},
 			{
-				"src": "https://via.placeholder.com/1920x823/0f0/fff",
+				"src": "https://picsum.photos/seed/2/1920/823",
 				"alt": "[image alt text]",
 				"width": 1920,
 				"height": 823
 			},
 			{
-				"src": "https://via.placeholder.com/1920x823/00f/fff",
+				"src": "https://picsum.photos/seed/3/1920/823",
 				"alt": "[image alt text]",
 				"width": 1920,
 				"height": 823
@@ -49,7 +49,7 @@
 				"title": "Detail Faculty First & Lastname",
 				"subtitle": "Faculty Title Lorem Ipsum Dolor Sit Amet Consectetur",
 				"image": {
-					"src": "https://via.placeholder.com/500",
+					"src": "https://picsum.photos/500/500",
 					"alt": "[image alt text]",
 					"width": 500,
 					"height": 500
@@ -65,7 +65,7 @@
 				"images": "",
 				"video": {
 					"src": "/video/alb_tvn0212_1080p.mp4",
-					"poster": "https://via.placeholder.com/1920x1080",
+					"poster": "https://picsum.photos/1920/1080",
 					"alt": "[video alt text]"
 				}				
 			}
@@ -78,7 +78,7 @@
 				"images": "",
 				"video": {
 					"src": "/video/alb_tvn0212_1080p.mp4",
-					"poster": "https://via.placeholder.com/1920x1080",
+					"poster": "https://picsum.photos/1920/1080",
 					"alt": "[video alt text]"
 				}				
 			}
@@ -91,7 +91,7 @@
 				"datetime": "Month 00, 0000",
 				"author": "By Firstname Lastname",
 				"image": {
-					"src": "https://via.placeholder.com/838x627",
+					"src": "https://picsum.photos/836/628",
 					"alt": "[image alt text]",
 					"width": 838,
 					"height": 627

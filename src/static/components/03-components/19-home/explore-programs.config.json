@@ -18,7 +18,7 @@
 			{
 				"style": "explore-programs__cell--photo",
 				"image": {
-					"src": "https://via.placeholder.com/465x407",
+					"src": "https://picsum.photos/465/407",
 					"alt": "[photo alt text]",
 					"width": 465,
 					"height": 407
@@ -27,7 +27,7 @@
 			{
 				"style": "explore-programs__cell--photo explore-programs__cell--tall",
 				"image": {
-					"src": "https://via.placeholder.com/465x703",
+					"src": "https://picsum.photos/465/703",
 					"alt": "[photo alt text]",
 					"width": 465,
 					"height": 753
@@ -36,7 +36,7 @@
 			{
 				"style": "explore-programs__cell--stat",
 				"image": {
-					"src": "https://via.placeholder.com/465x407",
+					"src": "https://picsum.photos/465/407",
 					"alt": "[photo alt text]",
 					"width": 465,
 					"height": 407

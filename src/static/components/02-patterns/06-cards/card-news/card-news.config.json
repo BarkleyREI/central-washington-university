@@ -4,7 +4,7 @@
 	"status": "ready",
 	"context": {
 		"image": {
-			"src": "https://via.placeholder.com/836x628",
+			"src": "https://picsum.photos/836/628",
 			"alt": "[photo alt text]",
 			"width": 836,
 			"height": 628

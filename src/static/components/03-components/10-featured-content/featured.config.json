@@ -15,10 +15,10 @@
 			"gallery": {
 				"images": [
 					{
-						"src": "https://via.placeholder.com/836x627",
+						"src": "https://picsum.photos/836/628",
 						"alt": "[image alt text]",
 						"width": 836,
-						"height": 627
+						"height": 628
 					}
 				]
 			},
@@ -31,7 +31,7 @@
 		"video": {
 			"video": {
 				"poster": {
-					"src": "https://via.placeholder.com/1264x711",
+					"src": "https://picsum.photos/1264/711",
 					"alt": "[image alt text]",
 					"width": 1264,
 					"height": 711
