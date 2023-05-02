@@ -1,0 +1,99 @@
+.explore-programs {
+	$this: &;
+
+	&__heading {
+		font-style: italic;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__copy {
+		color: $tundora;
+		margin-bottom: 32px;
+	}
+
+	&__grid {
+		--inset-edge: 32px;
+		@extend %inset-both-edge;
+		@extend %small-edge;
+		display: grid;
+		gap: 0 16px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	&__cell {
+		@extend %inset-both-edge;
+		position: relative;
+
+		&--stat {
+			&:after {
+				@extend %overlay;
+				background-color: $cwu-crimson-dark;
+				content: '';
+				opacity: 0.8;
+				z-index: 2;
+			}
+		}
+
+		&--tall {
+			grid-row: span 2;
+		}
+	}
+
+	&__figure {
+		height: 100%;
+		padding-bottom: 87.5%;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__image {
+		@extend %overlay;
+		object-fit: cover;
+	}
+
+	&__stat {
+		color: $white;
+		font-familh: $inter;
+		font-size: clamp(12.68px, 2.4vw, 22.63px);
+		font-weight: 900;
+		left: 50%;
+		line-height: 1.2;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		z-index: 5;
+
+		strong {
+			display: inline-block;
+			font-size: clamp(45.43px, 8.5vw, 81.09px);
+			font-weight: 900;
+			letter-spacing: -1.88px;
+			line-height: 1;
+		}
+	}
+
+	&.animateOnce,
+	&__cell.animateOnce {
+		@extend %bump-fade;
+	}
+
+	@include breakpoint(medium down) {
+		&__grid {
+			// stylelint-disable declaration-no-important
+			margin-left: -8px !important;
+			margin-top: 48px;
+			width: 100vw !important;
+			// stylelint-enable declaration-no-important
+		}
+	}
+
+	@include breakpoint(large) {
+		&__content {
+			align-self: center;
+		}
+	}
+}

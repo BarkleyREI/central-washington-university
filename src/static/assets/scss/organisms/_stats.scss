@@ -90,9 +90,6 @@
 	}
 
 	&--home {
-		opacity: 0;
-		transform: translateY(100px);
-
 		#{$this}__heading {
 			color: $white;
 			font-style: italic;
@@ -138,12 +135,10 @@
 				}
 			}
 		}
+	}
 
-		&.animated {
-			opacity: 1;
-			transform: none;
-			transition: opacity 1000ms ease, transform 1000ms ease;
-		}
+	&.animateOnce {
+		@extend %bump-fade;
 	}
 
 	@include breakpoint(small) {
@@ -153,7 +148,6 @@
 			}
 		}
 	}
-
 
 	@include breakpoint(medium) {
 		&__list {

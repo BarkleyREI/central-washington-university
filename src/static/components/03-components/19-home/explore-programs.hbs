@@ -1,0 +1,36 @@
+<section class="explore-programs component animateOnce">
+	<div class="explore-programs__wrapper wrapper">
+		<div class="grid-x grid-margin-x">
+		
+			<div class="explore-programs__content cell xsmall-12 large-5">
+
+				<h2 class="explore-programs__heading font-h1">{{{ heading }}}</h2>
+				<hr />
+
+				<p class="explore-programs__copy font-big">{{{ copy }}}</p>
+
+				{{render '@button--primary' cta merge=true }}
+
+			</div>
+
+			<div class="explore-programs__grid cell xsmall-12 large-6 large-offset-1 animateOnce">
+
+				{{#each items}}
+				<div class="explore-programs__cell {{ style }}">
+
+					{{#with image}}
+					<figure class="explore-programs__figure">
+						<img src="{{ src }}" alt="{{ alt }}" class="explore-programs__image" width="{{ width }}" height="{{ height }}" />
+					</figure>
+					{{/with}}
+
+					{{#if stat }}<p class="explore-programs__stat">{{{ stat }}}</p>{{/if}}
+
+				</div>
+				{{/each}}
+
+			</div>
+			
+		</div>
+	</div>
+</section>

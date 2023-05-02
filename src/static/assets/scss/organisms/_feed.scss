@@ -37,9 +37,7 @@
 
 	&--home {
 		@extend %inset-bottom-edge;
-		opacity: 0;
 		padding: 60px 0;
-		transform: translateY(100px);
 
 		#{$this}__heading {
 			background-color: $white;
@@ -48,13 +46,8 @@
 			font-weight: 700;
 			text-transform: uppercase;
 		}
-
-		&.animated {
-			opacity: 1;
-			transform: none;
-			transition: opacity 1000ms ease, transform 1000ms ease;
-		}
 	}
+
 
 	&--dark {
 		background-color: $wild-sand;
@@ -80,6 +73,10 @@
 				}
 			}
 		}
+	}
+
+	&.animateOnce {
+		@extend %bump-fade;
 	}
 
 	@include breakpoint(small down) {
