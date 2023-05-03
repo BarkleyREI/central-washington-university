@@ -16,15 +16,16 @@
 				</figure>
 				{{/with}}
 
+				<h3 class="image-cards__title"><span>{{{ heading }}}</span></h3>
+
 				<div class="image-cards__content">
 
-					<h3 class="image-cards__title"><span>{{{ heading }}}</span></h3>
+					<p class="image-cards__label" aria-hidden="true">{{{ heading }}}</h3>
 				
-					<div class="image-cards__copy">
-					   <p>{{{ copy }}}</p>
-					   {{render '@button-fake' cta }}
-					</div>
-
+					<p class="image-cards__copy">{{{ copy }}}</p>
+					
+					{{render '@button-fake' cta }}
+					
 				</div>
 				
 				<a href="{{ cta.url }}" class="image-cards__link"><span class="show-for-sr">{{ cta.copy }}</span></a>

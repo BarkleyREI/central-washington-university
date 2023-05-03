@@ -3,22 +3,21 @@
 	$this: &;
 
 	&__heading {
+		font-style: italic;
+		font-weight: 700;
 		text-align: center;
+		text-transform: uppercase;
 	}
 
 	hr {
 		margin: 1.5rem auto 40px;
-	}	
-	
-	&__heading {
-		font-style: italic;
-		font-weight: 700;
-		text-transform: uppercase;
 	}
 
 	&__grid {
+		align-items: stretch;
 		display: flex;
 		flex-flow: column;
+		justify-content: space-between;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -28,36 +27,96 @@
 
 	&__item {
 		--inset-edge: 16px;
-		position: relative;
+		aspect-ratio: 1.423;
 		overflow: hidden;
-		text-align: center;
-
-		&:after {
-			content: '';
-			@extend %overlay;
-			background-color: $black;
-			opacity: 0;
-			transition: opacity $transition-time ease;
-			z-index: 10;
-		}		
+		position: relative;
 
 		&:hover,
 		&:focus-within {
-			&:after {
-				opacity: 0.88;
-			}
-			
 			#{$this}__image {
 				transform: scale(1.05);
 			}
-			
-			#{$this}__title {
-				&:after {
-					opacity: 0;
-				}
-			}
 		}
 	}
+
+	&__figure {
+		@extend %overlay;
+		overflow: hidden;
+		z-index: -5;
+	}
+
+	&__image {
+		@extend %overlay;
+		transition: transform $transition-time ease;
+	}
+
+	&__title {
+		bottom: 40px;
+		color: $white;
+		font-size: 23.04px;
+		font-weight: 900;
+		left: 50%;
+		line-height: 1;
+		opacity: 1;
+		padding: 1px 12px;
+		position: absolute;
+		text-transform: uppercase;
+		transform: translateX(-50%);
+		transition: opacity $transition-time ease;
+		white-space: nowrap;
+		width: fit-content;
+
+		span {
+			position: relative;
+			// top: 6px;
+			top: 4px;
+		}
+
+		&:after {
+			@extend %overlay;
+			background-color: $cwu-crimson;
+			content: '';
+			transform: skew(-12.5deg);
+			z-index: -1;
+		}
+	}
+
+	&__content {
+		align-items: center;
+		background-color: rgba($black, 0.88);
+		color: $white;
+		display: flex;
+		flex-flow: column;
+		height: 100%;
+		justify-content: center;
+		opacity: 0;
+		padding: 40px;
+		text-align: center;
+		transition: opacity $transition-time ease;
+		z-index: 15;
+	}
+
+	&__label {
+		font-size: 23.04px;
+		font-weight: 900;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+
+	&__copy {
+		font-size: 16px;
+		margin: 16px 0 24px;
+	}
+
+	.btn--cta {
+		--text: #{$white};
+	}
+
+	&__link {
+		@extend %overlay;
+		z-index: 20;
+	}
+	/*
 
 	&__figure {
 		aspect-ratio: 1.423;
@@ -72,40 +131,7 @@
 		transition: transform $transition-time ease;
 	}
 
-	&__content {
-		position: absolute;
-		bottom: 0;
-		padding: 40px;
-		z-index: 15;
-	}
 
-	&__title {
-		color: $white;
-		text-transform: uppercase;
-		font-size: 23.04px;
-		margin: 0 auto;
-		padding: 1px 20px;
-		width: fit-content;
-		position: relative;
-		font-weight: 900;
-		line-height: 1;
-
-		span {
-			position: relative;
-			// top: 6px;
-			top: 4px;
-		}
-
-		&:after {
-			@extend %overlay;
-			content: '';
-			background-color: $cwu-crimson;
-			transform: skew(-12.5deg);
-			z-index: -1;
-			opacity: 1;
-			transition: opacity $transition-time ease;
-		}
-	}
 
 	&__copy {
 		color: $white;
@@ -118,14 +144,7 @@
 		transition: max-height $transition-time ease, opacity $transition-time ease, padding $transition-time ease;
 	}
 
-	.btn--cta {
-		--text: #{$white};
-	}
-
-	&__link {
-		@extend %overlay;
-		z-index: 20;
-	}
+	*/
 
 	&.animateOnce {
 		@extend %bump-fade;
@@ -139,8 +158,12 @@
 				top: 5px;
 			}
 		}
+
+		&__label {
+			font-size: 33.18px;
+		}
 	}
-	
+
 	@include breakpoint(small down) {
 		&__item {
 			clip-path: polygon(0% var(--inset-edge), 100% 0%, 100% calc(100% - var(--inset-edge)), 0% 100%);
@@ -160,23 +183,23 @@
 				clip-path: polygon(0% 0%,  100% 0%, calc(100% - var(--inset-edge)) 100%, 0% 100%);
 				width: calc(50% + 8px);
 
-				#{$this}__content {				
+				#{$this}__content {
 					padding-right: 48px;
 				}
 			}
 
 			&:nth-child(2) {
-				width: calc(50% - 8px);
 				clip-path: polygon(var(--inset-edge) 0%, 100% 0%, 100% 100%, 0% 100%);
+				width: calc(50% - 8px);
 
-				#{$this}__content {				
+				#{$this}__content {
 					padding-left: 32px;
 				}
 			}
 
 			&:nth-child(3) {
-				width: calc(50% - 8px);
 				clip-path: polygon(0% 0%, 100% 0%, calc(100% - var(--inset-edge)) 100%, 0% 100%);
+				width: calc(50% - 8px);
 
 				#{$this}__content {
 					padding-right: 32px;
@@ -184,9 +207,9 @@
 			}
 
 			&:nth-child(4) {
-				width: calc(50% + 8px);
 				clip-path: polygon(var(--inset-edge) 0%, 100% 0%, 100% 100%, 0% 100%);
-				
+				width: calc(50% + 8px);
+
 				#{$this}__content {
 					padding-left: 48px;
 				}
@@ -198,13 +221,15 @@
 		hr {
 			margin-botom: 48px;
 		}
-		
+
 		&__item {
 			&:hover,
 			&:focus-within {
-				#{$this}__copy {
-					max-height: 100vh;
-					padding: 16px 0 24px;
+				#{$this}__title {
+					opacity: 0;
+				}
+
+				#{$this}__content {
 					opacity: 1;
 				}
 			}
@@ -239,7 +264,7 @@
 				#{$this}__content {
 					padding-left: 68px;
 				}
-			}			
+			}
 		}
 
 		&__title {
@@ -250,13 +275,18 @@
 			}
 		}
 
+		&__label {
+			font-size: 39.81px;
+		}
+
 		&__copy {
 			font-size: 19.2px;
 		}
 	}
 
 	@include breakpoint(xxlarge) {
-		&__title {
+		&__title,
+		&__label {
 			font-size: 47.48px;
 		}
 	}
@@ -269,5 +299,9 @@
 				top: 8px;
 			}
 		}
-	}	
+
+		&__label {
+			font-size: 56.98px;
+		}
+	}
 }
