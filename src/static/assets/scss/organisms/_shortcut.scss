@@ -1,0 +1,146 @@
+.shortcut {
+	--inset-edge: 32px;
+	$this: &;
+
+	@extend %inset-both-edge;
+	background-color: $black;
+	padding: 72px 0 64px;
+	position: relative;
+
+	&:after {
+		@extend %overlay;
+		background-attachment: fixed;
+		background-image: url('/img/topo-map.jpg');
+		background-position: 50% 50%;
+		background-size: cover;
+		content: '';
+		filter: invert(1);
+		mix-blend-mode: lighten;
+		opacity: 0.35;
+		z-index: 1;
+	}
+
+	&__content {
+		color: $white;
+		padding-bottom: 40px;
+		position: relative;
+		text-align: center;
+		z-index: 5;
+
+		hr {
+			margin: 1.5rem auto;
+		}
+	}
+
+	&__heading {
+		font-style: italic;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__grid {
+		display: grid;
+		gap: 32px 16px;
+		grid-template-columns: repeat(2, 1fr);
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		z-index: 5;
+	}
+
+	&__item {
+		text-align: center;
+	}
+
+	&__link {
+		&:link,
+		&:visited {
+			color: $white;
+		}
+
+		&:hover,
+		&:active {
+			color: $white;
+
+			#{$this}__image {
+				transform: scale(1.15);
+			}
+
+			#{$this}__copy {
+				&:after {
+					width: 100%;
+				}
+			}
+		}
+
+		&:focus-visible {
+			color: $white;
+			outline: 0;
+
+			#{$this}__image {
+				transform: scale(1.15);
+			}
+		}
+	}
+
+	&__figure {
+		aspect-ratio: 1;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&__image {
+		@extend %overlay;
+		transition: transform $transition-time ease;
+	}
+
+	&__copy {
+		font-size: 19.2px;
+		font-weight: 500;
+		line-height: 1.2;
+		margin: 8px auto 0;
+		padding-bottom: 8px;
+		position: relative;
+		width: fit-content;
+
+		&:after {
+			background-color: $cwu-yellow;
+			bottom: 0;
+			content: '';
+			display: block;
+			height: 4px;
+			left: 0;
+			position: absolute;
+			transition: width $transition-time ease;
+			width: 100%;
+			width: 0;
+		}
+	}
+
+	&.animateOnce {
+		@extend %fade-only;
+	}
+
+	@include breakpoint(small) {
+		&__copy {
+			font-size: 23.04px;
+		}
+	}
+
+	@include breakpoint(medium) {
+		&__grid {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	@include breakpoint(large) {
+		--inset-edge: 88px;
+		padding: 136px 0 152px;
+
+		&__copy {
+			font-weight: 600;
+			font-wize: 27.65px;
+		}
+	}
+}

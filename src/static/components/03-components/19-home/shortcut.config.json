@@ -1,0 +1,56 @@
+{
+	"title": "Shortcut",
+	"status": "ready",
+	"preview": "@high",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"heading": "You Belong at Central",
+		"items": [
+			{
+				"url": "#1",
+				"image": {
+					"src": "https://picsum.photos/seed/1/405/405",
+					"alt": "[photo alt text]",
+					"width": 405,
+					"height": 405
+				},
+				"copy": "Affordability"
+			},
+			{
+				"url": "#2",
+				"image": {
+					"src": "https://picsum.photos/seed/2/405/405",
+					"alt": "[photo alt text]",
+					"width": 405,
+					"height": 405
+				},
+				"copy": "Diversity & Inclusion"
+			},
+			{
+				"url": "#3",
+				"image": {
+					"src": "https://picsum.photos/seed/3/405/405",
+					"alt": "[photo alt text]",
+					"width": 405,
+					"height": 405
+				},
+				"copy": "Visit CWU"
+			},
+			{
+				"url": "#4",
+				"image": {
+					"src": "https://picsum.photos/seed/4/405/405",
+					"alt": "[photo alt text]",
+					"width": 405,
+					"height": 405
+				},
+				"copy": "Apply Today"
+			}			
+		]
+	}
+}

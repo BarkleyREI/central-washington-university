@@ -95,5 +95,9 @@
 		&__content {
 			align-self: center;
 		}
+
+		&__grid {
+			--inset-edge: 44px;
+		}
 	}
 }

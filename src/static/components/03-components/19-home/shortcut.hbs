@@ -1,0 +1,32 @@
+<section class="shortcut component animateOnce">
+	<div class="shortcut__wrapper wrapper">
+	
+		<div class="shortcut__content">
+
+			<h2 class="shortcut__heading font-h1">{{{ heading }}}</h2>
+			<hr />
+
+		</div>
+
+		<ul class="shortcut__grid">
+
+			{{#each items}}
+			<li class="shortcut__item">
+				<a href="{{ url }}" class="shortcut__link">
+
+					{{#with image}}
+					<figure class="shortcut__figure">
+						<img src="{{ src }}" alt="{{ alt }}" class="shortcut__image" width="{{ width }}" height="{{ height }}" />
+					</figure>
+					{{/with}}
+
+					<p class="shortcut__copy">{{{ copy }}}</p>
+
+				</a>
+			</li>
+			{{/each}}
+			
+		</ul>
+		
+	</div>
+</section>
