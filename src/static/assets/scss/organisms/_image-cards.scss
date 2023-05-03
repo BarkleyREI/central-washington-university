@@ -1,0 +1,273 @@
+.image-cards {
+	--inset-edge: 32px;
+	$this: &;
+
+	&__heading {
+		text-align: center;
+	}
+
+	hr {
+		margin: 1.5rem auto 40px;
+	}	
+	
+	&__heading {
+		font-style: italic;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__grid {
+		display: flex;
+		flex-flow: column;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		z-index: 5;
+	}
+
+	&__item {
+		--inset-edge: 16px;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+
+		&:after {
+			content: '';
+			@extend %overlay;
+			background-color: $black;
+			opacity: 0;
+			transition: opacity $transition-time ease;
+			z-index: 10;
+		}		
+
+		&:hover,
+		&:focus-within {
+			&:after {
+				opacity: 0.88;
+			}
+			
+			#{$this}__image {
+				transform: scale(1.05);
+			}
+			
+			#{$this}__title {
+				&:after {
+					opacity: 0;
+				}
+			}
+		}
+	}
+
+	&__figure {
+		aspect-ratio: 1.423;
+		height: 100%;
+		position: relative;
+		z-index: 5;
+		overflow: hidden;
+	}
+
+	&__image {
+		@extend %overlay;
+		transition: transform $transition-time ease;
+	}
+
+	&__content {
+		position: absolute;
+		bottom: 0;
+		padding: 40px;
+		z-index: 15;
+	}
+
+	&__title {
+		color: $white;
+		text-transform: uppercase;
+		font-size: 23.04px;
+		margin: 0 auto;
+		padding: 1px 20px;
+		width: fit-content;
+		position: relative;
+		font-weight: 900;
+		line-height: 1;
+
+		span {
+			position: relative;
+			// top: 6px;
+			top: 4px;
+		}
+
+		&:after {
+			@extend %overlay;
+			content: '';
+			background-color: $cwu-crimson;
+			transform: skew(-12.5deg);
+			z-index: -1;
+			opacity: 1;
+			transition: opacity $transition-time ease;
+		}
+	}
+
+	&__copy {
+		color: $white;
+		padding: 0; // padding: 16px 0 24px;
+		position: relative;
+		font-size: 16px;
+		overflow: hidden;
+		max-height: 0;
+		opacity: 0;
+		transition: max-height $transition-time ease, opacity $transition-time ease, padding $transition-time ease;
+	}
+
+	.btn--cta {
+		--text: #{$white};
+	}
+
+	&__link {
+		@extend %overlay;
+		z-index: 20;
+	}
+
+	&.animateOnce {
+		@extend %bump-fade;
+	}
+
+	@include breakpoint(small) {
+		&__title {
+			font-size: 33.18px;
+
+			span {
+				top: 5px;
+			}
+		}
+	}
+	
+	@include breakpoint(small down) {
+		&__item {
+			clip-path: polygon(0% var(--inset-edge), 100% 0%, 100% calc(100% - var(--inset-edge)), 0% 100%);
+		}
+	}
+
+	@include breakpoint(medium) {
+		&__grid {
+			flex-flow: row wrap;
+			gap: 16px 0;
+		}
+
+		&__item {
+			width: 50%;
+
+			&:nth-child(1) {
+				clip-path: polygon(0% 0%,  100% 0%, calc(100% - var(--inset-edge)) 100%, 0% 100%);
+				width: calc(50% + 8px);
+
+				#{$this}__content {				
+					padding-right: 48px;
+				}
+			}
+
+			&:nth-child(2) {
+				width: calc(50% - 8px);
+				clip-path: polygon(var(--inset-edge) 0%, 100% 0%, 100% 100%, 0% 100%);
+
+				#{$this}__content {				
+					padding-left: 32px;
+				}
+			}
+
+			&:nth-child(3) {
+				width: calc(50% - 8px);
+				clip-path: polygon(0% 0%, 100% 0%, calc(100% - var(--inset-edge)) 100%, 0% 100%);
+
+				#{$this}__content {
+					padding-right: 32px;
+				}
+			}
+
+			&:nth-child(4) {
+				width: calc(50% + 8px);
+				clip-path: polygon(var(--inset-edge) 0%, 100% 0%, 100% 100%, 0% 100%);
+				
+				#{$this}__content {
+					padding-left: 48px;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(large) {
+		hr {
+			margin-botom: 48px;
+		}
+		
+		&__item {
+			&:hover,
+			&:focus-within {
+				#{$this}__copy {
+					max-height: 100vh;
+					padding: 16px 0 24px;
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(xlarge) {
+		&__content {
+			padding: 60px;
+		}
+
+		&__item {
+			&:nth-child(1) {
+				#{$this}__content {
+					padding-right: 68px;
+				}
+			}
+
+			&:nth-child(2) {
+				#{$this}__content {
+					padding-left: 52px;
+				}
+			}
+
+			&:nth-child(3) {
+				#{$this}__content {
+					padding-right: 52px;
+				}
+			}
+
+			&:nth-child(4) {
+				#{$this}__content {
+					padding-left: 68px;
+				}
+			}			
+		}
+
+		&__title {
+			font-size: 39.81px;
+
+			span {
+				top: 7px;
+			}
+		}
+
+		&__copy {
+			font-size: 19.2px;
+		}
+	}
+
+	@include breakpoint(xxlarge) {
+		&__title {
+			font-size: 47.48px;
+		}
+	}
+
+	@include breakpoint(xxxlarge) {
+		&__title {
+			font-size: 56.98px;
+
+			span {
+				top: 8px;
+			}
+		}
+	}	
+}

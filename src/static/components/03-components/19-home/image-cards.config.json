@@ -1,0 +1,76 @@
+{
+	"title": "Image Cards",
+	"status": "ready",
+	"preview": "@high",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"heading": "The CWU Experience",
+		"items": [
+			{
+				"image": {
+					"src": "https://picsum.photos/seed/1/888/624",
+					"alt": "[photo alt text]",
+					"width": 888,
+					"height": 624
+				},
+				"heading": "Student Life",
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet consectetur adipiscing elit. Sed diam nonumy eirmod tempor invidun.",
+				"cta": {
+					"modifiers": "btn--cta",
+					"url": "#student-life",
+					"copy": "Tertiary Button"					
+				}
+			},
+			{
+				"image": {
+					"src": "https://picsum.photos/seed/2/888/624",
+					"alt": "[photo alt text]",
+					"width": 888,
+					"height": 624
+				},
+				"heading": "Admissions & Aid",
+				"copy": "Begin building the future you've been dreaming about. It's easy to apply to CWU and we're here for you every step of the way.",
+				"cta": {
+					"modifiers": "btn--cta",
+					"url": "#admissions-and-aid",
+					"copy": "Start Your Application Today"
+				}
+			},
+			{
+				"image": {
+					"src": "https://picsum.photos/seed/3/888/624",
+					"alt": "[photo alt text]",
+					"width": 888,
+					"height": 624
+				},
+				"heading": "Academics",
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet consectetur adipiscing elit. Sed diam nonumy eirmod tempor invidun.",
+				"cta": {
+					"modifiers": "btn--cta",
+					"url": "#academics",
+					"copy": "Tertiary Button"
+				}
+			},
+			{
+				"image": {
+					"src": "https://picsum.photos/seed/4/888/624",
+					"alt": "[photo alt text]",
+					"width": 888,
+					"height": 624
+				},
+				"heading": "About",
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet consectetur adipiscing elit. Sed diam nonumy eirmod tempor invidun.",
+				"cta": {
+					"modifiers": "btn--cta",
+					"url": "#about",
+					"copy": "Tertiary Button"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,38 @@
+<section class="image-cards component animateOnce">
+	<div class="image-cards__wrapper wrapper">
+	
+		<h2 class="image-cards__heading font-h1">{{{ heading }}}</h2>
+		
+		<hr />
+
+		<div class="image-cards__grid">
+
+			{{#each items}}
+			<li class="image-cards__item">
+
+				{{#with image}}
+				<figure class="image-cards__figure">
+					<img src="{{ src }}" alt="{{ alt }}" class="image-cards__image" width="{{ width }}" height="{{ height }}" />
+				</figure>
+				{{/with}}
+
+				<div class="image-cards__content">
+
+					<h3 class="image-cards__title"><span>{{{ heading }}}</span></h3>
+				
+					<div class="image-cards__copy">
+					   <p>{{{ copy }}}</p>
+					   {{render '@button-fake' cta }}
+					</div>
+
+				</div>
+				
+				<a href="{{ cta.url }}" class="image-cards__link"><span class="show-for-sr">{{ cta.copy }}</span></a>
+				
+			</li>
+			{{/each}}
+			
+		</ul>
+		
+	</div>
+</section>
