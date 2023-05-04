@@ -35,7 +35,7 @@
 			"deep": true,
 			"items": [
 				{
-					"title": "CWU Ellensburg",
+					"title": "Ellensburg",
 					"active": true,
 					"icon": "peak",
 					"position": {
@@ -52,7 +52,7 @@
 							"copy": "email@cwu.edu"
 						}			
 					],
-					"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
+					"copy": "Located on University Way, Barge's signature red brick and white stone trim are reflected in many of the buildings on campus."
 				}
 			]	
 		},

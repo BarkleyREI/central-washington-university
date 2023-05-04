@@ -7,6 +7,10 @@
 		margin: 0 0 36px;
 	}
 
+	&__blurb {
+		color: $tundora;
+	}
+
 	&__map {
 		margin-left: -7px;
 		position: relative;
@@ -16,7 +20,9 @@
 	&__image {
 		aspect-ratio: 1.511;
 		max-width: auto;
+		position: relative;
 		width: 100%;
+		z-index: 1;
 	}
 
 	&__location-list {
@@ -28,6 +34,7 @@
 	&__location-item {
 		position: absolute;
 		transform: translate(-9.6px, -9.6px);
+		z-index: 10;
 
 		&:first-child {
 			.trigger {
@@ -38,7 +45,7 @@
 		}
 
 		&.is-active {
-			z-index: 10;
+			z-index: 11;
 		}
 	}
 
@@ -198,6 +205,54 @@
 		margin: 0 0 16px;
 	}
 
+	&--home {
+		@extend %inset-bottom-edge;
+
+		#{$this}__title {
+			font-style: italic;
+			font-weight: 700;
+			margin-bottom: 16px;
+			text-transform: uppercase;
+		}
+	}
+
+	.animateOnce {
+		@extend %fade-only;
+	}
+
+	@include breakpoint(medium down) {
+		&--home {
+			#{$this}__intro {
+				.btn--primary {
+					display: none;
+				}
+			}
+
+			#{$this}__map {
+				&:after {
+					background-attachment: fixed;
+					background-image: url('/img/topo-map.jpg');
+					bottom: 0;
+					content: '';
+					filter: invert(1);
+					left: 0;
+					mix-blend-mode: lighten;
+					opacity: 0.35;
+					position: absolute;
+					right: 0;
+					top: 0;
+					z-index: 5;
+				}
+			}
+
+			.is-active {
+				#{$this}__heading {
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
 	@include breakpoint(large) {
 		padding: 96px 0 84px;
 
@@ -254,6 +309,8 @@
 		&__content {
 			flex-grow: 0;
 			flex-shrink: 0;
+			left: 5vw;
+			position: relative;
 			width: 37.5%;
 		}
 
@@ -287,6 +344,39 @@
 		&__copy {
 			margin-bottom: 24px;
 		}
+
+		&--home {
+			--inset-edge: 0;
+			padding-bottom: 0;
+
+			#{$this}__intro {
+				align-items: flex-start;
+				display: flex;
+				flex-flow: row nowrap;
+				gap: 48px;
+				justify-content: space-between;
+				margin-bottom: 48px;
+
+				#{$this}__blurb {
+					flex-grow: 0;
+				}
+
+				.btn--primary {
+					flex-shrink: 0;
+				}
+			}
+
+			#{$this}__wrapper {
+				background: $black;
+				background-clip: content-box;
+			}
+
+			#{$this}__content {
+				.btn--primary {
+					display: none;
+				}
+			}
+		}
 	}
 
 	@include breakpoint(xlarge) {
@@ -315,6 +405,10 @@
 	@include breakpoint(xxxlarge) {
 		&__map {
 			left: 144px;
+		}
+
+		&__content {
+			left: 96px;
 		}
 
 		&__image {

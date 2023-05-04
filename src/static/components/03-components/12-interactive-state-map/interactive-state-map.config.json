@@ -2,6 +2,7 @@
 	"title": "Interactive State Map",
 	"status": "ready",
 	"preview": "@high",
+	"default": "Wide",
 	"meta": {
 		"scripts": [
 			"vendor",
@@ -12,13 +13,13 @@
 		"title": "H2 Campus and Center Locations",
 		"map": {
 			"src": "/img/state-map.svg",
-			"alt": "a map of Washington State, showing CWU campus loations"
+			"alt": "a map of Washington State, showing campus loations"
 		},
 		"id": "ism",
 		"deep": true,
 		"items": [
 			{
-				"title": "CWU Ellensburg",
+				"title": "Ellensburg",
 				"active": true,
 				"icon": "peak",
 				"position": {
@@ -35,13 +36,13 @@
 						"copy": "email@cwu.edu"
 					}			
 				],
-				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"copy": "Located on University Way, Barge's signature red brick and white stone trim are reflected in many of the buildings on campus.",
 				"cta": {
-					"copy": "Tertiary Button"
+					"copy": "Explore Ellensburg"
 				}
 			},
 			{
-				"title": "CWU Lynnwood",
+				"title": "Lynnwood",
 				"active": false,
 				"icon": "plus",
 				"position": {
@@ -60,11 +61,11 @@
 				],
 				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
 				"cta": {
-					"copy": "Tertiary Button"
+					"copy": "Explore Lynnwood"
 				}
 			},
 			{
-				"title": "CWU Sammamish",
+				"title": "Sammamish",
 				"active": false,
 				"icon": "plus",
 				"position": {
@@ -83,11 +84,11 @@
 				],
 				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
 				"cta": {
-					"copy": "Tertiary Button"
+					"copy": "Explore Sammamish"
 				}
 			},			
 			{
-				"title": "CWU Des Moines",
+				"title": "Des Moines",
 				"active": false,
 				"icon": "plus",
 				"position": {
@@ -106,34 +107,11 @@
 				],
 				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
 				"cta": {
-					"copy": "Tertiary Button"
+					"copy": "Explore Des Moines"
 				}
 			},			
 			{
-				"title": "CWU Moses Lake",
-				"active": false,
-				"icon": "plus",
-				"position": {
-					"top": "48.4%",
-					"left": "57.9%"
-				},
-				"contact": [
-					{
-						"url": "tel:0000000000",
-						"copy": "000-000-0000"
-					},
-					{
-						"url": "mailto:email@cwu.edu",
-						"copy": "email@cwu.edu"
-					}			
-				],
-				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-				"cta": {
-					"copy": "Tertiary Button"
-				}
-			},
-			{
-				"title": "CWU Pierce County",
+				"title": "Pierce County",
 				"active": false,
 				"icon": "plus",
 				"position": {
@@ -152,57 +130,11 @@
 				],
 				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
 				"cta": {
-					"copy": "Tertiary Button"
+					"copy": "Explore Pierce County"
 				}
 			},			
 			{
-				"title": "CWU Yakima",
-				"active": false,
-				"icon": "plus",
-				"position": {
-					"top": "70.5%",
-					"left": "48.8%"
-				},
-				"contact": [
-					{
-						"url": "tel:0000000000",
-						"copy": "000-000-0000"
-					},
-					{
-						"url": "mailto:email@cwu.edu",
-						"copy": "email@cwu.edu"
-					}			
-				],
-				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-				"cta": {
-					"copy": "Tertiary Button"
-				}
-			},
-			{
-				"title": "CWU Wenatchee",
-				"active": false,
-				"icon": "plus",
-				"position": {
-					"top": "41.2%",
-					"left": "54.1%"
-				},
-				"contact": [
-					{
-						"url": "tel:0000000000",
-						"copy": "000-000-0000"
-					},
-					{
-						"url": "mailto:email@cwu.edu",
-						"copy": "email@cwu.edu"
-					}			
-				],
-				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-				"cta": {
-					"copy": "Tertiary Button"
-				}
-			},
-			{
-				"title": "CWU Joint Base Lewis-McChord",
+				"title": "Joint Base Lewis-McChord",
 				"active": false,
 				"icon": "plus",
 				"position": {
@@ -221,12 +153,213 @@
 				],
 				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
 				"cta": {
-					"copy": "Tertiary Button"
+					"copy": "Explore Joint Base Lewis-McChord"
 				}
-			}			
+			},
+			{
+				"title": "Wenatchee",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "41.2%",
+					"left": "54.1%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "CWU-Wenatchee is located on the Wenatchee Valley College campus. Students can complete the first two years of their bachelor's degree at CWU-Wenatchee.",
+				"cta": {
+					"copy": "Explore Wenatchee"
+				}
+			},
+			{
+				"title": "Moses Lake",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "48.4%",
+					"left": "57.9%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Explore Moses Lake"
+				}
+			},
+			{
+				"title": "Yakima",
+				"active": false,
+				"icon": "plus",
+				"position": {
+					"top": "70.5%",
+					"left": "48.8%"
+				},
+				"contact": [
+					{
+						"url": "tel:0000000000",
+						"copy": "000-000-0000"
+					},
+					{
+						"url": "mailto:email@cwu.edu",
+						"copy": "email@cwu.edu"
+					}			
+				],
+				"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+				"cta": {
+					"copy": "Explore Yakima"
+				}
+			}
 		],
 		"cta": {
-			"copy": "Primary Button"
-		}		
-	}
+			"copy": "Explore All Locations"
+		}
+	},
+	"variants": [
+		{
+			"name": "Home",
+			"context": {
+				"style": "ism--home",
+				"title": "CWU Campus Locations",
+				"copy": "Our main campus is located in historic Ellensburg, Washington and we have six satellite locations across the state. Explore our locations and find the campus or center that's most convenient for you.",
+				"items": [
+					{
+						"title": "Ellensburg",
+						"active": true,
+						"icon": "peak",
+						"position": {
+							"top": "55.7%",
+							"left": "47.4%"
+						},
+						"copy": "Located on University Way, Barge's signature red brick and white stone trim are reflected in many of the buildings on campus.",
+						"cta": {
+							"copy": "Explore Ellensburg"
+						}
+					},
+					{
+						"title": "Lynnwood",
+						"active": false,
+						"icon": "plus",
+						"position": {
+							"top": "32%",
+							"left": "25.5%"
+						},
+						"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+						"cta": {
+							"copy": "Explore Lynnwood"
+						}
+					},
+					{
+						"title": "Sammamish",
+						"active": false,
+						"icon": "plus",
+						"position": {
+							"top": "37.5%",
+							"left": "27.0%"
+						},
+						"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+						"cta": {
+							"copy": "Explore Sammamish"
+						}
+					},			
+					{
+						"title": "Des Moines",
+						"active": false,
+						"icon": "plus",
+						"position": {
+							"top": "43.5%",
+							"left": "26.2%"
+						},
+						"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+						"cta": {
+							"copy": "Explore Des Moines"
+						}
+					},			
+					{
+						"title": "Pierce County",
+						"active": false,
+						"icon": "plus",
+						"position": {
+							"top": "48.3%",
+							"left": "23.2%"
+						},
+						"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+						"cta": {
+							"copy": "Explore Pierce County"
+						}
+					},
+					{
+						"title": "Joint Base Lewis-McChord",
+						"active": false,
+						"icon": "plus",
+						"position": {
+							"top": "50.3%",
+							"left": "20.0%"
+						},
+						"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+						"cta": {
+							"copy": "Explore Joint Base Lewis-McChord"
+						}
+					},
+					{
+						"title": "Wenatchee",
+						"active": false,
+						"icon": "plus",
+						"position": {
+							"top": "41.2%",
+							"left": "54.1%"
+						},
+						"copy": "CWU-Wenatchee is located on the Wenatchee Valley College campus. Students can complete the first two years of their bachelor's degree at CWU-Wenatchee.",
+						"cta": {
+							"copy": "Explore Wenatchee"
+						}
+					},
+					{
+						"title": "Moses Lake",
+						"active": false,
+						"icon": "plus",
+						"position": {
+							"top": "48.4%",
+							"left": "57.9%"
+						},
+						"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+						"cta": {
+							"copy": "Explore Moses Lake"
+						}
+					},
+					{
+						"title": "Yakima",
+						"active": false,
+						"icon": "plus",
+						"position": {
+							"top": "70.5%",
+							"left": "48.8%"
+						},
+						"copy": "Structured body copy 125 characters lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+						"cta": {
+							"copy": "Explore Yakima"
+						}
+					}
+				],
+				"cta": {
+					"copy": "Explore All Locations"
+				}
+			}
+		}
+	]
 }
