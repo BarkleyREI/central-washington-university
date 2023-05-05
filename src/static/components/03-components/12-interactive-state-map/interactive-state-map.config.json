@@ -239,6 +239,13 @@
 				"copy": "Our main campus is located in historic Ellensburg, Washington and we have six satellite locations across the state. Explore our locations and find the campus or center that's most convenient for you.",
 				"items": [
 					{
+						"image": {
+							"style": "ism__photo--shown",
+							"src": "/img/photos/ellensburg.jpg",
+							"alt": "[photo caption]",
+							"width": 1240,
+							"height": 868
+						},
 						"title": "Ellensburg",
 						"active": true,
 						"icon": "peak",
@@ -252,6 +259,12 @@
 						}
 					},
 					{
+						"image": {
+							"src": "https://picsum.photos/seed/1/1240/868",
+							"alt": "[photo caption]",
+							"width": 1240,
+							"height": 868
+						},						
 						"title": "Lynnwood",
 						"active": false,
 						"icon": "plus",
@@ -265,6 +278,12 @@
 						}
 					},
 					{
+						"image": {
+							"src": "https://picsum.photos/seed/2/1240/868",
+							"alt": "[photo caption]",
+							"width": 1240,
+							"height": 868
+						},						
 						"title": "Sammamish",
 						"active": false,
 						"icon": "plus",
@@ -278,6 +297,12 @@
 						}
 					},			
 					{
+						"image": {
+							"src": "https://picsum.photos/seed/3/1240/868",
+							"alt": "[photo caption]",
+							"width": 1240,
+							"height": 868
+						},						
 						"title": "Des Moines",
 						"active": false,
 						"icon": "plus",
@@ -291,6 +316,12 @@
 						}
 					},			
 					{
+						"image": {
+							"src": "https://picsum.photos/seed/4/1240/868",
+							"alt": "[photo caption]",
+							"width": 1240,
+							"height": 868
+						},						
 						"title": "Pierce County",
 						"active": false,
 						"icon": "plus",
@@ -304,6 +335,12 @@
 						}
 					},
 					{
+						"image": {
+							"src": "https://picsum.photos/seed/5/1240/868",
+							"alt": "[photo caption]",
+							"width": 1240,
+							"height": 868
+						},						
 						"title": "Joint Base Lewis-McChord",
 						"active": false,
 						"icon": "plus",
@@ -317,6 +354,12 @@
 						}
 					},
 					{
+						"image": {
+							"src": "https://picsum.photos/seed/6/1240/868",
+							"alt": "[photo caption]",
+							"width": 1240,
+							"height": 868
+						},						
 						"title": "Wenatchee",
 						"active": false,
 						"icon": "plus",
@@ -330,6 +373,12 @@
 						}
 					},
 					{
+						"image": {
+							"src": "https://picsum.photos/seed/7/1240/868",
+							"alt": "[photo caption]",
+							"width": 1240,
+							"height": 868
+						},						
 						"title": "Moses Lake",
 						"active": false,
 						"icon": "plus",
@@ -343,6 +392,12 @@
 						}
 					},
 					{
+						"image": {
+							"src": "https://picsum.photos/seed/8/1240/868",
+							"alt": "[photo caption]",
+							"width": 1240,
+							"height": 868
+						},						
 						"title": "Yakima",
 						"active": false,
 						"icon": "plus",

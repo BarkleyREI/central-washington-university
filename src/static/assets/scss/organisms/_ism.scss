@@ -38,7 +38,6 @@
 
 		&:first-child {
 			.trigger {
-				--border: #{$white};
 				height: 30.5px;
 				width: 30.5px;
 			}
@@ -46,6 +45,12 @@
 
 		&.is-active {
 			z-index: 11;
+
+			&:first-child {
+				.trigger {
+					--border: #{$white};
+				}
+			}
 		}
 	}
 
@@ -85,7 +90,7 @@
 		}
 
 		.brei-icon-peak {
-			font-size: 38px;
+			font-size: 42px;
 		}
 		// stylelint-enable declaration-no-important
 	}
@@ -205,6 +210,33 @@
 		margin: 0 0 16px;
 	}
 
+	&__figure {
+		display: none;
+
+		&:after {
+			@extend %overlay;
+			background-image: linear-gradient(180deg, rgba($black, 0) 45%, rgba($black, 1) 100%);
+			clip-path: polygon(5% 0%, 76% 0%, 64% 100%, 5% 100%);
+			content: '';
+			z-index: 13;
+		}
+	}
+
+	&__photo {
+		@extend %overlay;
+		clip-path: polygon(5% 0%, 76% 0%, 64% 100%, 5% 100%);
+		display: block;
+		object-fit: cover;
+		object-position: top left;
+		opacity: 0;
+		transition: opacity $transition-time ease;
+		z-index: 12;
+
+		&--shown {
+			opacity: 1;
+		}
+	}
+
 	&--home {
 		@extend %inset-bottom-edge;
 
@@ -302,7 +334,7 @@
 			}
 
 			.brei-icon-peak {
-				font-size: 60px;
+				font-size: 64px;
 			}
 		}
 
@@ -345,6 +377,11 @@
 			margin-bottom: 24px;
 		}
 
+		&__figure {
+			display: contents;
+		}
+
+
 		&--home {
 			--inset-edge: 0;
 			padding-bottom: 0;
@@ -369,12 +406,86 @@
 			#{$this}__wrapper {
 				background: $black;
 				background-clip: content-box;
+				overflow: hidden;
+				position: relative;
+
+				&:after {
+					background-attachment: fixed;
+					background-image: url('/img/topo-map.jpg');
+					background-position: right center;
+					bottom: 0;
+					content: '';
+					filter: invert(1);
+					left: 0;
+					mix-blend-mode: lighten;
+					opacity: 0.35;
+					position: absolute;
+					right: 0;
+					top: 0;
+					z-index: 5;
+				}
+			}
+
+			#{$this}__map {
+				margin-bottom: 40px;
+				margin-top: 60px;
+				z-index: 15;
 			}
 
 			#{$this}__content {
+				align-self: flex-end;
+				left: calc(5vw - 10px);
+				overflow: hidden;
+
 				.btn--primary {
 					display: none;
 				}
+			}
+
+			#{$this}__accordion {
+				margin-bottom: 72px;
+				padding: 0;
+				position: relative;
+				z-index: 15;
+			}
+
+			#{$this}__accordion-content {
+				background: transparent;
+				clip-path: none;
+				padding: 0 0 0 60px;
+			}
+
+			#{$this}__label {
+				color: $white;
+				font-weight: 900;
+				letter-spacing: 0.68px;
+				padding-right: 40px;
+				position: relative;
+				text-transform: uppercase;
+				width: fit-content;
+				z-index: 10;
+
+				&:after {
+					background-color: $cwu-crimson;
+					bottom: 0;
+					content: '';
+					left: -7.5vw;
+					position: absolute;
+					right: 0;
+					top: 0;
+					transform: skew(-12.5deg);
+					transform-origin: top right;
+					z-index: -1;
+				}
+			}
+
+			#{$this}__copy {
+				color: $white;
+			}
+
+			.btn--cta {
+				--text: #{$white};
+				z-index: 5;
 			}
 		}
 	}
@@ -400,6 +511,20 @@
 			white-space: nowrap;
 			width: auto;
 		}
+
+		&--home {
+			#{$this}__content {
+				left: calc(5vw - 12px);
+			}
+		}
+	}
+
+	@include breakpoint(xxlarge) {
+		&--home {
+			#{$this}__content {
+				left: calc(5vw - 14px);
+			}
+		}
 	}
 
 	@include breakpoint(xxxlarge) {
@@ -413,6 +538,22 @@
 
 		&__image {
 			width: 1170px;
+		}
+
+		&__figure {
+			&:after {
+				clip-path: polygon(0% 0%, 76% 0%, 64% 100%, 0% 100%);
+			}
+		}
+
+		&__photo {
+			clip-path: polygon(0% 0%, 76% 0%, 64% 100%, 0% 100%);
+		}
+
+		&--home {
+			#{$this}__content {
+				left: 93px;
+			}
 		}
 	}
 }

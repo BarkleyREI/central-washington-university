@@ -7,7 +7,8 @@ const ism = {
 
 	elem: {
 		$icon: $('.ism__location-item'),
-		$heading: $('.ism__heading')
+		$heading: $('.ism__heading'),
+		$photos: $('.ism__photo')
 	},
 
 	init() {
@@ -35,11 +36,17 @@ const ism = {
 
 	btnIcon(e) {
 		e.preventDefault();
-		console.log('blorb');
-		console.log(e.currentTarget);
+		let targetHash =  $(e.currentTarget).find('.ism__location-link').attr('href');
+		if(this.elem.$photos.length > 0) {
+			let targetPhoto = targetHash.substr(1);
+			console.log(targetPhoto);
+			this.elem.$photos.removeClass('ism__photo--shown');
+			this.elem.$photos.eq(targetPhoto).addClass('ism__photo--shown');
+		}
 		this.elem.$icon.removeClass('is-active').find('.ism__location-link').attr('aria-expanded', false);
 		$(e.currentTarget).addClass('is-active').find('.ism__location-link').attr('aria-expanded', true);
-		$('.ism__heading[href="' + $(e.currentTarget).find('.ism__location-link').attr('href') + '"]').trigger('click');
+		$('.ism__heading[href="' + targetHash + '"]').trigger('click');
+
 	},
 
 	btnNoIcon(e) {

@@ -70,6 +70,12 @@
 
 		</div>
 
+		<figure class="ism__figure">
+			{{#each items}}{{#with image}}
+			<img src="{{ src }}" class="ism__photo {{ style }}" alt="{{ alt }}" width="{{ width }}" height={{ height }}" />
+			{{/with}}{{/each}}
+		</ul>
+		
 	</div>
 
 </section>
