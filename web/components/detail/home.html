@@ -191,6 +191,28 @@
 			<span class="Meta-value">components/04-templates/01-home/home.hbs</span>
 		</li>
 		
+		<li class="Meta-item">
+			<strong class="Meta-key">References:</strong>
+			
+			<span class="Meta-value Meta-value--linkList">
+			
+				<a href="./masthead--home.html">@<span>masthead--home</span></a>, 
+			
+				<a href="./explore-programs.html">@<span>explore-programs</span></a>, 
+			
+				<a href="./shortcut.html">@<span>shortcut</span></a>, 
+			
+				<a href="./stats--home.html">@<span>stats--home</span></a>, 
+			
+				<a href="./image-cards.html">@<span>image-cards</span></a>, 
+			
+				<a href="./news--home.html">@<span>news--home</span></a>, 
+			
+				<a href="./events--home.html">@<span>events--home</span></a>
+			
+			</span>
+		</li class="Meta-item">
+		
 		
 	</ul>
 </div>
@@ -209,9 +231,511 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-7bc0eae864b6631dc3be967db0f05d8e-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;main&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;home&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;main&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;home main&quot;</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello world!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;masthead masthead--home masthead--video animateOnce&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;masthead__gallery&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;masthead__btn masthead__btn--is-playing btn btn--small&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Pause video&quot;</span> <span class="hljs-attr">aria-pressed</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;show-for-sr&quot;</span>&gt;</span>Pause video<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn__icon&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brei-icon brei-icon-play&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#brei-icon-play&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brei-icon brei-icon-pause&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#brei-icon-pause&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">autoplay</span> <span class="hljs-attr">loop</span> <span class="hljs-attr">muted</span> <span class="hljs-attr">playsinline</span> <span class="hljs-attr">preload</span>=<span class="hljs-string">&quot;auto&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;masthead__video&quot;</span> <span class="hljs-attr">poster</span>=<span class="hljs-string">&quot;https://picsum.photos/1920/1080&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/video/alb_tvn0212_1080p.mp4&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;masthead__wrapper wrapper grid-x grid-margin-x&quot;</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;masthead__title cell xsmall-12&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-specialty-2&quot;</span>&gt;</span>We See <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>Futures<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;masthead__copy cell xsmall-12 medium-9 large-6&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;font-big&quot;</span>&gt;</span>At Central Washington University, you&#x27;ll find a community designed to support your individual journey to success.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs component animateOnce&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__wrapper wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;grid-x grid-margin-x&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__content cell xsmall-12 large-5&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__heading font-h1&quot;</span>&gt;</span>Forward-Thinking Programs<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__copy font-big&quot;</span>&gt;</span>Prepare for the careers of today and tomorrow. Chart your own course with more than 135 accredited college majors and 32 accredited master&#x27;s degree programs.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--primary btn--with-icon&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>Explore Programs<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn__icon&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brei-icon brei-icon-arrow&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#brei-icon-arrow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__grid cell xsmall-12 large-6 large-offset-1 animateOnce&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__cell explore-programs__cell--photo&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__figure&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/465/407&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;[photo alt text]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;465&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;407&quot;</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__cell explore-programs__cell--photo explore-programs__cell--tall&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__figure&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/465/703&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;[photo alt text]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;465&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;753&quot;</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__cell explore-programs__cell--stat&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__figure&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/465/407&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;[photo alt text]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;465&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;407&quot;</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;explore-programs__stat&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>135<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>accredited<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>college majors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut component animateOnce&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__wrapper wrapper&quot;</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__content&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__heading font-h1&quot;</span>&gt;</span>You Belong at Central<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__grid&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__link&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__figure&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/seed/1/405/405&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;[photo alt text]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;405&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;405&quot;</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__copy&quot;</span>&gt;</span>Affordability<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#2&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__link&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__figure&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/seed/2/405/405&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;[photo alt text]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;405&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;405&quot;</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__copy&quot;</span>&gt;</span>Diversity &amp; Inclusion<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#3&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__link&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__figure&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/seed/3/405/405&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;[photo alt text]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;405&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;405&quot;</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__copy&quot;</span>&gt;</span>Visit CWU<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#4&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__link&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__figure&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/seed/4/405/405&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;[photo alt text]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;405&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;405&quot;</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;shortcut__copy&quot;</span>&gt;</span>Apply Today<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats stats--home animateOnce component&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__wrapper wrapper&quot;</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__heading font-h1&quot;</span>&gt;</span>CWU by the Numbers<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__list&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__card stats__card--standalone&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__info&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>10K<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__headline font-h5&quot;</span>&gt;</span>full-time Wildcats<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__card stats__card--standalone&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__info&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>80%<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__headline font-h5&quot;</span>&gt;</span>of students receive financial aid<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__card stats__card--standalone&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__info&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>20/1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__headline font-h5&quot;</span>&gt;</span>student to faculty ratio<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__card stats__card--standalone&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__info&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>125+<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats__headline font-h5&quot;</span>&gt;</span>student organizations<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards component animateOnce&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__wrapper wrapper&quot;</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__heading font-h1&quot;</span>&gt;</span>The CWU Experience<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__grid&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__item&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__figure&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/seed/1/888/624&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;[photo alt text]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;888&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;624&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__title&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Student Life<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__content&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__label&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>Student Life<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__copy&quot;</span>&gt;</span>Structured body copy 125 characters lorem ipsum dolor sit amet consectetur adipiscing elit. Sed diam nonumy eirmod tempor invidun.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--cta&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>Tertiary Button<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#student-life&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__link&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;show-for-sr&quot;</span>&gt;</span>Tertiary Button<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__item&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__figure&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/seed/2/888/624&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;[photo alt text]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;888&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;624&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__title&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Admissions &amp; Aid<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__content&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__label&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>Admissions &amp; Aid<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__copy&quot;</span>&gt;</span>Begin building the future you&#x27;ve been dreaming about. It&#x27;s easy to apply to CWU and we&#x27;re here for you every step of the way.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--cta&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>Start Your Application Today<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#admissions-and-aid&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__link&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;show-for-sr&quot;</span>&gt;</span>Start Your Application Today<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__item&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__figure&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/seed/3/888/624&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;[photo alt text]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;888&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;624&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__title&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Academics<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__content&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__label&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>Academics<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__copy&quot;</span>&gt;</span>Structured body copy 125 characters lorem ipsum dolor sit amet consectetur adipiscing elit. Sed diam nonumy eirmod tempor invidun.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--cta&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>Tertiary Button<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#academics&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__link&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;show-for-sr&quot;</span>&gt;</span>Tertiary Button<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__item&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__figure&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/seed/4/888/624&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;[photo alt text]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;888&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;624&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__title&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__content&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__label&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__copy&quot;</span>&gt;</span>Structured body copy 125 characters lorem ipsum dolor sit amet consectetur adipiscing elit. Sed diam nonumy eirmod tempor invidun.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--cta&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>Tertiary Button<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#about&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-cards__link&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;show-for-sr&quot;</span>&gt;</span>Tertiary Button<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;feed feed--home feed--news feed--dark animateOnce&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;feed__wrapper wrapper&quot;</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;feed__title&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;feed__heading font-h1&quot;</span>&gt;</span>CWU News<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--primary btn--with-icon&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>View All News<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn__icon&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brei-icon brei-icon-arrow&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#brei-icon-arrow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;feed__list&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card card--news&quot;</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">&quot;https://schema.org/NewsArticle&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__figure&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/img/photos/heart.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;CWU students walking on campus&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;836&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;628&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__heading font-h4&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span>From the President: Heart of Higher Education Conference 2023<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__info&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;dateline&quot;</span>&gt;</span>May 05, 2023<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__info&quot;</span>&gt;</span>by <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;author&quot;</span>&gt;</span>Jim Wohlpart<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--cta&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>Read More<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__link&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;url&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;show-for-sr&quot;</span>&gt;</span>Read more about &#x27;From the President: Heart of Higher Education Conference 2023&#x27;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card card--news&quot;</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">&quot;https://schema.org/NewsArticle&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__figure&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/img/photos/were-leadership.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;the CWU College of Business building&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;836&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;628&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__heading font-h4&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span>WERE leadership training program building momentum in 2023<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__info&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;dateline&quot;</span>&gt;</span>May 05, 2023<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__info&quot;</span>&gt;</span>by <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;author&quot;</span>&gt;</span>David Leder<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--cta&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>Read More<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__link&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;url&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;show-for-sr&quot;</span>&gt;</span>Read more about &#x27;WERE leadership training program building momentum in 2023&#x27;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card card--news&quot;</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">&quot;https://schema.org/NewsArticle&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__figure&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/img/photos/wildcat-football.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;the CWU Wildcats football team&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;836&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;628&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__heading font-h4&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span>Wildcat Football Once Again Partners with Be The Match<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__info&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;dateline&quot;</span>&gt;</span>May 05, 2023<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__info&quot;</span>&gt;</span>by <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;author&quot;</span>&gt;</span>Jacob Thompson<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--cta&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>Read More<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__link&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;url&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;show-for-sr&quot;</span>&gt;</span>Read more about &#x27;Wildcat Football Once Again Partners with Be The Match&#x27;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--primary btn--with-icon&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>View All News<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn__icon&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brei-icon brei-icon-arrow&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#brei-icon-arrow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;feed feed--home feed--events animateOnce&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;feed__wrapper wrapper&quot;</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;feed__title&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;feed__heading font-h1&quot;</span>&gt;</span>CWU Upcoming Events<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--primary btn--with-icon&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>View All Events<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn__icon&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brei-icon brei-icon-arrow&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#brei-icon-arrow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;feed__list&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card card--event&quot;</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">&quot;https://schema.org/Event&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date font-h4&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;startDate&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;2023-03-06T02:30:00-07:00&quot;</span>&gt;</span>March 06<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__heading font-h4&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span>Monday Movie Madness: I Wanna Dance With Somebody<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__info&quot;</span>&gt;</span>07:30PM - 10:00PM<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__info&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;location&quot;</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">&quot;https://schema.org/Place&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span>Student Union and Recreation Center<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>Theatre Rm 210<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--cta&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>View Event Details<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__link&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;url&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;show-for-sr&quot;</span>&gt;</span>Learn more about &#x27;Monday Movie Madness: I Wanna Dance With Somebody&#x27;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card card--event&quot;</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">&quot;https://schema.org/Event&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date font-h4&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;startDate&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;2023-03-04T18:00:00-07:00&quot;</span>&gt;</span>March 04<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__heading font-h4&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span>Softball Doubleheader Game vs Billings<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__info&quot;</span>&gt;</span>11:00AM - 05:00PM<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__info&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;location&quot;</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">&quot;https://schema.org/Place&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span>Sports-Varsity Softball Field<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--cta&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>View Event Details<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__link&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;url&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;show-for-sr&quot;</span>&gt;</span>Learn more about &#x27;Softball Doubleheader Game vs Billings&#x27;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card card--event&quot;</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">&quot;https://schema.org/Event&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date font-h4&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;startDate&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;2023-03-02T24:00:00-07:00&quot;</span>&gt;</span>March 02<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__heading font-h4&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span>Services &amp; Activities Fee Committe Meeting<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__info&quot;</span>&gt;</span>05:30PM - 07:00PM<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__info&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;location&quot;</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">&quot;https://schema.org/Place&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span>Virtual Location for Online Events<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--cta&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>View Event Details<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__link&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;url&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;show-for-sr&quot;</span>&gt;</span>Learn more about &#x27;Services &amp; Activities Fee Committe Meeting&#x27;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--primary btn--with-icon&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>View All Events<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn__icon&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brei-icon brei-icon-arrow&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#brei-icon-arrow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span></pre>
         
@@ -1314,24 +1838,6 @@
 	
 		
 		
-			
-			
-			<li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-featured-content">
-				<button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-featured-content-items">
-					Featured Content
-					<svg class="chevron" viewBox="0 0 16 10" height="10" width="16">
-	<path d="M8,6L2,0L0,2l8,8l8-8l-2-2L8,6z"/>
-</svg>
-
-				</button>
-				<ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-featured-content-items">
-				
-				
-				
-				
-	
-		
-		
 		
 		
 		<li class="Tree-item Tree-entity" data-role="item">
@@ -1340,12 +1846,6 @@
 				
 			</a>
 		</li>
-		
-	
-
-				</ul>
-			</li>
-			
 		
 	
 		
@@ -1425,7 +1925,7 @@
 		
 		
 		<li class="Tree-item Tree-entity" data-role="item">
-			<a class="Tree-entityLink" href="./interactive-state-map.html" data-role="tree-link" data-pjax data-handle="interactive-state-map">
+			<a class="Tree-entityLink" href="./interactive-state-map--wide.html" data-role="tree-link" data-pjax data-handle="interactive-state-map">
 				<span>Interactive State Map</span>
 				
 			</a>
@@ -1506,24 +2006,6 @@
 	
 		
 		
-			
-			
-			<li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-quick-links">
-				<button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-quick-links-items">
-					Quick Links
-					<svg class="chevron" viewBox="0 0 16 10" height="10" width="16">
-	<path d="M8,6L2,0L0,2l8,8l8-8l-2-2L8,6z"/>
-</svg>
-
-				</button>
-				<ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-quick-links-items">
-				
-				
-				
-				
-	
-		
-		
 		
 		
 		<li class="Tree-item Tree-entity" data-role="item">
@@ -1532,12 +2014,6 @@
 				
 			</a>
 		</li>
-		
-	
-
-				</ul>
-			</li>
-			
 		
 	
 		
@@ -1566,17 +2042,29 @@
 	
 		
 		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./error.html" data-role="tree-link" data-pjax data-handle="error">
+				<span>Error</span>
+				
+			</a>
+		</li>
+		
+	
+		
+		
 			
 			
-			<li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-404">
-				<button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-404-items">
-					404
+			<li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-home">
+				<button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-home-items">
+					Home
 					<svg class="chevron" viewBox="0 0 16 10" height="10" width="16">
 	<path d="M8,6L2,0L0,2l8,8l8-8l-2-2L8,6z"/>
 </svg>
 
 				</button>
-				<ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-404-items">
+				<ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-home-items">
 				
 				
 				
@@ -1587,8 +2075,32 @@
 		
 		
 		<li class="Tree-item Tree-entity" data-role="item">
-			<a class="Tree-entityLink" href="./error.html" data-role="tree-link" data-pjax data-handle="error">
-				<span>Error</span>
+			<a class="Tree-entityLink" href="./explore-programs.html" data-role="tree-link" data-pjax data-handle="explore-programs">
+				<span>Explore Programs</span>
+				
+			</a>
+		</li>
+		
+	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./image-cards.html" data-role="tree-link" data-pjax data-handle="image-cards">
+				<span>Image Cards</span>
+				
+			</a>
+		</li>
+		
+	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./shortcut.html" data-role="tree-link" data-pjax data-handle="shortcut">
+				<span>Shortcut</span>
 				
 			</a>
 		</li>
@@ -2554,6 +3066,18 @@
 		
 		
 		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./masthead--home.html" data-role="tree-link" data-pjax data-handle="masthead">
+				<span>Home</span>
+				
+			</a>
+		</li>
+		
+	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
 			<a class="Tree-entityLink" href="./masthead--landing.html" data-role="tree-link" data-pjax data-handle="masthead">
 				<span>Landing</span>
 				
@@ -2810,6 +3334,18 @@
 		</li>
 		
 	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./events--home.html" data-role="tree-link" data-pjax data-handle="events">
+				<span>Home</span>
+				
+			</a>
+		</li>
+		
+	
 
 	</ul>
 </div>
@@ -2896,6 +3432,18 @@
 		</li>
 		
 	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./news--home.html" data-role="tree-link" data-pjax data-handle="news">
+				<span>Home</span>
+				
+			</a>
+		</li>
+		
+	
 
 	</ul>
 </div>
@@ -2946,6 +3494,47 @@
             </div>
         
     
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="interactive-state-map">
+                
+<div class="Tree" data-behaviour="tree" id="tree-interactive-state-map-variants">
+	<div class="Tree-header">
+		<h3 class="Tree-title">Interactive State Map Variants</h3>
+		
+	</div>
+	<ul class="Tree-items Tree-depth-1">
+		
+	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./interactive-state-map--wide.html" data-role="tree-link" data-pjax data-handle="interactive-state-map">
+				<span>Wide</span>
+				
+			</a>
+		</li>
+		
+	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./interactive-state-map--home.html" data-role="tree-link" data-pjax data-handle="interactive-state-map">
+				<span>Home</span>
+				
+			</a>
+		</li>
+		
+	
+
+	</ul>
+</div>
+
+            </div>
         
     
         
@@ -3100,6 +3689,18 @@
 		</li>
 		
 	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./stats--home.html" data-role="tree-link" data-pjax data-handle="stats">
+				<span>Home</span>
+				
+			</a>
+		</li>
+		
+	
 
 	</ul>
 </div>
@@ -3148,6 +3749,12 @@
 </div>
 
             </div>
+        
+    
+        
+    
+        
+    
         
     
         
