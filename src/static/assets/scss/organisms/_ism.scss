@@ -248,7 +248,7 @@
 		}
 	}
 
-	.animateOnce {
+	&.animateOnce {
 		@extend %fade-only;
 	}
 
@@ -381,10 +381,25 @@
 			display: contents;
 		}
 
-
 		&--home {
 			--inset-edge: 0;
+			background-color: transparent;
 			padding-bottom: 0;
+			position: relative;
+			z-index: 5;
+
+			&:after {
+				background-color: $wild-sand;
+				bottom: 0;
+				clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% calc(75% + 88px));
+				content: '';
+				display: block;
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				z-index: -1;
+			}
 
 			#{$this}__intro {
 				align-items: flex-start;
@@ -414,6 +429,7 @@
 					background-image: url('/img/topo-map.jpg');
 					background-position: right center;
 					bottom: 0;
+					clip-path: polygon(5% 0%, 95% 0%, 95% 100%, 5% 100%);
 					content: '';
 					filter: invert(1);
 					left: 0;

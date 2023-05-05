@@ -39,7 +39,6 @@ const ism = {
 		let targetHash =  $(e.currentTarget).find('.ism__location-link').attr('href');
 		if(this.elem.$photos.length > 0) {
 			let targetPhoto = targetHash.substr(1);
-			console.log(targetPhoto);
 			this.elem.$photos.removeClass('ism__photo--shown');
 			this.elem.$photos.eq(targetPhoto).addClass('ism__photo--shown');
 		}
