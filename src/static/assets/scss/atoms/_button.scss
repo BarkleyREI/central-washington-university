@@ -163,7 +163,7 @@ $button: '.button';
 		@extend %font-button;
 		justify-content: space-between;
 		left: 3px;
-		padding: 14px 32px 13px;
+		padding: 14px 20px 13px;
 		position: relative;
 
 		.text {
@@ -186,15 +186,15 @@ $button: '.button';
 		}
 
 		@include breakpoint(small) {
-			padding: 14px 40px 13px;
-
-			#{$this}__icon {
-				margin-left: 36px;
-			}
+			padding: 14px 32px 13px;
 		}
 
 		@include breakpoint(large) {
 			padding: 16px 40px 15px;
+
+			#{$this}__icon {
+				margin-left: 36px;
+			}
 		}
 	}
 
