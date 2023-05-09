@@ -11,13 +11,60 @@
 		// stylelint-enable declaration-no-important
 
 		&:link,
-		&:visited,
-		&:hover,
-		&:active,
-		&:focus {
+		&:visited {
 			background: transparent;
 			color: $black;
 			text-decoration: none;
+
+			#{$this}__label {
+				background-size: 0 2px;
+			}
+		}
+
+		&:hover,
+		&:active {
+			background: transparent;
+			color: $black;
+			text-decoration: none;
+
+			#{$this}__label {
+				background-size: 100% 2px;
+			}
+		}
+
+		&:focus-visible {
+			background: transparent;
+			color: $black;
+			outline: 0;
+			text-decoration: none;
+
+			#{$this}__label {
+				background-color: $cwu-yellow;
+				background-image: none;
+
+				&:before,
+				&:after {
+					background-color: currentcolor;
+					background-image: none;
+					content: '';
+					display: block;
+					height: 4px;
+					left: 0;
+					opacity: 0;
+					opacity: 1;
+					position: absolute;
+					right: 0;
+					z-index: -1;
+				}
+
+				&:before {
+					top: -8px;
+				}
+
+				&:after {
+					bottom: -8px;
+				}
+			}
 		}
 
 		&:before {
@@ -37,6 +84,10 @@
 	}
 
 	&__label {
+		background-image: linear-gradient(90deg, currentcolor 0%, currentcolor 100%);
+		background-position: bottom left;
+		background-repeat: no-repeat;
+		background-size: 0% 2px;
 		color: $black;
 		flex-grow: 1;
 		flex-shrink: 1;
@@ -44,9 +95,14 @@
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 1.2;
-		padding: 3px 16px 3px 0;
+		line-height: 1.6;
+		margin-right: 13px;
+		padding: 0 3px 0 0;
+		position: relative;
+		position: relative;
+		transition: background-size $transition-time ease;
+		z-index: 1;
 	}
-
 
 	&__content {
 		border: 1px solid $black;
@@ -54,9 +110,12 @@
 		padding: 0;
 	}
 
-	&__children,
-	&__grandchildren {
+	&__children {
 		margin: 0;
+	}
+
+	&__grandchildren {
+		margin: 0 16px;
 	}
 
 	&__child,
@@ -94,13 +153,6 @@
 
 		> span {
 			font-weight: 700;
-		}
-	}
-
-	&__grandchild {
-		> a,
-		> span {
-			padding-left: 32px;
 		}
 	}
 
