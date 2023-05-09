@@ -76,7 +76,7 @@
 	}
 
 	&__copy {
-		margin-top: 32px;
+		margin-top: 40px;
 		position: relative;
 		z-index: 4;
 
@@ -151,15 +151,21 @@
 			transform: translateX(-100vw);
 
 			h1 {
+				font-family: $inter;
+				font-size: 44.35px;
 				font-style: italic;
+				font-weight: 800;
+				letter-spacing: -1px;
 				line-height: 1;
+				line-height: 1.2;
 				padding: 8px 44px 8px 0;
 				position: relative;
 				text-transform: uppercase;
 				width: fit-content;
 
+
 				&:before {
-					background-color: $cwu-crimson;
+					background-color: rgba($cwu-crimson, 0.85);
 					bottom: 0;
 					content: '';
 					display: block;
@@ -176,6 +182,10 @@
 
 		#{$this}__copy {
 			transform: translateX(-100vw);
+
+			p {
+				margin-bottom: 0;
+			}
 		}
 
 		&.animated {
@@ -314,11 +324,15 @@
 
 			#{$this}__wrapper {
 				clip-path: none;
-				padding-bottom: 88px;
+				padding-bottom: 120px;
 			}
 
 			#{$this}__title {
 				padding: 0;
+
+				h1 {
+					font-size: 86.56px;
+				}
 
 				br {
 					display: none;
