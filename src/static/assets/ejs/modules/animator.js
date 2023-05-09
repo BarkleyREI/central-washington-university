@@ -1,31 +1,27 @@
 const animator = {
 
 	elem: {
-		sections: document.querySelectorAll('.animate, .animateOnce')
+		groups: document.querySelectorAll('.animateOnce')
 	},
 
-	animationObserver: null,
+	mover: null,
 
 	init() {
-		if (animator.elem.sections.length > 0 ) {
-			if(!!window.IntersectionObserver){
-				animator.animationObserver = new IntersectionObserver(animator.animate, { rootMargin: '-200px', threshold: 0 });
-				animator.elem.sections.forEach(function(element) {
-					animator.animationObserver.observe(element);
-				});
-			}
+		if (animator.elem.groups.length > 0 ) {
+			animator.mover = new IntersectionObserver(animator.mover, { root: null, rootMargin: '-100px', threshold: 0 });
+			animator.elem.groups.forEach(function(element) {
+				animator.mover.observe(element);
+			});
 		}
 	},
 
-	animate(entries) {
+	mover(entries) {
+		console.log('kiki');
+		console.log(entries);
 		entries.forEach(entry => {
 			if(entry.isIntersecting) {
 				entry.target.classList.add('animated');
-				if (entry.target.classList.contains('animateOnce')) {
-					animator.animationObserver.unobserve(entry.target);
-				}
-			} else {
-				entry.target.classList.remove('animated');
+				animator.mover.unobserve(entry.target);
 			}
 		});
 	}
