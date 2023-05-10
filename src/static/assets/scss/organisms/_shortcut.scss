@@ -9,14 +9,13 @@
 
 	&:after {
 		@extend %overlay;
-		background-attachment: fixed;
 		background-image: url('/img/topo-map.jpg');
 		background-position: 50% 50%;
 		background-size: cover;
 		content: '';
 		filter: invert(1);
 		mix-blend-mode: lighten;
-		opacity: 0.35;
+		opacity: 0.25;
 		z-index: 1;
 	}
 
@@ -119,7 +118,7 @@
 	}
 
 	&.animateOnce {
-		@extend %fade-only;
+		@extend %bump-fade;
 	}
 
 	@include breakpoint(small) {

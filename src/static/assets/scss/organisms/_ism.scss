@@ -249,7 +249,7 @@
 	}
 
 	&.animateOnce {
-		@extend %fade-only;
+		@extend %bump-fade;
 	}
 
 	@include breakpoint(medium down) {
@@ -262,8 +262,9 @@
 
 			#{$this}__map {
 				&:after {
-					background-attachment: fixed;
 					background-image: url('/img/topo-map.jpg');
+					background-position: 50% 50%;
+					background-size: cover;
 					bottom: 0;
 					content: '';
 					filter: invert(1);
@@ -425,9 +426,9 @@
 				position: relative;
 
 				&:after {
-					background-attachment: fixed;
+					background-size: cover;
 					background-image: url('/img/topo-map.jpg');
-					background-position: right center;
+					background-position: 50% 50%;
 					bottom: 0;
 					clip-path: polygon(5% 0%, 95% 0%, 95% 100%, 5% 100%);
 					content: '';
@@ -567,6 +568,12 @@
 		}
 
 		&--home {
+			#{$this}__wrapper {
+				&:after {
+					clip-path: none;
+				}
+			}
+			
 			#{$this}__content {
 				left: 93px;
 			}

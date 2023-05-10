@@ -232,6 +232,14 @@
 				#{$this}__content {
 					opacity: 1;
 				}
+
+				.btn--cta {
+					&:after {
+						left: 0;
+						right: 0;
+						transition-delay: 250ms;
+					}
+				}
 			}
 		}
 	}
