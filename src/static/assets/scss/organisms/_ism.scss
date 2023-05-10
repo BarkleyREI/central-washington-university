@@ -426,9 +426,9 @@
 				position: relative;
 
 				&:after {
-					background-size: cover;
 					background-image: url('/img/topo-map.jpg');
 					background-position: 50% 50%;
+					background-size: cover;
 					bottom: 0;
 					clip-path: polygon(5% 0%, 95% 0%, 95% 100%, 5% 100%);
 					content: '';
@@ -573,7 +573,7 @@
 					clip-path: none;
 				}
 			}
-			
+
 			#{$this}__content {
 				left: 93px;
 			}
