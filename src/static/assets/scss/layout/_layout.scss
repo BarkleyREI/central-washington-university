@@ -52,13 +52,18 @@
 		padding: 0 5%;
 	}
 
-	@include breakpoint(1920px) {
+	@include breakpoint(xxxlarge) {
 		padding: 0;
 		width: $global-width;
 	}
 }
 
 .main {
+	padding-bottom: 96px;
+
+	@include breakpoint(large) {
+		padding-botom: 148px;
+	}
 }
 
 .rail {

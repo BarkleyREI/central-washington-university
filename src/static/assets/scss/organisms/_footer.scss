@@ -1,7 +1,6 @@
 .footer {
 	$this: &;
 	border-top: 6px solid $cwu-crimson;
-	margin-top: 96px;
 
 	&__main {
 		background-color: $wild-sand;
@@ -113,7 +112,6 @@
 	}
 
 	@include breakpoint(large) {
-		margin-top: 148px;
 
 		&__main {
 			&:after {

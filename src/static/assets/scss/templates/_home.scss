@@ -1,0 +1,17 @@
+.home {
+	position: relative;
+
+	&:after {
+		@extend %overlay;
+		background-image: url('/img/topo-map.jpg');
+		background-position: 50% 50%;
+		background-size: auto;
+		content: '';
+		opacity: 0.1;
+		z-index: -1;
+
+		@include breakpoint(large) {
+			background-size: 100% auto;
+		}
+	}
+}

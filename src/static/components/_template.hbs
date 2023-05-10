@@ -21,15 +21,11 @@
 
 	{{render '@access-nav' }}
 
-	<div class="container">
+	{{render '@header'}}
 
-		{{render '@header'}}
+	{{{ yield }}}
 
-		{{{ yield }}}
-
-		{{render '@footer'}}
-
-	</div>
+	{{render '@footer'}}
 
 	<script src="{{ _config.project.jquerycdn }}"></script>
 

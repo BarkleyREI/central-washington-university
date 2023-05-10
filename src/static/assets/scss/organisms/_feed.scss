@@ -6,19 +6,7 @@
 
 		#{$this}__heading {
 			margin-bottom: 0;
-			padding-right: 36px;
-		}
-
-		&:after {
-			background-color: $black;
-			bottom: 24px;
-			content: '';
-			display: block;
-			height: 4px;
-			left: 0;
-			position: absolute;
-			right: 0;
-			z-index: -1;
+			position: relative;
 		}
 	}
 
@@ -39,22 +27,45 @@
 		@extend %inset-bottom-edge;
 		padding: 60px 0;
 
+		#{$this}__title {
+		}
+
 		#{$this}__heading {
-			background-color: $white;
-			display: inline;
+			flex-grow: 1;
+			flex-shrink: 1;
+			// background-color: $white;
 			font-style: italic;
 			font-weight: 700;
+			overflow: hidden;
 			text-transform: uppercase;
+
+			span {
+				display: block;
+				padding-right: 36px;
+				position: relative;
+				width: fit-content;
+
+				&:after {
+					background-color: $black;
+					bottom: calc(50% - 2px);
+					content: '';
+					display: block;
+					height: 4px;
+					left: 100%;
+					position: absolute;
+					width: 100vw;
+					z-index: -1;
+				}
+			}
 		}
 	}
-
 
 	&--dark {
 		background-color: $wild-sand;
 		padding-bottom: 72px;
 
 		#{$this}__heading {
-			background-color: $wild-sand;
+			// background-color: $wild-sand;
 		}
 
 		.card {
