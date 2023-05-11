@@ -11,7 +11,8 @@ const accordion = {
 		$asides: $('.aside__accordion'),		
 		$emergency: $('.emergency__accordion'),
 		$filters: $('.filter__accordion'),
-		$navigation: $('.nav-primary__list')
+		$navPrimary: $('.nav-primary__list'),
+		$navSecondary: $('.nav-secondary__list')		
 	},
 
 	mql: {
@@ -61,14 +62,18 @@ const accordion = {
 
 			}
 
-			// Close navigation on click outside navigation and ESC
+			// Close navPrimary on click outside navPrimary and ESC
 			$(document).on('click keydown', function(e) {
 				if(e.type === 'click') {
 					if(!$(e.target).closest('#primary-navigation').length) {
-						accordion.elem.$navigation.foundation('up', $($('.nav-primary__item.is-active .accordion-title').eq(0).attr('href')));
+						accordion.elem.$navPrimary.foundation('up', $($('.nav-primary__item.is-active .accordion-title').eq(0).attr('href')));
+					}
+					if(!$(e.target).closest('#secondary-navigation-desktop').length) {
+						accordion.elem.$navSecondary.foundation('up', $($('.nav-secondary__item.is-active .accordion-title').eq(0).attr('href')));
 					}
 				} else if (e.keyCode === 27) {
-					accordion.elem.$navigation.foundation('up', $($('.nav-primary__item.is-active .accordion-title').eq(0).attr('href')));
+					accordion.elem.$navPrimary.foundation('up', $($('.nav-primary__item.is-active .accordion-title').eq(0).attr('href')));
+					accordion.elem.$navSecondary.foundation('up', $($('.nav-secondary__item.is-active .accordion-title').eq(0).attr('href')));
 				}
 			});
 			

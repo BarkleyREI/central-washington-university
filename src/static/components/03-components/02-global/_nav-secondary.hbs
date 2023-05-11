@@ -5,12 +5,12 @@
 		{{#each items}}
 		{{#if children}}
 		<li class="nav-secondary__item accordion-item" data-accordion-item>
-			<a href="#nav-secondary-{{ @key }}" class="nav-secondary__heading accordion-title">
+			<a href="#nav-secondary-{{ ../id }}-{{ @key }}" class="nav-secondary__heading accordion-title">
 			   <span class="nav-secondary__label">{{copy}}</span>
 			   {{svg 'chevron' }}
 			</a>
 
-			<div class="nav-secondary__content accordion-content" data-tab-content id="nav-secondary-{{ @key }}">
+			<div class="nav-secondary__content accordion-content" data-tab-content id="nav-secondary-{{ ../id }}-{{ @key }}">
 				 <ul class="nav-secondary__children">
 				 	{{#each children}}
 					<li class="nav-secondary__child">
