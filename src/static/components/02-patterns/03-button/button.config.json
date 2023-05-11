@@ -93,7 +93,8 @@
 			"context": {
 				"modifiers": "btn--social",
 				"icon": "facebook",
-				"copy": ""
+				"copy": "",
+				"alt": "facebook"
 			}
 		}
 	]

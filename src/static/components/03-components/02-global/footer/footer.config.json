@@ -21,23 +21,28 @@
 			"items": [
 				{
 					"url": "https://www.facebook.com/cwu.wildcats",
-					"icon": "facebook"
+					"icon": "facebook",
+					"alt": "Facebook"
 				},
 				{
 					"url": "https://www.linkedin.com/school/central-washington-university/",
-					"icon": "linkedin"
+					"icon": "linkedin",
+					"alt": "LinkedIn"
 				},
 				{
 					"url": "https://www.instagram.com/central_washington_university/",
-					"icon": "instagram"
+					"icon": "instagram",
+					"alt": "Instagram"
 				},
 				{
 					"url": "https://www.youtube.com/user/CentralWashU",
-					"icon": "youtube"
+					"icon": "youtube",
+					"alt": "YouTube"
 				},
 				{
 					"url": "https://twitter.com/CentralWashU",
-					"icon": "twitter"
+					"icon": "twitter",
+					"alt": "Twitter"
 				}
 			]
 		},

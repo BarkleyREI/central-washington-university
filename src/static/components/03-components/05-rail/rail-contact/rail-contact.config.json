@@ -22,23 +22,28 @@
 			"items": [
 				{
 					"url": "#",
-					"icon": "facebook"
+					"icon": "facebook",
+					"alt": "Facebook"
 				},
 				{
 					"url": "#",
-					"icon": "twitter"
+					"icon": "twitter",
+					"alt": "Twitter"
 				},
 				{
 					"url": "#",
-					"icon": "instagram"
+					"icon": "instagram",
+					"alt": "Instagram"
 				},
 				{
 					"url": "#",
-					"icon": "linkedin"
+					"icon": "linkedin",
+					"alt": "Linkedin"
 				},
 				{
 					"url": "#",
-					"icon": "youtube"
+					"icon": "youtube",
+					"alt": "YouTube"
 				}				
 			]
 		}
