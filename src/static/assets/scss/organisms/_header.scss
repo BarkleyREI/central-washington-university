@@ -110,14 +110,11 @@
 
 			&__lower {
 				bottom: 0;
-				transition-delay: 0s, 0s;
-				visibility: visible;
-			}
-
-			&__links {
-				height: calc(100vh - 200px);
+				height: calc(100% - 101px);
 				overflow-x: hidden;
 				overflow-y: auto;
+				transition-delay: 0s, 0s;
+				visibility: visible;
 			}
 		}
 	}
