@@ -1,6 +1,13 @@
 .explore-programs {
 	$this: &;
 
+	&__wrapper {
+		max-width: 1920px;
+		margin: 0 auto;
+		padding: 0 16px;
+		width: 100%;
+	}
+
 	&__heading {
 		font-style: italic;
 		font-weight: 700;
@@ -62,6 +69,7 @@
 		line-height: 1.2;
 		position: absolute;
 		text-align: center;
+		text-transform: uppercase;
 		top: 50%;
 		transform: translate(-50%, -50%);
 		width: 100%;
@@ -92,12 +100,22 @@
 	}
 
 	@include breakpoint(large) {
+		&__wrapper {
+			padding: 0 0 0 5%;
+		}
+		
 		&__content {
 			align-self: center;
 		}
 
 		&__grid {
 			--inset-edge: 44px;
+		}
+	}
+
+	@include breakpoint(xxxlarge) {
+		&__wrapper {
+			padding: 0 0 0 96px;
 		}
 	}
 }
