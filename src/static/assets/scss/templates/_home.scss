@@ -13,5 +13,10 @@
 		@include breakpoint(large) {
 			background-size: 100% auto;
 		}
+
+		@include breakpoint(1369px) {
+			background-attachment: fixed;
+			background-size: cover;
+		}
 	}
 }
