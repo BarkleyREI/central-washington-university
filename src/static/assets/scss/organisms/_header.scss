@@ -93,9 +93,9 @@
 			position: fixed;
 			right: 0;
 			top: 97px;
+			transition-delay: 0s, $transition-time;
 			transition-duration: $transition-time * 2, 0s;
 			transition-property: bottom, visibility;
-			transition-delay: 0s, $transition-time;
 			visibility: hidden;
 			z-index: 999;
 		}
@@ -110,8 +110,8 @@
 
 			&__lower {
 				bottom: 0;
-				visibility: visible;
 				transition-delay: 0s, 0s;
+				visibility: visible;
 			}
 
 			&__links {
