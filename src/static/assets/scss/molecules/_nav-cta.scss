@@ -106,8 +106,12 @@
 	}
 
 	@include breakpoint(xlarge) {
+		&__list {
+			gap: clamp(32px, 2.2222vw, 96px);
+		}
+		
 		&__item {
-			flex-grow: 0;
+			flex-grow: 1;
 
 			a {
 				font-size: 57.33px;
@@ -120,4 +124,5 @@
 			}
 		}
 	}
+
 }
