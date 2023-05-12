@@ -68,7 +68,7 @@ const accordion = {
 					if(!$(e.target).closest('#primary-navigation').length) {
 						accordion.elem.$navPrimary.foundation('up', $($('.nav-primary__item.is-active .accordion-title').eq(0).attr('href')));
 					}
-					if(!$(e.target).closest('#secondary-navigation-desktop').length) {
+					if(!$(e.target).closest('#secondary-navigation-desktop, #secondary-navigation-mobile').length) {
 						accordion.elem.$navSecondary.foundation('up', $($('.nav-secondary__item.is-active .accordion-title').eq(0).attr('href')));
 					}
 				} else if (e.keyCode === 27) {
