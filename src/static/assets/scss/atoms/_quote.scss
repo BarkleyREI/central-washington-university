@@ -23,13 +23,18 @@
 
 	cite,
 	&__citation {
-		@extend %font-subhead;
-		color: $black;
+		font-family: $inter;
+		font-size: 19.2px;
+		font-weight: 700;
+		line-height: 1.5;
+		color: $tundora;
 		font-style: normal;
 
 		&:before {
 			display: none;
 		}
+
+		
 	}
 
 	&:before {
@@ -77,7 +82,7 @@
 				height: 2px;
 				left: -30px;
 				right: 0;
-				top: 30px;
+				top: 31px;
 				width: auto;
 			}
 		}
