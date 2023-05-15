@@ -23,18 +23,16 @@
 
 	cite,
 	&__citation {
+		color: $tundora;
 		font-family: $inter;
 		font-size: 19.2px;
+		font-style: normal;
 		font-weight: 700;
 		line-height: 1.5;
-		color: $tundora;
-		font-style: normal;
 
 		&:before {
 			display: none;
 		}
-
-		
 	}
 
 	&:before {

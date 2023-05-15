@@ -2,6 +2,10 @@
 	background-color: $mercury;
 	padding: 20px;
 
+	&__list {
+		width: fit-content;
+	}
+
 	&__item {
 		margin: 0 0 12px -3px;
 		padding-right: 16px;
