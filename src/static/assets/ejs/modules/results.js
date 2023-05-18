@@ -50,7 +50,7 @@ const results = {
 
 	// add a new chip to the list of chips and bind the unfilterChip action to it
 	addChip(key, label) {
-		let output = '<a href="#' + key + '" class="chip"><span class="chip__close"><span class="show-for-sr">Remove this filter</span><svg class="brei-icon brei-icon-close" focusable="false"><use xlink:href="#brei-icon-close"></use></svg></span><span class="chip__label">' + label + '</span></a>';
+		let output = '<a href="#' + key + '" class="chip"><span class="chip__close"><span class="show-for-sr">Remove this filter</span><svg class="brei-icon brei-icon-close" focusable="false"><use href="#brei-icon-close"></use></svg></span><span class="chip__label">' + label + '</span></a>';
 		results.elem.$chips.prepend(output);
 		$('.chip[href="#' + key + '"]').on('click', results.unfilterChip);
 	},
@@ -355,7 +355,7 @@ const results = {
 		if(current === 0) {
 			output += ' pagination__item--disabled';
 		}
-		output += '"><a href="#' + (current - 1) + '" class="pagination__button btn btn--pagination"><span class="btn__icon"><svg class="brei-icon brei-icon-chevron" focusable="false"><use xlink:href="#brei-icon-chevron"></use></svg></span><span class="show-for-sr">Previous Page</span></a></li>';
+		output += '"><a href="#' + (current - 1) + '" class="pagination__button btn btn--pagination"><span class="btn__icon"><svg class="brei-icon brei-icon-chevron" focusable="false"><use href="#brei-icon-chevron"></use></svg></span><span class="show-for-sr">Previous Page</span></a></li>';
 
 		// individual results
 		for(let i = 0; i < items.length; i = i + 1) {
@@ -379,7 +379,7 @@ const results = {
 		if(current === max) {
 			output += ' pagination__item--disabled';
 		}
-		output += '"><a href="#' + (current + 1) + '" class="pagination__button btn btn--pagination"><span class="btn__icon"><svg class="brei-icon brei-icon-chevron" focusable="false"><use xlink:href="#brei-icon-chevron"></use></svg></span><span class="show-for-sr">Previous Page</span></a></li></ul>';
+		output += '"><a href="#' + (current + 1) + '" class="pagination__button btn btn--pagination"><span class="btn__icon"><svg class="brei-icon brei-icon-chevron" focusable="false"><use href="#brei-icon-chevron"></use></svg></span><span class="show-for-sr">Previous Page</span></a></li></ul>';
 		
 		results.elem.$pagination.html(output);
 		$('.pagination__button, .pagination__link').on('click', results.filterPagination); // rebind UI actions

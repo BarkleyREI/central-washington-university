@@ -21,8 +21,8 @@ const gallery = {
 		slidesToScroll: 1,
 		slidesToShow: 1,
 		speed: 500,
-		prevArrow: '<button class="gallery__prev btn btn--small"><span class="show-for-sr">Go to the previous slide</span><svg class="brei-icon brei-icon-chevron"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#brei-icon-chevron"></use></svg></button>',
-		nextArrow: '<button class="gallery__next btn btn--small"><span class="show-for-sr">Go to the next slide</span><svg class="brei-icon brei-icon-chevron"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#brei-icon-chevron"></use></svg></button>'
+		prevArrow: '<button class="gallery__prev btn btn--small"><span class="show-for-sr">Go to the previous slide</span><svg class="brei-icon brei-icon-chevron"><use xmlns:xlink="http://www.w3.org/1999/xlink" href="#brei-icon-chevron"></use></svg></button>',
+		nextArrow: '<button class="gallery__next btn btn--small"><span class="show-for-sr">Go to the next slide</span><svg class="brei-icon brei-icon-chevron"><use xmlns:xlink="http://www.w3.org/1999/xlink" href="#brei-icon-chevron"></use></svg></button>'
 	},
 
 	init() {

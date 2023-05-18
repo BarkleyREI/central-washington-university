@@ -186,7 +186,7 @@ module.exports = {
 
 		const tmpl = `
 			<svg class="${_svgClass} ${_svgClass}-${name}" focusable="false">
-				<use xlink:href="#${_svgClass}-${name}"></use>
+				<use href="#${_svgClass}-${name}"></use>
 			</svg>
 		`;
 

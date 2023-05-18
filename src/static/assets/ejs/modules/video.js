@@ -17,7 +17,7 @@ const video = {
 
 		this.elem.$play.magnificPopup({
 			type: 'iframe',
-			closeMarkup: '<button type="button" class="mfp-close btn btn--small"><span class="show-for-sr">Close Modal</span><span class="btn__icon"><svg class="brei-icon brei-icon-close" focusable="false"><use xlink:href="#brei-icon-close"></use></svg></span></button>',
+			closeMarkup: '<button type="button" class="mfp-close btn btn--small"><span class="show-for-sr">Close Modal</span><span class="btn__icon"><svg class="brei-icon brei-icon-close" focusable="false"><use href="#brei-icon-close"></use></svg></span></button>',
 			iframe: {
 				patterns: {
 					vimeo: {
