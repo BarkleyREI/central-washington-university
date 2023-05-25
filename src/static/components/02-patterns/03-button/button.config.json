@@ -44,6 +44,16 @@
 			}
 		},
 		{
+			"name": "tertiary--icon",
+			"label": "Tertiary [Icon]",
+			"context": {
+				"modifiers": "btn--cta",
+				"icon": "",
+				"copy": "Tertiary Button",
+				"icon": "external"
+			}
+		},
+		{
 			"name": "Disabled",
 			"context": {
 				"modifiers": "btn--primary btn--disabled",

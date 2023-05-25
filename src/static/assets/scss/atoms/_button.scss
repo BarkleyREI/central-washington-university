@@ -226,6 +226,13 @@ $button: '.button';
 		padding: 2px 0.365em 1px;
 		position: relative;
 
+		#{$this}__icon {
+			font-size: 13.333px;
+			margin-left: 8px;
+			position: relative;
+			top: 1.8px;
+		}
+
 		&:before,
 		&:after {
 			background-color: var(--border);
@@ -274,6 +281,13 @@ $button: '.button';
 				left: 0;
 				opacity: 1;
 				right: 0;
+			}
+		}
+
+		@include breakpoint(large) {
+			#{$this}__icon {
+				font-size: 16px;
+				top: 2.4px;
 			}
 		}
 	}
