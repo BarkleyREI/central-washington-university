@@ -9,5 +9,182 @@
 			"main"
 		]
 	},	
-	"context": {}	
+	"context": {},
+	"variants": [
+		{
+			"name": "Library",
+			"context": {
+				"nav-primary": {
+					"items": [
+						{
+							"modifiers": "menu--primary",
+							"url": "#",
+							"copy": "Find Materials",
+							"children": [
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Books, Articles, & More (OneSearch)"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Databases"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Online Journals"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "ScholarWorks"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Course Reserves"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "New Books"
+								}
+							]
+						},
+						{
+							"modifiers": "menu--primary",
+							"url": "#",
+							"copy": "Use the Libraries",
+							"children": [
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Hours"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Locations & Collections"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "My Library Accounts"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Borrow & Request"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Reserve a Study Room"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Print, Scan, & Compute"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Library Accessibility"
+								}
+							]
+						},
+						{
+							"modifiers": "menu--primary",
+							"url": "#",
+							"copy": "Get Support",
+							"children": [
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Ask Here"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Research Support"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Instruction & Course Support"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Learning Commons"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Library & Information Science Programs"
+								}
+							]
+						},
+						{
+							"modifiers": "menu--primary",
+							"url": "#",
+							"copy": "Connect",
+							"children": [
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "About Us"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Employee Directory"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Events"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Jobs"
+								},
+								{
+									"modifiers": "menu--secondary",
+									"icon": "chevron",
+									"url": "#",
+									"copy": "Friends of the Brooks Library"
+								}
+							]
+						}
+					]
+				}
+			}
+		}
+	]
 }

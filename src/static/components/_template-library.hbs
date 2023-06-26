@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- http://microformats.org/wiki/hcard-cheatsheet -->
+	<link rel="profile" href="http://microformats.org/profile/hcard" />
+
+	<link media="all" rel="stylesheet" href="{{ path '/css/main.css' }}">
+
+	<title>{{ _target.title }}</title>
+
+	<script type="text/javascript" src="{{ path '/js/plugins/modernizr.js' }}"></script>
+
+</head>
+<body>
+
+	{{render '@svg' }}
+
+	{{render '@access-nav' }}
+
+	{{render '@header--library'}}
+
+	{{{ yield }}}
+
+	{{render '@footer'}}
+
+	<script src="{{ _config.project.jquerycdn }}"></script>
+
+	{{#if _config.project.is_server }}
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.4.1/axe.min.js" integrity="sha512-dBGHGCHrc6Lz3qXcm9O3QgAK2FYCYTsRSwb07QY3t9s1Q8vR36zc9PETlCiF69r6S+WaDi/fepihq+PWzFYuxQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script type="text/javascript">
+			axe
+					.run()
+					.then(results => {
+						console.log(results);
+						window.parent.postMessage(results, 'http://localhost:3000');
+
+						if (results.violations.length > 0) {
+							throw new Error('Accessibility issues found');
+						}
+					})
+					.catch(err => {
+						console.error('Something bad happened:', err.message);
+					});
+		</script>
+	{{/if}}
+
+	{{#if _target.meta.scripts}}
+		{{#each _target.meta.scripts}}
+			<script type="text/javascript" src="{{ scriptPath this }}"></script>
+		{{/each}}
+	{{/if}}
+
+	{{render '@chat' }}
+
+</body>
+</html>

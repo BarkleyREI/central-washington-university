@@ -11,5 +11,14 @@
 			"width": 200,
 			"title": "Sample Iframe"
 		}
-	}
+	},
+	"variants": [
+		{
+			"name": "Wide",
+			"preview": "@high",
+			"context": {
+				"style": "iframe--wide"
+			}
+		}
+	]
 }

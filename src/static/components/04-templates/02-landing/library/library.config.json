@@ -1,11 +1,12 @@
 {
 	"title": "Library",
 	"status": "ready",
-	"preview": "@template",
+	"preview": "@template-library",
 	"meta": {
 		"scripts": [
 			"vendor",
-			"main"
+			"main",
+			"library"
 		]
 	},
 	"context": {

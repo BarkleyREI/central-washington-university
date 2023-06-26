@@ -138,6 +138,21 @@
 					color: $black;
 				}
 			}
+
+			&:first-child {
+				#{$this}__content {
+					left: -22px;
+					transform: none;
+				}
+			}
+
+			&:last-child {
+				#{$this}__content {
+					left: auto;
+					right: -22px;
+					transform: none;
+				}
+			}
 		}
 
 		&__heading {
@@ -249,12 +264,12 @@
 		}
 
 		&__content {
-			left: -20px;
+			left: 50%;
 			min-width: 300px;
 			padding: 0;
 			position: absolute;
 			top: 100%;
-			// transform: translateX(-50%);
+			transform: translateX(-50%);
 		}
 	}
 

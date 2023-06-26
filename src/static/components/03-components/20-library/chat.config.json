@@ -1,0 +1,15 @@
+{
+	"title": "Chat",
+	"status": "ready",
+	"preview": "@high",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main",
+			"library"
+		]
+	},
+	"context": {
+		"copy": "Ask Us"
+	}
+}
