@@ -1,10 +1,11 @@
 <script src="https://v2.libanswers.com/load_chat.php?hash=55b987fbc153add10f9a1c0b2732eb3e"></script>
 <div class="chat">
 
-	<button class="ask_us_slideout_handle">
+	<button class="chat__button" aria-controls="#libchat_55b987fbc153add10f9a1c0b2732eb3e" aria-expanded="false" aria-label="{{ label }}">
+		{{svg "chat" }}
 		{{ copy }}
 	</button>
 	
-	<div class="chat__window" id="libchat_55b987fbc153add10f9a1c0b2732eb3e"></div>
+	<div class="chat__window" aria-hidden="true" id="libchat_55b987fbc153add10f9a1c0b2732eb3e"></div>
 	
 </div>

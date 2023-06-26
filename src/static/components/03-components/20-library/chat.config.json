@@ -10,6 +10,7 @@
 		]
 	},
 	"context": {
-		"copy": "Ask Us"
+		"copy": "Ask Here",
+		"label": "Click here to open the library chat window"
 	}
 }

@@ -235,6 +235,17 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: black; font-size: 32px; width: 32px; height: 32px;&quot;</span>&gt;</span>
 
+            <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brei-icon brei-icon-chat&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#brei-icon-chat&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>icon-chat<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{svg &quot;chat&quot;}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: black; font-size: 32px; width: 32px; height: 32px;&quot;</span>&gt;</span>
+
             <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brei-icon brei-icon-facebook&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#brei-icon-facebook&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
@@ -488,6 +499,7 @@
   <span class="hljs-attr">&quot;icons&quot;</span>: [
     <span class="hljs-string">&quot;logo&quot;</span>,
     <span class="hljs-string">&quot;logo-signature&quot;</span>,
+    <span class="hljs-string">&quot;chat&quot;</span>,
     <span class="hljs-string">&quot;facebook&quot;</span>,
     <span class="hljs-string">&quot;instagram&quot;</span>,
     <span class="hljs-string">&quot;linkedin&quot;</span>,
@@ -1359,7 +1371,7 @@
 		
 		
 		<li class="Tree-item Tree-entity" data-role="item">
-			<a class="Tree-entityLink" href="./header.html" data-role="tree-link" data-pjax data-handle="header">
+			<a class="Tree-entityLink" href="./header--default.html" data-role="tree-link" data-pjax data-handle="header">
 				<span>Header</span>
 				
 			</a>
@@ -1515,7 +1527,7 @@
 		
 		
 		<li class="Tree-item Tree-entity" data-role="item">
-			<a class="Tree-entityLink" href="./iframe.html" data-role="tree-link" data-pjax data-handle="iframe">
+			<a class="Tree-entityLink" href="./iframe--default.html" data-role="tree-link" data-pjax data-handle="iframe">
 				<span>Iframe</span>
 				
 			</a>
@@ -1876,6 +1888,42 @@
 			
 		
 	
+		
+		
+			
+			
+			<li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-library">
+				<button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-library-items">
+					Library
+					<svg class="chevron" viewBox="0 0 16 10" height="10" width="16">
+	<path d="M8,6L2,0L0,2l8,8l8-8l-2-2L8,6z"/>
+</svg>
+
+				</button>
+				<ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-library-items">
+				
+				
+				
+				
+	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./chat.html" data-role="tree-link" data-pjax data-handle="chat">
+				<span>Chat</span>
+				
+			</a>
+		</li>
+		
+	
+
+				</ul>
+			</li>
+			
+		
+	
 
 				</ul>
 			</li>
@@ -1961,6 +2009,18 @@
 		<li class="Tree-item Tree-entity" data-role="item">
 			<a class="Tree-entityLink" href="./high-level.html" data-role="tree-link" data-pjax data-handle="high-level">
 				<span>High Level</span>
+				
+			</a>
+		</li>
+		
+	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./library.html" data-role="tree-link" data-pjax data-handle="library">
+				<span>Library</span>
 				
 			</a>
 		</li>
@@ -2770,6 +2830,47 @@
         
     
         
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="header">
+                
+<div class="Tree" data-behaviour="tree" id="tree-header-variants">
+	<div class="Tree-header">
+		<h3 class="Tree-title">Header Variants</h3>
+		
+	</div>
+	<ul class="Tree-items Tree-depth-1">
+		
+	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./header--default.html" data-role="tree-link" data-pjax data-handle="header">
+				<span>Default</span>
+				
+			</a>
+		</li>
+		
+	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./header--library.html" data-role="tree-link" data-pjax data-handle="header">
+				<span>Library</span>
+				
+			</a>
+		</li>
+		
+	
+
+	</ul>
+</div>
+
+            </div>
+        
     
         
     
@@ -2894,6 +2995,47 @@
     
         
     
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="iframe">
+                
+<div class="Tree" data-behaviour="tree" id="tree-iframe-variants">
+	<div class="Tree-header">
+		<h3 class="Tree-title">Iframe Variants</h3>
+		
+	</div>
+	<ul class="Tree-items Tree-depth-1">
+		
+	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./iframe--default.html" data-role="tree-link" data-pjax data-handle="iframe">
+				<span>Default</span>
+				
+			</a>
+		</li>
+		
+	
+		
+		
+		
+		
+		<li class="Tree-item Tree-entity" data-role="item">
+			<a class="Tree-entityLink" href="./iframe--wide.html" data-role="tree-link" data-pjax data-handle="iframe">
+				<span>Wide</span>
+				
+			</a>
+		</li>
+		
+	
+
+	</ul>
+</div>
+
+            </div>
         
     
         
@@ -3525,6 +3667,12 @@
 </div>
 
             </div>
+        
+    
+        
+    
+        
+    
         
     
         

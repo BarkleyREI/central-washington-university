@@ -25,6 +25,8 @@
 
 	{{{ yield }}}
 
+	{{render '@chat' }}	
+	
 	{{render '@footer'}}
 
 	<script src="{{ _config.project.jquerycdn }}"></script>
@@ -53,8 +55,6 @@
 			<script type="text/javascript" src="{{ scriptPath this }}"></script>
 		{{/each}}
 	{{/if}}
-
-	{{render '@chat' }}
 
 </body>
 </html>

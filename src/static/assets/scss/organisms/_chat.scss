@@ -1,0 +1,49 @@
+.chat {
+	align-items: flex-start;
+	bottom: 16px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	left: 100%;
+	position: fixed;
+	transform: translate(-78px, 244px);
+	transition: transform $transition-time ease;
+	z-index: 99;
+
+	&__button {
+		background: $black;
+		border: 3px solid $white;
+		color: $white;
+		flex-shrink: 0;
+		font-size: 16px;
+		font-weight: 900;
+		height: 98px;
+		line-height: 0.816;
+		padding: 8px;
+		text-align: center;
+		text-transform: uppercase;
+		transition: border $transition-time ease, color $transition-time ease;
+		width: 78px;
+
+		svg {
+			height: 44px;
+			margin-bottom: 6px;
+			width: 49.66px;
+		}
+
+		&:hover,
+		&:focus {
+			border-color: $cwu-yellow;
+			color: $cwu-yellow;
+		}
+	}
+
+	&__window {
+		flex-shrink: 0;
+		width: 302px;
+	}
+
+	&--open {
+		transform: translate(-100%, 0);
+	}
+}

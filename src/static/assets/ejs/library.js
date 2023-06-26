@@ -2,12 +2,12 @@ import { ready } from 'brei-project-utils';
 
 import { chat } from './modules/chat';
 
-const library = {
+const bibliotheque = {
 	init() {
 		chat.init();
 	}
 };
 
 ready(function () {
-	library.init();
+	bibliotheque.init();
 });
