@@ -1,0 +1,38 @@
+{
+	"title": "Questions",
+	"status": "ready",
+	"preview": "@high",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"heading": "Have Questions?",
+		"items": [
+			{
+				"style": "open-chat",
+				"url": "#",
+				"icon": "chat",
+				"copy": "24x7 Chat",
+				"label": "Click here to open the library chat window"
+			},
+			{
+				"url": "#",
+				"icon": "email",
+				"copy": "Email"
+			},
+			{
+				"url": "#",
+				"icon": "appointment",
+				"copy": "Appointments"
+			},
+			{
+				"url": "#",
+				"icon": "call",
+				"copy": "Phone"
+			}
+		]
+	}
+}

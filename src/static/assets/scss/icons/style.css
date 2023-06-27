@@ -23,8 +23,12 @@ Single-colored icons can be modified like so:
   width: 5.1572265625em;
 }
 
+.brei-icon-appointment {
+  width: 1.5517578125em;
+}
+
 .brei-icon-chat {
-  width: 1.1376953125em;
+  width: 1.12890625em;
 }
 
 .brei-icon-facebook {

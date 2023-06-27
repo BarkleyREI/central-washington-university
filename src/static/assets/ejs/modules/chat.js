@@ -5,13 +5,15 @@
 
 const chat = {
 	elem: {
-		$chat: $('.chat')
+		$chat: $('.chat'),
+		$open: $('.open-chat')
 	},
 	
 	init() {
 		console.log('zap');
 		
 		if (this.elem.$chat.length > 0) {
+			
 			this.elem.$chat.find('.chat__button').on('click', function() {
 				chat.elem.$chat.toggleClass('chat--open');
 				chat.elem.$chat.find('.chat__button').attr({
@@ -26,8 +28,15 @@ const chat = {
 					'aria-hidden': function (i, txt) {
 						return (txt === 'false') ? 'true' : 'false';
 					}
-				})
-				
+				})	
+			});
+
+			this.elem.$open.on('click', function(e) {
+				e.preventDefault();
+				chat.elem.$chat.addClass('chat--open');
+				chat.elem.$chat.find('.chat__button').attr({ 'aria-expanded': 'true', 'aria-label': 'Click here to close the library chat window' });
+				chat.elem.$chat.find('.chat__window').attr({'aria-hidden': 'false' });
+				chat.elem.$chat.find('iframe').focus();				
 			});
 		}
 	}

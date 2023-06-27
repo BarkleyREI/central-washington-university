@@ -1,0 +1,27 @@
+<section class="questions component">
+	<div class="questions__wrapper wrapper">
+	
+		<div class="questions__content">
+
+			<h2 class="questions__heading font-h1">{{{ heading }}}</h2>
+
+		</div>
+
+		<ul class="questions__grid">
+
+			{{#each items}}
+			<li class="questions__item">
+				<a href="{{ url }}" class="questions__link{{#if style}} {{ style }}{{/if}}"{{#if label}} aria-label="{{ label }}"{{/if}}>
+
+					{{svg icon }}
+
+					<p class="questions__copy">{{{ copy }}}</p>
+
+				</a>
+			</li>
+			{{/each}}
+			
+		</ul>
+		
+	</div>
+</section>

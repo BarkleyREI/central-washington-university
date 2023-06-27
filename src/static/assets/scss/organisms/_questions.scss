@@ -1,0 +1,128 @@
+.questions {
+	$this: &;
+	background: $mercury;
+	padding: 48px 0;
+
+	&__heading {
+		margin-bottom: 25px;
+	}
+
+	&__grid {
+		display: grid;
+		gap: 32px 16px;
+		grid-template-columns: repeat(2, 1fr);
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		z-index: 5;
+	}
+
+	&__item {
+		display: contents;
+	}
+
+	&__link {
+		align-items: center;
+		aspect-ratio: 1;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		padding-bottom: 4px;
+		position: relative;
+
+		&:link,
+		&:visited {
+			background: $white;
+			color: $black;
+		}
+
+		&:hover,
+		&:active {
+			background: $white;
+			color: $black;
+
+			#{$this}__copy {
+				&:after {
+					left: 0;
+					right: 0;
+				}
+			}
+		}
+
+		&:focus-visible {
+			background: $cwu-yellow;
+			color: $black;
+			outline: 0;
+
+			&:before,
+			&:after {
+				background-color: $black;
+				content: '';
+				display: block;
+				height: 4px;
+				left: 0;
+				position: absolute;
+				right: 0;
+			}
+
+			&:before {
+				top: -8px;
+			}
+
+			&:after {
+				bottom: -8px;
+			}
+		}
+	}
+
+	.brei-icon {
+		font-size: 72px; // 76
+	}
+
+	&__copy {
+		font-size: 14px; // 16
+		font-weight: 900;
+		line-height: 1;
+		margin: 1em 0 0;
+		padding: 2px 0.365em 1px;
+		position: relative;
+		text-transform: uppercase;
+
+		&:after {
+			background-color: $cwu-yellow;
+			bottom: -4px;
+			content: '';
+			display: block;
+			height: 4px;
+			left: 0.365em;
+			position: absolute;
+			right: 0.365em;
+			transition: left $transition-time ease, right $transition-time ease;
+		}
+	}
+
+	@include breakpoint(small) {
+		.brei-icon {
+			font-size: 76px;
+		}
+
+		&__copy {
+			font-size: 16px;
+		}
+	}
+
+	@include breakpoint(medium) {
+		&__grid {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	@include breakpoint(large) {
+		padding: 96px 0;
+
+		&__heading {
+			margin-bottom: 40px;
+		}
+	}
+}
