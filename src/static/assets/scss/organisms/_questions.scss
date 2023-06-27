@@ -1,6 +1,6 @@
 .questions {
 	$this: &;
-	background: $mercury;
+	background: $wild-sand;
 	padding: 48px 0;
 
 	&__heading {
@@ -9,8 +9,8 @@
 
 	&__grid {
 		display: grid;
-		gap: 32px 16px;
-		grid-template-columns: repeat(2, 1fr);
+		gap: 16px;
+		grid-template-columns: repeat(1, 1fr);
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -81,8 +81,7 @@
 	}
 
 	&__copy {
-		font-size: 14px; // 16
-		font-weight: 900;
+		@extend %font-cta;
 		line-height: 1;
 		margin: 1em 0 0;
 		padding: 2px 0.365em 1px;
@@ -91,7 +90,7 @@
 
 		&:after {
 			background-color: $cwu-yellow;
-			bottom: -4px;
+			bottom: -8px;
 			content: '';
 			display: block;
 			height: 4px;
@@ -102,13 +101,13 @@
 		}
 	}
 
-	@include breakpoint(small) {
-		.brei-icon {
-			font-size: 76px;
+	@include breakpoint(375px) {
+		&__grid {
+			grid-template-columns: repeat(2, 1fr);
 		}
 
-		&__copy {
-			font-size: 16px;
+		.brei-icon {
+			font-size: 76px;
 		}
 	}
 

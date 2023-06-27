@@ -11,13 +11,17 @@
 	z-index: 99;
 
 	&__button {
+		align-items: center;
 		background: $black;
 		border: 3px solid $white;
 		color: $white;
+		display: flex;
+		flex-flow: column;
 		flex-shrink: 0;
 		font-size: 16px;
 		font-weight: 900;
 		height: 98px;
+		justify-content: center;
 		line-height: 0.816;
 		padding: 8px;
 		text-align: center;
@@ -30,14 +34,24 @@
 		}
 
 		svg {
-			height: 44px;
-			margin-bottom: 6px;
+			flex-grow: 0;
+			flex-shrink: 0;
+			margin: auto;
 			transition: transform $transition-time ease;
+		}
+
+		.brei-icon-chat {
+			height: 44px;
 			width: 49.66px;
 		}
 
+		.brei-icon-close {
+			display: none;
+			height: 30px;
+			width: 30px;
+		}
+
 		&:hover {
-			span,
 			svg {
 				transform: scale(1.2);
 			}
@@ -50,10 +64,24 @@
 
 	&__window {
 		flex-shrink: 0;
-		width: 302px;
+		width: 242px;
 	}
 
 	&--open {
 		transform: translate(-100%, 0);
+
+		.brei-icon-chat {
+			display: none;
+		}
+
+		.brei-icon-close {
+			display: block;
+		}
+	}
+
+	@include breakpoint(small) {
+		&__window {
+			width: 302px;
+		}
 	}
 }
