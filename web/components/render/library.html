@@ -2,9 +2,124 @@
 
 <main id="main" class="landing main">
 
-	<!-- masthead--library -->
+	<section class="masthead masthead--library masthead--video">
 
-	<!-- shortcut--library -->
+	<figure class="masthead__gallery">
+		<img src="/img/photos/library.jpg" alt="[image alt text]" class="masthead__image" width="1920" height="823" />
+		
+	</figure>
+
+
+	<div class="masthead__wrapper wrapper grid-x grid-margin-x">
+
+		<div class="masthead__title cell xsmall-12 large-10 large-offset-1">
+
+			<h1 class="font-specialty-2">CWU Libraries</h1>
+
+			<p class="masthead__hours font-intro"><a href="hours">Library Hours</a>: <span class="date">Friday, June 9, 2023</span> <span class="hours">7:30am - 7:00pm</span></p>
+
+			<div class="onesearch">
+
+	<form id="simple" class="form__field form__field--is-search" name="searchForm" method="get" target="_self" action="https://searchlib.cwu.edu/discovery/search" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
+		<input type="hidden" name="vid" value="01ALLIANCE_CWU:CWU">
+		<input type="hidden" name="tab" value="CWU_MORE">
+		<input type="hidden" name="search_scope" value="CWU_MORE">
+		<input type="hidden" name="lang" value="en">
+		<input type="hidden" name="query" id="primoQuery">
+		<label for="primoQueryTemp" class="show-for-sr">Search Text</label>
+		<input type="search" name="search" id="primoQueryTemp" value="" size="35" placeholder="Search for books, articles, and more">
+		<button class="search-button" id="go" title="Search" onclick="searchPrimo()" type="submit">
+			<span class="show-for-sr">Search</span>
+			
+			<svg class="brei-icon brei-icon-search" focusable="false">
+				<use href="#brei-icon-search"></use>
+			</svg>
+		
+		</button>
+	</form>
+	
+	<ul class="onesearch__links">
+		<li><a href="https://searchlib.cwu.edu/discovery/search?vid=01ALLIANCE_CWU:CWU&amp;mode=advanced">Advanced Search</a></li>
+		<li><a href="http://www.lib.cwu.edu/my-library-accounts">Library Accounts</a></li>
+		<li><a href="https://www.youtube.com/watch?v=suucT7H_3qU&amp;list=PL3cU1OFSaRg6OrGzbqjy7Im-5ipUtv-hx" target="_blank">OneSearch Help</a></li>
+	</ul>
+
+</div>
+			
+		</div>
+		
+	</div>
+	
+</section>
+
+	<section class="questions">
+	<div class="questions__wrapper wrapper">
+	
+		<div class="questions__content">
+
+			<h2 class="questions__heading font-h1">Have Questions?</h2>
+
+		</div>
+
+		<ul class="questions__grid">
+
+			<li class="questions__item">
+				<a href="#" class="questions__link open-chat" aria-label="Click here to open the library chat window">
+
+					
+			<svg class="brei-icon brei-icon-chat" focusable="false">
+				<use href="#brei-icon-chat"></use>
+			</svg>
+		
+
+					<p class="questions__copy">24x7 Chat</p>
+
+				</a>
+			</li>
+			<li class="questions__item">
+				<a href="#" class="questions__link">
+
+					
+			<svg class="brei-icon brei-icon-email" focusable="false">
+				<use href="#brei-icon-email"></use>
+			</svg>
+		
+
+					<p class="questions__copy">Email</p>
+
+				</a>
+			</li>
+			<li class="questions__item">
+				<a href="#" class="questions__link">
+
+					
+			<svg class="brei-icon brei-icon-appointment" focusable="false">
+				<use href="#brei-icon-appointment"></use>
+			</svg>
+		
+
+					<p class="questions__copy">Appointments</p>
+
+				</a>
+			</li>
+			<li class="questions__item">
+				<a href="#" class="questions__link">
+
+					
+			<svg class="brei-icon brei-icon-call" focusable="false">
+				<use href="#brei-icon-call"></use>
+			</svg>
+		
+
+					<p class="questions__copy">Phone</p>
+
+				</a>
+			</li>
+			
+		</ul>
+		
+	</div>
+</section>
 
 	<section class="quick quick--wide component">
 

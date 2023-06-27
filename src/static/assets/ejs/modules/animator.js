@@ -16,8 +16,6 @@ const animator = {
 	},
 
 	mover(entries) {
-		console.log('kiki');
-		console.log(entries);
 		entries.forEach(entry => {
 			if(entry.isIntersecting) {
 				entry.target.classList.add('animated');

@@ -10,8 +10,6 @@ const chat = {
 	},
 	
 	init() {
-		console.log('zap');
-		
 		if (this.elem.$chat.length > 0) {
 			
 			this.elem.$chat.find('.chat__button').on('click', function() {

@@ -1,0 +1,54 @@
+.onesearch {
+	.form__field--is-search {
+		margin-bottom: 24px;
+		margin-left: -2px;
+		position: relative;
+		z-index: 100;
+
+		input[type='search'] {
+			border-width: 2px;
+			font-size: 16px;
+			padding: 8px 60px 8px 16px;
+
+			&:hover,
+			&:focus-visible {
+				border-width: 2px;
+			}
+		}
+
+		.search-button {
+			bottom: 2px;
+			font-size: 20px;
+			right: 2px;
+			top: 2px;
+			width: 40px;
+		}
+	}
+
+	&__links {
+		align-items: flex-start;
+		color: $white;
+		display: flex;
+		flex-flow: column;
+		font-family: $inter;
+		font-size: 16px;
+		gap: 16px;
+		justify-content: flex-start;
+		line-height: 1.44;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		a {
+			@extend %default-link;
+			background-size: 100% 2px;
+			font-size: 16px;
+		}
+	}
+
+	@include breakpoint(large) {
+		&__links {
+			flex-flow: row nowrap;
+		}
+	}
+}

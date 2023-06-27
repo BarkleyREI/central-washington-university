@@ -1,0 +1,23 @@
+<div class="onesearch">
+
+	<form id="simple" class="form__field form__field--is-search" name="searchForm" method="get" target="_self" action="https://searchlib.cwu.edu/discovery/search" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
+		<input type="hidden" name="vid" value="01ALLIANCE_CWU:CWU">
+		<input type="hidden" name="tab" value="CWU_MORE">
+		<input type="hidden" name="search_scope" value="CWU_MORE">
+		<input type="hidden" name="lang" value="en">
+		<input type="hidden" name="query" id="primoQuery">
+		<label for="primoQueryTemp" class="show-for-sr">Search Text</label>
+		<input type="search" name="search" id="primoQueryTemp" value="" size="35" placeholder="Search for books, articles, and more">
+		<button class="search-button" id="go" title="Search" onclick="searchPrimo()" type="submit">
+			<span class="show-for-sr">Search</span>
+			{{svg 'search' }}
+		</button>
+	</form>
+	
+	<ul class="onesearch__links">
+		<li><a href="https://searchlib.cwu.edu/discovery/search?vid=01ALLIANCE_CWU:CWU&amp;mode=advanced">Advanced Search</a></li>
+		<li><a href="http://www.lib.cwu.edu/my-library-accounts">Library Accounts</a></li>
+		<li><a href="https://www.youtube.com/watch?v=suucT7H_3qU&amp;list=PL3cU1OFSaRg6OrGzbqjy7Im-5ipUtv-hx" target="_blank">OneSearch Help</a></li>
+	</ul>
+
+</div>

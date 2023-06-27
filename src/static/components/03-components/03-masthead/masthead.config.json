@@ -84,6 +84,25 @@
 			}
 		},
 		{
+			"name": "Library",
+			"context": {
+				"style": "masthead--library masthead--video",
+				"title": "CWU Libraries",
+				"hours": {
+					"datestamp": "Friday, June 9, 2023",
+					"timestamp": "7:30am - 7:00pm"
+				},
+				"images": [
+					{
+						"src": "/img/photos/library.jpg",
+						"alt": "[image alt text]",
+						"width": 1920,
+						"height": 823
+					}
+				]
+			}
+		},		
+		{
 			"name": "News",
 			"context": {
 				"style": "headline--news",
