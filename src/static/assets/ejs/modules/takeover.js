@@ -26,14 +26,14 @@ export const takeover = {
 		// If the cookies are set but the takeover is more current, show the modal
 		if (Cookies.get('takeover') !== undefined) {
 			if (Cookies.get('takeover') === undefined || Cookies.get('takeoverModTime') === undefined) {
-				Cookies.set('takeoverModTime', this.takeoverModTime, { Secure: true, HttpOnly: true });
+				Cookies.set('takeoverModTime', this.takeoverModTime, { Secure: false, HttpOnly: false });
 				$('html, body').addClass('body--no-scroll');
 				this.elem.$takeover.attr('aria-modal', 'true');
 
 			} else if (Cookies.get('takeoverModTime') !== undefined && Cookies.get('takeoverModTime') !== this.takeoverModTime) {
 				Cookies.remove('takeover');
 				Cookies.remove('takeoverModTime');
-				Cookies.set('takeoverModTime', this.takeoverModTime, { Secure: true, HttpOnly: true });
+				Cookies.set('takeoverModTime', this.takeoverModTime, { Secure: false, HttpOnly: false });
 				$('html, body').addClass('body--no-scroll');
 				this.elem.$takeover.attr('aria-modal', 'true');
 			}
@@ -45,7 +45,8 @@ export const takeover = {
 
 	onClick(e) {
 		e.preventDefault();
-		Cookies.set('takeover', 'true', { expires: 1, Secure: true, HttpOnly: true });
+		Cookies.set('takeover', 'true', { expires: 1, Secure: false, HttpOnly: false });
+		Cookies.set('takeoverModTime', this.takeoverModTime, { Secure: false, HttpOnly: false });
 		$('html, body').removeClass('body--no-scroll');
 
 		// Hide takeover
