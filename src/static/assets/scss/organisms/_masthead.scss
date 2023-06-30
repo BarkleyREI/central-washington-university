@@ -210,7 +210,11 @@
 
 	&--library {
 		background-color: $mercury;
-		#{$this}__hours {
+
+		#todays-hours {
+			@extend %font-intro;
+			color: $white;
+			margin-bottom: 16px;
 			margin-top: -0.25rem;
 
 			a {

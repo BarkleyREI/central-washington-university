@@ -36,7 +36,13 @@
 
 			<h1 class="font-specialty-2">{{{ title }}}</h1>
 
-			{{#with hours }}<p class="masthead__hours font-intro"><a href="hours">Library Hours</a>: <span class="date">{{{ datestamp }}}</span> <span class="hours">{{{ timestamp }}}</span></p>{{/with}}
+			{{#with hours }}
+			<div id="todays-hours">
+				<span class="hours-link"><a href="hours">Library Hours</a>:</span>
+				<span class="date">{{{ datestamp }}}</span>
+				<span class="hours">{{{ timestamp }}}</span>
+			</div>
+			{{/with}}
 
 			{{render '@library-search'}}
 			
