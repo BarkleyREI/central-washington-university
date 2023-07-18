@@ -1,15 +1,17 @@
 .iframe {
 
 	iframe {
-		aspect-ratio: 1 / 1;
+		// aspect-ratio: 1 / 1;
+		// height: auto;
 		border: 0;
-		height: auto;
 		margin-top: 32px;
+		min-height: 428px;
 		width: 100%;
 
 		&[src*='vimeo'],
 		&[src*='youtube'] {
 			aspect-ratio: 16 / 9;
+			min-height: 0;
 		}
 	}
 }
