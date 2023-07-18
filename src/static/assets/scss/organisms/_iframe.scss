@@ -5,12 +5,13 @@
 		// height: auto;
 		border: 0;
 		margin-top: 32px;
-		min-height: 428px;
+		min-height: 480px;
 		width: 100%;
 
 		&[src*='vimeo'],
 		&[src*='youtube'] {
 			aspect-ratio: 16 / 9;
+			height: auto;
 			min-height: 0;
 		}
 	}
