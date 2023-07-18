@@ -1,5 +1,6 @@
 {{#if items}}
 <fieldset>
+	{{#if label}}<legend class="form__legend">{{{ label }}}</legend>{{/if}}	
 	{{#if legend}}<legend class="show-for-sr">{{{ legend }}}</legend>{{/if}}
 	{{#each items}}
 	<div class="form__field form__field--radio">
