@@ -5,6 +5,12 @@
 	"preview": "@rail",
 	"context": {
 		"title": "Section Headline",
+		"link": {
+			"modifiers": "menu--secondary",
+			"url": "#",
+			"copy": "Section Headline",
+			"icon": "chevron"
+		},
 		"items": [
 			{
 				"copy": "Child Page Lorem Ipsum",

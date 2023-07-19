@@ -2,6 +2,8 @@
 	background-color: $mercury;
 	padding: 20px;
 
+
+
 	&__list {
 		width: fit-content;
 	}
@@ -12,11 +14,33 @@
 		position: relative;
 	}
 
+	.menu--secondary {
+		@extend %font-h4;
+		margin-bottom: -3px;
+		margin-top: -13px;
+		position: relative;
+
+		.text {
+			line-height: 1.2;
+			padding: 5px 28px 4px 0;
+		}
+
+		.menu__icon {
+			margin-top: 7px;
+		}
+	}
+
 	.menu--tertiary {
 		width: 100%;
 	}
 
 	@include breakpoint(large) {
 		padding: 36px 28px;
+
+		.menu--secondary {
+			.text {
+				padding-right: 30px;
+			}
+		}
 	}
 }
