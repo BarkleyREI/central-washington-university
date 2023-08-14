@@ -84,7 +84,7 @@
 
 	&__link {
 		@extend %overlay;
-		z-index: 2;
+		z-index: 10;
 	}
 
 	&__button {
