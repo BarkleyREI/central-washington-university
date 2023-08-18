@@ -46,10 +46,8 @@
 		&.is-active {
 			z-index: 11;
 
-			&:first-child {
-				.trigger {
-					--border: #{$white};
-				}
+			.trigger {
+				--border: #{$white};
 			}
 		}
 	}
