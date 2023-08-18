@@ -165,8 +165,7 @@ $card: '.card';
 		}
 	}
 
-	&:hover,
-	&:focus-within {
+	&:hover {
 		background-color: $cwu-crimson;
 		color: $white;
 
@@ -184,6 +183,31 @@ $card: '.card';
 
 		.btn--cta {
 			--text: #{$white};
+		}
+	}
+
+	&:focus-within {
+		background-color: $cwu-crimson;
+		color: $white;
+
+		#{$card}__image {
+			transform: scale(1.1);
+		}
+
+		#{$card}__content {
+			background-color: $cwu-crimson;
+		}
+
+		#{$card}__info {
+			opacity: 1;
+		}
+
+		a.btn--cta {
+			--text: #{$white};
+		}
+
+		p.btn--cta {
+			--text: #{$black};
 		}
 	}
 
