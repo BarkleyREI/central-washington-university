@@ -94,7 +94,7 @@
 	}
 
 	&__location-name {
-		// background-color: $black;
+		// background-color: $black;-fo
 		// clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
 		// display: inline-block;
 		display: none;
@@ -506,6 +506,15 @@
 	}
 
 	@include breakpoint(xlarge) {
+		// &__location-link {
+		//	&:hover {
+		//		#{$this}__location-name {
+		//			opacity: 1;
+		//			visibility: visible;
+		//		}
+		//	}
+		// xs}
+
 		&__location-item {
 			&.is-active {
 				#{$this}__location-name {
