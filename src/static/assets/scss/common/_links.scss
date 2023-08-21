@@ -1,7 +1,8 @@
 a {
 	text-decoration: none;
 
-	.user-markup &:not([class]) {
+	.user-markup &:not([class]),
+	.user-markup &.ext {
 		@extend %default-link;
 	}
 }
