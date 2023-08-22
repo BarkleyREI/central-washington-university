@@ -65,11 +65,14 @@
 	}
 
 	&__image {
-		@extend %overlay;
 		object-fit: cover;
 		object-position: center center;
 		transition: transform $transition-time ease;
-		z-index: 1;
+
+		@supports (aspect-ratio) {
+			@extend %overlay;
+			z-index: 1;
+		}
 	}
 
 	&__content {

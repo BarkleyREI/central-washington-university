@@ -84,8 +84,9 @@
 	}
 
 	&__figure {
-		aspect-ratio: 1;
+		// aspect-ratio: 1;
 		overflow: hidden;
+		padding-bottom: 100%;
 		position: relative;
 	}
 

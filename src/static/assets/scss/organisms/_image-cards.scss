@@ -29,7 +29,7 @@
 		--inset-edge: 16px;
 		aspect-ratio: 1.423;
 		overflow: hidden;
-		position: relative;
+		padding-bottom: 35%;
 
 		&:hover,
 		&:focus-within {
@@ -121,35 +121,6 @@
 		@extend %overlay;
 		z-index: 20;
 	}
-	/*
-
-	&__figure {
-		aspect-ratio: 1.423;
-		height: 100%;
-		position: relative;
-		z-index: 5;
-		overflow: hidden;
-	}
-
-	&__image {
-		@extend %overlay;
-		transition: transform $transition-time ease;
-	}
-
-
-
-	&__copy {
-		color: $white;
-		padding: 0; // padding: 16px 0 24px;
-		position: relative;
-		font-size: 16px;
-		overflow: hidden;
-		max-height: 0;
-		opacity: 0;
-		transition: max-height $transition-time ease, opacity $transition-time ease, padding $transition-time ease;
-	}
-
-	*/
 
 	&.animateOnce {
 		@extend %bump-fade;

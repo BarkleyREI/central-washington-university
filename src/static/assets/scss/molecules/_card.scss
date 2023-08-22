@@ -258,7 +258,8 @@ $card: '.card';
 	#{$card}__figure {
 		@extend %inset-bottom-edge;
 		@extend %inset-bottom-border;
-		aspect-ratio: 1;
+		// aspect-ratio: 1;
+		padding-bottom: 100%;
 	}
 
 	#{$card}__content {
@@ -277,7 +278,8 @@ $card: '.card';
 	#{$card}__figure {
 		@extend %inset-bottom-edge;
 		@extend %inset-bottom-border;
-		aspect-ratio: 1.333;
+		// aspect-ratio: 1.333;
+		padding-bottom: 75%;
 	}
 
 	#{$card}__content {
@@ -294,6 +296,7 @@ $card: '.card';
 
 #{$card}--program {
 	#{$card}__figure {
-		aspect-ratio: 1;
+		// aspect-ratio: 1;
+		padding-bottom: 100%;
 	}
 }

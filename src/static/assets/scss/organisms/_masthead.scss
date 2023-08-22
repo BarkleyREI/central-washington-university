@@ -265,20 +265,23 @@
 		&--aggregate,
 		&--library {
 			#{$this}__gallery {
-				aspect-ratio: 2.3333;
+				// aspect-ratio: 2.3333;
+				padding-bottom: 42.85%;
 			}
 		}
 
 		&--landing {
 			#{$this}__gallery {
-				aspect-ratio: 1.7777;
+				// aspect-ratio: 1.7777;
+				padding-bottom: 56.25%;
 			}
 		}
 
 		&--home {
 			#{$this}__gallery {
-				aspect-ratio: 1.7777;
 				clip-path: none;
+				// aspect-ratio: 1.7777;
+				padding-bottom: 56.25%;
 
 				&:after {
 					display: none;
