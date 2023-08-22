@@ -59,6 +59,10 @@
 					background-position: left center;
 				}
 			}
+
+			&:focus-visible {
+				outline: 0;
+			}
 		}
 	}
 
