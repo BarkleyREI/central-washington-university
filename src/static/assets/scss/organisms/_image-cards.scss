@@ -30,6 +30,7 @@
 		aspect-ratio: 1.423;
 		overflow: hidden;
 		padding-bottom: 35%;
+		position: relative;
 
 		&:hover,
 		&:focus-within {
@@ -91,6 +92,7 @@
 		justify-content: center;
 		opacity: 0;
 		padding: 40px;
+		position: absolute;
 		text-align: center;
 		transition: opacity $transition-time ease;
 		z-index: 15;
