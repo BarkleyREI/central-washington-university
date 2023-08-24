@@ -1,0 +1,74 @@
+{
+	"title": "Next Steps",
+	"status": "ready",
+	"preview": "@standard",
+	"default": "narrow",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"heading": "Take the Next Steps",
+		"items": [
+			{
+				"image": {
+					"src": "/img/icons/atom.svg",
+					"alt": "[icon alt text]"
+				},
+				"heading": "Visit Central",
+				"links": [
+					{
+						"modifiers": "btn--cta",
+						"icon": "",				
+						"url": "#",
+						"copy": "Schedule a Tour"
+					},
+					{
+						"modifiers": "btn--cta",
+						"icon": "",				
+						"url": "#",
+						"copy": "Explore Campus Virtually"
+					}
+				]
+			},
+			{
+				"image": {
+					"src": "/img/icons/book.svg",
+					"alt": "[icon alt text]"
+				},
+				"heading": "Admissions",
+				"links": [
+					{
+						"modifiers": "btn--cta",
+						"icon": "",					
+						"url": "#",
+						"copy": "Apply to CWU"
+					},
+					{	
+						"modifiers": "btn--cta",
+						"icon": "",				
+						"url": "#",
+						"copy": "Cost, Aid, Value"
+					}
+				]
+			},
+			{
+				"image": {
+					"src": "/img/icons/compass.svg",
+					"alt": "[icon alt text]"
+				},
+				"heading": "Interested?",
+				"links": [
+					{
+						"modifiers": "btn--cta",
+						"icon": "",				
+						"url": "#",
+						"copy": "Request Information"
+					}
+				]
+			}
+		]
+	}	
+}

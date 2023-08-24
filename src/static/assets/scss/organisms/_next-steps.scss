@@ -1,0 +1,80 @@
+.next-steps {
+	@extend %inset-bottom-edge;
+	@extend %small-edge;
+	background-color: $wild-sand;
+	color: $black;
+	padding: 32px 16px 90px;
+	position: relative;
+	width: 100vw;
+
+	&:after {
+		@extend %overlay;
+		background-image: url('/img/topo-map.jpg');
+		background-position: 50% 50%;
+		background-size: cover;
+		content: '';
+		mix-blend-mode: multiply;
+		opacity: 0.1;
+		z-index: 1;
+	}
+
+	&__grid {
+		align-items: flex-start;
+		display: flex;
+		flex-flow: column;
+		gap: 32px;
+		justify-content: flex-start;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__image {
+		height: 72px;
+		margin-bottom: 16px;
+		width: 72px;
+	}
+
+	&__subheading {
+		margin: 0;
+	}
+
+	&__list {
+		margin: 0;
+		overflow: auto;
+		padding-left: 16px;
+	}
+
+	&__list-item {
+		padding: 8px 0 0;
+	}
+
+	&__link {
+		@extend %default-link;
+		font-size: 16px;
+	}
+
+	@include breakpoint(medium) {
+		&__grid {
+			flex-flow: row nowrap;
+			gap: 16px;
+			justify-content: space-between;
+		}
+
+		&__item {
+			width: 25%;
+		}
+	}
+
+	@include breakpoint(large) {
+		width: 100%;
+	}
+
+	@include breakpoint(xxlarge) {
+		&__item {
+			display: flex;
+			flex-flow: row nowrap;
+			gap: 16px;
+			width: 30%;
+		}
+	}
+}
