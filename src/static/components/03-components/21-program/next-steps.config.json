@@ -1,7 +1,7 @@
 {
 	"title": "Next Steps",
 	"status": "ready",
-	"preview": "@standard",
+	"preview": "@high",
 	"default": "narrow",
 	"meta": {
 		"scripts": [
@@ -23,13 +23,13 @@
 						"modifiers": "btn--cta",
 						"icon": "",				
 						"url": "#",
-						"copy": "Schedule a Tour"
+						"copy": "In-Person Tour"
 					},
 					{
 						"modifiers": "btn--cta",
 						"icon": "",				
 						"url": "#",
-						"copy": "Explore Campus Virtually"
+						"copy": "Virtual Tour"
 					}
 				]
 			},
@@ -38,7 +38,7 @@
 					"src": "/img/icons/book.svg",
 					"alt": "[icon alt text]"
 				},
-				"heading": "Admissions",
+				"heading": "Admissions & Aid",
 				"links": [
 					{
 						"modifiers": "btn--cta",

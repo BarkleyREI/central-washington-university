@@ -1,32 +1,33 @@
 <div class="next-steps component">
+	<div class="next-steps__wrapper">
 
-	<h2 class="next-steps__heading font-h2">{{{ heading }}}</h2>
+		<h2 class="next-steps__heading font-h2">{{{ heading }}}</h2>
 	
-	<hr />
+		<hr />
 
-	<div class="next-steps__grid">
+		<div class="next-steps__grid">
 
-		{{#each items}}
-		<div class="next-steps__item">
+			{{#each items}}
+			<div class="next-steps__item">
 
-			{{#with image}}<img src="{{ src }}" alt="{{ alt }}" class="next-steps__image">{{/with}}
+				{{#with image}}<img src="{{ src }}" alt="{{ alt }}" class="next-steps__image">{{/with}}
 
-			<div class="next-steps__content">
+				<div class="next-steps__content">
 		
-				<h3 class="next-steps__subheading font-h5">{{{ heading }}}</h3>
-
-				<ul class="next-steps__list">
+					<h3 class="next-steps__subheading font-h5">{{{ heading }}}</h3>
+					<ul class="next-steps__list">
 				
-					{{#each links}}<li class="next-steps__list-item"><a href="{{ url }}" class="next-steps__link">{{{ copy }}}</a></li>{{/each}}
+						{{#each links}}<li class="next-steps__list-item"><a href="{{ url }}" class="next-steps__link">{{{ copy }}}</a></li>{{/each}}
 					
-				</ul>
+					</ul>
 				
+				</div>
+
 			</div>
+			{{/each}}
 
 		</div>
-		{{/each}}
-
+		
 	</div>
-
 </div>
 
