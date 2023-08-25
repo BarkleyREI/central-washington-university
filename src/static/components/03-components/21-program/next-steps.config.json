@@ -1,7 +1,7 @@
 {
 	"title": "Next Steps",
 	"status": "ready",
-	"preview": "@high",
+	"preview": "@standard",
 	"default": "narrow",
 	"meta": {
 		"scripts": [
@@ -23,13 +23,13 @@
 						"modifiers": "btn--cta",
 						"icon": "",				
 						"url": "#",
-						"copy": "In-Person Tour"
+						"copy": "Schedule an In-Person Tour"
 					},
 					{
 						"modifiers": "btn--cta",
 						"icon": "",				
 						"url": "#",
-						"copy": "Virtual Tour"
+						"copy": "Explore Campus Virtually"
 					}
 				]
 			},
@@ -59,7 +59,7 @@
 					"src": "/img/icons/compass.svg",
 					"alt": "[icon alt text]"
 				},
-				"heading": "Interested?",
+				"heading": "Interested in CWU?",
 				"links": [
 					{
 						"modifiers": "btn--cta",
