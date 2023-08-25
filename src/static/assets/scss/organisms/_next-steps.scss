@@ -1,27 +1,28 @@
 .next-steps {
-	@extend %inset-bottom-edge;
-	background-color: $wild-sand;
 	color: $black;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 16px 0 90px;
 	position: relative;
 
-	&:after {
-		@extend %overlay;
-		background-image: url('/img/topo-map.jpg');
-		background-position: 50% 50%;
-		background-size: cover;
-		content: '';
-		mix-blend-mode: multiply;
-		opacity: 0.1;
-		z-index: 1;
-	}
-
 	&__wrapper {
+		background-color: $wild-sand;
 		margin: 0 auto;
 		max-width: 1920px;
-		padding: 0 16px;
+		padding: 32px 16px 64px;
 		position: relative;
 		z-index: 2;
+
+		&:after {
+			@extend %overlay;
+			background-image: url('/img/topo-map.jpg');
+			background-position: 50% 50%;
+			background-size: cover;
+			content: '';
+			mix-blend-mode: multiply;
+			opacity: 0.1;
+			z-index: 1;
+		}
 	}
 
 	&__grid {
@@ -31,6 +32,7 @@
 		gap: 32px;
 		justify-content: flex-start;
 		position: relative;
+		z-index: 3;
 	}
 
 	&__image {
@@ -45,8 +47,7 @@
 
 	&__list {
 		margin: 0;
-		overflow: auto;
-		padding-left: 16px;
+		padding: 0 0 0 16px;
 	}
 
 	&__list-item {
@@ -71,11 +72,10 @@
 	}
 
 	@include breakpoint(large) {
-		--inset-edge: 48px;
-		padding: 80px 0 120px;
+		padding: 0 5%;
 
 		&__wrapper {
-			padding: 0 5%;
+			padding: 80px 8.3333%;
 		}
 
 		&__item {
@@ -93,9 +93,7 @@
 	}
 
 	@include breakpoint(1920px) {
-		&__wrapper {
-			padding: 0;
-			width: $global-width;
-		}
+		padding: 0;
+		width: $global-width;
 	}
 }
