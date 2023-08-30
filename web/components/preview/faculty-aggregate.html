@@ -1275,22 +1275,6 @@
 
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.4.1/axe.min.js" integrity="sha512-dBGHGCHrc6Lz3qXcm9O3QgAK2FYCYTsRSwb07QY3t9s1Q8vR36zc9PETlCiF69r6S+WaDi/fepihq+PWzFYuxQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script type="text/javascript">
-			axe
-					.run()
-					.then(results => {
-						console.log(results);
-						window.parent.postMessage(results, 'http://localhost:3000');
-
-						if (results.violations.length > 0) {
-							throw new Error('Accessibility issues found');
-						}
-					})
-					.catch(err => {
-						console.error('Something bad happened:', err.message);
-					});
-		</script>
 
 			<script type="text/javascript" src="/js/vendor.js"></script>
 			<script type="text/javascript" src="/js/main.js"></script>

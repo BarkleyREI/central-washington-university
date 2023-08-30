@@ -22,13 +22,13 @@
 					{
 						"modifiers": "btn--cta",
 						"icon": "",				
-						"url": "#",
+						"url": "https://admissions.cwu.edu/portal/campus_tours#TIPS%20ANCHOR",
 						"copy": "Schedule an In-Person Tour"
 					},
 					{
 						"modifiers": "btn--cta",
 						"icon": "",				
-						"url": "#",
+						"url": "https://tour.concept3d.com/share/vgwzn-QUO/stop/1",
 						"copy": "Explore Campus Virtually"
 					}
 				]
@@ -43,13 +43,13 @@
 					{
 						"modifiers": "btn--cta",
 						"icon": "",					
-						"url": "#",
+						"url": "https://cwu-staging.ewaycorphosting.com/admissions-aid/apply/index.php",
 						"copy": "Apply to CWU"
 					},
 					{	
 						"modifiers": "btn--cta",
 						"icon": "",				
-						"url": "#",
+						"url": "https://cwu-staging.ewaycorphosting.com/admissions-aid/cost-aid-value.php",
 						"copy": "Cost, Aid, Value"
 					}
 				]
@@ -64,7 +64,7 @@
 					{
 						"modifiers": "btn--cta",
 						"icon": "",				
-						"url": "#",
+						"url": "https://admissions.cwu.edu/register/request_info",
 						"copy": "Request Information"
 					}
 				]

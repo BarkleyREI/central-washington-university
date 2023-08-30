@@ -90,8 +90,8 @@ let themeSettings = {
 
 // Client facing settings
 if (!isStart) {
-	// mode = 'production';
-	mode = 'development'
+	mode = 'production';
+	// mode = 'development'
 }
 
 /*

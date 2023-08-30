@@ -2,11 +2,9 @@
 title: Overview
 ---
 
-<p class="intro">
-Introductory text lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-</p>
+<p class="intro">Within this library you will find guidelines for usage, documentation, and raw code for all of CWU’s Patterns, Components and Templates. All of this is provided to assist you and your company partners in creating, designing, and developing robust and accessible digital experiences across all CWU Utilities web properties.</p>
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+This is where you’ll find flexible resources and tools for any person or team to learn and use as they contribute to CWU’s diverse and substantial digital infrastructure. The menu to the left will be your guide as you navigate to find the resources you need to continue building and maintaining your new website(s).
 
 **_Throughout this library a few terms will be referenced that you should be familiar with:_**<br />
 **Elements**: Elements are the foundational building blocks of a system. They are things like brand colors, iconography, typography, and more. They are necessary to ensure whatever you create looks cohesive and is on brand.<br />
