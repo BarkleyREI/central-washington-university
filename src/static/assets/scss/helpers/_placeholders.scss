@@ -131,10 +131,12 @@
 
 // Edge-to-edge overlay at small screens
 %small-edge {
+	// stylelint-disable declaration-no-important
 	@include breakpoint(medium down) {
 		margin-left: -16px;
-		width: 100vw;
+		width: 100vw !important;
 	}
+	// stylelint-enable declaration-no-important
 }
 
 // Maintains 1:1 image proportions. Works best when direct child uses %overlay.

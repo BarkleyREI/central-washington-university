@@ -1,6 +1,6 @@
 .next-steps {
+	@extend %small-edge;
 	color: $black;
-	width: 100vw;
 
 	&__inner {
 		background-color: $wild-sand;
@@ -56,14 +56,8 @@
 	}
 
 	@include breakpoint(large) {
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 1920px;
-		padding: 0 5%;
-		width: 100%;
-
 		&__inner {
-			padding: 80px 8.3333%;
+			padding: 48px 32px;
 		}
 	}
 
