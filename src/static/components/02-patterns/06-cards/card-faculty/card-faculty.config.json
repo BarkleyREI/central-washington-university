@@ -30,5 +30,13 @@
 			"modifiers": "btn--cta",
 			"copy": "Tertiary Button"
 		}
-	}
+	},
+	"variants": [
+		{
+			"name": "No Image",
+			"context": {
+				"image": ""
+			}
+		}
+	]
 }
