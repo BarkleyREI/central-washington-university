@@ -393,7 +393,11 @@ const results = {
 
 		// if this is not the initial set-up of the aggregate, zero out any featured results on the page
 		if(results.initial === false) {
-			$('.aggregate__feature').empty();
+			if(($('.aggregate__chips').children().length === 0) && (parseInt(results.filters['pageindex']) === 0)) {
+				$('.aggregate__feature').show();
+			} else {
+				$('.aggregate__feature').hide();
+			}
 		}
 
 		// if there are results, render the count, results, and pagination then fade them in
