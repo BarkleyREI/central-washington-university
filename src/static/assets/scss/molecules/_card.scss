@@ -300,3 +300,14 @@ $card: '.card';
 		padding-bottom: 100%;
 	}
 }
+
+#{$card}--standalone {
+	@include breakpoint(large) {
+		display: flex;
+		flex-flow: row nowrap;
+
+		#{$card}__figure {
+			padding-bottom: 50%;
+		}
+	}
+}

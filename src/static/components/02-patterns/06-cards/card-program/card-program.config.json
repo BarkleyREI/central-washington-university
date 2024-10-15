@@ -24,6 +24,12 @@
 			"context": {
 				"image": ""
 			}
+		},
+		{
+			"name": "Standalone",
+			"context": {
+				"style": "card--standalone"
+			}
 		}
 	]
 }
