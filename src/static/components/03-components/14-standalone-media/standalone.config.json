@@ -1,0 +1,95 @@
+{
+	"title": "Standalone",
+	"status": "ready",
+	"preview": "@standard",
+	"default": "Narrow Gallery",
+	"meta": {
+		"scripts": [
+			"vendor",
+			"main"
+		]
+	},
+	"context": {
+		"style": "standalone--narrow",
+		"heading": "Standalone H2 Headline Ipsum Dolor Sit Amet Consectetur",
+		"copy": "Structured body copy 150 characters lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+		"cta": {
+			"copy": "Tertiary Button"
+		},
+		"gallery": {
+			"images": [
+				{
+					"src": "https://picsum.photos/seed/1/836/628",
+					"alt": "[image alt text]",
+					"width": 836,
+					"height": 628,
+					"caption": "Optional caption 100 characters lorem ipsum dolor sit amet consectetur adipscing elit sed do eiusmo."
+				},
+				{
+					"src": "https://picsum.photos/seed/2/836/628",
+					"alt": "[image alt text]",
+					"width": 836,
+					"height": 628,
+					"caption": "Optional caption 100 characters lorem ipsum dolor sit amet consectetur adipscing elit sed do eiusmo."
+				},
+				{
+					"src": "https://picsum.photos/seed/3/836/628",
+					"alt": "[image alt text]",
+					"width": 836,
+					"height": 628
+				}
+			]
+		}
+	},
+	"variants": [
+		{
+			"name": "Narrow Video",
+			"context": {
+				"gallery": "",
+				"video": {
+					"poster": {
+						"src": "https://picsum.photos/1264/711",
+						"alt": "[image alt text]",
+						"width": 1264,
+						"height": 711
+					},
+					"play-button": {
+						"url": "https://www.youtube.com/watch?v=J5OSRpRyl6g",
+						"alt": "Play video",
+						"modifiers": "btn--xlarge play-button",
+						"icon": "play"
+					}
+				}
+			}
+		},
+		{
+			"name": "Wide Gallery",
+			"preview": "@high",
+			"context": {
+				"style": "standalone--wide"
+			}			
+		},
+		{
+			"name": "Wide Video",
+			"preview": "@high",
+			"context": {
+				"style": "standalone--wide",
+				"gallery": "",
+				"video": {
+					"poster": {
+						"src": "https://picsum.photos/1264/711",
+						"alt": "[image alt text]",
+						"width": 1264,
+						"height": 711
+					},
+					"play-button": {
+						"url": "https://www.youtube.com/watch?v=J5OSRpRyl6g",
+						"alt": "Play video",
+						"modifiers": "btn--xlarge play-button",
+						"icon": "play"
+					}
+				}
+			}			
+		}		
+	]
+}
