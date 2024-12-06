@@ -70,12 +70,16 @@
 	}
 
 	.form__field {
-		margin-bottom: 16px;
+		// stylelint-disable declaration-no-important
+		margin: 0 0 16px !important;
+		// stylelint-enable declaration-no-important
 	}
 
 	.form__field--radio {
 		+ .form__field--radio {
-			margin-top: -4px;
+			// stylelint-disable declaration-no-important
+			margin-top: -4px !important;
+			// stylelint-enable declaration-no-important
 		}
 	}
 

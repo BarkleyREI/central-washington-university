@@ -2,6 +2,7 @@
 <fieldset>
 	{{#if label}}<legend class="form__legend">{{{ label }}}</legend>{{/if}}	
 	{{#if legend}}<legend class="show-for-sr">{{{ legend }}}</legend>{{/if}}
+	{{#if help-before}}<div class="form__help-message">{{{ help-before }}}</div>{{/if}}	
 	{{#each items}}
 	<div class="form__field form__field--radio">
 		<input id="{{ id }}{{#if formkey}}-{{formkey}}{{/if}}" name="{{ name }}" type="radio" value="{{{ value }}}"{{#if checked}} checked="checked"{{/if}} />
@@ -13,5 +14,6 @@
 		</label>
 	</div>
 	{{/each}}
+	{{#if help-after}}<div class="form__help-message">{{{ help-after }}}</div>{{/if}}		
 </fieldset>
 {{/if}}

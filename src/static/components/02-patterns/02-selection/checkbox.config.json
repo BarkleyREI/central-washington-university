@@ -9,6 +9,12 @@
 				"name": "check",
 				"value": 1,
 				"label": "Lorem Checkbox"
+			},
+			{
+				"id": "check-box",
+				"name": "check",
+				"value": 2,
+				"label": "Lorem Checkbox"
 			}
 		]
 	}

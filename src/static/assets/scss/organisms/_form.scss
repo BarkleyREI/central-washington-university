@@ -18,9 +18,23 @@ $form: '.form';
 		position: relative;
 		width: 100%;
 
+		&:has([type='checkbox']) {
+			+ #{$this}__field:has([type="checkbox"]) {
+				margin-top: -24px;
+			}
+
+			~ #{$this}__help-message {
+				margin: -32px 0 40px;
+			}
+		}
+
 		&--radio {
 			+ #{$this}__field--radio {
 				margin-top: -24px;
+			}
+
+			~ #{$this}__help-message {
+				margin: -32px 0 40px;
 			}
 		}
 	}
@@ -112,6 +126,10 @@ $form: '.form';
 	&__help-message,
 	&__error-message {
 		position: relative;
+	}
+
+	fieldset &__help-message {
+		margin: 4px 0;
 	}
 
 	&__error-message {
