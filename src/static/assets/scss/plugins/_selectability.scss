@@ -40,6 +40,9 @@
 		background-color: $white;
 		left: 16px;
 		line-height: 1;
+		max-height: 32px;
+		max-width: calc(100% - 92px);
+		overflow: hidden;
 		padding: 0 8px;
 		position: absolute;
 		top: 25px;
