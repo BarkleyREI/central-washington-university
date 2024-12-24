@@ -17,6 +17,7 @@ const ism = {
 		} else {
 			this.bindNoUIActions();
 		}
+		this.initOnHash();
 	},
 
 	bindUIActions() {
@@ -46,6 +47,18 @@ const ism = {
 		$(e.currentTarget).addClass('is-active').find('.ism__location-link').attr('aria-expanded', true);
 		$('.ism__heading[href="' + targetHash + '"]').trigger('click');
 
+	},
+
+	initOnHash() {
+		if (window.location.hash) {
+			let hash = window.location.hash;
+			let links = document.getElementsByClassName('ism__location-link');
+			links = Array.from(links);
+			let link = links.filter(x => x.href.includes('#') && x.href.substring(x.href.indexOf('#')) === hash);
+			if (link) {
+				$('.ism__heading[href="' + hash + '"]').trigger('click');
+			}
+		}
 	},
 
 	btnNoIcon(e) {
